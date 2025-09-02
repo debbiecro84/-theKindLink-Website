@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/ochvegan-cover.png" alt="Och Vegan" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/ochvegan-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Och Vegan" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Och Vegan</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/wearewild-cover.jpg" alt="Wild" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/wearewild-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Wild" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Wild</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/appleandbears-cover.png" alt="Apple & Bears" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/appleandbears-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Apple & Bears" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Apple & Bears</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/getfussy-cover.png" alt="Fussy" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/getfussy-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Fussy" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Fussy</h3>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/napuve-cover.jpg" alt="Napuve" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/napuve-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Napuve" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Napuve</h3>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/theenglishsoapcompany-cover.jpg" alt="The English Soap Company" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/theenglishsoapcompany-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="The English Soap Company" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>The English Soap Company</h3>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/originalsource-cover.png" alt="Original Source" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/originalsource-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Original Source" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Original Source</h3>
@@ -180,55 +180,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Body Care Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free body care brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Body Care Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your body care business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your body care products special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Body Care Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Body Care Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
 
 
@@ -308,7 +262,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

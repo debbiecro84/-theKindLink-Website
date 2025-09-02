@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/theOrdinary-cover.png" alt="The Ordinary" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/theOrdinary-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="The Ordinary" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>The Ordinary</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/wearewild-cover.jpg" alt="Wild Deodorant" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/wearewild-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Wild Deodorant" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Wild Deodorant</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/sukin-cover.jpg" alt="Sukin Naturals" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/sukin-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Sukin Naturals" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Sukin Naturals</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/bybi-cover.png" alt="BYBI" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/bybi-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="BYBI" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>BYBI</h3>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/evolve-cover.png" alt="Evolve Beauty" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/evolve-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Evolve Beauty" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Evolve Beauty</h3>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/pacifica-cover.jpg" alt="Pacifica Beauty" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/pacifica-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Pacifica Beauty" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Pacifica Beauty</h3>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/pai-cover.jpg" alt="Pai Skincare" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/pai-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Pai Skincare" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Pai Skincare</h3>
@@ -163,7 +163,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/beauty/tropicskincare-cover.png" alt="Tropic Skincare" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/beauty/tropicskincare-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Tropic Skincare" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Tropic Skincare</h3>
@@ -191,55 +191,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Skincare Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free skincare brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Skincare Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your skincare business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your skincare special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Skincare Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Skincare Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
 
 
@@ -319,7 +273,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -122,7 +122,7 @@
             <div class="brands-grid">
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/toothcare1.jpg" alt="Eco Tooth Care">
+                        <img src="images/toothcare1.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Eco Tooth Care" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Eco Tooth Care</h3>
                     <p>Sustainable oral hygiene products</p>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/toothcare2.jpg" alt="Vegan Dental">
+                        <img src="images/toothcare2.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Vegan Dental" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Vegan Dental</h3>
                     <p>Plant-based dental care</p>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/toothcare3.jpg" alt="Natural Smile">
+                        <img src="images/toothcare3.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Natural Smile" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Natural Smile</h3>
                     <p>Natural oral care products</p>
@@ -160,55 +160,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Tooth Care Brand?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free oral hygiene brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Tooth Care Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your tooth care business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your tooth care products special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Tooth Care Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Tooth Care Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -284,7 +238,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html>

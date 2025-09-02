@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/gifts/plantbasedcards-cover.png" alt="Plant Based Cards">
+                        <img src="images/gifts/plantbasedcards-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Plant Based Cards" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Plant Based Cards</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/viva-cover.webp" alt="Viva La Vegan">
+                        <img src="images/clothing/viva-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="Viva La Vegan" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Viva La Vegan</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Custom Jewelry">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Custom Jewelry" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Custom Jewelry</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Engraved Items">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Engraved Items" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Engraved Items</h3>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Custom Clothing">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Custom Clothing" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Custom Clothing</h3>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Personalized Accessories">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Personalized Accessories" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Personalized Accessories</h3>
@@ -158,7 +158,7 @@
             <div class="brands-grid">
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/heartstone-cover.png" alt="Custom Vegan Gifts">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Custom Vegan Gifts" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Custom Vegan Gifts</h3>
                     <p>Unique personalized vegan gifts for special occasions</p>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/heartstone-cover.png" alt="Personal Touch">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Personal Touch" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Personal Touch</h3>
                     <p>Thoughtful personalized vegan accessories and jewelry</p>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="brand-card">
                     <div class="brand-image">
-                        <img src="images/heartstone-cover.png" alt="Kind Custom">
+                        <img src="images/heartstone-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Kind Custom" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Kind Custom</h3>
                     <p>Compassionate personalized gifts for conscious consumers</p>
@@ -198,55 +198,9 @@
         </section>
 
         
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Personalized Gift Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free personalized gift brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Personalized Gifts Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your personalized gift business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your personalized gifts special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Personalized Gift Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Personalized Gifts Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -324,7 +278,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

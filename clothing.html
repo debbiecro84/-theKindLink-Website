@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/viva-cover.webp" alt="Viva La Vegan" style= "object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/viva-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="Viva La Vegan" style= "object-fit: contain; background: #f8f9fa;" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Viva La Vegan</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/heartcure-cover.jpg" alt="HeartCure Clothing" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/heartcure-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="HeartCure Clothing" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>HeartCure Clothing</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/rogueandwolf-cover.png" alt="Rogue + Wolf" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/rogueandwolf-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Rogue + Wolf" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Rogue + Wolf</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/vo-cover.png" alt="VO Clothing" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/vo-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="VO Clothing" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>VO Clothing</h3>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/plantfaced-cover.png" alt="Plant Faced Clothing" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/plantfaced-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Plant Faced Clothing" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Plant Faced Clothing</h3>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/immaculatevegan-cover.png" alt="Immaculate Vegan" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/immaculatevegan-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Immaculate Vegan" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Immaculate Vegan</h3>
@@ -150,7 +150,7 @@
 
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/yesfriends-cover.png" alt="Yes Friends" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/yesfriends-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Yes Friends" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Yes Friends</h3>
@@ -165,7 +165,7 @@
 
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/veganasfolk-cover.png" alt="Vegan As Folk" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/veganasfolk-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Vegan As Folk" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Vegan As Folk</h3>
@@ -194,55 +194,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Clothing Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free clothing brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Clothing Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your clothing business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your clothing special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Clothing Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Clothing Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -318,7 +272,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

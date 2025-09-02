@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/willsFootwear-cover.jpg" alt="Will's Vegan Shoes" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/willsFootwear-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Will's Vegan Shoes" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Will's Vegan Shoes</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/noah-cover.png" alt="NOAH Italian Vegan Shoes" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/noah-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="NOAH Italian Vegan Shoes" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>NOAH Italian Vegan Shoes</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/vegetarian-shoes-cover.png" alt="Vegetarian Shoes" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/vegetarian-shoes-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Vegetarian Shoes" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Vegetarian Shoes</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/clothing/moea-cover.png" alt="MoEa" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/clothing/moea-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="MoEa" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>MoEa</h3>
@@ -119,34 +119,7 @@
                         <a href="https://moea.io/" class="type-link" target="_blank">Shop Now</a>
                     </div>
                 </div>
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Athletic Shoes" style="object-fit: contain; background: #f8f9fa;">
-                    </div>
-                    <div class="type-content">
-                        <h3>Athletic Shoes</h3>
-                        <p>Performance vegan athletic footwear for active lifestyles.</p>
-                        <div class="type-features">
-                            <span><i class="fas fa-running"></i> Performance</span>
-                            <span><i class="fas fa-dumbbell"></i> Supportive</span>
-                        </div>
-                        <a href="#" class="type-link">Explore Now</a>
-                    </div>
-                </div>
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/heartstone-cover.png" alt="Formal Shoes" style="object-fit: contain; background: #f8f9fa;">
-                    </div>
-                    <div class="type-content">
-                        <h3>Formal Shoes</h3>
-                        <p>Elegant vegan formal footwear for professional and special occasions.</p>
-                        <div class="type-features">
-                            <span><i class="fas fa-briefcase"></i> Professional</span>
-                            <span><i class="fas fa-star"></i> Elegant Design</span>
-                        </div>
-                        <a href="#" class="type-link">Explore Now</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -163,55 +136,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Footwear Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free footwear brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Footwear Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your footwear business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your footwear special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Footwear Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Footwear Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
 
 
@@ -289,7 +216,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

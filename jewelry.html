@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/talismankind-cover.jpg" alt="Talisman Kind" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/jewellery/talismankind-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Talisman Kind" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Talisman Kind</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/lunatree-cover.png" alt="Luna Tree">
+                        <img src="images/jewellery/lunatree-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Luna Tree" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Luna Tree</h3>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/wildnorajewellery-cover.png" alt="Wild Nora">
+                        <img src="images/jewellery/wildnorajewellery-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Wild Nora" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Wild Nora</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/heathergems-cover.jpg" alt="Heathergems">
+                        <img src="images/jewellery/heathergems-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Heathergems" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Heathergems</h3>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/serenajewellery-cover.jpg" alt="Serena Jewellery">
+                        <img src="images/jewellery/serenajewellery-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Serena Jewellery" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Serena Jewellery</h3>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="type-card">
                     <div class="type-image">
-                        <img src="images/jewellery/harbourukbracelets-cover.jpg" alt="Harbour UK">
+                        <img src="images/jewellery/harbourukbracelets-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Harbour UK" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <div class="type-content">
                         <h3>Harbour UK</h3>
@@ -163,55 +163,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Jewelry Retailer?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and cruelty-free jewelry brands to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Jewelry Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Company/Brand Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your jewelry business and products..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your jewelry special? (e.g., 100% vegan, eco-friendly, handmade, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Jewelry Company Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Jewelry Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -287,7 +241,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html> 

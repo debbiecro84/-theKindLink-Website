@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/tattoos/harmlesstattoos-cover.png" alt="Harmless Tattoo" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/tattoos/harmlesstattoos-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Harmless Tattoo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Harmless Tattoo</h3>
                     <p>UK's premier vegan and cruelty-free tattoo studio, specializing in vegan tattoos, nail art, and tooth gems. Based in Braintree, UK.</p>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/tattoos/tengutattoostudio-cover.jpg" alt="Tengu Tattoo Studio" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/tattoos/tengutattoostudio-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Tengu Tattoo Studio" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Tengu Tattoo Studio</h3>
                     <p>Vegan, eco-friendly tattoo studio in Bristol, UK. Fully licensed studio using cruelty-free products and renewable energy. Based in Clifton, Bristol.</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/tattoos/tribetattoo-cover.jpg" alt="Tribe Tattoo" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/tattoos/tribetattoo-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Tribe Tattoo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Tribe Tattoo</h3>
                     <p>Vegan-friendly tattoo studio with locations in Glasgow and Edinburgh, Scotland. Established since 2000, offering quality tattooing, piercing, and laser removal. Based in Scotland.</p>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/tattoos/lunatattoo-cover.jpg" alt="Luna Tattoo Glasgow" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/tattoos/lunatattoo-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Luna Tattoo Glasgow" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Luna Tattoo Glasgow</h3>
                     <p>Tattoo studio in Glasgow, Scotland. Offering quality tattooing services with a focus on artistic excellence. Based in Glasgow, Scotland.</p>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/tattoos/mourningstartattoo-cover.jpg" alt="Mourningstar Collective" style="object-fit: contain; background: #f8f9fa;">
+                        <img src="images/tattoos/mourningstartattoo-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Mourningstar Collective" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Mourningstar Collective</h3>
                     <p>Tattoo collective featuring multiple artists with a focus on quality tattooing and artistic collaboration. Offering products and booking services. Based in Newport, UK.</p>
@@ -158,55 +158,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Tattoo Studio?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan-friendly tattoo studios and artists to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Tattoo Studios Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Studio/Artist Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location (City, Country)" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your tattoo studio and services..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your studio special? (e.g., 100% vegan inks, eco-friendly practices, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Tattoo Studio Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Tattoo Studios Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -282,7 +236,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                 </a>
             </div>
@@ -65,7 +65,7 @@
             <div class="categories-grid">
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/restaurants/mono-cover.webp" alt="Mono Vegan Cafe Bar & Venue">
+                        <img src="images/restaurants/mono-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="Mono Vegan Cafe Bar & Venue" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Mono Vegan Cafe Bar & Venue</h3>
                     <p>Established in 2002, offering quality vegan food, drinks, and live music events in Glasgow's Kings Court</p>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/restaurants/the78-cover.webp" alt="The 78 Vegan Bar & Restaurant">
+                        <img src="images/restaurants/the78-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="The 78 Vegan Bar & Restaurant" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>The 78 Vegan Bar & Restaurant</h3>
                     <p>Popular vegan bar and restaurant in Glasgow's West End, known for its relaxed atmosphere and great food</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/restaurants/suissi-cover.webp" alt="Suissi Vegan Kitchen">
+                        <img src="images/restaurants/suissi-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="Suissi Vegan Kitchen" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Suissi Vegan Kitchen</h3>
                     <p>Delicious vegan cuisine in Glasgow, offering plant-based dishes with a focus on quality and taste</p>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/restaurants/non-viet-cover.webp" alt="Non Viet Vietnamese Cuisine">
+                        <img src="images/restaurants/non-viet-cover.webp" style="object-fit: contain; background: #f8f9fa;" alt="Non Viet Vietnamese Cuisine" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Non Viet Vietnamese Cuisine</h3>
                     <p>Glasgow's first choice for authentic Vietnamese cuisine, with multiple locations offering traditional Vietnamese dishes</p>
@@ -97,50 +97,11 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/restaurants/stereo.webp" alt="Stereo Vegan Bar & Cafe">
+                        <img src="images/restaurants/stereo.webp" style="object-fit: contain; background: #f8f9fa;" alt="Stereo Vegan Bar & Cafe" style="object-fit: contain; background: #f8f9fa;">
                     </div>
                     <h3>Stereo Vegan Bar & Cafe</h3>
                     <p>Vegan bar and cafe in Glasgow's city centre, known for its live music and plant-based menu</p>
                     <a href="https://www.stereocafebar.com/" class="category-link" target="_blank">Visit Website</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Restaurants -->
-    <section class="featured-brands">
-        <div class="container">
-            <h2>Featured Glasgow Restaurants</h2>
-            <div class="brands-grid">
-                <div class="brand-card">
-                    <div class="brand-image">
-                        <div class="advertise-box">
-                            <span>Advertise Here</span>
-                        </div>
-                    </div>
-                    <h3>Vegan Restaurant</h3>
-                    <p>Available to hire out, contact me</p>
-                    <a href="mailto:hello@thekindlink.com" class="brand-link">Contact Me</a>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-image">
-                        <div class="advertise-box">
-                            <span>Advertise Here</span>
-                        </div>
-                    </div>
-                    <h3>Plant-Based Cafe</h3>
-                    <p>Available to hire out, contact me</p>
-                    <a href="mailto:hello@thekindlink.com" class="brand-link">Contact Me</a>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-image">
-                        <div class="advertise-box">
-                            <span>Advertise Here</span>
-                        </div>
-                    </div>
-                    <h3>Vegan Bistro</h3>
-                    <p>Available to hire out, contact me</p>
-                    <a href="mailto:hello@thekindlink.com" class="brand-link">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -158,55 +119,9 @@
         </div>
     </section>
 
-    <!-- Get Featured Section -->
-    <section class="get-featured-section">
-        <div class="container">
-            <div class="get-featured-content">
-                <div class="get-featured-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h2>Are You a Glasgow Restaurant?</h2>
-                <p>Would you like to be featured on this page? We're always looking for amazing vegan and plant-based restaurants to showcase.</p>
-                <button class="get-featured-btn" onclick="openGetFeaturedModal()">
-                    <i class="fas fa-rocket"></i>
-                    Get Featured
-                </button>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Get Featured Modal -->
-    <div id="getFeaturedModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeGetFeaturedModal()">&times;</span>
-            <h3>Get Featured on Our Glasgow Restaurants Page</h3>
-            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleGetFeaturedFormSubmit(event)">
-                <div class="form-group">
-                    <input type="text" name="company_name" placeholder="Restaurant Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="url" name="company_website" placeholder="Website URL" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company_location" placeholder="Location in Glasgow" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_description" placeholder="Tell us about your restaurant and cuisine..." rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="company_features" placeholder="What makes your restaurant special? (e.g., 100% vegan, organic, locally sourced, etc.)" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email (for follow up)" required />
-                </div>
-                <input type="hidden" name="_subject" value="New Glasgow Restaurant Feature Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="form_source" value="Glasgow Restaurants Page - Get Featured Button">
-                <button type="submit" class="suggest-button">Submit Request</button>
-            </form>
-        </div>
-    </div>
+    
 
         <!-- Footer -->
     <footer class="footer">
@@ -282,7 +197,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/get-featured.js"></script>
+    
     <script src="js/mobile-menu.js"></script>
 </body>
 </html>
