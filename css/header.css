@@ -104,8 +104,61 @@
     letter-spacing: 0.5px;
 }
 
-/* Responsive Header */
+/* Enhanced Responsive Header */
+
+/* Large Desktop */
+@media (max-width: 1200px) {
+    .header-container {
+        max-width: 100%;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .nav-link {
+        font-size: 0.85rem;
+        padding: var(--spacing-sm) var(--spacing-sm);
+    }
+    
+    .nav {
+        gap: var(--spacing-sm);
+    }
+    
+    .logo-square {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Tablet and Small Desktop */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .nav-link {
+        font-size: 0.8rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .nav {
+        gap: var(--spacing-xs);
+    }
+    
+    .logo-square {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
+    .header {
+        padding: var(--spacing-xs) 0;
+    }
+    
     .header-container {
         flex-direction: column;
         gap: var(--spacing-sm);
@@ -115,17 +168,30 @@
     .nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-xs);
+        width: 100%;
     }
     
     .nav-link {
         padding: var(--spacing-xs) var(--spacing-sm);
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        flex: 1;
+        min-width: 0;
+        text-align: center;
     }
     
     .logo-square {
         width: 80px;
         height: 80px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+        margin-left: var(--spacing-xs);
+    }
+    
+    .page-header {
+        padding: var(--spacing-lg) 0;
     }
     
     .page-header-content h1 {
@@ -137,13 +203,68 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .nav-link {
-        font-size: 0.85rem;
-        padding: var(--spacing-sm) var(--spacing-sm);
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .header {
+        padding: var(--spacing-xs) 0;
+    }
+    
+    .header-container {
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
     
     .nav {
-        gap: var(--spacing-sm);
+        gap: 2px;
+    }
+    
+    .nav-link {
+        padding: 6px 8px;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .logo-square {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+        margin-left: var(--spacing-xs);
+    }
+    
+    .page-header {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .page-header-content h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .page-header-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .nav-link {
+        padding: 4px 6px;
+        font-size: 0.65rem;
+    }
+    
+    .logo-square {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo-text {
+        font-size: 0.9rem;
+    }
+    
+    .page-header-content h1 {
+        font-size: 1.6rem;
     }
 }

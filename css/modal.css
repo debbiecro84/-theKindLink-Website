@@ -293,3 +293,228 @@
         transform: translateY(0);
     }
 }
+
+/* Enhanced Mobile Responsive Modal Styles */
+
+/* Tablet and Small Desktop */
+@media (max-width: 1024px) {
+    .modal-content {
+        width: 85%;
+        max-width: 450px;
+        padding: 25px;
+    }
+    
+    .suggest-card {
+        padding: 30px;
+        max-width: 500px;
+    }
+    
+    .suggest-card h2 {
+        font-size: 24px;
+    }
+    
+    .suggest-card p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile Landscape and Small Tablets */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+        margin: 10% auto;
+        padding: 20px;
+    }
+    
+    .close {
+        font-size: 24px;
+        right: 15px;
+        top: 10px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .suggest-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .suggest-section {
+        padding: 40px 0;
+    }
+    
+    .suggest-card {
+        padding: 25px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .suggest-icon i {
+        font-size: 40px;
+    }
+    
+    .suggest-card h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    
+    .suggest-card p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .suggest-card .suggest-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    .back-to-areas {
+        padding: 30px 0;
+    }
+    
+    .back-link {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .message {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        max-width: 350px;
+        margin: 5% auto;
+        padding: 15px;
+    }
+    
+    .close {
+        font-size: 20px;
+        right: 10px;
+        top: 8px;
+    }
+    
+    .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .form-group textarea {
+        min-height: 60px;
+    }
+    
+    .suggest-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .suggest-section {
+        padding: 30px 0;
+    }
+    
+    .suggest-card {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .suggest-icon i {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    
+    .suggest-card h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .suggest-card p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    
+    .suggest-card .suggest-button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .back-to-areas {
+        padding: 25px 0;
+    }
+    
+    .back-link {
+        padding: 10px 16px;
+        font-size: 13px;
+        gap: 8px;
+    }
+    
+    .back-link i {
+        font-size: 16px;
+    }
+    
+    .message {
+        padding: 10px 12px;
+        font-size: 13px;
+        gap: 8px;
+    }
+    
+    .message i {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .modal-content {
+        width: 98%;
+        max-width: 320px;
+        margin: 2% auto;
+        padding: 12px;
+    }
+    
+    .close {
+        font-size: 18px;
+        right: 8px;
+        top: 6px;
+    }
+    
+    .suggest-card {
+        padding: 15px;
+    }
+    
+    .suggest-card h2 {
+        font-size: 18px;
+    }
+    
+    .suggest-card p {
+        font-size: 12px;
+    }
+    
+    .suggest-card .suggest-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .back-link {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

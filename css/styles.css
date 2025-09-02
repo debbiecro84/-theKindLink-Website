@@ -364,11 +364,93 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+/* Enhanced Mobile Responsive Design */
+
+/* Tablet and Small Desktop */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+    
+    .showcase-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 180px);
+        gap: var(--spacing-sm);
+    }
+    
+    .spotlight-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .spotlight-stats {
+        justify-content: center;
+    }
+}
+
+/* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .cta-button, .secondary-button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+    
+    .features-section h2,
+    .vegan-living-showcase h2,
+    .events-section h2 {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding: 0 1rem;
+    }
+    
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+    
     .showcase-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 150px);
+        gap: var(--spacing-sm);
+        padding: 0 1rem;
     }
     
     .showcase-image.medium {
@@ -395,12 +477,118 @@ body {
         grid-column: 2;
         grid-row: 3;
     }
+    
+    .spotlight-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .spotlight-text h2 {
+        font-size: 2rem;
+    }
+    
+    .spotlight-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+    
+    .spotlight-image img {
+        height: 300px;
+    }
+    
+    .events-preview {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding: 0 1rem;
+    }
+    
+    .preview-event-card {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .preview-event-date {
+        align-self: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .newsletter-form input {
+        width: 100%;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+        max-width: 200px;
+        align-self: center;
+    }
 }
 
+/* Mobile Portrait */
 @media (max-width: 480px) {
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-xs);
+    }
+    
+    .cta-button, .secondary-button {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 1rem;
+        max-width: 250px;
+    }
+    
+    .features-section,
+    .vegan-living-showcase,
+    .sanctuary-spotlight,
+    .events-section,
+    .newsletter-section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .features-section h2,
+    .vegan-living-showcase h2,
+    .events-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .showcase-subtitle,
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
     .showcase-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 200px);
+        gap: var(--spacing-sm);
+        padding: 0 0.5rem;
     }
     
     .showcase-image.medium {
@@ -414,6 +602,47 @@ body {
     .showcase-image.small:nth-child(5) {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    
+    .spotlight-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .spotlight-text p {
+        font-size: 1rem;
+    }
+    
+    .spotlight-stats {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .spotlight-image img {
+        height: 250px;
+    }
+    
+    .preview-event-card {
+        padding: var(--spacing-md);
+    }
+    
+    .preview-event-date {
+        min-width: 70px;
+    }
+    
+    .preview-event-date .day {
+        font-size: 1.5rem;
+    }
+    
+    .newsletter-content h2 {
+        font-size: 2rem;
+    }
+    
+    .newsletter-content p {
+        font-size: 1rem;
     }
 }
 
@@ -1995,32 +2224,80 @@ body {
     background-color: #e55a2b;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design for All Components */
+
+/* Tablet and Small Desktop */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        grid-template-areas: 
+            "explore feature"
+            "fashion candles"
+            "travel skincare";
+    }
+    
+    .categories-grid,
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .sanctuaries-grid,
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .help-grid,
+    .nutrition-grid,
+    .impact-grid,
+    .resources-grid,
+    .faq-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         gap: 1rem;
+        padding: var(--spacing-sm) var(--spacing-md);
     }
     
     .nav {
         flex-wrap: wrap;
         justify-content: center;
+        gap: var(--spacing-sm);
     }
     
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
+    .nav-link {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.8rem;
     }
     
     .page-header-content h1 {
         font-size: 2.5rem;
     }
     
+    .page-header-content p {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
     .content-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
         grid-template-areas: 
             "explore"
             "feature"
@@ -2028,6 +2305,18 @@ body {
             "candles"
             "travel"
             "skincare";
+    }
+    
+    .content-block {
+        padding: 1.5rem;
+    }
+    
+    .content-block h2 {
+        font-size: 1.6rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.3rem;
     }
     
     .categories-grid,
@@ -2041,94 +2330,7 @@ body {
     .faq-grid,
     .team-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .content-grid,
-    .rights-content,
-    .about-content,
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .newsletter-form {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .newsletter-form input {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .footer-container {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .social-icons {
-        justify-content: center;
-    }
-    
-    .nav-tabs,
-    .category-tabs {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .visit-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .visit-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .filter-tabs {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .calendar-wrapper {
-        grid-template-columns: 1fr;
-    }
-    
-    .submit-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-container,
-    .hero-content,
-    .content-grid,
-    .footer-container,
-    .container {
-        padding: 0 1rem;
-    }
-    
-    .nav-link {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .page-header-content h1 {
-        font-size: 2rem;
-    }
-    
-    .content-block {
-        padding: 1.5rem;
+        gap: 1.5rem;
     }
     
     .category-card,
@@ -2144,11 +2346,238 @@ body {
         padding: 1.5rem;
     }
     
+    .category-card h3,
+    .brand-card h3,
+    .sanctuary-card h3,
+    .event-card h3,
+    .help-card h3,
+    .nutrition-card h3,
+    .resource-card h3,
+    .faq-item h3,
+    .team-member h3 {
+        font-size: 1.3rem;
+    }
+    
+    .content-grid,
+    .rights-content,
+    .about-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .newsletter-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .nav-tabs,
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-tab,
+    .tab-button {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .visit-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .visit-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .filter-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .filter-tab {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .calendar-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .submit-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .submit-buttons .cta-button,
+    .submit-buttons .secondary-button {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .event-filter-section,
+    .sanctuary-filter-section {
+        padding: 1.5rem 0;
+    }
+    
+    .event-categories {
+        padding: 1.5rem 0;
+    }
+    
+    .calendar-section {
+        padding: 3rem 0;
+    }
+    
+    .submit-event-section {
+        padding: 3rem 0;
+    }
+    
+    .quick-nav {
+        padding: 0.5rem 0;
+    }
+    
+    .content-section {
+        padding: 3rem 0;
+    }
+    
+    .about-section,
+    .team-section,
+    .contact-section {
+        padding: 3rem 0;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .header-container,
+    .hero-content,
+    .content-grid,
+    .footer-container,
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .header-container {
+        gap: 0.5rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .nav {
+        gap: var(--spacing-xs);
+    }
+    
+    .nav-link {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.75rem;
+    }
+    
+    .logo-square {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .page-header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header-content p {
+        font-size: 1rem;
+    }
+    
+    .content-block {
+        padding: 1rem;
+    }
+    
+    .content-block h2 {
+        font-size: 1.4rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.2rem;
+    }
+    
+    .category-card,
+    .brand-card,
+    .sanctuary-card,
+    .event-card,
+    .help-card,
+    .nutrition-card,
+    .impact-stat,
+    .resource-card,
+    .faq-item,
+    .team-member {
+        padding: 1rem;
+    }
+    
+    .category-card h3,
+    .brand-card h3,
+    .sanctuary-card h3,
+    .event-card h3,
+    .help-card h3,
+    .nutrition-card h3,
+    .resource-card h3,
+    .faq-item h3,
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+    
+    .category-icon,
+    .help-icon,
+    .nutrition-icon {
+        font-size: 2.5rem;
+    }
+    
     .event-date {
         position: relative;
         top: 0;
         left: 0;
         margin-bottom: 1rem;
+        align-self: flex-start;
+    }
+    
+    .event-content {
+        padding-top: 1.5rem;
     }
     
     .sanctuary-stats,
@@ -2159,11 +2588,15 @@ body {
     }
     
     .visit-card {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .visit-cta {
-        padding: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .visit-icon {
+        font-size: 2rem;
     }
     
     .filter-tab {
@@ -2177,6 +2610,62 @@ body {
     
     .day-number {
         font-size: 0.9rem;
+    }
+    
+    .calendar-month {
+        padding: 1rem;
+    }
+    
+    .calendar-month h3 {
+        font-size: 1.2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .member-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+    
+    .member-role {
+        font-size: 0.9rem;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .suggest-form .form-group input,
+    .suggest-form .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .suggest-button {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 } 
 

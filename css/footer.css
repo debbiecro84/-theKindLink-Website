@@ -45,16 +45,30 @@
     color: #ff6b35;
 }
 
-/* Responsive Footer */
+/* Enhanced Responsive Footer */
+
+/* Tablet and Small Desktop */
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 0 1.5rem;
+    }
+    
+    .kind-code-logo img {
+        height: 90px;
+    }
+}
+
+/* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0;
+    }
+    
     .footer-container {
         flex-direction: column;
         gap: var(--spacing-md);
         text-align: center;
-    }
-    
-    .footer {
-        padding: 2rem 0;
+        padding: 0 1rem;
     }
     
     .kind-code-logo img {
@@ -63,5 +77,58 @@
     
     .social-icons {
         gap: 1rem;
+        justify-content: center;
+    }
+    
+    .footer-left p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-container {
+        gap: var(--spacing-sm);
+        padding: 0 0.5rem;
+    }
+    
+    .kind-code-logo img {
+        height: 70px;
+    }
+    
+    .social-icons {
+        gap: 0.75rem;
+    }
+    
+    .social-icon {
+        font-size: 1.3rem;
+    }
+    
+    .footer-left p {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .footer {
+        padding: 1rem 0;
+    }
+    
+    .kind-code-logo img {
+        height: 60px;
+    }
+    
+    .social-icon {
+        font-size: 1.2rem;
+    }
+    
+    .footer-left p {
+        font-size: 0.75rem;
     }
 }
