@@ -133,6 +133,23 @@ body {
     padding: 0 2rem;
 }
 
+.hero-logo {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo img {
+    max-height: 150px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+    object-fit: contain;
+}
+
 .hero-title {
     font-size: 4rem;
     font-weight: 800;
