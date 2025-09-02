@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - The Kind Link</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="restaurants-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-square">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                    </div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="explore.html" class="nav-link active">EXPLORE</a>
+                <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                <a href="information.html" class="nav-link">INFORMATION</a>
+                <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Restaurants</h1>
+            <p>Discover amazing vegan and plant-based dining experiences</p>
+        </div>
+    </section>
+
+    <!-- Restaurant Areas -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Areas</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Glasgow</h3>
+                    <p>Vegan restaurants and cafes in Glasgow</p>
+                    <a href="glasgow-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Edinburgh</h3>
+                    <p>Vegan restaurants and cafes in Edinburgh</p>
+                    <a href="edinburgh-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Newcastle</h3>
+                    <p>Vegan restaurants and cafes in Newcastle</p>
+                    <a href="newcastle-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Manchester</h3>
+                    <p>Vegan restaurants and cafes in Manchester</p>
+                    <a href="manchester-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Leeds</h3>
+                    <p>Vegan restaurants and cafes in Leeds</p>
+                    <a href="leeds-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>York</h3>
+                    <p>Vegan restaurants and cafes in York</p>
+                    <a href="york-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>London</h3>
+                    <p>Vegan restaurants and cafes in London</p>
+                    <a href="london-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Brighton</h3>
+                    <p>Vegan restaurants and cafes in Brighton</p>
+                    <a href="brighton-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Bath</h3>
+                    <p>Vegan restaurants and cafes in Bath</p>
+                    <a href="bath-restaurants.html" class="category-link">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Back to All Areas -->
+    <section class="back-to-areas">
+        <div class="container">
+            <div class="back-card">
+                <a href="javascript:history.back()" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to All Areas</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest a Restaurant Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h2>Suggest a Restaurant</h2>
+                <p>Know a great vegan restaurant in any city that we should add? Help us grow our directory by sharing your favorite spots!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest a Restaurant
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest Restaurant Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest a Restaurant</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="restaurant_name" placeholder="Restaurant Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="restaurant_city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="restaurant_address" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="restaurant_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="restaurant_description" placeholder="Tell us about this restaurant..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Restaurant Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Restaurants Page - Suggest Restaurant Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Newsletter Sign up</p>
+                <p>Affiliate Disclaimer</p>
+            </div>
+            <div class="footer-center">
+                <div class="kind-code-logo">
+                    <img src="images/logos/Group 1 (1).png" alt="Kind Code Design Logo">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scroll to top functionality -->
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

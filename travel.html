@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - The Kind Link</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="travel-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-square">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                    </div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="explore.html" class="nav-link active">EXPLORE</a>
+                <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                <a href="information.html" class="nav-link">INFORMATION</a>
+                <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Travel & Adventure</h1>
+            <p>Explore vegan-friendly destinations and travel essentials</p>
+        </div>
+    </section>
+
+    <!-- Travel Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>UK Hotels & B&Bs</h3>
+                    <p>Vegan-friendly accommodation across the United Kingdom</p>
+                    <a href="uk-hotels-b&bs.html" class="category-link">Explore Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Europe Hotels & B&Bs</h3>
+                    <p>Vegan-friendly accommodation across Europe</p>
+                    <a href="europe-hotels-b&bs.html" class="category-link">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Back to All Areas -->
+       <section class="back-to-areas">
+        <div class="container">
+            <div class="back-card">
+                <a href="javascript:history.back()" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to All Areas</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h2>Suggest Travel & Adventure</h2>
+                <p>Know a great vegan travel destination, accommodation, or travel gear brand that we should add? Help us grow our directory by sharing your discoveries!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest Travel
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <!-- Suggest Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest Travel & Adventure</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="travel_name" placeholder="Destination/Accommodation/Brand Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="travel_location" placeholder="Location (City, Country)" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="travel_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="travel_description" placeholder="Tell us about this travel destination, accommodation, or gear..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="travel_features" placeholder="What makes this special? (e.g., 100% vegan, eco-friendly, sustainable, etc.)" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Travel & Adventure Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Travel Page - Suggest Travel Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Newsletter Sign up</p>
+                <p>Affiliate Disclaimer</p>
+            </div>
+            <div class="footer-center">
+                <div class="kind-code-logo">
+                    <img src="images/logos/Group 1 (1).png" alt="Kind Code Design Logo">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scroll to top functionality -->
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html> 

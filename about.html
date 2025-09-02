@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About/Contact - The Kind Link</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-square">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                    </div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="explore.html" class="nav-link">EXPLORE</a>
+                <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                <a href="information.html" class="nav-link">INFORMATION</a>
+                <a href="about.html" class="nav-link active">ABOUT/CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>About The Kind Link</h1>
+            <p>Connecting compassionate people with ethical products and causes</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>The Kind Link is dedicated to making veganism accessible, enjoyable, and sustainable for everyone. We believe that living compassionately shouldn't be difficult or expensive.</p>
+                    
+                    <h3>What We Do</h3>
+                    <ul>
+                        <li>Curate and promote ethical vegan products and brands</li>
+                        <li>Connect people with local animal sanctuaries and rescue organizations</li>
+                        <li>Host community events and educational workshops</li>
+                        <li>Provide resources and information about vegan living</li>
+                        <li>Build a supportive community of like-minded individuals</li>
+                    </ul>
+
+                    <h3>Our Values</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Compassion</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainability</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>Community</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Education</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                                            <img src="images/logos/kindlinkteam-cover.png" alt="The Kind Link Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/me-animation.png" alt="Debbie Cross">
+                    </div>
+                    <h3>Debbie Cross</h3>
+                    <p class="member-role">Founder & Developer</p>
+                    <p>Hi, I’m Debbie! I’ve been vegan for over 6 years, and my journey has inspired me to use technology to support the vegan community. I’m an aspiring web designer and university student, and I love turning what I’ve learned into tools and projects that help others live more compassionately. My goal is to combine my skills and passions to make a positive difference—for animals, people, and the planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <a href="mailto:hello@thekindlink.com">hello@thekindlink.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong>
+                            <a href="tel:+441234567890">+44 123 456 7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address:</strong>
+                            <p>123 Vegan Street<br>Glasgow, Scotland<br>G1 1AA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Office Hours:</strong>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleContactFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="event">Event Information</option>
+                                <option value="support">Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Contact Form Message - The Kind Link">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="form_source" value="About/Contact Page - Contact Form">
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Newsletter Sign up</p>
+                <p>Affiliate Disclaimer</p>
+            </div>
+            <div class="footer-center">
+                <div class="kind-code-logo">
+                    <img src="images/logos/Group 1 (1).png" alt="Kind Code Design Logo">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scroll to top functionality -->
+    <script src="js/scroll.js"></script>
+    
+    <!-- Contact Form Handler -->
+    <script>
+        function handleContactFormSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitButton = form.querySelector('.submit-button');
+            const originalText = submitButton.textContent;
+            
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Submit form
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success - show success message
+                    showMessage('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
+                    form.reset();
+                } else {
+                    // Error - show error message
+                    showMessage('Sorry, there was an error sending your message. Please try again or contact us directly at hello@thekindlink.com', 'error');
+                }
+            })
+            .catch(error => {
+                // Network error - show error message
+                showMessage('Sorry, there was an error sending your message. Please try again or contact us directly at hello@thekindlink.com', 'error');
+            })
+            .finally(() => {
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            });
+        }
+        
+        function showMessage(message, type) {
+            // Remove any existing messages
+            const existingMessage = document.querySelector('.form-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            // Create message element
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `form-message ${type}`;
+            messageDiv.textContent = message;
+            
+            // Insert message after the form
+            const form = document.querySelector('.contact-form form');
+            form.parentNode.insertBefore(messageDiv, form.nextSibling);
+            
+            // Auto-remove message after 5 seconds
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.remove();
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html> 

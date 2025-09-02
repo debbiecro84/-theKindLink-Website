@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanctuaries - The Kind Link</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sanctuaries-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-square">
+                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                    </div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="explore.html" class="nav-link">EXPLORE</a>
+                <a href="sanctuaries.html" class="nav-link active">SANCTUARIES</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                <a href="information.html" class="nav-link">INFORMATION</a>
+                <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Animal Sanctuaries</h1>
+            <p>Support and connect with amazing animal rescue organizations</p>
+        </div>
+    </section>
+
+    <!-- Sanctuary Filter -->
+    <section class="sanctuary-filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="scotland">Scotland</button>
+                <button class="filter-tab" data-filter="england">England</button>
+                <button class="filter-tab" data-filter="wales">Wales</button>
+                <button class="filter-tab" data-filter="ireland">Ireland</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Sanctuaries -->
+    <section class="sanctuaries-section">
+        <div class="container">
+            <h2>Featured Sanctuaries</h2>
+            <div class="sanctuaries-grid">
+                <div class="sanctuary-card" data-region="scotland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/ananda-image.jpg" alt="Ananda Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Ananda Animal Sanctuary</h3>
+                        <p>Based just outside Biggar in Scotland, this vegan animal sanctuary is home to over 80 animals including sheep, goats, turkeys, cows, ducks, geese, pigs, chickens, cats and a three-legged dog. They rescue, rehabilitate and provide forever homes for animals that have been abused, neglected, saved from slaughter, or unwanted.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 80+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Biggar, Scotland</span>
+                        </div>
+                        <a href="https://anandaanimalsanctuary.com/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+                <div class="sanctuary-card" data-region="scotland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/tribe-cover.jpg" alt="Tribe Animal Sanctuary Scotland">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Tribe Animal Sanctuary Scotland</h3>
+                        <p>A small sanctuary for animals rescued from abuse, neglect or slaughter, located in the Clyde Valley. Founded by John and Morag, TASS provides sanctuary to factory farming victims and lets them live out their natural lives with compassion and respect.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> Multiple Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Clyde Valley, Scotland</span>
+                        </div>
+                        <a href="https://tribesanctuary.co.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+                <div class="sanctuary-card" data-region="scotland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/willow-cover.jpg" alt="Willows Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Willows Animal Sanctuary</h3>
+                        <p>Founded in 1998, Willows is the largest ethically managed equine, farm and domestic animal sanctuary in Scotland. They operate a strict no-kill policy and care for almost 100 horses, ponies and donkeys, approximately 70 cats and dogs, and over 100 farm animals and birds.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 270+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Scotland</span>
+                        </div>
+                        <a href="https://www.willowsanimals.com/index.htm" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- England Sanctuaries -->
+                <div class="sanctuary-card" data-region="england">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/FAR-cover.webp" alt="Farm Animal Rescue Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Farm Animal Rescue Sanctuary (FARS)</h3>
+                        <p>Established by Carole Webb in 1988, FARS is based near Stratford-Upon-Avon in Wolverton, Warwickshire. Currently home to more than 400 farm animals, with a peak of over 800 animals cared for. They provide a safe haven where animals can live freely, healthily and happily.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 400+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Warwickshire, England</span>
+                        </div>
+                        <a href="https://www.farmanimalrescuesanctuary.co.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="england">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/goodheart-cover.jpg" alt="Goodheart Animal Sanctuaries">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Goodheart Animal Sanctuaries</h3>
+                        <p>Located on a 92-acre site in the beautiful Worcestershire countryside, Goodheart Farm Animal Sanctuary provides a lifelong haven for over 300 rescued farm animals. They work towards a better future for animals through compassion, education and advocacy.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 300+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Worcestershire, England</span>
+                        </div>
+                        <a href="https://www.goodheartanimalsanctuaries.com/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="england">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/hopefield-cover.png" alt="Hopefield Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Hopefield Animal Sanctuary</h3>
+                        <p>Located on 53 acres of Essex countryside, Hopefield has been saving animals together since 1983. Home to over 100 species of rescued animals including meerkats, skunks, foxes, parrots, birds of prey, and farm animals. They provide a safe and loving home for abused, abandoned and neglected animals.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 600+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brentwood, Essex</span>
+                        </div>
+                        <a href="https://hopefield.org.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+
+
+                <div class="sanctuary-card" data-region="england">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/lotus-cover.webp" alt="Lotus Lamb & Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Lotus Lamb & Animal Sanctuary</h3>
+                        <p>A vegan-run animal sanctuary based in West Sussex, dedicated to rescuing, rehabilitating, and providing life-long care to animals who have suffered from neglect and abuse. They strive to find suitable forever homes for those who are adoptable and rely on community support to care for their over 200 animals.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 200+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> West Sussex, England</span>
+                        </div>
+                        <a href="https://lotuslambanimalsanctuary.co.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="england">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/pear-cover.webp" alt="Pear Tree Farm Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Pear Tree Farm Animal Sanctuary</h3>
+                        <p>Our Somerset-based animal sanctuary began just before Christmas 2018, when we welcomed 3 huge pigs into our lives with open arms! They were booked in for the slaughterhouse, and we could not possibly have refused them a home. Since then, we have become home to a selection of beautiful souls, all saved from a harsh reality and death. Today we are an ever-growing family of rescues, and we have helped over 7400 animals find their way to the safety of loving, forever homes.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 7400+ Animals Helped</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Somerset, England</span>
+                        </div>
+                        <a href="https://www.ptfanimalsanctuary.org.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Wales Sanctuaries -->
+                <div class="sanctuary-card" data-region="wales">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/beneath-cover.png" alt="Beneath the Wood Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Beneath the Wood Sanctuary</h3>
+                        <p>A Viva! award-winning vegan sanctuary based in Wales that provides permanent homes for dogs with behaviour issues, pigs, sheep, cats and horses. Founded by Sasha Bennett in 2009 on a 15-acre site in Ceredigion, nestled in beautiful rolling hills between Lampeter and Tregaron. In 2019, they were involved in a high-profile case that rescued #53 pigs from truly horrifying conditions at an illegal slaughterhouse in Pembrokeshire.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 135+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Ceredigion, Wales</span>
+                        </div>
+                        <a href="https://beneaththewoodsanctuary.co.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="wales">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/dean-cover.png" alt="Dean Farm Trust">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Dean Farm Trust</h3>
+                        <p>Located just outside Chepstow, Dean Farm Trust is an animal sanctuary with a mission to rescue, rehabilitate and give a home for life to abused, neglected and unwanted animals whilst promoting compassionate living. Voted the UK's "Favourite Animal Sanctuary" in the Vegfest UK Awards in both 2020 and 2021.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 200+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Chepstow, Monmouthshire</span>
+                        </div>
+                        <a href="https://deanfarmtrust.org.uk/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="wales">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/sanctuary-wales2.jpg" alt="Wildlife Rescue">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Welsh Wildlife Centre</h3>
+                        <p>Rescuing and rehabilitating native Welsh wildlife, with educational programs about local biodiversity.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 90+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Pembrokeshire, Wales</span>
+                        </div>
+                        <a href="#" class="sanctuary-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Ireland Sanctuaries -->
+                <div class="sanctuary-card" data-region="ireland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/eden-cover.png" alt="Eden Farmed Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Eden Farmed Animal Sanctuary</h3>
+                        <p>Located in Kells, Co Meath, Ireland, Eden is a vegan home where farmed animals who have been rescued from the animal use industries are given sanctuary for life. At Eden they are regarded with the dignity and respect that is their right. The sanctuary promotes animal rights and veganism, believing that all sentient beings have equal fundamental rights not to be bred, owned, used, exploited, harmed or killed.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> Multiple Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kells, Co Meath, Ireland</span>
+                        </div>
+                        <a href="https://edenfarmedanimalsanctuary.com/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="ireland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/daylight-cover.jpg" alt="Back Into Daylight">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Back Into Daylight</h3>
+                        <p>A non-profit animal sanctuary in Eastern Ireland that creates a safe and loving forever home for farmed and domestic animals in need. They care for over 600 animals including goats, pigs, cats, ducks, geese, dogs, pigeons, hens, cockerels, and small birds. They promote a vegan philosophy and encourage people to speak out against the use and abuse of animals in the farming industry.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 600+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Navan, Ireland</span>
+                        </div>
+                        <a href="https://backintodaylight.com/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="ireland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuaries/heartstone-cover.png" alt="Heartstone">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Heartstone</h3>
+                        <p>A veganic (vegan organic) animal sanctuary charity in Ireland dedicated to giving rescued animals a safe haven and a second chance at life. Their mission is to provide a peaceful refuge where animals can live out their lives feeling loved and cherished, roam the fields, and feel the sun on their faces. Heartstone also supports rewilding and promotes sustainability and a holistic, nonviolent way of living that respects all life.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> Multiple Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Co Meath, Ireland</span>
+                        </div>
+                        <a href="https://www.heartstone.earth/" target="_blank" class="sanctuary-link">Visit Website</a>
+                    </div>
+                </div>
+
+                <!-- Additional Sanctuaries -->
+                <div class="sanctuary-card" data-region="scotland">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuary-scotland4.jpg" alt="Farm Animal Sanctuary">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Edinburgh Animal Sanctuary</h3>
+                        <p>Providing refuge for abandoned and neglected animals in the Edinburgh area, with a focus on farm animals and domestic pets.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 120+ Animals</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Edinburgh, Scotland</span>
+                        </div>
+                        <a href="#" class="sanctuary-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="sanctuary-card" data-region="wales">
+                    <div class="sanctuary-image">
+                        <img src="images/sanctuary-wales3.jpg" alt="Horse Rescue">
+                    </div>
+                    <div class="sanctuary-content">
+                        <h3>Welsh Horse Rescue</h3>
+                        <p>Dedicated to rescuing and rehabilitating horses, ponies, and donkeys from neglect and abandonment across Wales.</p>
+                        <div class="sanctuary-stats">
+                            <span><i class="fas fa-heart"></i> 85+ Horses</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Monmouthshire, Wales</span>
+                        </div>
+                        <a href="#" class="sanctuary-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Help -->
+    <section class="help-section">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <div class="help-grid">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Give your time to help care for animals and support sanctuary operations.</p>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <h3>Donate</h3>
+                    <p>Financial contributions help provide food, medical care, and shelter for rescued animals.</p>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Spread Awareness</h3>
+                    <p>Share sanctuary stories and help educate others about animal welfare.</p>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Shop Responsibly</h3>
+                    <p>Choose cruelty-free products and support ethical brands that don't harm animals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit a Sanctuary -->
+    <section class="visit-section">
+        <div class="container">
+            <h2>Plan Your Visit</h2>
+            <div class="visit-grid">
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Book in Advance</h3>
+                    <p>Most sanctuaries require advance booking for visits. Contact them at least 2-3 weeks ahead to secure your spot.</p>
+                </div>
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Visit Times</h3>
+                    <p>Sanctuaries typically offer tours between 10 AM - 4 PM. Check individual sanctuary websites for specific hours.</p>
+                </div>
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Tours</h3>
+                    <p>Perfect for families, schools, or groups. Many sanctuaries offer educational programs and guided experiences.</p>
+                </div>
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Volunteer Opportunities</h3>
+                    <p>Consider volunteering during your visit. Many sanctuaries welcome help with animal care and maintenance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Suggest a Sanctuary Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h2>Suggest a Sanctuary</h2>
+                <p>Know a great animal sanctuary that we should add to our directory? Help us connect more people with amazing rescue organizations!</p>
+                <button class="get-featured-btn" onclick="openSuggestSanctuaryModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest a Sanctuary
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest Sanctuary Modal -->
+    <div id="suggestSanctuaryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestSanctuaryModal()">&times;</span>
+            <h3>Suggest a Sanctuary</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@thekindlink.com" method="POST" onsubmit="handleSanctuaryFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="sanctuary_name" placeholder="Sanctuary Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="sanctuary_location" placeholder="Location (City/Region)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="sanctuary_address" placeholder="Full Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="sanctuary_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="sanctuary_description" placeholder="Tell us about this sanctuary and what animals they care for..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Sanctuary Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Sanctuaries Page - Suggest Sanctuary Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Newsletter Sign up</p>
+                <p>Affiliate Disclaimer</p>
+            </div>
+            <div class="footer-center">
+                <div class="kind-code-logo">
+                    <img src="images/logos/Group 1 (1).png" alt="Kind Code Design Logo">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scroll to top functionality -->
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+
+    <!-- Sanctuary Filter Functionality -->
+    <script>
+        // Sanctuary filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const sanctuaryCards = document.querySelectorAll('.sanctuary-card');
+
+            // Set Scotland as default active filter
+            const scotlandTab = document.querySelector('[data-filter="scotland"]');
+            if (scotlandTab) {
+                scotlandTab.classList.add('active');
+            }
+
+            // Initially hide all cards except Scotland
+            sanctuaryCards.forEach(card => {
+                const cardRegion = card.getAttribute('data-region');
+                if (cardRegion === 'scotland') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+
+                    const filter = tab.getAttribute('data-filter');
+
+                    sanctuaryCards.forEach(card => {
+                        const cardRegion = card.getAttribute('data-region');
+                        if (cardRegion === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
