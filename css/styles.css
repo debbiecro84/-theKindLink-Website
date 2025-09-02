@@ -394,8 +394,30 @@ body {
         display: grid;
     }
     
+    .spotlight-image {
+        order: -1;
+    }
+    
     .spotlight-stats {
         justify-content: center;
+    }
+}
+
+/* Mobile at 600px - Move image above text */
+@media (max-width: 600px) {
+    .spotlight-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "text";
+    }
+    
+    .spotlight-image {
+        grid-area: image;
+    }
+    
+    .spotlight-text {
+        grid-area: text;
     }
 }
 
