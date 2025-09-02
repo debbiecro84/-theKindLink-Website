@@ -391,6 +391,7 @@ body {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
         text-align: center;
+        display: grid;
     }
     
     .spotlight-stats {
@@ -483,6 +484,7 @@ body {
         gap: var(--spacing-lg);
         text-align: center;
         padding: 0 1rem;
+        display: grid;
     }
     
     .spotlight-text h2 {
@@ -499,6 +501,8 @@ body {
         height: 300px;
         object-fit: cover;
         object-position: center;
+        display: block;
+        width: 100%;
     }
     
     .events-preview {
@@ -621,6 +625,9 @@ body {
     
     .spotlight-image {
         margin-top: var(--spacing-md);
+        display: block;
+        width: 100%;
+        min-height: 200px;
     }
     
     .stat-number {
@@ -631,6 +638,8 @@ body {
         height: 250px;
         object-fit: cover;
         object-position: center;
+        display: block;
+        width: 100%;
     }
     
     .preview-event-card {
@@ -657,6 +666,8 @@ body {
         height: 200px;
         object-fit: cover;
         object-position: center;
+        display: block;
+        width: 100%;
     }
 }
 
@@ -666,6 +677,8 @@ body {
         height: 180px;
         object-fit: cover;
         object-position: center;
+        display: block;
+        width: 100%;
     }
 }
 
@@ -730,6 +743,8 @@ body {
     box-shadow: 0 8px 30px var(--shadow-medium);
     width: 100%;
     max-width: 100%;
+    background-color: var(--bg-light-gray);
+    display: block;
 }
 
 .spotlight-image img {
@@ -737,6 +752,7 @@ body {
     height: 400px;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
 /* Events Section */
