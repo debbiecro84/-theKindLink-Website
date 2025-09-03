@@ -1,0 +1,503 @@
+/* Global Search Bar Styles */
+.global-search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.global-search-container.active {
+    transform: translateY(0);
+}
+
+.global-search-box {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#globalSearchInput {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    border: 2px solid var(--primary-green);
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-white);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#globalSearchInput:focus {
+    outline: none;
+    box-shadow: 0 6px 20px rgba(156, 170, 139, 0.4);
+}
+
+.global-search-icon {
+    position: absolute;
+    right: 1.5rem;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.search-close-btn {
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.search-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.search-results {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    background: var(--bg-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-result-item:hover {
+    background: var(--bg-light-gray);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.search-result-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.search-result-page {
+    color: var(--primary-green);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.no-search-results {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Search Trigger Button in Header */
+.search-trigger-btn {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.search-trigger-btn:hover {
+    background: var(--bg-light-gray);
+}
+
+/* Ensure search button is always visible - fix for mobile issues */
+.search-trigger-btn {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: red !important; /* Temporary debug color */
+    border: 2px solid blue !important; /* Temporary debug border */
+    position: relative !important;
+    z-index: 9999 !important; /* Above hero overlay */
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Force search button visibility on all screen sizes */
+@media screen and (max-width: 9999px) {
+    .search-trigger-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: red !important;
+        border: 2px solid blue !important;
+    }
+}
+
+/* Search button - now working and styled properly */
+.search-trigger-btn,
+.nav .search-trigger-btn,
+.header-container .nav .search-trigger-btn,
+header .nav .search-trigger-btn,
+button.search-trigger-btn {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: var(--primary-green) !important;
+    border: 2px solid var(--primary-green-dark) !important;
+    position: relative !important;
+    z-index: 99999 !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    color: white !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.search-trigger-btn:hover {
+    background: var(--primary-green-dark) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Force the search icon to be visible */
+.search-trigger-btn i,
+.search-trigger-btn .fas,
+.search-trigger-btn .fa-search {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+}
+
+/* Remove duplicate icon - only use the HTML icon */
+
+/* Show text fallback if icon fails */
+.search-trigger-btn span {
+    display: none !important;
+    font-size: 10px !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* If icon doesn't load, show text */
+.search-trigger-btn:not(:has(i)) span {
+    display: inline-block !important;
+}
+
+/* Mobile search button removed - search is now always in main nav */
+
+/* MOBILE FIX - Ensure search button is visible on smaller screens */
+@media (max-width: 768px) {
+    .search-trigger-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: var(--primary-green) !important;
+        border: 2px solid var(--primary-green-dark) !important;
+        position: relative !important;
+        z-index: 10 !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+    }
+    
+    /* Ensure navigation shows the search button on mobile */
+    .nav {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+    
+    /* Hide navigation links but keep search button */
+    .nav-link {
+        display: none !important;
+    }
+    
+    .search-trigger-btn {
+        display: flex !important;
+    }
+}
+    
+    .global-search-container {
+        padding: 0.5rem;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .global-search-box {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    #globalSearchInput {
+        font-size: 1rem;
+        padding: 0.8rem 2.5rem 0.8rem 1rem;
+        border-radius: 20px;
+    }
+    
+    .global-search-icon {
+        right: 1rem;
+        font-size: 1rem;
+    }
+    
+    .search-close-btn {
+        right: 0.5rem;
+        top: 0.5rem;
+        transform: none;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .search-results {
+        max-height: calc(100vh - 120px);
+        margin: 0.5rem 0 0;
+        border-radius: 10px;
+    }
+    
+    .search-result-item {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .search-result-title {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+    .search-result-description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .search-result-page {
+        font-size: 0.7rem;
+    }
+    
+    .no-search-results {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ensure search button is visible on small screens */
+    .search-trigger-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: var(--primary-green) !important;
+        border: 2px solid var(--primary-green-dark) !important;
+        width: 35px !important;
+        height: 35px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+    }
+    
+    /* Ensure navigation layout works on small screens */
+    .nav {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.25rem !important;
+    }
+    
+    .nav-link {
+        display: none !important;
+    }
+    
+    .global-search-container {
+        padding: 0.25rem;
+    }
+    
+    #globalSearchInput {
+        font-size: 0.9rem;
+        padding: 0.7rem 2rem 0.7rem 0.8rem;
+        border-radius: 15px;
+    }
+    
+    .global-search-icon {
+        right: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .search-close-btn {
+        right: 0.25rem;
+        top: 0.25rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+    
+    .search-results {
+        max-height: calc(100vh - 100px);
+        border-radius: 8px;
+    }
+    
+    .search-result-item {
+        padding: 0.7rem 0.8rem;
+    }
+    
+    .search-result-title {
+        font-size: 0.85rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.75rem;
+    }
+    
+    .search-result-page {
+        font-size: 0.65rem;
+    }
+    
+    .no-search-results {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    /* Ensure search button is visible on extra small screens */
+    .search-trigger-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: var(--primary-green) !important;
+        border: 2px solid var(--primary-green-dark) !important;
+        width: 30px !important;
+        height: 30px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+    }
+    
+    /* Ensure navigation layout works on extra small screens */
+    .nav {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.1rem !important;
+    }
+    
+    .nav-link {
+        display: none !important;
+    }
+    
+    .global-search-container {
+        padding: 0.15rem;
+    }
+    
+    #globalSearchInput {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.8rem 0.6rem 0.7rem;
+    }
+    
+    .global-search-icon {
+        right: 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    .search-close-btn {
+        right: 0.15rem;
+        top: 0.15rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .search-results {
+        max-height: calc(100vh - 90px);
+    }
+    
+    .search-result-item {
+        padding: 0.6rem 0.7rem;
+    }
+    
+    .search-result-title {
+        font-size: 0.8rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.7rem;
+    }
+    
+    .search-result-page {
+        font-size: 0.6rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .global-search-container {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .search-results {
+        max-height: calc(100vh - 80px);
+    }
+}

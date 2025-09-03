@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global-search.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -29,7 +30,7 @@
                 <a href="events.html" class="nav-link active">EVENTS</a>
                 <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
                 <a href="information.html" class="nav-link">INFORMATION</a>
-                <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+                <a href="about.html" class="nav-link">ABOUT/CONTACT</a><button class="search-trigger-btn" aria-label="Search"><i class="fas fa-search"></i></button>
             </nav>            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <span></span>
                 <span></span>
@@ -62,7 +63,16 @@
     <section class="categories-section">
         <div class="container">
             <h2>Upcoming Events</h2>
-            <div class="categories-grid">
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="eventSearchInput" placeholder="Search events by name, location, or date..." />
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+            
+            <div class="categories-grid" id="eventsGrid">
                 <div class="type-card" data-event-date="2025-09-06">
                     <div class="type-image">
                         <img src="images/events/1st-event-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Bournemouth Vegan Festival 2025" style="object-fit: contain; background: #f8f9fa;">
@@ -441,7 +451,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     
-    <!-- Event Date Checker -->
+    <!-- Event Date Checker and Search Functionality -->
     <script>
         // Function to check and hide expired events
         function checkEventDates() {
@@ -475,11 +485,73 @@
                 container.appendChild(noEventsMessage);
             }
         }
-        
 
+        // Function to search through events
+        function searchEvents() {
+            const searchInput = document.getElementById('eventSearchInput');
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            const eventCards = document.querySelectorAll('.type-card');
+            const eventsGrid = document.getElementById('eventsGrid');
+            
+            // Remove existing no results message
+            const existingNoResults = document.querySelector('.no-results-message');
+            if (existingNoResults) {
+                existingNoResults.remove();
+            }
+            
+            let visibleCount = 0;
+            
+            eventCards.forEach(card => {
+                // Get all text content from the card
+                const cardText = card.textContent.toLowerCase();
+                const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                const cardDescription = card.querySelector('p').textContent.toLowerCase();
+                const cardFeatures = card.querySelector('.type-features').textContent.toLowerCase();
+                
+                // Check if search term matches any part of the card content
+                const matches = cardText.includes(searchTerm) || 
+                              cardTitle.includes(searchTerm) || 
+                              cardDescription.includes(searchTerm) || 
+                              cardFeatures.includes(searchTerm);
+                
+                if (matches || searchTerm === '') {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show no results message if no events match
+            if (searchTerm !== '' && visibleCount === 0) {
+                const noResultsMessage = document.createElement('div');
+                noResultsMessage.className = 'no-results-message';
+                noResultsMessage.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: var(--text-light);">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                        <h3>No events found</h3>
+                        <p>Try searching with different keywords like location, event name, or date.</p>
+                    </div>
+                `;
+                eventsGrid.appendChild(noResultsMessage);
+            }
+        }
         
         // Run the check when page loads
-        document.addEventListener('DOMContentLoaded', checkEventDates);
+        document.addEventListener('DOMContentLoaded', function() {
+            checkEventDates();
+            
+            // Add search functionality
+            const searchInput = document.getElementById('eventSearchInput');
+            if (searchInput) {
+                searchInput.addEventListener('input', searchEvents);
+                searchInput.addEventListener('keyup', function(e) {
+                    if (e.key === 'Enter') {
+                        searchEvents();
+                    }
+                });
+            }
+        });
         
         // Also run the check daily (optional - for long-term visitors)
         setInterval(checkEventDates, 24 * 60 * 60 * 1000); // Check every 24 hours
@@ -487,6 +559,16 @@
 
 
     <script src="js/mobile-menu.js"></script>
+    <script src="js/global-search.js"></script>
 </body>
 </html> 
+
+
+
+
+
+
+
+
+
 
