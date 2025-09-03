@@ -255,6 +255,23 @@ button.search-trigger-btn {
         align-items: center !important;
         justify-content: center !important;
         flex-shrink: 0 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* NUCLEAR OPTION - Hide search button when mobile menu is open */
+    body.mobile-menu-open .search-trigger-btn,
+    .mobile-nav.active .search-trigger-btn,
+    .mobile-nav.active ~ * .search-trigger-btn,
+    .mobile-nav.active + * .search-trigger-btn {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        left: -9999px !important;
+        top: -9999px !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
     }
     
     /* Ensure navigation shows the search button on mobile */

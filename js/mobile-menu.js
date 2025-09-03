@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Prevent body scroll when menu is open
         if (mobileNav.classList.contains('active')) {
             body.style.overflow = 'hidden';
+            body.classList.add('mobile-menu-open');
         } else {
             body.style.overflow = '';
+            body.classList.remove('mobile-menu-open');
         }
     }
 
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuToggle.classList.remove('active');
         mobileNav.classList.remove('active');
         body.style.overflow = '';
+        body.classList.remove('mobile-menu-open');
     }
 
     // Event listeners
