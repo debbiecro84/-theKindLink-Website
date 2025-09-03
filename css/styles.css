@@ -309,6 +309,32 @@ body {
     font-size: 0.9rem;
 }
 
+/* Page Header Styles */
+.page-header {
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--bg-light);
+    position: relative;
+}
+
+
+
+.page-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+
+.page-header-content p {
+    font-size: 1.2rem;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
 /* Features Section */
 .features-section {
     padding: var(--spacing-xl) 0;
