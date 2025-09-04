@@ -389,11 +389,12 @@ body {
 
 .mobile-menu-toggle span {
     width: 25px;
-    height: 3px;
-    background: var(--primary-green);
-    margin: 2px 0;
+    height: 2px;
+    background: #000000;
+    margin: 3px 0;
     transition: 0.3s;
-    border-radius: 2px;
+    border-radius: 1px;
+    display: block;
 }
 
 .mobile-nav {

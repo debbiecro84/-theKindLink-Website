@@ -18,8 +18,10 @@ class GlobalSearch {
         searchContainer.className = 'global-search-container';
         searchContainer.innerHTML = `
             <div class="global-search-box">
-                <input type="text" id="globalSearchInput" placeholder="Search across all pages..." autocomplete="off">
-                <i class="fas fa-search global-search-icon"></i>
+                <div class="search-input-wrapper">
+                    <input type="text" id="globalSearchInput" placeholder="Search" autocomplete="off">
+                    <i class="fas fa-search global-search-icon"></i>
+                </div>
                 <button class="search-close-btn" id="searchCloseBtn">
                     <i class="fas fa-times"></i>
                 </button>
