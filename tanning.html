@@ -15,27 +15,42 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
-                    </div>
-                </a>
+        <!-- Top Section - Logo Only -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-square">
+                            <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <nav class="nav">
-                <a href="index.html" class="nav-link">HOME</a>
-                <a href="explore.html" class="nav-link active">EXPLORE</a>
-                <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
-                <a href="events.html" class="nav-link">EVENTS</a>
-                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
-                <a href="information.html" class="nav-link">INFORMATION</a>
-                <a href="about.html" class="nav-link">ABOUT/CONTACT</a><button class="search-trigger-btn" aria-label="Search"><i class="fas fa-search"></i></button>
-            </nav>            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        </div>
+        
+        <!-- Bottom Section - Navigation -->
+        <div class="header-bottom">
+            <div class="header-bottom-container">
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="explore.html" class="nav-link active">EXPLORE</a>
+                    <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                    <a href="events.html" class="nav-link">EVENTS</a>
+                    <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                    <a href="information.html" class="nav-link">INFORMATION</a>
+                    <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-trigger-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
         
         <!-- Mobile Navigation -->
@@ -224,7 +239,7 @@
                 </div>
                 <div class="footer-bottom-right">
                     <a href="#" class="footer-link" onclick="openModal('privacyModal')">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link" onclick="openModal('termsModal')">Terms of Service</a>
                     <a href="#" class="footer-link" onclick="openModal('affiliateModal')">Affiliate Disclaimer</a>
                 </div>
             </div>
@@ -240,6 +255,21 @@
     <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+        <!-- Terms of Service Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body">
+                <p>By using The Kind Link, you agree to the following:</p>
+                <p>All external links are provided for convenience. We are not responsible for the content or practices of third-party websites.</p>
+                <p>Some links are affiliate links. We may earn a small commission if you make a purchase, at no cost to you.</p>
+                <p>Content on this website is for informational purposes only. We do not provide professional advice.</p>
+                <p>We reserve the right to update or change these terms at any time. Continued use of the site means you accept any changes.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Affiliate Disclaimer Modal -->
     <div id="affiliateModal" class="modal">
