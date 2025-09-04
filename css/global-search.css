@@ -244,13 +244,18 @@ button.search-trigger-btn {
 
 /* MOBILE FIX - Ensure search button is visible on smaller screens */
 @media (max-width: 768px) {
-    .search-trigger-btn {
+    .search-trigger-btn,
+    .nav .search-trigger-btn,
+    .header-container .nav .search-trigger-btn,
+    header .nav .search-trigger-btn,
+    button.search-trigger-btn {
         display: flex !important;
         visibility: visible !important;
         opacity: 1 !important;
         background: #ffffff !important;
         border: 2px solid #e0e0e0 !important;
-        position: relative !important;
+        position: absolute !important;
+        right: 1rem !important;
         z-index: 10 !important;
         width: 40px !important;
         height: 40px !important;
@@ -283,6 +288,18 @@ button.search-trigger-btn {
         display: flex !important;
         align-items: center !important;
         gap: 0.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-trigger-btn,
+    .nav .search-trigger-btn,
+    .header-container .nav .search-trigger-btn,
+    header .nav .search-trigger-btn,
+    button.search-trigger-btn {
+        right: 0.75rem !important;
+        width: 35px !important;
+        height: 35px !important;
     }
     
     /* Hide navigation links but keep search button */
