@@ -175,11 +175,11 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'jewelry.html',
-                title: 'Jewelry',
-                url: 'jewelry.html',
+                page: 'jewellery.html',
+                title: 'Jewellery',
+                url: 'jewellery.html',
                 content: [
-                    { title: 'Jewelry', description: 'Vegan jewelry and accessories', keywords: 'jewelry, jewellery, rings, necklaces, earrings, bracelets, watches, vegan jewelry, vegan jewellery', url: 'jewelry.html' }
+                    { title: 'Jewellery', description: 'Vegan jewellery and accessories', keywords: 'jewellery, rings, necklaces, earrings, bracelets, watches, vegan jewellery', url: 'jewellery.html' }
                 ]
             },
             {
