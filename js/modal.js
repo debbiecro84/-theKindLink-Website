@@ -75,6 +75,8 @@ window.onclick = function(event) {
     var modal = document.getElementById('suggestModal');
     var sanctuaryModal = document.getElementById('suggestSanctuaryModal');
     var companyModal = document.getElementById('companyListingModal');
+    var affiliateModal = document.getElementById('affiliateModal');
+    
     if (event.target == modal) {
         modal.style.display = 'none';
     }
@@ -83,6 +85,10 @@ window.onclick = function(event) {
     }
     if (event.target == companyModal) {
         companyModal.style.display = 'none';
+    }
+    if (event.target == affiliateModal) {
+        affiliateModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
     }
 }
 
@@ -227,3 +233,32 @@ function showCompanyMessage(message, type) {
         messageDiv.remove();
     }, 5000);
 }
+
+// Generic modal functions
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const openModals = document.querySelectorAll('.modal[style*="block"]');
+        openModals.forEach(modal => {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    }
+});

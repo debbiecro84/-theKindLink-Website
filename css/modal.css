@@ -19,6 +19,8 @@
     max-width: 500px;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .close {
@@ -36,6 +38,36 @@
 .close:focus {
     color: #000;
     text-decoration: none;
+}
+
+/* Modal body styling */
+.modal-body {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.modal-body h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.modal-body ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.modal-body li {
+    margin-bottom: 8px;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+}
+
+.modal-body strong {
+    color: #2c5530;
 }
 
 .suggest-form {

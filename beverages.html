@@ -207,9 +207,9 @@
                     <p>&copy; 2024 The Kind Link. All rights reserved.</p>
                 </div>
                 <div class="footer-bottom-right">
-                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link" onclick="openModal('privacyModal')">Privacy Policy</a>
                     <a href="#" class="footer-link">Terms of Service</a>
-                    <a href="#" class="footer-link">Affiliate Disclaimer</a>
+                    <a href="#" class="footer-link" onclick="openModal('affiliateModal')">Affiliate Disclaimer</a>
                 </div>
             </div>
             
@@ -227,10 +227,26 @@
 
 
 
+    <!-- Affiliate Disclaimer Modal -->
+    <div id="affiliateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('affiliateModal')">&times;</span>
+            <h2>Affiliate Disclaimer</h2>
+            <div class="modal-body">
+                <p>Some of the links on The Kind Link are affiliate links. This means that if you click on these links and make a purchase, I may earn a small commission, at no additional cost to you.</p>
+                
+                <p>I only share businesses, sanctuaries, products, and services that are vegan, cruelty-free, and align with the mission of The Kind Link.</p>
+                
+                <p>This helps support the running of the website and allows me to continue curating vegan resources for the community.</p>
+                
+                <p><strong>Thank you for supporting The Kind Link.</strong></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
-    
     <script src="js/mobile-menu.js"></script>
     <script src="js/global-search.js"></script>
 </body>

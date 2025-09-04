@@ -3,7 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacks & Treats - The Kind Link</title>
+    <title>Vegan Snacks & Treats | The Kind Link - UK Vegan Directory</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the best vegan snacks and treats from top UK brands. Find delicious plant-based chocolates, sweets, and healthy snacks from ethical companies like Ombar, Vego, and Candy Kittens.">
+    <meta name="keywords" content="vegan snacks, vegan treats, vegan chocolate, vegan sweets, plant-based snacks, cruelty-free treats, vegan candy, healthy vegan snacks, UK vegan brands">
+    <meta name="author" content="The Kind Link">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vegan Snacks & Treats | The Kind Link">
+    <meta property="og:description" content="Discover the best vegan snacks and treats from top UK brands. Find delicious plant-based chocolates, sweets, and healthy snacks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thekindlink.com/snacks-treats.html">
+    <meta property="og:image" content="https://thekindlink.com/images/food/ombar-cover.png">
+    <meta property="og:site_name" content="The Kind Link">
+    <meta property="og:locale" content="en_GB">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vegan Snacks & Treats | The Kind Link">
+    <meta name="twitter:description" content="Discover the best vegan snacks and treats from top UK brands. Find delicious plant-based chocolates, sweets, and healthy snacks.">
+    <meta name="twitter:image" content="https://thekindlink.com/images/food/ombar-cover.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logos/plain-logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/logos/plain-logo.png">
+    <link rel="apple-touch-icon" href="images/logos/plain-logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thekindlink.com/snacks-treats.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Vegan Snacks & Treats",
+        "description": "A curated collection of the best vegan snacks and treats from top UK brands",
+        "url": "https://thekindlink.com/snacks-treats.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "name": "Ombar Chocolate",
+                    "description": "Premium organic vegan chocolate made with real, natural ingredients",
+                    "brand": "Ombar"
+                },
+                {
+                    "@type": "Product", 
+                    "name": "Vego Chocolate",
+                    "description": "Premium vegan chocolate brand offering organic, Fairtrade certified products",
+                    "brand": "Vego"
+                },
+                {
+                    "@type": "Product",
+                    "name": "Candy Kittens",
+                    "description": "London-based gourmet sweets brand making plant-powered sweets",
+                    "brand": "Candy Kittens"
+                }
+            ]
+        }
+    }
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/header.css">
@@ -320,9 +385,9 @@
                     <p>&copy; 2024 The Kind Link. All rights reserved.</p>
                 </div>
                 <div class="footer-bottom-right">
-                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link" onclick="openModal('privacyModal')">Privacy Policy</a>
                     <a href="#" class="footer-link">Terms of Service</a>
-                    <a href="#" class="footer-link">Affiliate Disclaimer</a>
+                    <a href="#" class="footer-link" onclick="openModal('affiliateModal')">Affiliate Disclaimer</a>
                 </div>
             </div>
             
@@ -338,7 +403,22 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-
+    <!-- Affiliate Disclaimer Modal -->
+    <div id="affiliateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('affiliateModal')">&times;</span>
+            <h2>Affiliate Disclaimer</h2>
+            <div class="modal-body">
+                <p>Some of the links on The Kind Link are affiliate links. This means that if you click on these links and make a purchase, I may earn a small commission, at no additional cost to you.</p>
+                
+                <p>I only share businesses, sanctuaries, products, and services that are vegan, cruelty-free, and align with the mission of The Kind Link.</p>
+                
+                <p>This helps support the running of the website and allows me to continue curating vegan resources for the community.</p>
+                
+                <p><strong>Thank you for supporting The Kind Link.</strong></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>

@@ -18,27 +18,42 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <div class="logo-square">
-                        <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
-                    </div>
-                </a>
+        <!-- Top Section - Logo Only -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-square">
+                            <img src="images/logos/plain-logo.png" alt="The Kind Link Logo">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <nav class="nav">
-                <a href="index.html" class="nav-link">HOME</a>
-                <a href="explore.html" class="nav-link active">EXPLORE</a>
-                <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
-                <a href="events.html" class="nav-link">EVENTS</a>
-                <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
-                <a href="information.html" class="nav-link">INFORMATION</a>
-                <a href="about.html" class="nav-link">ABOUT/CONTACT</a>n                <button class="search-trigger-btn" aria-label="Search"><i class="fas fa-search"></i></button>
-            </nav>            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        </div>
+        
+        <!-- Bottom Section - Navigation -->
+        <div class="header-bottom">
+            <div class="header-bottom-container">
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="explore.html" class="nav-link active">EXPLORE</a>
+                    <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                    <a href="events.html" class="nav-link">EVENTS</a>
+                    <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                    <a href="information.html" class="nav-link">INFORMATION</a>
+                    <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-trigger-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
         
         <!-- Mobile Navigation -->
@@ -210,15 +225,15 @@
                     <p>&copy; 2024 The Kind Link. All rights reserved.</p>
                 </div>
                 <div class="footer-bottom-right">
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                    <a href="#" class="footer-link">Terms of Service</a>
-                    <a href="#" class="footer-link">Affiliate Disclaimer</a>
+                    <a href="#" class="footer-link" onclick="openModal('privacyModal')">Privacy Policy</a>
+                    <a href="#" class="footer-link" onclick="openModal('termsModal')">Terms of Service</a>
+                    <a href="#" class="footer-link" onclick="openModal('affiliateModal')">Affiliate Disclaimer</a>
                 </div>
             </div>
             
             <!-- Kind Code Design Credit -->
             <div class="footer-credit">
-                <p>Website designed by <a href="#" class="kind-code-link">Kind Code Design</a></p>
+                <p>Website designed by <a href="about.html" class="kind-code-link">Kind Code Design</a></p>
             </div>
         </div>
     </footer>
@@ -227,6 +242,71 @@
     <button id="scrollToTop" class="scroll-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Affiliate Disclaimer Modal -->
+    <div id="affiliateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('affiliateModal')">&times;</span>
+            <h2>Affiliate Disclaimer</h2>
+            <div class="modal-body">
+                <p>Some of the links on The Kind Link are affiliate links. This means that if you click on these links and make a purchase, I may earn a small commission, at no additional cost to you.</p>
+                
+                <p>I only share businesses, sanctuaries, products, and services that are vegan, cruelty-free, and align with the mission of The Kind Link.</p>
+                
+                <p>This helps support the running of the website and allows me to continue curating vegan resources for the community.</p>
+                
+                <p><strong>Thank you for supporting The Kind Link.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-body">
+                <p>At The Kind Link, your privacy is important.</p>
+                
+                <h3>Information We Collect</h3>
+                <p>When you use our contact form, we may collect your name, email address, and any information you choose to provide.</p>
+                
+                <h3>How We Use Your Information</h3>
+                <p>We use this information only to respond to your enquiry. We do not sell, trade, or share your personal data with third parties.</p>
+                
+                <h3>Cookies</h3>
+                <p>Our website may contain affiliate links. Clicking these may take you to external websites that use cookies. We do not control these third-party sites.</p>
+                
+                <h3>Data Security</h3>
+                <p>We take steps to protect your information but cannot guarantee complete security of data transmitted online.</p>
+                
+                <h3>Your Rights</h3>
+                <p>You can request to see, update, or delete the information we hold about you by contacting us at hello@thekindlink.com.</p>
+                
+                <h3>Updates</h3>
+                <p>This policy may be updated occasionally. Please check this page for any changes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body">
+                <p>By using The Kind Link, you agree to the following:</p>
+                
+                <p>All external links are provided for convenience. We are not responsible for the content or practices of third-party websites.</p>
+                
+                <p>Some links are affiliate links. We may earn a small commission if you make a purchase, at no cost to you.</p>
+                
+                <p>Content on this website is for informational purposes only. We do not provide professional advice.</p>
+                
+                <p>We reserve the right to update or change these terms at any time. Continued use of the site means you accept any changes.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
