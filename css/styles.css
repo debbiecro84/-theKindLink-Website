@@ -622,10 +622,24 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .hero-svg {
+        height: 120px;
+        bottom: -30px;
+    }
+}
+
 @media (max-width: 360px) {
     .hero-svg {
-        height: 80px;
+        height: 100px;
         bottom: -35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-svg {
+        height: 80px;
+        bottom: -25px;
     }
 }
 
@@ -679,6 +693,12 @@ body {
 @media (max-width: 360px) {
     .features-section {
         margin-top: -35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .features-section {
+        margin-top: -25px;
     }
 }
 
