@@ -686,19 +686,19 @@ body {
 
 @media (max-width: 480px) {
     .features-section {
-        margin-top: -30px;
+        margin-top: -10px;
     }
 }
 
 @media (max-width: 360px) {
     .features-section {
-        margin-top: -35px;
+        margin-top: -10px;
     }
 }
 
 @media (max-width: 320px) {
     .features-section {
-        margin-top: 50px;
+        margin-top: -10px;
     }
 }
 
