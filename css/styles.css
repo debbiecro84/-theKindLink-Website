@@ -636,6 +636,19 @@ body {
     }
 }
 
+@media (max-width: 400px) and (min-width: 300px) {
+    .hero-svg {
+        height: 80px;
+        bottom: 10px;
+    }
+    
+    .hero-image {
+        min-height: 30vh;
+        background-size: 70%;
+        background-position: center;
+    }
+}
+
 @media (max-width: 320px) {
     .hero-svg {
         height: 80px;
