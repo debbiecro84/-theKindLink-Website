@@ -64,8 +64,8 @@ body {
 }
 
 .logo-square {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background: transparent;
     border-radius: var(--radius-sm);
     display: flex;
@@ -305,8 +305,8 @@ body {
     }
     
     .logo-square {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -336,8 +336,8 @@ body {
     }
     
     .logo-square {
-        width: 90px;
-        height: 90px;
+        width: 110px;
+        height: 110px;
     }
     
     .logo-text {
@@ -356,8 +356,8 @@ body {
     }
     
     .logo-square {
-        width: 85px;
-        height: 85px;
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -409,8 +409,8 @@ body {
     }
     
     .logo-square {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
     .logo-text {
@@ -466,8 +466,8 @@ body {
     }
     
     .logo-square {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     
     .logo-text {
@@ -508,8 +508,8 @@ body {
     }
     
     .logo-square {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     
     .logo-text {

@@ -126,7 +126,7 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     min-height: 70vh;
@@ -566,10 +566,120 @@ body {
     color: var(--primary-green);
 }
 
+/* Hero SVG */
+.hero-svg {
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Responsive SVG adjustments */
+@media (min-width: 1301px) {
+    .hero-svg {
+        height: 200px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 1100px) {
+    .hero-svg {
+        height: 180px;
+        bottom: -20px;
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-svg {
+        height: 140px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-svg {
+        height: 130px;
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-svg {
+        height: 120px;
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-svg {
+        height: 100px;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-svg {
+        height: 80px;
+        bottom: -35px;
+    }
+}
+
 /* Features Section */
 .features-section {
     padding: var(--spacing-xl) 0;
     background: var(--bg-white);
+    margin-top: -35px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive features section adjustments */
+@media (min-width: 1301px) {
+    .features-section {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 1100px) {
+    .features-section {
+        margin-top: -20px;
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .features-section {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .features-section {
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .features-section {
+        margin-top: -35px;
+    }
 }
 
 .features-section h2 {
