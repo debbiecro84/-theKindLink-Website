@@ -470,19 +470,26 @@ body {
     font-size: 3rem;
     font-weight: 800;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
+    color: var(--bg-light) !important;
     margin-bottom: var(--spacing-sm);
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.page-header-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bg-light) !important;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.5px;
 }
 
 .page-header-content p {
     font-size: 1.2rem;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
+    color: #666666 !important;
     margin-bottom: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 
