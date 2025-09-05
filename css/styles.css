@@ -639,7 +639,7 @@ body {
 @media (max-width: 320px) {
     .hero-svg {
         height: 80px;
-        bottom: -25px;
+        bottom: 10px;
     }
 }
 
@@ -698,7 +698,7 @@ body {
 
 @media (max-width: 320px) {
     .features-section {
-        margin-top: -25px;
+        margin-top: 10px;
     }
 }
 
