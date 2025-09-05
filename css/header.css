@@ -140,10 +140,10 @@ body {
     text-decoration: none;
     padding: 0;
     border-radius: 0;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 0.9rem;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: var(--transition-smooth);
     border: none;
@@ -243,7 +243,7 @@ body {
     border-radius: var(--radius-md);
     font-weight: 600;
     font-size: 0.9rem;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: var(--transition-smooth);
