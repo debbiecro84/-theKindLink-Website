@@ -117,7 +117,8 @@ class GlobalSearch {
                 title: 'Hair Care',
                 url: 'hair-care.html',
                 content: [
-                    { title: 'Hair Care', description: 'Vegan hair care products', keywords: 'hair care, haircare, shampoo, conditioner, hair treatment, hair mask, hair oil, vegan hair care', url: 'hair-care.html' }
+                    { title: 'Hair Care', description: 'Vegan hair care products', keywords: 'hair care, haircare, shampoo, conditioner, hair treatment, hair mask, hair oil, vegan hair care', url: 'hair-care.html' },
+                    { title: 'Plant Made', description: 'Plant-based beauty and personal care brand', keywords: 'plant made, hair care, beauty, personal care, vegan, cruelty-free, sustainable', url: 'https://www.weareplantmade.com/' }
                 ]
             },
             {
@@ -125,7 +126,8 @@ class GlobalSearch {
                 title: 'Body Care',
                 url: 'body-care.html',
                 content: [
-                    { title: 'Body Care', description: 'Vegan body care products', keywords: 'body care, bodycare, body lotion, body wash, body scrub, body butter, body oil, vegan body care', url: 'body-care.html' }
+                    { title: 'Body Care', description: 'Vegan body care products', keywords: 'body care, bodycare, body lotion, body wash, body scrub, body butter, body oil, vegan body care', url: 'body-care.html' },
+                    { title: 'AKT London', description: 'Premium natural deodorant and body care brand', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' }
                 ]
             },
             {
@@ -213,7 +215,8 @@ class GlobalSearch {
                 title: 'Food & Drinks',
                 url: 'food-drinks.html',
                 content: [
-                    { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' }
+                    { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' },
+                    { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' }
                 ]
             },
             {
@@ -221,7 +224,9 @@ class GlobalSearch {
                 title: 'Beverages',
                 url: 'beverages.html',
                 content: [
-                    { title: 'Beverages', description: 'Vegan drinks and beverages', keywords: 'beverages, drinks, juice, smoothies, tea, coffee, plant milk, vegan drinks, vegan beverages', url: 'beverages.html' }
+                    { title: 'Beverages', description: 'Vegan drinks and beverages', keywords: 'beverages, drinks, juice, smoothies, tea, coffee, plant milk, vegan drinks, vegan beverages', url: 'beverages.html' },
+                    { title: 'Overherd', description: 'Powdered oat milk that you just add water to', keywords: 'overherd, oat milk, powdered, sustainable, dairy-free, plant milk', url: 'https://overherd.uk/' },
+                    { title: 'MYOM', description: 'Revolutionary oat milk paste that you make at home', keywords: 'myom, oat milk, paste, home made, dairy-free, plant milk', url: 'https://myom.shop/' }
                 ]
             },
             {
@@ -229,7 +234,9 @@ class GlobalSearch {
                 title: 'Snacks & Treats',
                 url: 'snacks-treats.html',
                 content: [
-                    { title: 'Snacks & Treats', description: 'Vegan snacks and treats', keywords: 'snacks, treats, sweets, chocolate, candy, cookies, chips, vegan snacks, vegan treats, vegan sweets', url: 'snacks-treats.html' }
+                    { title: 'Snacks & Treats', description: 'Vegan snacks and treats', keywords: 'snacks, treats, sweets, chocolate, candy, cookies, chips, vegan snacks, vegan treats, vegan sweets', url: 'snacks-treats.html' },
+                    { title: 'Based Food', description: 'Plant-based baking and breakfast mixes', keywords: 'based food, baking, breakfast, mixes, plant-based, gluten-free, allergen-free', url: 'https://basedfood.co.uk/' },
+                    { title: 'Vive', description: 'Dangerously delicious plant-based chocolate treats', keywords: 'vive, chocolate, treats, plant-based, vegan chocolate, sweets', url: 'https://eatvive.com/' }
                 ]
             },
             {
@@ -237,7 +244,17 @@ class GlobalSearch {
                 title: 'Frozen Foods',
                 url: 'frozen-foods.html',
                 content: [
-                    { title: 'Frozen Foods', description: 'Vegan frozen foods', keywords: 'frozen foods, frozen, ice cream, frozen meals, frozen vegetables, vegan frozen, vegan ice cream', url: 'frozen-foods.html' }
+                    { title: 'Frozen Foods', description: 'Vegan frozen foods', keywords: 'frozen foods, frozen, ice cream, frozen meals, frozen vegetables, vegan frozen, vegan ice cream', url: 'frozen-foods.html' },
+                    { title: 'Shicken Foods', description: 'Vegan versions of everyday favorite foods', keywords: 'shicken foods, vegan, curries, kebabs, wings, sides, plant-based', url: 'https://shickenfoods.com/' }
+                ]
+            },
+            {
+                page: 'bakery.html',
+                title: 'Bakery',
+                url: 'bakery.html',
+                content: [
+                    { title: 'Bakery', description: 'Vegan bakery and baked goods', keywords: 'bakery, baked goods, bread, cakes, pastries, vegan bakery, vegan baked goods', url: 'bakery.html' },
+                    { title: 'Magpye', description: 'Multi-award winning vegan pies handmade in Northumberland', keywords: 'magpye, vegan pies, handmade, northumberland, organic, sustainable', url: 'https://magpye.co.uk/' }
                 ]
             },
             {
@@ -277,7 +294,8 @@ class GlobalSearch {
                 title: 'Home & Living',
                 url: 'home-living.html',
                 content: [
-                    { title: 'Home & Living', description: 'Sustainable home products', keywords: 'home, living, sustainable, eco, household, decor, furniture, cleaning', url: 'home-living.html' }
+                    { title: 'Home & Living', description: 'Sustainable home products', keywords: 'home, living, sustainable, eco, household, decor, furniture, cleaning', url: 'home-living.html' },
+                    { title: 'Textiles & Linens', description: 'Vegan bedding, towels, and home textiles', keywords: 'textiles, linens, bedding, towels, sheets, pillows, mattresses, vegan textiles, eco textiles', url: 'textiles-linens.html' }
                 ]
             },
             {
@@ -642,6 +660,34 @@ class GlobalSearch {
                 content: [
                     { title: 'About The Kind Link', description: 'Learn about our mission to connect people with vegan resources', keywords: 'about, mission, connect, vegan resources' },
                     { title: 'Contact Us', description: 'Get in touch with The Kind Link team', keywords: 'contact, get in touch, team' }
+                ]
+            },
+            
+            // New Categories Added
+            {
+                page: 'cheese.html',
+                title: 'Cheese',
+                url: 'cheese.html',
+                content: [
+                    { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' },
+                    { title: 'Kinda Co.', description: 'Artisanal vegan cheese made with traditional methods', keywords: 'kinda co, vegan cheese, artisanal, traditional, dairy-free, plant-based cheese', url: 'https://thekindaco.com/' },
+                    { title: 'Tyne Chease', description: 'Handcrafted vegan cheese from the UK', keywords: 'tyne chease, vegan cheese, handcrafted, uk, dairy-free, plant-based', url: 'https://tynechease.com/' },
+                    { title: 'Sheese', description: 'Scottish vegan cheese with authentic taste', keywords: 'sheese, vegan cheese, scottish, authentic, dairy-free, plant-based', url: 'https://buteisland.com/' },
+                    { title: 'Jay & Joy', description: 'French artisan vegan cheese and dairy products', keywords: 'jay and joy, vegan cheese, french, artisan, dairy-free, plant-based', url: 'https://www.jay-joy.com/' },
+                    { title: 'I AM NUT OK', description: 'Nut-based vegan cheese and spreads', keywords: 'i am nut ok, vegan cheese, nut-based, spreads, dairy-free, plant-based', url: 'https://www.iamnutok.com/' },
+                    { title: 'Miyoko\'s Creamery', description: 'Artisan vegan cheese and butter', keywords: 'miyokos, vegan cheese, artisan, butter, dairy-free, plant-based', url: 'https://miyokos.com/' }
+                ]
+            },
+            {
+                page: 'textiles-linens.html',
+                title: 'Textiles & Linens',
+                url: 'textiles-linens.html',
+                content: [
+                    { title: 'Textiles & Linens', description: 'Vegan bedding, towels, and home textiles', keywords: 'textiles, linens, bedding, towels, sheets, pillows, mattresses, vegan textiles, eco textiles', url: 'textiles-linens.html' },
+                    { title: 'Panda London', description: 'Sustainable bamboo bedding and home textiles', keywords: 'panda london, bamboo, bedding, sustainable, eco, home textiles', url: 'https://pandalondon.com/' },
+                    { title: 'Cottonsafe Natural Mattress', description: 'Organic cotton mattresses and bedding', keywords: 'cottonsafe, natural mattress, organic cotton, bedding, mattresses', url: 'https://www.cottonsafenaturalmattress.co.uk/' },
+                    { title: 'Ettitude', description: 'Bamboo lyocell bedding and home textiles', keywords: 'ettitude, bamboo lyocell, bedding, home textiles, sustainable', url: 'https://www.ettitude.com/en-gb' },
+                    { title: 'Vossen', description: 'Sustainable home textiles and linens', keywords: 'vossen, home textiles, linens, sustainable, eco', url: 'https://uk.vossen.com/' }
                 ]
             }
         ];

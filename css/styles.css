@@ -385,7 +385,7 @@ body {
 .nav-link:hover,
 .nav-link.active {
     background: none;
-    color: #e55a2b;
+    color: #000000;
     text-decoration: underline;
 }
 
