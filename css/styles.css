@@ -956,7 +956,7 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-size: 80%;
-        background-position: center 85%;
+        background-position: center 75%;
     }
     
     .hero-subtitle {
@@ -979,7 +979,7 @@ body {
 @media (max-width: 480px) {
     .hero {
         background-size: 90%;
-        background-position: center 75%;
+        background-position: center 65%;
     }
     
     .hero-subtitle {
@@ -1002,7 +1002,7 @@ body {
 @media (max-width: 360px) {
     .hero {
         background-size: 100%;
-        background-position: center 65%;
+        background-position: center 55%;
     }
     
     .hero-subtitle {
