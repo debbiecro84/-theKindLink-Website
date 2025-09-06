@@ -115,7 +115,7 @@
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
+    color: var(--text-medium);
     background-color: var(--bg-light);
 }
 
@@ -142,10 +142,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-        rgba(0, 0, 0, 0.4) 0%, 
-        rgba(0, 0, 0, 0.6) 50%,
-        rgba(0, 0, 0, 0.4) 100%);
+    background: var(--bg-light);
+    opacity: 0.8;
     z-index: 1;
 }
 
@@ -196,7 +194,7 @@ body {
     font-size: 4rem;
     font-weight: 400;
     font-family: 'Fredoka One', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
+    color: var(--text-medium);
     margin-bottom: var(--spacing-sm);
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -207,24 +205,24 @@ body {
 .hero-subtitle {
     font-size: 1.5rem;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
+    color: var(--text-medium);
     margin-bottom: var(--spacing-lg);
     font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
     letter-spacing: 1px;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-white);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-xl);
     line-height: 1.7;
     max-width: 600px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    background: rgba(0, 0, 0, 0.4);
+    text-shadow: none;
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 }
 
@@ -239,7 +237,7 @@ body {
     background-color: var(--primary-green);
     color: var(--text-white);
     padding: 1rem 2.5rem;
-    border: 3px solid var(--text-white);
+    border: 3px solid var(--primary-green);
     border-radius: 30px;
     font-size: 1.1rem;
     font-weight: 700;
@@ -262,7 +260,7 @@ body {
     background-color: var(--primary-green);
     color: var(--text-white);
     padding: 1rem 2.5rem;
-    border: 3px solid var(--text-white);
+    border: 3px solid var(--primary-green);
     border-radius: 30px;
     font-size: 1.1rem;
     font-weight: 700;
@@ -370,7 +368,7 @@ body {
 }
 
 .nav-link {
-    color: var(--text-dark);
+    color: var(--text-medium);
     text-decoration: none;
     padding: 0;
     border-radius: 0;
@@ -432,7 +430,7 @@ body {
 }
 
 .mobile-nav-link {
-    color: var(--text-dark);
+    color: var(--text-medium);
     text-decoration: none;
     padding: 1rem 4rem;
     border-radius: 15px;
@@ -665,7 +663,7 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-xl);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -714,7 +712,7 @@ body {
 .feature-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-md);
 }
 
@@ -734,7 +732,7 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-md);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1157,7 +1155,7 @@ body {
 .spotlight-text h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-lg);
 }
 
@@ -1221,7 +1219,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-md);
 }
 
@@ -1284,7 +1282,7 @@ body {
 .preview-event-details h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text-medium);
     margin-bottom: var(--spacing-xs);
 }
 
