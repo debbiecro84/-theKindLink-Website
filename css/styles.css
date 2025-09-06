@@ -366,6 +366,12 @@ body {
     .banner-content span {
         margin-right: 2rem;
     }
+    
+    /* Hide first and third messages on mobile, show only second */
+    .banner-content span:nth-child(1),
+    .banner-content span:nth-child(3) {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -379,6 +385,12 @@ body {
     
     .banner-content span {
         margin-right: 1.5rem;
+    }
+    
+    /* Hide first and third messages on mobile, show only second */
+    .banner-content span:nth-child(1),
+    .banner-content span:nth-child(3) {
+        display: none;
     }
 }
 
