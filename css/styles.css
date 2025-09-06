@@ -962,6 +962,18 @@ body {
     .hero-subtitle {
         margin-top: 40%;
     }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -973,6 +985,18 @@ body {
     .hero-subtitle {
         margin-top: 40%;
     }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -983,6 +1007,18 @@ body {
     
     .hero-subtitle {
         margin-top: 40%;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
     }
 }
 
