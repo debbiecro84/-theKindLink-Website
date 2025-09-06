@@ -956,11 +956,12 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-size: 80%;
-        background-position: center 75%;
+        background-position: center 75
+        %;
     }
     
     .hero-subtitle {
-        margin-top: 40%;
+        margin-top: 55%;
     }
     
     .hero-title {
@@ -983,7 +984,7 @@ body {
     }
     
     .hero-subtitle {
-        margin-top: 40%;
+        margin-top: 55%;
     }
     
     .hero-title {
@@ -1006,7 +1007,7 @@ body {
     }
     
     .hero-subtitle {
-        margin-top: 40%;
+        margin-top: 55%;
     }
     
     .hero-title {
