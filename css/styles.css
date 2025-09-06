@@ -142,7 +142,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--bg-light);
+    background: #0D0D0D;
     opacity: 0.8;
     z-index: 1;
 }
@@ -194,7 +194,7 @@ body {
     font-size: 4rem;
     font-weight: 400;
     font-family: 'Fredoka One', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-medium);
+    color: #ffffff;
     margin-bottom: var(--spacing-sm);
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -205,7 +205,7 @@ body {
 .hero-subtitle {
     font-size: 1.5rem;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-medium);
+    color: #ff6b35;
     margin-bottom: var(--spacing-lg);
     font-weight: 400;
     text-shadow: none;
@@ -214,7 +214,7 @@ body {
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-medium);
+    color: #ff6b35;
     margin-bottom: var(--spacing-xl);
     line-height: 1.7;
     max-width: 600px;
@@ -318,7 +318,8 @@ body {
 
 /* Header Styles */
 .header {
-    background: var(--bg-light);
+    background: #7a8a6a !important;
+    background-color: #7a8a6a !important;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -456,7 +457,7 @@ body {
 .page-header {
     padding: 4rem 0;
     text-align: center;
-    background: var(--primary-green) !important;
+    background: var(--bg-light) !important;
     position: relative;
     margin: 0 !important;
     border: none !important;
@@ -476,7 +477,7 @@ body {
     font-size: 3rem;
     font-weight: 800;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--bg-light) !important;
+    color: var(--text-medium) !important;
     margin-bottom: var(--spacing-sm);
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -486,7 +487,7 @@ body {
     font-size: 2rem;
     font-weight: 600;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--bg-light) !important;
+    color: var(--text-dark) !important;
     margin-bottom: var(--spacing-sm);
     letter-spacing: 0.5px;
 }
@@ -494,7 +495,7 @@ body {
 .page-header-content p {
     font-size: 1.2rem;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #666666 !important;
+    color: #ff6b35 !important;
     margin-bottom: 0;
 }
 
@@ -1516,7 +1517,7 @@ body {
 /* Explore Page Styles */
 .categories-section {
     padding: 4rem 0;
-    background-color: #f4f1eb;
+    background-color: #ffffff;
 }
 
 .categories-section h2 {
@@ -3299,4 +3300,10 @@ body {
     .get-featured-content p {
         font-size: 1rem;
     }
+}
+
+/* Force header background override */
+body .header {
+    background: #7a8a6a !important;
+    background-color: #7a8a6a !important;
 } 

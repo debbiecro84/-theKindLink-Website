@@ -15,7 +15,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #ffffff !important;
+    background-color: #7a8a6a !important;
     margin: 0 !important;
     border: none !important;
     padding: 0 !important;
@@ -43,7 +43,7 @@ body {
 
 /* Bottom Section - Navigation */
 .header-bottom {
-    background-color: #f4f1eb;
+    background-color: #7a8a6a;
     padding: var(--spacing-sm) 0 0 0;
     margin: 0;
     display: flex;
@@ -136,7 +136,7 @@ body {
 
 .nav-link {
     background: none;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     padding: 0;
     border-radius: 0;
@@ -184,7 +184,7 @@ body {
 .mobile-menu-toggle span {
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 1px;
     transition: all 0.3s ease;
     transform-origin: center;
@@ -210,7 +210,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(244, 241, 235, 0.98);
+    background-color: rgba(38, 38, 38, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding-top: 80px;
@@ -530,4 +530,16 @@ body {
         font-size: 0.8rem;
         width: 160px;
     }
+}
+
+/* Force header background override */
+html body .header {
+    background: #7a8a6a !important;
+    background-color: #7a8a6a !important;
+}
+
+/* Even more specific override */
+html body .header[class*="header"] {
+    background: #7a8a6a !important;
+    background-color: #7a8a6a !important;
 }
