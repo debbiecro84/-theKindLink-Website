@@ -85,7 +85,15 @@ class GlobalSearch {
                 title: 'Skincare',
                 url: 'skincare.html',
                 content: [
-                    { title: 'Skincare', description: 'Vegan skincare products', keywords: 'skincare, skin care, face, moisturizer, cleanser, serum, cream, lotion, vegan skincare', url: 'skincare.html' }
+                    { title: 'Skincare', description: 'Vegan skincare products', keywords: 'skincare, skin care, face, moisturizer, cleanser, serum, cream, lotion, vegan skincare', url: 'skincare.html' },
+                    { title: 'The Ordinary', description: 'Science-backed skincare formulations that are vegan and cruelty-free', keywords: 'the ordinary, skincare, science, vegan, cruelty-free, ingredients, face care', url: 'https://theordinary.com/' },
+                    { title: 'Wild Deodorant', description: 'UK-based company offering naturally effective body care products', keywords: 'wild deodorant, wild, deodorant, body care, plastic-free, compostable, refills, uk', url: 'https://wearewild.com/' },
+                    { title: 'Sukin Naturals', description: 'Australian natural skincare brand offering 100% vegan and cruelty-free products', keywords: 'sukin, naturals, australian, natural, skincare, vegan, cruelty-free, carbon neutral', url: 'https://sukinorganics.com/' },
+                    { title: 'BYBI', description: 'UK-based sustainable skincare brand offering 100% natural and vegan products', keywords: 'bybi, sustainable, skincare, natural, vegan, cruelty-free, b corporation, uk', url: 'https://bybi.com/' },
+                    { title: 'Evolve Beauty', description: 'UK-based natural and organic skincare brand certified as a B Corporation', keywords: 'evolve beauty, natural, organic, skincare, b corporation, sustainable, uk', url: 'https://evolvebeauty.co.uk/' },
+                    { title: 'Pacifica Beauty', description: 'Leading vegan beauty brand offering comprehensive skincare and beauty products', keywords: 'pacifica beauty, vegan, beauty, skincare, haircare, fragrance, makeup, cruelty-free', url: 'https://www.pacificabeauty.com/' },
+                    { title: 'Pai Skincare', description: 'UK-based organic skincare brand specializing in sensitive skin solutions', keywords: 'pai skincare, organic, sensitive skin, cruelty-free, vegan, uk, patch-tested', url: 'https://www.paiskincare.com/' },
+                    { title: 'Tropic Skincare', description: 'UK-based beauty company with 20 years of experience in natural skincare', keywords: 'tropic skincare, natural, organic, skincare, tanning, bronzing, uk, beauty', url: 'https://tropicskincare.com/' }
                 ]
             },
             {
@@ -93,7 +101,13 @@ class GlobalSearch {
                 title: 'Makeup',
                 url: 'makeup.html',
                 content: [
-                    { title: 'Makeup', description: 'Cruelty-free makeup products', keywords: 'makeup, cosmetics, lipstick, foundation, mascara, eyeshadow, blush, powder, vegan makeup', url: 'makeup.html' }
+                    { title: 'Makeup', description: 'Cruelty-free makeup products', keywords: 'makeup, cosmetics, lipstick, foundation, mascara, eyeshadow, blush, powder, vegan makeup', url: 'makeup.html' },
+                    { title: 'e.l.f. Cosmetics', description: 'Always vegan, cruelty-free beauty brand offering affordable professional-quality makeup', keywords: 'elf cosmetics, vegan, cruelty-free, affordable, professional, leaping bunny, clean beauty', url: 'https://www.elfcosmetics.com/' },
+                    { title: 'VE Cosmetics', description: 'Pioneering UK indie brand established in 2015, one of the first to produce completely vegan cosmetics', keywords: 've cosmetics, uk indie, vegan, cruelty-free, audhd, alternative styles, individuality', url: 'https://vecosmetics.co.uk/' },
+                    { title: 'Barry M', description: 'UK-based beauty brand offering innovative makeup and nail products with trending collections', keywords: 'barry m, uk, beauty, makeup, nail products, glazed, sheer splash, thats swell, affordable', url: 'https://www.barrym.com/' },
+                    { title: 'CATRICE', description: '100% vegan makeup brand committed to cruelty-free beauty and environmental sustainability', keywords: 'catrice, vegan, cruelty-free, environmental, sustainability, microplastics, clean beauty', url: 'https://www.catrice.com/' },
+                    { title: 'essence', description: 'European makeup brand committed to vegan beauty with natural ingredients whenever possible', keywords: 'essence, european, vegan, natural ingredients, affordable, high-quality, animal welfare', url: 'https://www.essence.eu/' },
+                    { title: 'Black Moon Cosmetics', description: '100% vegan and cruelty-free makeup brand specializing in alternative beauty', keywords: 'black moon cosmetics, vegan, cruelty-free, alternative beauty, grunge, liquid to mattes, orb of light', url: 'https://blackmooncosmetics.com/' }
                 ]
             },
             {
@@ -101,7 +115,14 @@ class GlobalSearch {
                 title: 'Fragrances',
                 url: 'fragrances.html',
                 content: [
-                    { title: 'Fragrances', description: 'Vegan perfumes and fragrances', keywords: 'fragrances, perfume, perfumes, cologne, scent, aromas, body spray, eau de toilette, eau de parfum, vegan perfume', url: 'fragrances.html' }
+                    { title: 'Fragrances', description: 'Vegan perfumes and fragrances', keywords: 'fragrances, perfume, perfumes, cologne, scent, aromas, body spray, eau de toilette, eau de parfum, vegan perfume', url: 'fragrances.html' },
+                    { title: 'Eden Perfumes', description: '100% vegan and cruelty-free fragrances with free UK delivery over £40', keywords: 'eden perfumes, vegan, cruelty-free, luxury scents, pheromone, alcohol-free, paraben-free, phthalate-free', url: 'https://www.edenperfumes.co.uk/' },
+                    { title: 'Flaya', description: 'Natural, organic and vegan perfumes handmade in small batches in Scotland', keywords: 'flaya, natural, organic, vegan, perfumes, scotland, nfcc, vegan society, naturewatch foundation', url: 'https://www.flaya.co.uk/' },
+                    { title: 'Floral Street', description: 'Vegan and cruelty-free luxury perfumes inspired by London', keywords: 'floral street, vegan, cruelty-free, luxury, perfumes, london, sustainable, recyclable, discovery sets', url: 'https://www.floralstreet.com/' },
+                    { title: 'Dolma Perfumes', description: 'Vegan and cruelty-free perfumes and aftershaves since 1982', keywords: 'dolma perfumes, vegan, cruelty-free, britain, palm oil free, paraben free, phthalate free, tree planting', url: 'https://www.dolmaperfumes.co.uk/' },
+                    { title: 'Herbivore Botanicals', description: 'Plant-powered, clinically effective skincare and body care using 99% natural ingredients', keywords: 'herbivore botanicals, plant-powered, natural ingredients, skincare, body care, lightweight, glow-giving', url: 'https://www.herbivorebotanicals.com/' },
+                    { title: 'Shay & Blue', description: 'Certified clean, vegan and cruelty-free unisex perfumes since 2012', keywords: 'shay blue, clean, vegan, cruelty-free, unisex, perfumes, planet-friendly, artisan techniques, real flowers', url: 'https://www.shayandblue.com/' },
+                    { title: 'The Essence Vault', description: 'UK-based company offering designer-inspired fragrances at affordable prices', keywords: 'essence vault, uk, designer-inspired, fragrances, affordable, eau de parfum, luxury brand, vegan, cruelty-free', url: 'https://www.theessencevault.com/' }
                 ]
             },
             {
@@ -109,7 +130,13 @@ class GlobalSearch {
                 title: 'Tanning',
                 url: 'tanning.html',
                 content: [
-                    { title: 'Tanning', description: 'Vegan tanning products', keywords: 'tanning, tan, self tan, fake tan, bronzer, sunless tanning, tanning lotion, tanning oil, vegan tanning', url: 'tanning.html' }
+                    { title: 'Tanning', description: 'Vegan tanning products', keywords: 'tanning, tan, self tan, fake tan, bronzer, sunless tanning, tanning lotion, tanning oil, vegan tanning', url: 'tanning.html' },
+                    { title: 'utan', description: 'Revolutionary self-tanning mist that helps clear skin, reduce redness and gives a natural glow', keywords: 'utan, self-tanning mist, clear skin, reduce redness, natural glow, mail online, must-have product', url: 'https://utan.com/' },
+                    { title: 'Coco & Eve', description: 'Global bestselling tanning brand with award-winning products including the No.1 Face Tanner', keywords: 'coco eve, global bestselling, tanning brand, award-winning, face tanner, tanning mists, antioxidant, bali-inspired', url: 'https://cocoandeve.com/' },
+                    { title: 'Eco By Sonya Driver', description: 'Certified organic, vegan, and cruelty-free tanning products', keywords: 'eco sonya driver, certified organic, vegan, cruelty-free, tanning, vogue best fake tan water, australian made', url: 'https://ecobysonyadriver.com/' },
+                    { title: 'Isle of Paradise', description: 'UK-based tanning brand offering innovative self-tanning solutions for a natural, sun-kissed glow', keywords: 'isle of paradise, uk, tanning brand, self-tanning, natural, sun-kissed glow, cruelty-free, vegan-friendly', url: 'https://www.theisleofparadise.com/' },
+                    { title: 'Nouvatan', description: 'Family-run British brand with over 25 years of experience in professional spray tanning', keywords: 'nouvatan, family-run, british, 25 years, professional spray tanning, vegan-friendly, cruelty-free, organic dha, made in britain', url: 'https://nouvatan.com/' },
+                    { title: 'Skin & Tan', description: 'Established UK brand with over 10 years of experience, previously known as Skinny Tan', keywords: 'skin tan, uk brand, 10 years, skinny tan, dragons den, 23k reviews, streak-free, natural-looking', url: 'https://skinandtan.com/' }
                 ]
             },
             {
@@ -118,7 +145,12 @@ class GlobalSearch {
                 url: 'hair-care.html',
                 content: [
                     { title: 'Hair Care', description: 'Vegan hair care products', keywords: 'hair care, haircare, shampoo, conditioner, hair treatment, hair mask, hair oil, vegan hair care', url: 'hair-care.html' },
-                    { title: 'Plant Made', description: 'Plant-based beauty and personal care brand', keywords: 'plant made, hair care, beauty, personal care, vegan, cruelty-free, sustainable', url: 'https://www.weareplantmade.com/' }
+                    { title: 'Faith In Nature', description: 'First company in the world to give nature a voice and a vote', keywords: 'faith in nature, uk-made, vegan, hair care, b corp, carbon balanced, refillable, plastic-free', url: 'https://www.faithinnature.co.uk/' },
+                    { title: 'Noughty', description: 'UK-based hair care brand certified B Corp, offering vegan and cruelty-free products', keywords: 'noughty, hair care, b corp, vegan, cruelty-free, curly hair, damaged hair, dry hair', url: 'https://www.noughtycare.com/' },
+                    { title: 'Pureology', description: 'Professional hair care brand specializing in color care without compromise', keywords: 'pureology, professional, hair care, color care, dry hair, damaged hair, blonde hair, fine hair', url: 'https://www.pureology.com/' },
+                    { title: 'Maria Nila', description: 'Swedish professional vegan hair care brand, 100% vegan and cruelty-free', keywords: 'maria nila, swedish, professional, vegan, cruelty-free, sulphate-free, paraben-free, color protection', url: 'https://www.marianila.com/' },
+                    { title: 'Umberto Giannini', description: 'UK-based hair care brand defining curls since 1998', keywords: 'umberto giannini, uk, hair care, curls, b corp, vegan, cruelty-free, curl jelly', url: 'https://www.umbertogiannini.com/' },
+                    { title: 'Plant Made', description: 'Plant-based beauty and personal care brand offering vegan and cruelty-free hair care products', keywords: 'plant made, hair care, beauty, personal care, vegan, cruelty-free, sustainable', url: 'https://www.weareplantmade.com/' }
                 ]
             },
             {
@@ -127,7 +159,14 @@ class GlobalSearch {
                 url: 'body-care.html',
                 content: [
                     { title: 'Body Care', description: 'Vegan body care products', keywords: 'body care, bodycare, body lotion, body wash, body scrub, body butter, body oil, vegan body care', url: 'body-care.html' },
-                    { title: 'AKT London', description: 'Premium natural deodorant and body care brand', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' }
+                    { title: 'Och Vegan', description: 'Glasgow-based vegan artisan soaps & cosmetics made by hand', keywords: 'och vegan, glasgow, artisan, soaps, cosmetics, zero-waste, natural, vegan', url: 'https://ochvegan.com/' },
+                    { title: 'Wild', description: 'UK-based brand offering refillable, plastic-free body care powered by nature', keywords: 'wild, deodorant, body care, plastic-free, refillable, compostable, natural, uk', url: 'https://wearewild.com/' },
+                    { title: 'Apple & Bears', description: 'British family-run skincare brand crafting natural, plant-based products', keywords: 'apple bears, british, family, natural, plant-based, cruelty-free, sustainable', url: 'https://appleandbears.com/' },
+                    { title: 'Fussy', description: 'UK-based company offering next-generation sustainable deodorant', keywords: 'fussy, deodorant, sustainable, plastic-free, compostable, probiotic, uk', url: 'https://getfussy.com/' },
+                    { title: 'Napuve', description: 'Natural Pure Vegan brand offering aromatherapy and massage products', keywords: 'napuve, aromatherapy, massage, body care, hair care, essential oils, natural soap', url: 'https://napuve.com/' },
+                    { title: 'The English Soap Company', description: 'Family business crafting luxury vegan soap bars and toiletries', keywords: 'english soap company, luxury, soap bars, toiletries, sussex, hand-finished, sustainable', url: 'https://www.englishsoapcompany.co.uk/' },
+                    { title: 'Original Source', description: 'UK-based brand offering PETA-approved and vegan shower gels', keywords: 'original source, shower gel, peta approved, vegan, natural fragrances, uk', url: 'https://www.originalsource.co.uk/' },
+                    { title: 'AKT London', description: 'Premium natural deodorant and body care brand born to perform', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' }
                 ]
             },
             {
@@ -135,7 +174,10 @@ class GlobalSearch {
                 title: 'Tooth Care',
                 url: 'tooth-care.html',
                 content: [
-                    { title: 'Tooth Care', description: 'Vegan dental care products', keywords: 'tooth care, dental, toothpaste, toothbrush, mouthwash, dental floss, oral care, vegan dental', url: 'tooth-care.html' }
+                    { title: 'Tooth Care', description: 'Vegan dental care products', keywords: 'tooth care, dental, toothpaste, toothbrush, mouthwash, dental floss, oral care, vegan dental', url: 'tooth-care.html' },
+                    { title: 't-brush', description: 'Natural oral care products with toothpaste tablets, toothbrushes, and dental floss', keywords: 't-brush, natural oral care, toothpaste tablets, toothbrushes, dental floss, vegan, plastic-free, travel-friendly', url: 'https://t-brush.com/' },
+                    { title: 'GudYu', description: 'Plastic-free toothpaste tablets with fluoride and hydroxyapatite', keywords: 'gudyu, plastic-free, toothpaste tablets, fluoride, hydroxyapatite, remineralising, whitening, dentist-approved, peta-certified', url: 'https://gudyu.com/' },
+                    { title: 'Sarakan', description: 'Natural dental care with Salvadora persica (toothbrush tree) extract', keywords: 'sarakan, natural dental care, salvadora persica, toothbrush tree, 30 years heritage, fluoride-free, vegan-friendly, oral health foundation', url: 'https://sarakan.co.uk/' }
                 ]
             },
             {
@@ -143,7 +185,12 @@ class GlobalSearch {
                 title: 'Vitamins & Supplements',
                 url: 'vitamins-supplements.html',
                 content: [
-                    { title: 'Vitamins & Supplements', description: 'Vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, b12, iron, calcium, omega, protein powder, vegan supplements', url: 'vitamins-supplements.html' }
+                    { title: 'Vitamins & Supplements', description: 'Vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, b12, iron, calcium, omega, protein powder, vegan supplements', url: 'vitamins-supplements.html' },
+                    { title: 'Vegetology', description: 'Certified vegan and vegetarian supplements with award-winning Omega-3 and collagen alternatives', keywords: 'vegetology, vegan supplements, vegetarian, omega-3, collagen alternatives, health support, certified', url: 'https://vegetology.com/' },
+                    { title: 'Vegums', description: 'Delicious vegan gummy vitamins with 100,000+ happy customers', keywords: 'vegums, vegan gummy vitamins, delicious, science-backed, nutrition, plastic-free packaging', url: 'https://vegums.com/' },
+                    { title: 'Omvits', description: 'UK\'s 1st vegan collagen peptide supplement with thoughtfully designed plant-based supplements', keywords: 'omvits, uk, vegan collagen, peptide supplement, plant-based, vegan society, eco-conscious packaging', url: 'https://omvits.com/' },
+                    { title: 'The Vegan Wellness Co.', description: 'Award-winning vegan healthcare brand with premium nutrition at affordable prices', keywords: 'vegan wellness co, award-winning, vegan healthcare, premium nutrition, affordable, cruelty-free, best vegan healthcare brand 2025', url: 'https://theveganwellnessco.com/' },
+                    { title: 'Love Mushrooms', description: 'The Home of Functional Mushrooms - organic mushroom supplements from Marcassie Farm, Scotland', keywords: 'love mushrooms, functional mushrooms, organic, mushroom supplements, scotland, marcassie farm, lions mane, reishi, cordyceps, maitake, shiitake, menopause, wellness, focus, energy', url: 'https://lovemushrooms.co.uk/' }
                 ]
             },
             {
@@ -159,7 +206,15 @@ class GlobalSearch {
                 title: 'Clothing',
                 url: 'clothing.html',
                 content: [
-                    { title: 'Clothing', description: 'Vegan clothing and apparel', keywords: 'clothing, clothes, apparel, shirts, pants, dresses, tops, bottoms, vegan clothing', url: 'clothing.html' }
+                    { title: 'Clothing', description: 'Vegan clothing and apparel', keywords: 'clothing, clothes, apparel, shirts, pants, dresses, tops, bottoms, vegan clothing', url: 'clothing.html' },
+                    { title: 'Viva La Vegan', description: 'Eco-ethical vegan clothing & accessories with powerful activist messaging', keywords: 'viva la vegan, eco-ethical, vegan clothing, organic cotton, sweatshop-free, animal charities', url: 'https://vivalavegan.com/' },
+                    { title: 'HeartCure Clothing', description: 'Vegan non-profit clothing company creating conscious clothing that supports sanctuaries', keywords: 'heartcure clothing, non-profit, conscious clothing, sanctuaries, activism, vegan', url: 'https://heartcureclothing.com/' },
+                    { title: 'Rogue + Wolf', description: 'UK-based fashion and jewellery designer brand specializing in unique witchin gear', keywords: 'rogue wolf, uk, fashion, jewellery, witchin gear, alternative style, dark aesthetic, botanical, celestial, occult', url: 'https://rogueandwolf.com/' },
+                    { title: 'VO Clothing', description: 'Ethical vegan clothing brand where every purchase helps protect our planet', keywords: 'vo clothing, ethical, vegan clothing, embroidered designs, sustainable materials, planet-conscious', url: 'https://voclothing.co.uk/' },
+                    { title: 'Plant Faced Clothing', description: 'Vegan clothing brand offering sustainable, ethical fashion with plant-based messaging', keywords: 'plant faced clothing, vegan clothing, sustainable, ethical fashion, plant-based messaging, eco-friendly', url: 'https://plantfacedclothing.com/' },
+                    { title: 'Immaculate Vegan', description: 'Premium vegan store bringing you the best vegan and ethical fashion brands', keywords: 'immaculate vegan, premium, vegan store, ethical fashion, vegan shoes, bags, accessories, sustainable clothing', url: 'https://www.immaculatevegan.com/' },
+                    { title: 'Yes Friends', description: 'UK-based ethical and sustainable clothing company making affordable ethical fashion accessible', keywords: 'yes friends, uk, ethical, sustainable clothing, affordable, fairtrade, organic cotton, solar-assisted', url: 'https://yesfriends.com/' },
+                    { title: 'Vegan As Folk', description: 'UK family-run company dedicated to ethical plant-based clothing using organic cotton', keywords: 'vegan as folk, uk, family-run, ethical, plant-based clothing, organic cotton, recycled polyester, wrap, fair wear', url: 'https://veganasfolk.com/' }
                 ]
             },
             {
@@ -167,7 +222,12 @@ class GlobalSearch {
                 title: 'Footwear',
                 url: 'footwear.html',
                 content: [
-                    { title: 'Footwear', description: 'Vegan shoes and footwear', keywords: 'footwear, shoes, boots, sneakers, sandals, heels, flats, vegan shoes, vegan footwear', url: 'footwear.html' }
+                    { title: 'Footwear', description: 'Vegan shoes and footwear', keywords: 'footwear, shoes, boots, sneakers, sandals, heels, flats, vegan shoes, vegan footwear', url: 'footwear.html' },
+                    { title: 'Will\'s Vegan Shoes', description: 'UK-based vegan footwear company at the forefront of vegan shoes since 2012', keywords: 'wills vegan shoes, uk, vegan footwear, goodyear welt, boots, sandals, carbon-neutral, italy, portugal', url: 'https://www.wills-vegan-shoes.com/' },
+                    { title: 'NOAH Italian Vegan Shoes', description: '100% vegan, 100% fair, 100% made in Italy', keywords: 'noah italian vegan shoes, italy, vegan shoes, fair, sustainable materials, traditional craftsmanship', url: 'https://www.noahvegan.com/' },
+                    { title: 'Vegetarian Shoes', description: 'Established in 1990, long-established vegan-friendly footwear company', keywords: 'vegetarian shoes, brighton, uk, vegan shoes, boots, sandals, accessories, established 1990', url: 'https://www.vegetarianshoesandbags.com/' },
+                    { title: 'MoEa', description: 'Bio-based vegan sneakers made from fruits and plants', keywords: 'moea, bio-based, vegan sneakers, fruits, plants, mother earth, low-carbon, animal-free materials', url: 'https://www.moea.com/' },
+                    { title: 'Bohema Clothing', description: 'Vegan footwear and clothing brand', keywords: 'bohema clothing, vegan footwear, vegan clothing, ethical fashion', url: 'https://en.bohemaclothing.com/' }
                 ]
             },
             {
@@ -175,7 +235,11 @@ class GlobalSearch {
                 title: 'Bags & Accessories',
                 url: 'bags-accessories.html',
                 content: [
-                    { title: 'Bags & Accessories', description: 'Vegan bags and accessories', keywords: 'bags, accessories, handbags, backpacks, purses, wallets, belts, vegan bags, vegan accessories', url: 'bags-accessories.html' }
+                    { title: 'Bags & Accessories', description: 'Vegan bags and accessories', keywords: 'bags, accessories, handbags, backpacks, purses, wallets, belts, vegan bags, vegan accessories', url: 'bags-accessories.html' },
+                    { title: 'Matt & Nat', description: 'Premium vegan bags and accessories made with sustainable materials', keywords: 'matt nat, premium, vegan bags, accessories, sustainable materials, backpacks, crossbody bags, totes, wallets', url: 'https://mattandnat.com/' },
+                    { title: 'LaBante London', description: '100% vegan bags and accessories made with sustainable materials since 2011', keywords: 'labante london, vegan bags, accessories, sustainable materials, 2011, cruelty-free, ethically manufactured, portugal, india', url: 'https://labante.com/' },
+                    { title: 'Vendula London', description: 'Voted the Most Innovative Vegan Accessory Brand 3 years running by Lux Life Magazine', keywords: 'vendula london, innovative, vegan accessory brand, lux life magazine, novelty bags, quirky designs, sushi shops, laundromats', url: 'https://vendulalondon.com/' },
+                    { title: 'Mashu', description: 'Women-founded and owned, PETA-certified 100% vegan luxury handbags', keywords: 'mashu, women-founded, peta-certified, vegan luxury handbags, sustainable, contemporary design, artisan craftsmanship, recyclable materials', url: 'https://mashu.co.uk/' }
                 ]
             },
             {
@@ -183,7 +247,12 @@ class GlobalSearch {
                 title: 'Jewellery',
                 url: 'jewellery.html',
                 content: [
-                    { title: 'Jewellery', description: 'Vegan jewellery and accessories', keywords: 'jewellery, rings, necklaces, earrings, bracelets, watches, vegan jewellery', url: 'jewellery.html' }
+                    { title: 'Jewellery', description: 'Vegan jewellery and accessories', keywords: 'jewellery, rings, necklaces, earrings, bracelets, watches, vegan jewellery', url: 'jewellery.html' },
+                    { title: 'Talisman Kind', description: 'Vegan jewellery handmade in North Yorkshire, UK since 2013', keywords: 'talisman kind, vegan jewellery, handmade, north yorkshire, uk, 2013, nature-inspired, eco-friendly, recycled metals, silversmithing, ecologi', url: 'https://talismankind.com/' },
+                    { title: 'Luna Tree', description: 'Handmade ethical silver jewellery and quirky artworks from Cheshire, UK', keywords: 'luna tree, handmade, ethical silver jewellery, quirky artworks, cheshire, uk, fair trade, recycled silver, tribal-inspired, vegan-founded', url: 'https://lunatree.co.uk/' },
+                    { title: 'Heathergems', description: 'Unique handmade Scottish jewellery crafted in Pitlochry from natural heather stems', keywords: 'heathergems, unique, handmade, scottish jewellery, pitlochry, natural heather stems, distinctive scottish variety, sustainable', url: 'https://heathergems.com/' },
+                    { title: 'Serena Jewellery', description: 'Bespoke jewellers located in Cambridge\'s historic Bridge Street', keywords: 'serena jewellery, bespoke jewellers, cambridge, bridge street, custom pieces, vegan design jewellery, ethically sourced diamonds', url: 'https://serenajewellery.co.uk/' },
+                    { title: 'Harbour UK', description: 'Handmade bracelets crafted in London for men, women, and couples', keywords: 'harbour uk, handmade bracelets, london, men, women, couples, adjustable, waterproof, eco-friendly materials, sustainable, artisan-crafted', url: 'https://harbouruk.com/' }
                 ]
             },
             {
@@ -225,6 +294,14 @@ class GlobalSearch {
                 url: 'beverages.html',
                 content: [
                     { title: 'Beverages', description: 'Vegan drinks and beverages', keywords: 'beverages, drinks, juice, smoothies, tea, coffee, plant milk, vegan drinks, vegan beverages', url: 'beverages.html' },
+                    { title: 'DrinkWell', description: 'Alcohol-free beverages and drinks', keywords: 'drinkwell, alcohol-free, non-alcoholic, beverages, drinks', url: 'https://drinkwelluk.com/' },
+                    { title: 'Oatly', description: 'Delicious oat-based plant milk and dairy alternatives', keywords: 'oatly, oat milk, plant milk, dairy-free, coffee, cooking, recipes, vegan milk', url: 'https://www.oatly.com/' },
+                    { title: 'Plamil Foods', description: 'Premium vegan chocolates, spreads, and organic soya milk', keywords: 'plamil, vegan chocolate, spreads, soya milk, organic, dairy-free, uk', url: 'https://plamilfoods.co.uk/' },
+                    { title: 'DUG', description: 'Genius potato-based plant drinks that are creamy and sustainable', keywords: 'dug, potato milk, plant drinks, sustainable, allergen-friendly, coffee', url: 'https://dugdrinks.com/' },
+                    { title: 'Three Spirit', description: 'Non-alcoholic botanical elixirs crafted by plant scientists', keywords: 'three spirit, botanical, elixirs, non-alcoholic, adaptogenic, nootropics', url: 'https://threespiritdrinks.com/' },
+                    { title: 'Vegan Soft Drinks', description: 'Handcrafted post-mix syrups with botanical goodness', keywords: 'vegan soft drinks, syrups, botanical, vegan society, uk', url: 'https://www.vegansoftdrinks.co.uk/' },
+                    { title: 'Living Things', description: 'Low sugar, all natural prebiotic sodas with belly-loving bubbles', keywords: 'living things, prebiotic, soda, low sugar, natural, uk', url: 'https://drinklivingthings.com/' },
+                    { title: 'Innocent', description: 'Delicious smoothies, juices, and healthy drinks made with real fruit', keywords: 'innocent, smoothies, juices, fruit, b corp, healthy drinks', url: 'https://www.innocentdrinks.co.uk/home' },
                     { title: 'Overherd', description: 'Powdered oat milk that you just add water to', keywords: 'overherd, oat milk, powdered, sustainable, dairy-free, plant milk', url: 'https://overherd.uk/' },
                     { title: 'MYOM', description: 'Revolutionary oat milk paste that you make at home', keywords: 'myom, oat milk, paste, home made, dairy-free, plant milk', url: 'https://myom.shop/' }
                 ]
@@ -235,8 +312,21 @@ class GlobalSearch {
                 url: 'snacks-treats.html',
                 content: [
                     { title: 'Snacks & Treats', description: 'Vegan snacks and treats', keywords: 'snacks, treats, sweets, chocolate, candy, cookies, chips, vegan snacks, vegan treats, vegan sweets', url: 'snacks-treats.html' },
-                    { title: 'Based Food', description: 'Plant-based baking and breakfast mixes', keywords: 'based food, baking, breakfast, mixes, plant-based, gluten-free, allergen-free', url: 'https://basedfood.co.uk/' },
-                    { title: 'Vive', description: 'Dangerously delicious plant-based chocolate treats', keywords: 'vive, chocolate, treats, plant-based, vegan chocolate, sweets', url: 'https://eatvive.com/' }
+                    { title: 'Vegan Supermarket', description: 'Your everyday online vegan supermarket with 1000s of animal-free products', keywords: 'vegan supermarket, online, vegan products, cruelty-free', url: 'https://vegansupermarket.com/' },
+                    { title: 'Ombar Chocolate', description: 'Premium organic vegan chocolate made with real, natural ingredients', keywords: 'ombar, chocolate, organic, vegan, oat milk, fair trade', url: 'https://ombar.co.uk/' },
+                    { title: 'Alternative Stores', description: 'Your go-to for free-from, plant-based and vegan products', keywords: 'alternative stores, free-from, plant-based, vegan products', url: 'https://alternativestores.com/' },
+                    { title: 'Vego Chocolate', description: 'Premium vegan chocolate brand offering organic, Fairtrade certified products', keywords: 'vego, chocolate, organic, fairtrade, hazelnut, pralines', url: 'https://vego-chocolate.com/' },
+                    { title: 'Dash Vegan', description: 'For your gluten-free, cruelty-free vegan goodies & eco home wares', keywords: 'dash vegan, gluten-free, cruelty-free, eco, plastic-free', url: 'https://dashvegan.com/' },
+                    { title: 'Navesu', description: 'Naturally Vegan Supermarket - 100% plant-based supermarket', keywords: 'navesu, vegan supermarket, plant-based, delivery', url: 'https://navesu.com/' },
+                    { title: 'H!P Chocolate', description: 'Premium vegan chocolate brand creating creamy, plant-based chocolate', keywords: 'hip chocolate, vegan chocolate, colombian cocoa, oat milk', url: 'https://hipchocolate.com/' },
+                    { title: 'Vegan Town', description: 'UK-based vegan store offering a comprehensive range of plant-based snacks', keywords: 'vegan town, uk, vegan store, snacks, treats', url: 'https://vegantown.co.uk/' },
+                    { title: 'OH MY GOSH IT\'S VEGAN', description: 'UK-based company specializing in 100% vegan sweets and chocolate delights', keywords: 'oh my gosh, vegan sweets, chocolate, sustainable packaging', url: 'https://ohmygoshitsvegan.com/' },
+                    { title: 'Montezuma\'s', description: 'Great British chocolate company offering premium organic and vegan chocolate', keywords: 'montezumas, british chocolate, organic, vegan, sustainable', url: 'https://montezumas.co.uk/' },
+                    { title: 'Rhythm108', description: 'Swiss-made vegan chocolate treats crafted by expert chocolatiers', keywords: 'rhythm108, swiss chocolate, vegan, nuts, oats, cocoa', url: 'https://rhythm108.com/' },
+                    { title: 'Candy Kittens', description: 'London-based gourmet sweets brand making plant-powered sweets', keywords: 'candy kittens, london, gourmet sweets, b corp, jamie laing', url: 'https://candykittens.co.uk/' },
+                    { title: 'Based Food', description: 'Plant-based baking and breakfast mixes made with premium ingredients', keywords: 'based food, baking, breakfast, mixes, plant-based, gluten-free, allergen-free', url: 'https://basedfood.co.uk/' },
+                    { title: 'Vive', description: 'Dangerously delicious plant-based chocolate treats', keywords: 'vive, chocolate, treats, plant-based, vegan chocolate, sweets', url: 'https://eatvive.com/' },
+                    { title: 'Magpye', description: 'Vegan snacks and treats', keywords: 'magpye, snacks, treats, vegan', url: 'https://magpye.co.uk/' }
                 ]
             },
             {
@@ -245,6 +335,10 @@ class GlobalSearch {
                 url: 'frozen-foods.html',
                 content: [
                     { title: 'Frozen Foods', description: 'Vegan frozen foods', keywords: 'frozen foods, frozen, ice cream, frozen meals, frozen vegetables, vegan frozen, vegan ice cream', url: 'frozen-foods.html' },
+                    { title: 'Root Kitchen', description: 'Chef-made plant-based ready meals delivered to your door', keywords: 'root kitchen, ready meals, plant-based, frozen, subscription, carbon-neutral', url: 'https://rootkitchen.co.uk/' },
+                    { title: 'Grubby', description: 'Chef-crafted meal kits and healthy ready meals', keywords: 'grubby, meal kits, ready meals, chef-crafted, healthy, nutritionalist-approved', url: 'https://grubby.co.uk/' },
+                    { title: 'VFC Foods', description: 'Award-winning vegan chicken alternatives', keywords: 'vfc foods, vegan chicken, crispy fillets, tenders, popcorn chicken, asda', url: 'https://vfc-foods.com/' },
+                    { title: 'Strong Roots', description: 'Plant-based frozen foods that are good for you and the planet', keywords: 'strong roots, plant-based, frozen foods, low saturated fat, vegan friendly, no artificial ingredients', url: 'https://strongroots.com/' },
                     { title: 'Shicken Foods', description: 'Vegan versions of everyday favorite foods', keywords: 'shicken foods, vegan, curries, kebabs, wings, sides, plant-based', url: 'https://shickenfoods.com/' }
                 ]
             },
@@ -254,7 +348,13 @@ class GlobalSearch {
                 url: 'bakery.html',
                 content: [
                     { title: 'Bakery', description: 'Vegan bakery and baked goods', keywords: 'bakery, baked goods, bread, cakes, pastries, vegan bakery, vegan baked goods', url: 'bakery.html' },
-                    { title: 'Magpye', description: 'Multi-award winning vegan pies handmade in Northumberland', keywords: 'magpye, vegan pies, handmade, northumberland, organic, sustainable', url: 'https://magpye.co.uk/' }
+                    { title: 'The Vegan Cakery', description: 'Multi-award winning artisan 100% vegan bakery', keywords: 'vegan cakery, artisan, vegan bakery, hand-made, england, wales', url: 'https://thevegancakery.co.uk/' },
+                    { title: 'Vegan Antics', description: '100% vegan café and bakery in Gravesend, Kent', keywords: 'vegan antics, café, bakery, gravesend, kent, cookies, cupcakes, doughnuts', url: 'https://veganantics.co.uk/' },
+                    { title: 'The Female Glaze', description: 'Vegan feminist bakery celebrating feminist icons', keywords: 'female glaze, feminist, bakery, lgbtq, custom cakes, events', url: 'https://thefemaleglaze.com/' },
+                    { title: 'Magpye', description: 'Multi-award winning vegan pies handmade in Northumberland', keywords: 'magpye, vegan pies, handmade, northumberland, organic, sustainable', url: 'https://magpye.co.uk/' },
+                    { title: 'The Dorky French', description: 'Artisan French bakery and café in Glasgow', keywords: 'dorky french, artisan, french bakery, glasgow, viennoiseries', url: 'https://thedorkyfrench.com/' },
+                    { title: 'Pure Bakery Highland', description: 'The UK\'s best and biggest variety of vegan friendly bakes', keywords: 'pure bakery highland, vegan bakes, croy, scotland, stockist', url: 'https://purebakeryhighland.co.uk/' },
+                    { title: 'Carla Bakes', description: 'Gluten-free, vegan & FODMAP friendly bakes handmade in small batches', keywords: 'carla bakes, gluten-free, fodmap, fife, sustainable packaging', url: 'https://carlabakes.com/' }
                 ]
             },
             {
@@ -270,7 +370,12 @@ class GlobalSearch {
                 title: 'Cleaning Essentials',
                 url: 'cleaning-essentials.html',
                 content: [
-                    { title: 'Cleaning Essentials', description: 'Vegan cleaning products', keywords: 'cleaning, essentials, household, detergent, soap, cleaner, vegan cleaning, eco cleaning', url: 'cleaning-essentials.html' }
+                    { title: 'Cleaning Essentials', description: 'Vegan cleaning products', keywords: 'cleaning, essentials, household, detergent, soap, cleaner, vegan cleaning, eco cleaning', url: 'cleaning-essentials.html' },
+                    { title: 'Smol', description: 'Innovative concentrated cleaning products, sustainably packaged and delivered direct', keywords: 'smol, innovative, concentrated cleaning, sustainably packaged, delivered direct, b corporation, free trials', url: 'https://smolproducts.com/' },
+                    { title: 'Astonish', description: 'UK-based cleaning products company offering effective, affordable cleaning solutions', keywords: 'astonish, uk, cleaning products, effective, affordable, as seen on tv, household, bathroom, kitchen, floor, laundry', url: 'https://astonishcleaners.com/' },
+                    { title: 'Bio-D', description: 'UK-produced ethical cleaning and laundry products made from naturally derived ingredients', keywords: 'bio-d, uk-produced, ethical cleaning, laundry products, naturally derived, b corporation, 35 years, hull, east yorkshire', url: 'https://www.biod.co.uk/' },
+                    { title: 'Ecover', description: 'Pioneering eco-friendly cleaning products with a mission to fight waste and protect nature', keywords: 'ecover, eco-friendly, cleaning products, fight waste, protect nature, laundry, dishwashing, household, personal care, refill stations, zero waste', url: 'https://www.ecover.com/' },
+                    { title: 'Method', description: 'Creative cleaning products with consciously chosen ingredients that are tough on dirt and stains', keywords: 'method, creative cleaning, consciously chosen ingredients, tough on dirt, stains, home cleaning, hand, body, laundry, dish, recycled plastic, leaping bunny', url: 'https://methodproducts.com/' }
                 ]
             },
             {
@@ -278,7 +383,13 @@ class GlobalSearch {
                 title: 'Candles',
                 url: 'candles.html',
                 content: [
-                    { title: 'Candles', description: 'Vegan candles and home fragrances', keywords: 'candles, candle, home fragrance, aromatherapy, wax, vegan candles, soy candles', url: 'candles.html' }
+                    { title: 'Candles', description: 'Vegan candles and home fragrances', keywords: 'candles, candle, home fragrance, aromatherapy, wax, vegan candles, soy candles', url: 'candles.html' },
+                    { title: 'Naturally Wicked', description: 'Magical vegan candles including Spellbinding, Voodoo, and Hypnotwist collections', keywords: 'naturally wicked, magical, vegan candles, spellbinding, voodoo, hypnotwist, crystals, mystical', url: 'https://naturallywicked.co.uk/' },
+                    { title: 'Wild Nature Candles', description: 'Eco-friendly soy wax candles and vegan wax melts hand-poured in the UK Cotswolds', keywords: 'wild nature candles, eco-friendly, soy wax, vegan wax melts, cotswolds, sustainable, tree planting', url: 'https://www.wildnaturecandles.co.uk/' },
+                    { title: 'Scents of the Wild', description: 'Natural botanical candles and soy wax melts handcrafted in Scotland', keywords: 'scents of the wild, botanical, candles, soy wax melts, scotland, natural, essential oils, flower petals', url: 'https://scentsofthewild.co.uk/' },
+                    { title: 'The Loyal Candle Company', description: 'Luxury soy wax candles handcrafted in the heart of Scotland', keywords: 'loyal candle company, luxury, soy wax, scotland, handcrafted, natural, vegan-friendly', url: 'https://theloyalcandlecompany.com/' },
+                    { title: 'RinkyDink Candles', description: 'Handmade candles inspired by iconic 90s smells with their Nostalgia Collection', keywords: 'rinkydink candles, handmade, leeds, 90s, nostalgia, school cake, pink custard, soy wax', url: 'https://rinkydinkcandles.co.uk/' },
+                    { title: 'Witch & Twig', description: '100% vegan soy wax candles lovingly handmade and delivered in the UK', keywords: 'witch twig, vegan, soy wax, handmade, uk, essential oils, herbs, flowers, sacred stones, mystical', url: 'https://witchandtwig.com/' }
                 ]
             },
             {
@@ -311,7 +422,13 @@ class GlobalSearch {
                 title: 'Books - Children',
                 url: 'books-children.html',
                 content: [
-                    { title: 'Books - Children', description: 'Vegan children\'s books', keywords: 'books, children, kids, reading, vegan books, children books, kids books', url: 'books-children.html' }
+                    { title: 'Books - Children', description: 'Vegan children\'s books', keywords: 'books, children, kids, reading, vegan books, children books, kids books', url: 'books-children.html' },
+                    { title: 'V Is for Vegan by Ruby Roth', description: 'Introducing 3-7 year olds to the ABCs of a compassionate lifestyle', keywords: 'v is for vegan, ruby roth, children, abc, compassionate lifestyle, rhymes, illustrations, 3-7 years', url: 'https://www.rubyroth.com/' },
+                    { title: 'Your Vegan Kid by Joanna Draus', description: 'A comprehensive guide for parents raising vegan children', keywords: 'your vegan kid, joanna draus, parents, raising vegan children, pregnancy, teenage years, practical advice', url: 'https://www.joannadraus.com/' },
+                    { title: 'Vegan Is Love by Ruby Roth', description: 'Introduces young readers to veganism as a lifestyle of compassion and action', keywords: 'vegan is love, ruby roth, young readers, veganism, compassion, action, daily choices, local, global', url: 'https://www.rubyroth.com/' },
+                    { title: 'That\'s Why We Don\'t Eat Animals by Ruby Roth', description: 'Introduces vegetarianism and veganism to early readers (ages 6-10)', keywords: 'thats why we dont eat animals, ruby roth, vegetarianism, veganism, early readers, 6-10, animal compassion', url: 'https://www.rubyroth.com/' },
+                    { title: 'ROXI the Rescue Dog - Helps the Cows by Carolyn Drew', description: 'A heartwarming story about ROXI the rescue dog helping cows', keywords: 'roxi rescue dog, carolyn drew, heartwarming, rescue dog, cows, animal compassion, rescue work', url: 'https://www.carolyndrew.com/' },
+                    { title: 'Frankie D, Vegan Vampire by Sally Dutra', description: 'A lovable vampire who\'s just trying to fit in', keywords: 'frankie d vegan vampire, sally dutra, vampire, school, new kid, vegan diet, lovable', url: 'https://www.sallydutra.com/' }
                 ]
             },
             {
@@ -439,7 +556,12 @@ class GlobalSearch {
                 title: 'Tattoo Studios',
                 url: 'tattoo-studios.html',
                 content: [
-                    { title: 'Tattoo Studios', description: 'Vegan-friendly tattoo studios', keywords: 'tattoo, tattoos, studio, studios, vegan tattoo, vegan tattoos, body art', url: 'tattoo-studios.html' }
+                    { title: 'Tattoo Studios', description: 'Vegan-friendly tattoo studios', keywords: 'tattoo, tattoos, studio, studios, vegan tattoo, vegan tattoos, body art', url: 'tattoo-studios.html' },
+                    { title: 'Harmless Tattoo', description: 'UK\'s premier vegan and cruelty-free tattoo studio, specializing in vegan tattoos, nail art, and tooth gems', keywords: 'harmless tattoo, uk, premier, vegan, cruelty-free, tattoo studio, nail art, tooth gems, braintree', url: 'https://harmlesstattoo.com/' },
+                    { title: 'Tengu Tattoo Studio', description: 'Vegan, eco-friendly tattoo studio in Bristol, UK', keywords: 'tengu tattoo studio, vegan, eco-friendly, bristol, uk, cruelty-free products, renewable energy, clifton', url: 'https://tengutattoo.com/' },
+                    { title: 'Tribe Tattoo', description: 'Vegan-friendly tattoo studio with locations in Glasgow and Edinburgh, Scotland', keywords: 'tribe tattoo, vegan-friendly, glasgow, edinburgh, scotland, 2000, tattooing, piercing, laser removal', url: 'https://tribetattoo.com/' },
+                    { title: 'Luna Tattoo Glasgow', description: 'Tattoo studio in Glasgow, Scotland offering quality tattooing services', keywords: 'luna tattoo glasgow, tattoo studio, glasgow, scotland, quality tattooing, artistic excellence', url: 'https://lunatattooglasgow.com/' },
+                    { title: 'Mourningstar Collective', description: 'Tattoo collective featuring multiple artists with a focus on quality tattooing and artistic collaboration', keywords: 'mourningstar collective, tattoo collective, multiple artists, quality tattooing, artistic collaboration, newport, uk', url: 'https://mourningstarcollective.com/' }
                 ]
             },
             {
@@ -670,12 +792,14 @@ class GlobalSearch {
                 url: 'cheese.html',
                 content: [
                     { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' },
-                    { title: 'Kinda Co.', description: 'Artisanal vegan cheese made with traditional methods', keywords: 'kinda co, vegan cheese, artisanal, traditional, dairy-free, plant-based cheese', url: 'https://thekindaco.com/' },
-                    { title: 'Tyne Chease', description: 'Handcrafted vegan cheese from the UK', keywords: 'tyne chease, vegan cheese, handcrafted, uk, dairy-free, plant-based', url: 'https://tynechease.com/' },
-                    { title: 'Sheese', description: 'Scottish vegan cheese with authentic taste', keywords: 'sheese, vegan cheese, scottish, authentic, dairy-free, plant-based', url: 'https://buteisland.com/' },
-                    { title: 'Jay & Joy', description: 'French artisan vegan cheese and dairy products', keywords: 'jay and joy, vegan cheese, french, artisan, dairy-free, plant-based', url: 'https://www.jay-joy.com/' },
-                    { title: 'I AM NUT OK', description: 'Nut-based vegan cheese and spreads', keywords: 'i am nut ok, vegan cheese, nut-based, spreads, dairy-free, plant-based', url: 'https://www.iamnutok.com/' },
-                    { title: 'Miyoko\'s Creamery', description: 'Artisan vegan cheese and butter', keywords: 'miyokos, vegan cheese, artisan, butter, dairy-free, plant-based', url: 'https://miyokos.com/' }
+                    { title: 'Kinda Co.', description: 'Award-winning dairy-free cheese handmade in Somerset', keywords: 'kinda co, vegan cheese, artisanal, traditional, dairy-free, plant-based cheese, somerset, great taste award', url: 'https://thekindaco.com/' },
+                    { title: 'Tyne Chease', description: 'The UK\'s first artisan hand-crafted cashew cheese company', keywords: 'tyne chease, vegan cheese, handcrafted, uk, dairy-free, plant-based, cashew, fairtrade', url: 'https://tynechease.com/' },
+                    { title: 'Sheese', description: 'Scottish-made vegan cheese with traditional cheese varieties', keywords: 'sheese, vegan cheese, scottish, authentic, dairy-free, plant-based, cheddar, mozzarella, cream cheese', url: 'https://buteisland.com/' },
+                    { title: 'Violife', description: 'Plant-based cheese alternatives made from coconut oil', keywords: 'violife, vegan cheese, coconut oil, cheddar, mozzarella, feta, cream cheese, dairy-free', url: 'https://violife.com/' },
+                    { title: 'Follow Your Heart', description: 'Pioneering vegan cheese brand offering a wide range of plant-based alternatives', keywords: 'follow your heart, vegan cheese, pioneering, cheddar, mozzarella, parmesan, cream cheese', url: 'https://followyourheart.com/' },
+                    { title: 'Jay & Joy', description: 'France\'s first vegan cheese dairy! Artisanal alternatives to traditional cheeses', keywords: 'jay and joy, vegan cheese, french, artisan, dairy-free, plant-based, almond, cashew, blue cheese, camembert', url: 'https://www.jay-joy.com/' },
+                    { title: 'I AM NUT OK', description: 'Artisan vegan cheese made in London by Angela and Nivi', keywords: 'i am nut ok, vegan cheese, london, hackney, artisanal, dairy-free, plant-based', url: 'https://www.iamnutok.com/' },
+                    { title: 'Miyoko\'s Creamery', description: 'Artisanal vegan cheese made from nuts and traditional fermentation methods', keywords: 'miyokos creamery, vegan cheese, artisanal, nuts, fermentation, cultured, dairy-free, plant-based', url: 'https://miyokos.com/' }
                 ]
             },
             {
