@@ -77,7 +77,8 @@ class GlobalSearch {
                 title: 'Beauty & Skincare',
                 url: 'beauty.html',
                 content: [
-                    { title: 'Beauty & Skincare', description: 'Cruelty-free beauty products', keywords: 'beauty, skincare, cosmetics, cruelty-free, makeup, skincare, personal care, toiletries', url: 'beauty.html' }
+                    { title: 'Beauty & Skincare', description: 'Cruelty-free beauty products', keywords: 'beauty, skincare, cosmetics, cruelty-free, makeup, skincare, personal care, toiletries', url: 'beauty.html' },
+                    { title: 'Re:gn', description: 'UK-based sustainable brand offering eco-friendly beauty products including makeup, skincare, and hair care', keywords: 'regn, re:gn, sustainable, eco-friendly, uk, bamboo, organic, cruelty-free, vegan, zero waste, reusable, affordable, makeup, skincare, hair care, beauty', url: 'https://www.regn.co.uk/' }
                 ]
             },
             {
@@ -166,7 +167,8 @@ class GlobalSearch {
                     { title: 'Napuve', description: 'Natural Pure Vegan brand offering aromatherapy and massage products', keywords: 'napuve, aromatherapy, massage, body care, hair care, essential oils, natural soap', url: 'https://napuve.com/' },
                     { title: 'The English Soap Company', description: 'Family business crafting luxury vegan soap bars and toiletries', keywords: 'english soap company, luxury, soap bars, toiletries, sussex, hand-finished, sustainable', url: 'https://www.englishsoapcompany.co.uk/' },
                     { title: 'Original Source', description: 'UK-based brand offering PETA-approved and vegan shower gels', keywords: 'original source, shower gel, peta approved, vegan, natural fragrances, uk', url: 'https://www.originalsource.co.uk/' },
-                    { title: 'AKT London', description: 'Premium natural deodorant and body care brand born to perform', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' }
+                    { title: 'AKT London', description: 'Premium natural deodorant and body care brand born to perform', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' },
+                    { title: 'Cosy Cottage Soap', description: 'Handmade luxury herb garden soaps and natural skincare products made in Yorkshire with a focus on natural, effective ingredients', keywords: 'cosy cottage soap, handmade, luxury, herb garden, soaps, natural skincare, yorkshire, malton, clara, chemist, sulphate-free, paraben-free, palm oil free, natural deodorant, body care, face care, haircare, candles, workshops, treatments', url: 'https://www.cosycottagesoap.co.uk/' }
                 ]
             },
             {
@@ -177,7 +179,15 @@ class GlobalSearch {
                     { title: 'Tooth Care', description: 'Vegan dental care products', keywords: 'tooth care, dental, toothpaste, toothbrush, mouthwash, dental floss, oral care, vegan dental', url: 'tooth-care.html' },
                     { title: 't-brush', description: 'Natural oral care products with toothpaste tablets, toothbrushes, and dental floss', keywords: 't-brush, natural oral care, toothpaste tablets, toothbrushes, dental floss, vegan, plastic-free, travel-friendly', url: 'https://t-brush.com/' },
                     { title: 'GudYu', description: 'Plastic-free toothpaste tablets with fluoride and hydroxyapatite', keywords: 'gudyu, plastic-free, toothpaste tablets, fluoride, hydroxyapatite, remineralising, whitening, dentist-approved, peta-certified', url: 'https://gudyu.com/' },
-                    { title: 'Sarakan', description: 'Natural dental care with Salvadora persica (toothbrush tree) extract', keywords: 'sarakan, natural dental care, salvadora persica, toothbrush tree, 30 years heritage, fluoride-free, vegan-friendly, oral health foundation', url: 'https://sarakan.co.uk/' }
+                    { title: 'Sarakan', description: 'Natural dental care with Salvadora persica (toothbrush tree) extract', keywords: 'sarakan, natural dental care, salvadora persica, toothbrush tree, 30 years heritage, fluoride-free, vegan-friendly, oral health foundation', url: 'https://sarakan.co.uk/' },
+                    { title: 'Mighty Mouthcare', description: 'Natural, refillable toothpaste with biodegradable refills and dentist-approved formulas', keywords: 'mighty mouthcare, refillable toothpaste, biodegradable refills, dentist approved, plastic-free, english mint, natural whitening, oral microbiome, subscription service, sustainable, microplastic-free, papain enzyme, sls-free', url: 'https://mightymouthcare.com/' },
+                    { title: 'The Humble Co.', description: 'Swedish brand making natural oral care essentials including toothbrushes, toothpaste, dental floss, and accessories', keywords: 'the humble co, humble, swedish, natural oral care, toothbrushes, toothpaste, dental floss, accessories, vegan certified, cosmos certified, sls free, pfas free, ptfe free, plant-based, compostable, sustainable, zero waste, dentist developed, whitening strips, mouthwash, tongue scraper', url: 'https://www.thehumble.co/' },
+                    { title: 'ZING Toothpaste', description: 'UK-made toothpaste that dissolves stains, repairs enamel, and stops sensitivity with hydroxyapatite and natural ingredients', keywords: 'zing toothpaste, uk made, dissolves stains, repairs enamel, stops sensitivity, hydroxyapatite, 1450 ppm fluoride, papain, sls free, titanium dioxide free, cruelty-free, vegan-friendly, 100% recyclable, made in yorkshire, dentist approved, 4.82 rating, 100000 tubes sold, mint, peach, lemon, apple kiwi', url: 'https://zingtoothpaste.com/' },
+                    { title: 'My Green Routine', description: 'Plastic-free personal care products including zero-waste toothpaste tablets, bamboo toothbrushes, and natural hair & body care', keywords: 'my green routine, plastic-free, zero-waste, toothpaste tablets, bamboo toothbrush, natural hair care, body care, organic, compostable, planet friendly, hand crafted, suitcase safe, carbon neutral delivery, 90 day guarantee, remove ocean plastic, plant a tree, 4.8 rating, trustpilot, travel kit, planet protector', url: 'https://mygreenroutine.earth/' },
+                    { title: 'BIOMED', description: 'Natural oral care products blending science and nature with mineral-plant complexes, calcium hydroxyapatite, and arginine for enamel strengthening', keywords: 'biomed, natural oral care, science and nature, mineral-plant complex, arginine, calcium hydroxyapatite, enamel strengthening, reduce sensitivity, soothing gums, switzerland studies, fluoride free, fluoride, dental floss, mouthwash, toothbrush, toothpaste, whitening, natural extracts, herbal gum guardian, sensitive shield, coconut delight, charcoal power', url: 'https://biomed-pro.com/' },
+                    { title: 'Ordo Life', description: 'Premium sonic toothbrushes and oral care products designed by dentists with sustainable practices and affordable pricing', keywords: 'ordo life, sonic toothbrush, water flosser, premium oral care, designed by dentists, sustainable, affordable, vegan friendly, cruelty free, sls free, sonic edge, sonic plus, hydro sonic, travel cases, toothpaste, mouthwash, interdental cleaning, 60 day guarantee, clinically proven, brush head recycling', url: 'https://www.ordolife.com/' },
+                    { title: 'Truthpaste', description: 'UK\'s best zero waste, natural and SLS-free oral care with hydroxyapatite for enamel remineralization and probiotic mouthwash', keywords: 'truthpaste, zero waste, natural oral care, sls free, hydroxyapatite, enamel remineralization, probiotic mouthwash, bamboo toothbrush, dental floss, kids toothpaste, travel, accessories, fluoride free, fluoride, organic botanicals, anti-plaque, antibacterial, anti-inflammatory, bentonite, no artificial additives, no plastics, no palm oil, uk made', url: 'https://truthpaste.co.uk/' },
+                    { title: 'Life Supplies', description: 'World\'s first zero-waste toothpaste with refillable glass and metal bottles, compostable refills, and BioHAP + fluoride formula', keywords: 'life supplies, zero waste toothpaste, refillable, glass bottle, metal bottle, compostable refills, bihap, fluoride, potassium citrate, aloe vera, enamel repair, gum care, whitening, sensitivity relief, sls free, paraben free, vegan, cruelty free, dentist approved, 1450 ppm fluoride, papain, natural mint, 4.5 rating, 1450 reviews, 75,000 people, 330,000 plastic tubes saved', url: 'https://lifesupplies.com/' }
                 ]
             },
             {
@@ -371,11 +381,20 @@ class GlobalSearch {
                 url: 'cleaning-essentials.html',
                 content: [
                     { title: 'Cleaning Essentials', description: 'Vegan cleaning products', keywords: 'cleaning, essentials, household, detergent, soap, cleaner, vegan cleaning, eco cleaning', url: 'cleaning-essentials.html' },
+                    { title: 'Cleaning Essentials - Retailers', description: 'Vegan cleaning product retailers and brands', keywords: 'cleaning retailers, cleaning brands, cleaning stores, vegan cleaning retailers, eco cleaning retailers, cleaning essentials retailers', url: 'cleaning-essentials.html' },
                     { title: 'Smol', description: 'Innovative concentrated cleaning products, sustainably packaged and delivered direct', keywords: 'smol, innovative, concentrated cleaning, sustainably packaged, delivered direct, b corporation, free trials', url: 'https://smolproducts.com/' },
                     { title: 'Astonish', description: 'UK-based cleaning products company offering effective, affordable cleaning solutions', keywords: 'astonish, uk, cleaning products, effective, affordable, as seen on tv, household, bathroom, kitchen, floor, laundry', url: 'https://astonishcleaners.com/' },
                     { title: 'Bio-D', description: 'UK-produced ethical cleaning and laundry products made from naturally derived ingredients', keywords: 'bio-d, uk-produced, ethical cleaning, laundry products, naturally derived, b corporation, 35 years, hull, east yorkshire', url: 'https://www.biod.co.uk/' },
                     { title: 'Ecover', description: 'Pioneering eco-friendly cleaning products with a mission to fight waste and protect nature', keywords: 'ecover, eco-friendly, cleaning products, fight waste, protect nature, laundry, dishwashing, household, personal care, refill stations, zero waste', url: 'https://www.ecover.com/' },
-                    { title: 'Method', description: 'Creative cleaning products with consciously chosen ingredients that are tough on dirt and stains', keywords: 'method, creative cleaning, consciously chosen ingredients, tough on dirt, stains, home cleaning, hand, body, laundry, dish, recycled plastic, leaping bunny', url: 'https://methodproducts.com/' }
+                    { title: 'Method', description: 'Creative cleaning products with consciously chosen ingredients that are tough on dirt and stains', keywords: 'method, creative cleaning, consciously chosen ingredients, tough on dirt, stains, home cleaning, hand, body, laundry, dish, recycled plastic, leaping bunny', url: 'https://methodproducts.com/' },
+                    { title: 'Miniml', description: 'UK-based zero waste cleaning and personal care products with refillable bottles and closed-loop system', keywords: 'miniml, zero waste, refillable, closed loop system, uk, cleaning, personal care, laundry, hand soap, toilet cleaner, shampoo, natural, plant based, cruelty free, independent, british made', url: 'https://minimlrefills.co.uk/' },
+                    { title: 'Re:gn', description: 'UK-based sustainable brand offering eco-friendly products across health, beauty, home, and kitchen categories', keywords: 'regn, re:gn, sustainable, eco-friendly, uk, bamboo, organic, cruelty-free, vegan, zero waste, reusable, affordable, laundry sheets, cleaning, beauty, health, kitchen', url: 'https://www.regn.co.uk/' },
+                    { title: 'Clean Living International', description: 'Probiotic-based eco-cleaning products scientifically proven to clean better than antibacterial cleaners', keywords: 'clean living international, probiotic cleaning, eco-friendly, antibacterial, science-backed, family safe, pet safe, planet safe, 30 day guarantee, free shipping, complete cleaning kit, multi-mop system, laundry essentials', url: 'https://www.cleanlivingint.com/' },
+                    { title: 'nimble cares', description: 'Plant-based, skin-kind cleaning and laundry products safe for families, gentle on homes, and kind to the planet', keywords: 'nimble cares, plant-based, skin-kind, non-bio, child friendly, sensitive skin, fragrance-free, natural water softener, ingredient transparency, not tested on animals, recyclable bottles, laundry detergent, fabric softener, multi-purpose cleaner, baby products', url: 'https://nimblecares.co.uk/' },
+                    { title: 'Tru Earth', description: 'Eco-strips laundry detergent and cleaning products that are ultra-concentrated, plastic-free, and designed to reduce waste', keywords: 'tru earth, eco-strips, laundry detergent, plastic-free, ultra-concentrated, water-activated sheets, recyclable packaging, b corporation, 1% for planet, fabric softener, multi-surface cleaner, dishwasher tablets, toilet bowl cleaner, subscription service, 4 million customers, 50,000 reviews', url: 'https://tru.earth/' },
+                    { title: 'Splosh', description: 'Refillable home cleaning and personal care products with zero plastic waste system, delivered directly from Wales', keywords: 'splosh, refillable, zero plastic waste, wales, uk, cruelty-free, vegan-friendly, all natural, great value, direct delivery, starter packs, bottles, refills, pouch returns, washing up liquid, hand wash, kitchen cleaner, air fryer cleaner, septic tank safe', url: 'https://splosh.com/' },
+                    { title: 'NeatClean', description: 'Stylish refillable aluminum bottles with plant-based cleaning and personal care products, designed to look good and do good for the planet', keywords: 'neatclean, neat clean, stylish bottles, refillable aluminum, plant-based, cruelty-free, made in uk, plastic-free refills, hand wash, body wash, surface cleaner, washing up spray, dishwasher tablets, toilet cleaner, discovery kits, subscription service, 40% off', url: 'https://neatclean.com/' },
+                    { title: 'Simple Living Eco', description: 'Gentle, plant-based laundry and fabric care products that treat fabrics like skin, with clean, skin-kind formulas designed to care for clothes and the planet', keywords: 'simple living eco, plant-based, laundry, fabric care, skin-kind, gentle, non-toxic, eco-friendly, fragrance-free, fragrance, aqualess, laundry detergent sheets, fragrance booster, multi-surface cleaner, dishwasher tablets, hand wash sachets, plastic-free, mindful self-care', url: 'https://simplelivingeco.com/' }
                 ]
             },
             {
@@ -406,7 +425,20 @@ class GlobalSearch {
                 url: 'home-living.html',
                 content: [
                     { title: 'Home & Living', description: 'Sustainable home products', keywords: 'home, living, sustainable, eco, household, decor, furniture, cleaning', url: 'home-living.html' },
-                    { title: 'Textiles & Linens', description: 'Vegan bedding, towels, and home textiles', keywords: 'textiles, linens, bedding, towels, sheets, pillows, mattresses, vegan textiles, eco textiles', url: 'textiles-linens.html' }
+                    { title: 'Textiles & Linens', description: 'Vegan bedding, towels, and home textiles', keywords: 'textiles, linens, bedding, towels, sheets, pillows, mattresses, vegan textiles, eco textiles', url: 'textiles-linens.html' },
+                    { title: 'Re:gn', description: 'UK-based sustainable brand offering eco-friendly home and kitchen products', keywords: 'regn, re:gn, sustainable, eco-friendly, uk, bamboo, organic, cruelty-free, vegan, zero waste, reusable, affordable, home, kitchen, laundry, cleaning, candles', url: 'https://www.regn.co.uk/' },
+                    { title: 'General Household', description: 'Essential household items and home accessories for sustainable living', keywords: 'general household, household items, home accessories, essential items, sustainable living, eco household, home essentials, household products', url: 'general-household.html' }
+                ]
+            },
+            {
+                page: 'general-household.html',
+                title: 'General Household',
+                url: 'general-household.html',
+                content: [
+                    { title: 'General Household', description: 'Essential household items and home accessories for sustainable living', keywords: 'general household, household items, home accessories, essential items, sustainable living, eco household, home essentials, household products', url: 'general-household.html' },
+                    { title: 'Naked Paper', description: 'UK\'s best eco toilet paper, kitchen roll, and tissues made from unbleached bamboo and recycled materials', keywords: 'naked paper, eco toilet paper, bamboo toilet paper, unbleached, recycled toilet paper, kitchen roll, tissues, sustainable paper, fsc certified, climate footprint, 20 million rolls sold, 12000 reviews, fossil fuel free, double length rolls, subscription service', url: 'https://uk.nakedpaper.com/' },
+                    { title: 'The Cheeky Panda', description: 'Sustainable bamboo toilet paper, kitchen roll, tissues, period products, and baby care items that save trees, money and time', keywords: 'cheeky panda, bamboo toilet paper, sustainable toilet paper, bamboo kitchen roll, bamboo tissues, period pads, baby nappies, bamboo wipes, tree-free, double length rolls, subscription service, wwf uk, b corp, fsc certified, cruelty free, vegan, biodegradable, eco friendly, zero waste, bamboo revolution, 8k customers, cheeky savings', url: 'https://uk.cheekypanda.com/' },
+                    { title: 'Who Gives A Crap', description: 'Eco-friendly toilet paper, tissues, kitchen roll, and household products with 50% of profits donated to clean water and sanitation projects', keywords: 'who gives a crap, eco toilet paper, recycled toilet paper, bamboo toilet paper, sustainable tissues, kitchen roll, household products, 50% profits donated, clean water, sanitation, fsc certified, carbon neutral shipping, 100% money back guarantee, over 9 million raised, deforestation reduction, bundles, subscription', url: 'https://uk.whogivesacrap.org/' }
                 ]
             },
             {
@@ -745,6 +777,7 @@ class GlobalSearch {
                     { title: 'Hopefield Animal Sanctuary', description: 'Essex-based sanctuary caring for a variety of rescued animals', keywords: 'hopefield, essex, sanctuary, variety of animals' },
                     { title: 'Lotus Animal Sanctuary', description: 'Sanctuary providing refuge for animals in need', keywords: 'lotus, sanctuary, refuge, animals in need' },
                     { title: 'Pear Tree Animal Sanctuary', description: 'Caring for rescued animals and providing education about animal welfare', keywords: 'pear tree, sanctuary, education, animal welfare' },
+                    { title: 'The Farm Animal Sanctuary', description: 'Established over 30 years ago, the first of its kind in the UK, providing a safe haven for over 600 neglected and abused farm animals', keywords: 'farm animal sanctuary, worcestershire, evesham, 600 animals, 30 years, first sanctuary, jan taylor, manor orchard farm, charity 702287, sponsorship, volunteering, donations, forever home', url: 'https://thefarmanimalsanctuary.co.uk/' },
                     { title: 'Willow Animal Sanctuary', description: 'Providing sanctuary and care for rescued farm animals', keywords: 'willow, sanctuary, farm animals, rescued' }
                 ]
             },
@@ -756,7 +789,7 @@ class GlobalSearch {
                 url: 'vegan-trailblazers.html',
                 content: [
                     { title: 'Donald Watson', description: 'Coined the term "vegan" and founded The Vegan Society in 1944', keywords: 'donald watson, vegan society, founder, 1944' },
-                    { title: 'Freya Dinshah', description: 'Founded the American Vegan Society and promoted veganism in the US', keywords: 'freya dinshah, american vegan society, us veganism' },
+                    { title: 'Genesis Butler', description: 'Young climate and animal rights activist who founded Genesis for Animals and advocates for plant-based living', keywords: 'genesis butler, climate activist, animal rights, genesis for animals, plant-based, young activist, environmentalist, vegan advocate' },
                     { title: 'Fiona Oakes', description: 'Ultra-marathon runner and animal rights activist', keywords: 'fiona oakes, marathon, runner, animal rights, activist' }
                 ]
             },
@@ -1038,11 +1071,19 @@ class GlobalSearch {
                 const searchText = `${item.title} ${item.description} ${item.keywords}`.toLowerCase();
                 
                 if (searchText.includes(query)) {
+                    // Prioritize internal page URLs over external URLs
+                    let targetUrl = page.url; // Default to the page URL
+                    
+                    // Only use item.url if it's an internal page (doesn't start with http)
+                    if (item.url && !item.url.startsWith('http')) {
+                        targetUrl = item.url;
+                    }
+                    
                     results.push({
                         title: item.title,
                         description: item.description,
                         page: page.title,
-                        url: item.url || page.url, // Use item-specific URL if available, otherwise use page URL
+                        url: targetUrl, // Always use internal page URL
                         relevance: this.calculateRelevance(query, searchText)
                     });
                 }
