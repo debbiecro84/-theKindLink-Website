@@ -361,6 +361,16 @@ h3 {
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 1px;
+    animation: scroll-banner 25s linear infinite;
+}
+
+@keyframes scroll-banner {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .banner-content span {
