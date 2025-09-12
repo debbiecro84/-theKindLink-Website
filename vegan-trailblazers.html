@@ -66,16 +66,22 @@
         
         <!-- Mobile Navigation -->
         <nav class="mobile-nav">
+            <div class="mobile-nav-logo">
+                <a href="index.html">
+                    <img src="images/logos/kind-logo.png" alt="The Kind Place" class="mobile-logo">
+                </a>
+            </div>
             <div class="mobile-nav-links">
                 <a href="index.html" class="mobile-nav-link">HOME</a>
                 <a href="explore.html" class="mobile-nav-link">EXPLORE</a>
                 <a href="sanctuaries.html" class="mobile-nav-link">SANCTUARIES</a>
                 <a href="events.html" class="mobile-nav-link">EVENTS</a>
-                <a href="vegan-trailblazers.html" class="mobile-nav-link">TRAILBLAZERS</a>
+                <a href="vegan-trailblazers.html" class="mobile-nav-link active">TRAILBLAZERS</a>
                 <a href="information.html" class="mobile-nav-link">INFORMATION</a>
                 <a href="about.html" class="mobile-nav-link">ABOUT/CONTACT</a>
             </div>
-        </nav>    </header>
+        </nav>
+    </header>
 
     <!-- Page Header -->
     <section class="page-header" style="position: relative; min-height: 400px; overflow: hidden; margin-top: 0; padding-top: 0;">
@@ -105,28 +111,41 @@
     <section class="categories-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
         <div class="container">
             <h2>🔥 Monthly Spotlight</h2>
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 900px; margin: 0 auto;">
-                <h3 style="color: var(--text-medium); margin-bottom: 1rem; text-align: center;">September: Vegan Fashion Pioneers</h3>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-medium); text-align: center; margin-bottom: 2rem;">How ethical style is reshaping wardrobes. From innovative materials to sustainable production, discover the designers and brands leading the fashion revolution toward a more compassionate future.</p>
+            <div class="feature-card" style="max-width: 900px; margin: 0 auto;">
+                <h3 style="text-align: center; margin-bottom: 1rem;">September: Vegan Fashion Pioneers</h3>
+                <p style="text-align: center; margin-bottom: 2rem;">How ethical style is reshaping wardrobes. From innovative materials to sustainable production, discover the designers and brands leading the fashion revolution toward a more compassionate future.</p>
                 
-                <!-- Mini Profile -->
-                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #ff6b35;">
-                    <h4 style="color: var(--text-medium); margin-bottom: 0.5rem; font-size: 1.1rem;">Featured: Stella McCartney</h4>
-                    <p style="color: var(--text-medium); font-size: 0.95rem; line-height: 1.5; margin: 0;">A trailblazer in sustainable luxury fashion, Stella McCartney has never used leather, fur, or feathers in her designs since launching her brand in 2001. She's proven that high fashion can be both glamorous and compassionate, pioneering innovative materials like mushroom leather and recycled polyester.</p>
-                </div>
-                
-                <!-- Quick Facts -->
-                <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <h4 style="color: var(--text-medium); margin-bottom: 1rem; font-size: 1.1rem;">Quick Facts</h4>
-                    <ul style="color: var(--text-medium); font-size: 0.95rem; line-height: 1.6; margin: 0; padding-left: 1.2rem;">
-                        <li style="margin-bottom: 0.5rem;">Mushroom leather is now used by major designers including Hermès and Adidas</li>
-                        <li style="margin-bottom: 0.5rem;">Over 60% of consumers want cruelty-free fashion options</li>
-                        <li style="margin-bottom: 0;">Vegan fashion sales are expected to grow 10% each year through 2025</li>
-                    </ul>
+                <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+                    <!-- Featured Profile -->
+                    <div style="padding: 1.5rem; background: var(--bg-light-gray); border-radius: var(--radius-md); border-left: 4px solid #ff6b35;">
+                        <h4 style="margin-bottom: 0.5rem;">Featured: Stella McCartney</h4>
+                        <p style="margin: 0; font-size: 0.95rem;">A trailblazer in sustainable luxury fashion, Stella McCartney has never used leather, fur, or feathers in her designs since launching her brand in 2001. She's proven that high fashion can be both glamorous and compassionate, pioneering innovative materials like mushroom leather and recycled polyester.</p>
+                    </div>
+                    
+                    <!-- Quick Facts -->
+                    <div style="padding: 1.5rem; background: var(--bg-light-gray); border-radius: var(--radius-md); border-left: 4px solid var(--primary-green);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary-green); display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="font-size: 1.2rem;">📊</span> Quick Facts
+                        </h4>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.1rem; margin-top: 0.1rem;">•</span>
+                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.5;">Mushroom leather is now used by major designers including Hermès and Adidas</p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.1rem; margin-top: 0.1rem;">•</span>
+                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.5;">Over 60% of consumers want cruelty-free fashion options</p>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span style="color: var(--primary-green); font-weight: bold; font-size: 1.1rem; margin-top: 0.1rem;">•</span>
+                                <p style="margin: 0; font-size: 0.95rem; line-height: 1.5;">Vegan fashion sales are expected to grow 10% each year through 2025</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div style="text-align: center;">
-                    <a href="#" class="category-link" style="font-size: 0.9rem;">Next Month: Animal Sanctuaries</a>
+                    <a href="#" class="category-link">Next Month: Animal Sanctuaries</a>
                 </div>
             </div>
         </div>
