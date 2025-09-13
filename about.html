@@ -169,7 +169,7 @@
                 <div style="width: 100%; max-width: 600px;">
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
-                    <form action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleContactFormSubmit(event)">
+                    <form action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleContactFormSubmit(event)" id="contactForm">
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -348,10 +348,17 @@
     <script>
         function handleContactFormSubmit(event) {
             event.preventDefault();
+            console.log('Form submission started');
             
             const form = event.target;
             const submitButton = form.querySelector('.submit-button');
             const originalText = submitButton.textContent;
+            
+            // Validate form
+            if (!form.checkValidity()) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
             
             // Disable button and show loading state
             submitButton.disabled = true;
@@ -359,8 +366,9 @@
             
             // Get form data
             const formData = new FormData(form);
+            console.log('Form data:', Object.fromEntries(formData));
             
-            // Submit form
+            // Try fetch first, then fallback to traditional submission
             fetch(form.action, {
                 method: 'POST',
                 body: formData,
@@ -369,24 +377,55 @@
                 }
             })
             .then(response => {
+                console.log('Response status:', response.status);
+                console.log('Response:', response);
                 if (response.ok) {
                     // Success - show success message
                     showMessage('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
                     form.reset();
                 } else {
-                    // Error - show error message
-                    showMessage('Sorry, there was an error sending your message. Please try again or contact us directly at hello@kindvgnlink.com', 'error');
+                    // Try traditional form submission as fallback
+                    console.log('Fetch failed, trying traditional submission');
+                    submitFormTraditional(form);
                 }
             })
             .catch(error => {
-                // Network error - show error message
-                showMessage('Sorry, there was an error sending your message. Please try again or contact us directly at hello@kindvgnlink.com', 'error');
+                console.error('Form submission error:', error);
+                // Try traditional form submission as fallback
+                console.log('Fetch error, trying traditional submission');
+                submitFormTraditional(form);
             })
             .finally(() => {
                 // Re-enable button
                 submitButton.disabled = false;
                 submitButton.textContent = originalText;
             });
+        }
+        
+        function submitFormTraditional(form) {
+            // Create a temporary form for traditional submission
+            const tempForm = document.createElement('form');
+            tempForm.action = form.action;
+            tempForm.method = 'POST';
+            tempForm.style.display = 'none';
+            
+            // Copy all form data
+            const formData = new FormData(form);
+            for (let [key, value] of formData.entries()) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = value;
+                tempForm.appendChild(input);
+            }
+            
+            // Add to page and submit
+            document.body.appendChild(tempForm);
+            tempForm.submit();
+            
+            // Show success message
+            showMessage('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
+            form.reset();
         }
         
         function showMessage(message, type) {
