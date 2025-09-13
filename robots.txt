@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://thekindlink.com/sitemap.xml
+Sitemap: https://kindvgnlink.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
