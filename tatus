@@ -1,0 +1,5 @@
+[33mc88e5f0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Update website with new header design, favicons, and hero sections
+[33mb0b1d82[m Update robots.txt: Change sitemap URL to new domain
+[33mdcfce72[m Update domain: Change from thekindlink.com to kindvgnlink.com
+[33m2d73fcc[m Update favicons: Change to new kindVGN-link.png logo
+[33m2fddcde[m Fix contact form: Add debugging and fallback submission
