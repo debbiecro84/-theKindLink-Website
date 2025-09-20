@@ -42,7 +42,10 @@ class GlobalSearch {
                 url: 'index.html',
                 content: [
                     { title: 'The Kind Link', description: 'The Link for all things Vegan', keywords: 'home, main, vegan, link' },
-                    { title: 'Explore Now', description: 'Discover amazing vegan products and ethical brands', keywords: 'explore, products, brands' }
+                    { title: 'Explore Now', description: 'Discover amazing vegan products and ethical brands', keywords: 'explore, products, brands' },
+                    { title: 'Upcoming Vegan Events', description: 'Join our community at amazing vegan events and meetups', keywords: 'events, vegan events, festivals, meetups, community, vegan community' },
+                    { title: 'Want to be Featured?', description: 'Get your vegan company featured on Kind VGN Link', keywords: 'featured, company listing, business listing, partnership, advertise, promote, get featured, request listing' },
+                    { title: 'Social Media', description: 'Follow us on Instagram @kindvgnlink for latest vegan updates', keywords: 'social media, instagram, kindvgnlink, follow, social, community, updates, news' }
                 ]
             },
             
@@ -394,7 +397,8 @@ class GlobalSearch {
                     { title: 'Tru Earth', description: 'Eco-strips laundry detergent and cleaning products that are ultra-concentrated, plastic-free, and designed to reduce waste', keywords: 'tru earth, eco-strips, laundry detergent, plastic-free, ultra-concentrated, water-activated sheets, recyclable packaging, b corporation, 1% for planet, fabric softener, multi-surface cleaner, dishwasher tablets, toilet bowl cleaner, subscription service, 4 million customers, 50,000 reviews', url: 'https://tru.earth/' },
                     { title: 'Splosh', description: 'Refillable home cleaning and personal care products with zero plastic waste system, delivered directly from Wales', keywords: 'splosh, refillable, zero plastic waste, wales, uk, cruelty-free, vegan-friendly, all natural, great value, direct delivery, starter packs, bottles, refills, pouch returns, washing up liquid, hand wash, kitchen cleaner, air fryer cleaner, septic tank safe', url: 'https://splosh.com/' },
                     { title: 'NeatClean', description: 'Stylish refillable aluminum bottles with plant-based cleaning and personal care products, designed to look good and do good for the planet', keywords: 'neatclean, neat clean, stylish bottles, refillable aluminum, plant-based, cruelty-free, made in uk, plastic-free refills, hand wash, body wash, surface cleaner, washing up spray, dishwasher tablets, toilet cleaner, discovery kits, subscription service, 40% off', url: 'https://neatclean.com/' },
-                    { title: 'Simple Living Eco', description: 'Gentle, plant-based laundry and fabric care products that treat fabrics like skin, with clean, skin-kind formulas designed to care for clothes and the planet', keywords: 'simple living eco, plant-based, laundry, fabric care, skin-kind, gentle, non-toxic, eco-friendly, fragrance-free, fragrance, aqualess, laundry detergent sheets, fragrance booster, multi-surface cleaner, dishwasher tablets, hand wash sachets, plastic-free, mindful self-care', url: 'https://simplelivingeco.com/' }
+                    { title: 'Simple Living Eco', description: 'Gentle, plant-based laundry and fabric care products that treat fabrics like skin, with clean, skin-kind formulas designed to care for clothes and the planet', keywords: 'simple living eco, plant-based, laundry, fabric care, skin-kind, gentle, non-toxic, eco-friendly, fragrance-free, fragrance, aqualess, laundry detergent sheets, fragrance booster, multi-surface cleaner, dishwasher tablets, hand wash sachets, plastic-free, mindful self-care', url: 'https://simplelivingeco.com/' },
+                    { title: 'Spruce', description: 'Refillable cleaning products with lightweight aluminum Eternity bottles that are unbreakable and infinitely recyclable. Break up with toxic chemicals and single-use plastics with plastic-free, non-toxic refills', keywords: 'spruce, refillable cleaning, aluminum bottles, eternity bottles, plastic-free refills, non-toxic, b corp certified, bio laundry sheets, glass cleaner, eco sponges, floor cleaner, safe ingredients, organic essential oils, zero water shipped, low carbon footprint, home compostable', url: 'https://www.wearespruce.co/' }
                 ]
             },
             {
@@ -403,6 +407,13 @@ class GlobalSearch {
                 url: 'candles.html',
                 content: [
                     { title: 'Candles', description: 'Vegan candles and home fragrances', keywords: 'candles, candle, home fragrance, aromatherapy, wax, vegan candles, soy candles', url: 'candles.html' },
+                    { title: 'Naturally Wicked', description: 'Magical vegan candles including Spellbinding, Voodoo, and Hypnotwist collections with crystals and mystical elements', keywords: 'naturally wicked, magical candles, spellbinding, voodoo, hypnotwist, crystals, mystical elements, free uk delivery', url: 'https://naturallywicked.store/pages/wicked-candles' },
+                    { title: 'Wild Nature Candles', description: 'Eco-friendly soy wax candles and vegan wax melts hand-poured in the UK Cotswolds, inspired by wild beauty of nature', keywords: 'wild nature candles, eco-friendly, soy wax, vegan wax melts, uk cotswolds, wild beauty, plants trees, free uk delivery', url: 'https://www.wildnaturecandles.co.uk/' },
+                    { title: 'Scents of the Wild', description: 'Natural botanical candles and soy wax melts handcrafted in Scotland using 100% natural, vegan and eco-friendly ingredients', keywords: 'scents of the wild, natural botanical candles, soy wax melts, scotland, 100% natural, therapeutic essential oils, flower petals', url: 'https://scentsofthewild.co.uk/' },
+                    { title: 'The Loyal Candle Company', description: 'Luxury soy wax candles handcrafted in the heart of Scotland using 100% natural, vegan-friendly ingredients', keywords: 'loyal candle company, luxury soy wax candles, scotland, 100% natural, vegan-friendly, hand-poured, free shipping', url: 'https://www.theloyalcandlecompany.co.uk/' },
+                    { title: 'RinkyDink Candles', description: 'Handmade in Leeds, England by founder Aimee, inspired by iconic 90s smells with Nostalgia Collection featuring School Cake and Pink Custard', keywords: 'rinkydink candles, leeds, england, aimee, 90s smells, nostalgia collection, school cake, pink custard, eco-friendly soy wax, free uk shipping', url: 'https://rinkydinkcandles.co.uk/' },
+                    { title: 'Witch & Twig', description: '100% vegan soy wax candles lovingly handmade in the UK, infused with natural essential oils, herbs, flowers, and sacred stones', keywords: 'witch and twig, 100% vegan, soy wax candles, uk, libby johnstone, natural essential oils, herbs, flowers, sacred stones, mystical energy', url: 'https://www.witchandtwig.com/' },
+                    { title: 'The Yorkshire Candle Company', description: 'Hand-poured candles made in Yorkshire since 2014, ethically driven with vegan-friendly products and sustainability commitment', keywords: 'yorkshire candle company, hand-poured candles, yorkshire, 2014, ethically driven, vegan-friendly, sustainability, wax melts, reed diffusers, free uk shipping', url: 'https://theyorkshirecandleco.co.uk/' },
                     { title: 'Naturally Wicked', description: 'Magical vegan candles including Spellbinding, Voodoo, and Hypnotwist collections', keywords: 'naturally wicked, magical, vegan candles, spellbinding, voodoo, hypnotwist, crystals, mystical', url: 'https://naturallywicked.co.uk/' },
                     { title: 'Wild Nature Candles', description: 'Eco-friendly soy wax candles and vegan wax melts hand-poured in the UK Cotswolds', keywords: 'wild nature candles, eco-friendly, soy wax, vegan wax melts, cotswolds, sustainable, tree planting', url: 'https://www.wildnaturecandles.co.uk/' },
                     { title: 'Scents of the Wild', description: 'Natural botanical candles and soy wax melts handcrafted in Scotland', keywords: 'scents of the wild, botanical, candles, soy wax melts, scotland, natural, essential oils, flower petals', url: 'https://scentsofthewild.co.uk/' },
@@ -438,7 +449,9 @@ class GlobalSearch {
                     { title: 'General Household', description: 'Essential household items and home accessories for sustainable living', keywords: 'general household, household items, home accessories, essential items, sustainable living, eco household, home essentials, household products', url: 'general-household.html' },
                     { title: 'Naked Paper', description: 'UK\'s best eco toilet paper, kitchen roll, and tissues made from unbleached bamboo and recycled materials', keywords: 'naked paper, eco toilet paper, bamboo toilet paper, unbleached, recycled toilet paper, kitchen roll, tissues, sustainable paper, fsc certified, climate footprint, 20 million rolls sold, 12000 reviews, fossil fuel free, double length rolls, subscription service', url: 'https://uk.nakedpaper.com/' },
                     { title: 'The Cheeky Panda', description: 'Sustainable bamboo toilet paper, kitchen roll, tissues, period products, and baby care items that save trees, money and time', keywords: 'cheeky panda, bamboo toilet paper, sustainable toilet paper, bamboo kitchen roll, bamboo tissues, period pads, baby nappies, bamboo wipes, tree-free, double length rolls, subscription service, wwf uk, b corp, fsc certified, cruelty free, vegan, biodegradable, eco friendly, zero waste, bamboo revolution, 8k customers, cheeky savings', url: 'https://uk.cheekypanda.com/' },
-                    { title: 'Who Gives A Crap', description: 'Eco-friendly toilet paper, tissues, kitchen roll, and household products with 50% of profits donated to clean water and sanitation projects', keywords: 'who gives a crap, eco toilet paper, recycled toilet paper, bamboo toilet paper, sustainable tissues, kitchen roll, household products, 50% profits donated, clean water, sanitation, fsc certified, carbon neutral shipping, 100% money back guarantee, over 9 million raised, deforestation reduction, bundles, subscription', url: 'https://uk.whogivesacrap.org/' }
+                    { title: 'Who Gives A Crap', description: 'Eco-friendly toilet paper, tissues, kitchen roll, and household products with 50% of profits donated to clean water and sanitation projects', keywords: 'who gives a crap, eco toilet paper, recycled toilet paper, bamboo toilet paper, sustainable tissues, kitchen roll, household products, 50% profits donated, clean water, sanitation, fsc certified, carbon neutral shipping, 100% money back guarantee, over 9 million raised, deforestation reduction, bundles, subscription', url: 'https://uk.whogivesacrap.org/' },
+                    { title: 'The Seep Company', description: 'Sustainable eco cleaning tools for a cleaner home, healthier planet and happier humans - 100% plastic-free sponges, scourers, gloves, and bin bags', keywords: 'seep company, eco cleaning tools, plastic-free sponges, scourers, rubber gloves, bin bags, sustainable cleaning, dragons den, b corp, zero plastic, natural materials, recyclable, home compostable, feel good cleaning, 1 billion plastic items eliminated, laura founder', url: 'https://theseepcompany.com/' },
+                    { title: 'Anything But Plastic', description: 'UK-based plastic-free shop offering sustainable alternatives to everyday household products. Features bathroom essentials, cleaning products, laundry items, kitchen accessories, and lifestyle products', keywords: 'anything but plastic, plastic-free shop, uk, sustainable alternatives, household products, bathroom essentials, cleaning products, laundry items, kitchen accessories, lifestyle products, informed choices, material ratings, what does it replace, why is it better, is it worth it, sustainable buying practices', url: 'https://www.anythingbutplastic.co.uk/shop' }
                 ]
             },
             {
@@ -560,6 +573,14 @@ class GlobalSearch {
                 ]
             },
             {
+                page: 'gift-accessories.html',
+                title: 'Gift Accessories',
+                url: 'gift-accessories.html',
+                content: [
+                    { title: 'Gift Accessories', description: 'Vegan gift accessories and presents', keywords: 'gift accessories, presents, vegan gifts, accessories, souvenirs', url: 'gift-accessories.html' }
+                ]
+            },
+            {
                 page: 'gifts-baskets.html',
                 title: 'Gift Baskets',
                 url: 'gifts-baskets.html',
@@ -601,7 +622,8 @@ class GlobalSearch {
                 title: 'Restaurants',
                 url: 'restaurants.html',
                 content: [
-                    { title: 'Restaurants', description: 'Vegan restaurants and dining', keywords: 'restaurants, dining, food, vegan restaurants, vegan food, eating out', url: 'restaurants.html' }
+                    { title: 'Restaurants', description: 'Vegan restaurants and dining', keywords: 'restaurants, dining, food, vegan restaurants, vegan food, eating out', url: 'restaurants.html' },
+                    { title: 'Suggest a Restaurant', description: 'Know a great vegan restaurant that we should add? Help us grow our directory by sharing your favorite spots!', keywords: 'suggest restaurant, add restaurant, directory, vegan restaurant, share, favorite spots, help grow', url: 'restaurants.html' }
                 ]
             },
             {
@@ -657,7 +679,11 @@ class GlobalSearch {
                 title: 'London Restaurants',
                 url: 'london-restaurants.html',
                 content: [
-                    { title: 'London Restaurants', description: 'Vegan restaurants in London', keywords: 'london, restaurants, vegan london, london dining, uk restaurants', url: 'london-restaurants.html' }
+                    { title: 'London Restaurants', description: 'Vegan restaurants in London', keywords: 'london, restaurants, vegan london, london dining, uk restaurants', url: 'london-restaurants.html' },
+                    { title: 'Tofu Vegan', description: 'Dedicated vegan restaurant offering innovative plant-based cuisine with a focus on tofu-based dishes', keywords: 'tofu vegan, vegan restaurant, london, plant-based, tofu dishes, innovative cuisine', url: 'https://www.tofuvegan.com/home' },
+                    { title: 'Plates Restaurant London', description: 'Fine dining plant-based restaurant by chef Kirk Haworth featuring seasonal menus of nature-inspired creativity', keywords: 'plates restaurant, london, fine dining, plant-based, kirk haworth, seasonal menu, nature-inspired', url: 'https://plates-london.com/plant-based-restaurant-london/' },
+                    { title: 'Gauthier Soho', description: 'Elegant fine dining restaurant in the heart of Soho, London offering sophisticated cuisine', keywords: 'gauthier soho, london, fine dining, soho, elegant, sophisticated cuisine, reservations', url: 'https://www.gauthiersoho.co.uk/' },
+                    { title: 'Studio Gauthier', description: 'Alexis Gauthier\'s exciting new restaurant featuring a 100% animal-free menu in a relaxed, chic setting', keywords: 'studio gauthier, alexis gauthier, london, animal-free menu, relaxed, chic, modern cuisine', url: 'https://www.studiogauthier.co.uk/' }
                 ]
             },
             {
@@ -665,7 +691,11 @@ class GlobalSearch {
                 title: 'Manchester Restaurants',
                 url: 'manchester-restaurants.html',
                 content: [
-                    { title: 'Manchester Restaurants', description: 'Vegan restaurants in Manchester', keywords: 'manchester, restaurants, vegan manchester, manchester dining, uk restaurants', url: 'manchester-restaurants.html' }
+                    { title: 'Manchester Restaurants', description: 'Vegan restaurants in Manchester', keywords: 'manchester, restaurants, vegan manchester, manchester dining, uk restaurants', url: 'manchester-restaurants.html' },
+                    { title: 'Purezza Manchester', description: 'Award-winning vegan restaurant in Manchester\'s Northern Quarter offering the finest vegan pizza, pasta, burgers', keywords: 'purezza, manchester, award-winning, vegan pizza, pasta, burgers, northern quarter, wood-fired oven', url: 'https://purezza.co.uk/locations/manchester/' },
+                    { title: 'Lotus Plant Based Kitchen', description: 'Established in 2014, Lotus serves vibrant, flavorful pan-Asian cuisine with fresh ingredients in Withington', keywords: 'lotus plant based, manchester, withington, pan-asian cuisine, flavorful, fresh ingredients, 2014', url: 'https://www.lotusplantbasedkitchen.com/' },
+                    { title: 'Wholesome Junkies', description: 'Vegan restaurant in Manchester\'s Northern Quarter at Hinterland Bar offering unique events and menu specials', keywords: 'wholesome junkies, manchester, northern quarter, hinterland bar, events, menu specials, themed nights', url: 'https://www.wholesomejunkies.co.uk/' },
+                    { title: 'Ortica Plant Based', description: 'Fully vegan Italian bar and deli offering an authentic Italian dining experience in Manchester', keywords: 'ortica plant based, manchester, italian, bar, deli, authentic italian, family-run, plant-based italian', url: 'https://www.orticarestaurant.com/' }
                 ]
             },
             {
@@ -681,7 +711,12 @@ class GlobalSearch {
                 title: 'Glasgow Restaurants',
                 url: 'glasgow-restaurants.html',
                 content: [
-                    { title: 'Glasgow Restaurants', description: 'Vegan restaurants in Glasgow', keywords: 'glasgow, scotland, restaurants, vegan glasgow, glasgow dining, scottish restaurants', url: 'glasgow-restaurants.html' }
+                    { title: 'Glasgow Restaurants', description: 'Vegan restaurants in Glasgow', keywords: 'glasgow, scotland, restaurants, vegan glasgow, glasgow dining, scottish restaurants', url: 'glasgow-restaurants.html' },
+                    { title: 'Mono Vegan Cafe Bar & Venue', description: 'Established in 2002, offering quality vegan food, drinks, and live music events in Glasgow\'s Kings Court', keywords: 'mono vegan, glasgow, 2002, vegan food, drinks, live music, kings court, venue', url: 'https://www.monocafebar.com/' },
+                    { title: 'The 78 Vegan Bar & Restaurant', description: 'Popular vegan bar and restaurant in Glasgow\'s West End, known for its relaxed atmosphere and great food', keywords: 'the 78, glasgow, west end, vegan bar, restaurant, relaxed atmosphere, great food', url: 'https://www.the78.co.uk/' },
+                    { title: 'Suissi Vegan Kitchen', description: 'Delicious vegan cuisine in Glasgow, offering plant-based dishes with a focus on quality and taste', keywords: 'suissi vegan kitchen, glasgow, plant-based dishes, quality, taste, delicious vegan cuisine', url: 'https://www.suissi.co.uk/' },
+                    { title: 'Non Viet Vietnamese Cuisine', description: 'Glasgow\'s first choice for authentic Vietnamese cuisine, with multiple locations offering traditional Vietnamese dishes', keywords: 'non viet, glasgow, vietnamese cuisine, authentic, traditional vietnamese dishes, multiple locations', url: 'https://nonviet.co.uk/' },
+                    { title: 'Stereo Vegan Bar & Cafe', description: 'Vegan bar and cafe in Glasgow\'s city centre, known for its live music and plant-based menu', keywords: 'stereo vegan, glasgow, city centre, vegan bar, cafe, live music, plant-based menu', url: 'https://www.stereocafebar.com/' }
                 ]
             },
             {
@@ -689,7 +724,13 @@ class GlobalSearch {
                 title: 'Edinburgh Restaurants',
                 url: 'edinburgh-restaurants.html',
                 content: [
-                    { title: 'Edinburgh Restaurants', description: 'Vegan restaurants in Edinburgh', keywords: 'edinburgh, scotland, restaurants, vegan edinburgh, edinburgh dining, scottish restaurants', url: 'edinburgh-restaurants.html' }
+                    { title: 'Edinburgh Restaurants', description: 'Vegan restaurants in Edinburgh', keywords: 'edinburgh, scotland, restaurants, vegan edinburgh, edinburgh dining, scottish restaurants', url: 'edinburgh-restaurants.html' },
+                    { title: 'Soul Vegan', description: 'A heaven for vegan food lovers, serving 100% organic plant-based cuisine in Edinburgh\'s vibrant food scene', keywords: 'soul vegan, edinburgh, organic, plant-based, vibrant food scene, vegan food lovers', url: 'https://soulvegan.uk/' },
+                    { title: 'Chapter One Coffee Shop', description: 'Scotland\'s first woman-owned vegan coffee shop and micro roaster since 2015 with fresh coffee beans from women-owned coops', keywords: 'chapter one coffee, edinburgh, scotland, woman-owned, vegan coffee shop, micro roaster, 2015', url: 'https://www.chapterone.coffee/' },
+                    { title: 'PULSE PlantBased', description: 'Plant-based kitchen & eatery at St John\'s Church, Edinburgh serving whole, unprocessed and organic ingredients', keywords: 'pulse plantbased, edinburgh, st johns church, whole ingredients, unprocessed, organic, plant-based kitchen', url: 'http://www.pulsehomecooking.com/' },
+                    { title: 'Sen Viet Vegan Restaurant', description: 'Proudly No.1 Vietnamese Vegan Only Restaurant in London. Authentic Vietnamese cuisine turned 100% vegan since April 2022', keywords: 'sen viet, vietnamese, vegan restaurant, london, authentic vietnamese, april 2022, number 1', url: 'https://www.senvietchay.co.uk/home' },
+                    { title: 'Holy Cow Vegan Café', description: 'One of Edinburgh\'s first fully vegan cafés since 2016, famous for mouth-watering homemade vegan burgers', keywords: 'holy cow, edinburgh, vegan café, 2016, homemade vegan burgers, fresh organic ingredients', url: 'https://holycow.cafe/' },
+                    { title: 'Curran Geal', description: 'Vegan restaurant in Edinburgh - details to be updated', keywords: 'curran geal, edinburgh, vegan restaurant', url: 'https://www.facebook.com/currangeal/' }
                 ]
             },
             {
@@ -697,7 +738,9 @@ class GlobalSearch {
                 title: 'Leeds Restaurants',
                 url: 'leeds-restaurants.html',
                 content: [
-                    { title: 'Leeds Restaurants', description: 'Vegan restaurants in Leeds', keywords: 'leeds, restaurants, vegan leeds, leeds dining, uk restaurants', url: 'leeds-restaurants.html' }
+                    { title: 'Leeds Restaurants', description: 'Vegan restaurants in Leeds', keywords: 'leeds, restaurants, vegan leeds, leeds dining, uk restaurants', url: 'leeds-restaurants.html' },
+                    { title: 'Fat Annie\'s Stateside Street Food', description: 'Established in 2014, serving quality vegan hot dogs, burgers, and banging sides at Leeds Kirkgate Market with 5-star food hygiene rating', keywords: 'fat annies, leeds, kirkgate market, vegan hot dogs, burgers, street food, 5-star hygiene, 2014, new york inspired', url: 'https://fatannies.co.uk/' },
+                    { title: 'Döner Summer', description: 'Modern vegan döner restaurant offering fresh, plant-based döner wraps and dishes with table booking and gift cards', keywords: 'doner summer, leeds, vegan doner, wraps, table booking, gift cards, modern, contemporary dining', url: 'https://www.donersummer.com/' }
                 ]
             },
             {
@@ -705,7 +748,11 @@ class GlobalSearch {
                 title: 'Newcastle Restaurants',
                 url: 'newcastle-restaurants.html',
                 content: [
-                    { title: 'Newcastle Restaurants', description: 'Vegan restaurants in Newcastle', keywords: 'newcastle, restaurants, vegan newcastle, newcastle dining, uk restaurants', url: 'newcastle-restaurants.html' }
+                    { title: 'Newcastle Restaurants', description: 'Vegan restaurants in Newcastle', keywords: 'newcastle, restaurants, vegan newcastle, newcastle dining, uk restaurants', url: 'newcastle-restaurants.html' },
+                    { title: 'Vegano', description: 'Delicious, cruelty-free food in a modern and cosy setting', keywords: 'vegano, vegan restaurant, newcastle, cruelty-free, modern, cosy, dining', url: 'https://www.vegano.uk.com/' },
+                    { title: 'SnackWallah', description: 'Authentic vegan Indian street food at Newcastle Grainger Market', keywords: 'snackwallah, indian street food, vegan, newcastle, grainger market, authentic, indian cuisine', url: 'https://snackwallahuk.onepage.website/' },
+                    { title: 'Veganatomy', description: 'Plant-based dining experience in Newcastle', keywords: 'veganatomy, plant-based, dining, newcastle, vegan restaurant, experience', url: 'https://www.veganatomy.co.uk/' },
+                    { title: 'Glazed Handmade Donuts', description: 'Damn good vegan donuts, artisan cakes & plant-based pastries', keywords: 'glazed handmade donuts, vegan donuts, artisan cakes, plant-based pastries, newcastle, desserts', url: 'https://glazedhandmadedonuts.co.uk/' }
                 ]
             },
             {
@@ -721,7 +768,9 @@ class GlobalSearch {
                 title: 'Brighton Restaurants',
                 url: 'brighton-restaurants.html',
                 content: [
-                    { title: 'Brighton Restaurants', description: 'Vegan restaurants in Brighton', keywords: 'brighton, restaurants, vegan brighton, brighton dining, uk restaurants', url: 'brighton-restaurants.html' }
+                    { title: 'Brighton Restaurants', description: 'Vegan restaurants in Brighton', keywords: 'brighton, restaurants, vegan brighton, brighton dining, uk restaurants', url: 'brighton-restaurants.html' },
+                    { title: 'Bonsai Plant Kitchen', description: 'Plant-based restaurant in Brighton offering innovative cuisine with Japanese-inspired elements, featuring chef\'s tasting menu and outdoor dining', keywords: 'bonsai plant kitchen, brighton, japanese-inspired, chef tasting menu, outdoor dining, baker street, sustainable dining', url: 'https://www.bonsaiplantkitchen.co.uk/' },
+                    { title: 'Oowee Vegan', description: 'Making the fast food of the future with an obsession for flavor! Serving deliciously vegan comfort food including classic double cheeseburgers and signature milkshakes', keywords: 'oowee vegan, brighton, fast food, vegan comfort food, cheeseburgers, milkshakes, market street, delivery, click collect', url: 'https://ooweevegan.com/' }
                 ]
             },
             {
@@ -740,10 +789,11 @@ class GlobalSearch {
                 url: 'events.html',
                 content: [
                     { title: 'Bournemouth Vegan Festival', description: 'Join The Vegan Events UK Movement - 6 September 2025', keywords: 'bournemouth, festival, september, 2025, events, vegan events' },
-                    { title: 'Leicester Vegan Festival', description: 'Join The Vegan Events UK Movement - 13 September 2025', keywords: 'leicester, festival, september, 2025, events, vegan events' },
-                    { title: 'Portsmouth Vegan Festival', description: 'Join The Vegan Events UK Movement - 20 September 2025', keywords: 'portsmouth, festival, september, 2025, events, vegan events' },
-                    { title: 'Essex Vegan Festival', description: 'Join The Vegan Events UK Movement - 4 October 2025', keywords: 'essex, festival, october, 2025, events, vegan events' },
-                    { title: 'Sheffield Vegan Festival', description: 'Join The Vegan Events UK Movement - 12 October 2025', keywords: 'sheffield, festival, october, 2025, events, vegan events' },
+                    { title: 'Leicester Vegan Festival 2025', description: 'Join The Vegan Events UK Movement - 13 September 2025', keywords: 'leicester, festival, september, 2025, events, vegan events' },
+                    { title: 'Portsmouth Vegan Festival 2025', description: 'Join The Vegan Events UK Movement - 20 September 2025', keywords: 'portsmouth, festival, september, 2025, events, vegan events' },
+                    { title: 'Bournemouth Vegan Festival 2025', description: 'Join The Vegan Events UK Movement - 5 October 2025', keywords: 'bournemouth, festival, october, 2025, events, vegan events' },
+                    { title: 'Essex Vegan Festival 2025', description: 'Join The Vegan Events UK Movement - 12 October 2025', keywords: 'essex, festival, october, 2025, events, vegan events' },
+                    { title: 'Sheffield Vegan Festival 2025', description: 'Join The Vegan Events UK Movement - 2 November 2025', keywords: 'sheffield, festival, november, 2025, events, vegan events' },
                     { title: 'Glasgow Vegan Festival', description: 'Join The Vegan Events UK Movement - 18 October 2025', keywords: 'glasgow, scotland, festival, october, 2025, events, vegan events' },
                     { title: 'Northern Vegan Christmas Festival', description: 'Join The Vegan Events UK Movement - 1 November 2025', keywords: 'manchester, christmas, festival, november, 2025, events, vegan events, xmas' },
                     { title: 'Newcastle Vegan Festival', description: 'Join The Vegan Events UK Movement - 15 November 2025', keywords: 'newcastle, festival, november, 2025, events, vegan events' },
