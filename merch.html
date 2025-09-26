@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch Shop - Kind VGN Link | Vegan Merchandise & Apparel</title>
+    <link rel="icon" type="image/png" href="images/logos/kindVGN-link.png">
+    <link rel="shortcut icon" type="image/png" href="images/logos/kindVGN-link.png">
+    <link rel="apple-touch-icon" href="images/logos/kindVGN-link.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Shop Kind VGN Link merchandise! Discover vegan-themed apparel, accessories, and lifestyle products that celebrate compassionate living. Support our mission with every purchase.">
+    <meta name="keywords" content="vegan merchandise, vegan apparel, vegan accessories, cruelty-free products, ethical shopping, vegan lifestyle, plant-based clothing">
+    <meta name="author" content="Kind VGN Link">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Merch Shop - Kind VGN Link">
+    <meta property="og:description" content="Shop vegan-themed merchandise and support our mission of connecting people to a kinder world.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kindvgnlink.com/merch.html">
+    <meta property="og:image" content="https://kindvgnlink.com/images/logos/kindVGN-link.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kindvgnlink.com/merch.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Kind VGN Link Merch Shop",
+        "description": "Vegan merchandise and apparel celebrating compassionate living",
+        "url": "https://kindvgnlink.com/merch.html",
+        "logo": "https://kindvgnlink.com/images/logos/kindVGN-link.png",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/global-search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fredoka+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Merch Page Specific Styles */
+        .merch-hero {
+            background: linear-gradient(135deg, #7a8a6a 0%, #5a6b4a 100%);
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .merch-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .merch-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .merch-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .merch-stat {
+            text-align: center;
+        }
+        
+        .merch-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #e55a2b;
+            display: block;
+        }
+        
+        .merch-stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .merch-categories {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .category-image {
+            height: 250px;
+            background: linear-gradient(45deg, #7a8a6a, #5a6b4a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .category-image i {
+            font-size: 4rem;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .category-content {
+            padding: 2rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .category-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .category-count {
+            color: #e55a2b;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .featured-products {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .product-image {
+            height: 250px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #e55a2b;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #e55a2b;
+            margin-bottom: 1rem;
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn-primary {
+            background: #ff6b35;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #7a8a6a;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #7a8a6a;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #7a8a6a;
+            color: white;
+        }
+        
+        .merch-cta {
+            background: linear-gradient(135deg, #7a8a6a 0%, #5a6b4a 100%);
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .merch-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .merch-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #e55a2b;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #e55a2b;
+        }
+        
+        .mission-statement {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .statement-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .statement-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .statement-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+        
+        .statement-content p:last-child {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #7a8a6a;
+        }
+        
+        .coming-soon {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .coming-soon h3 {
+            color: #7a8a6a;
+            margin-bottom: 1rem;
+        }
+        
+        .coming-soon p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .email-signup {
+            display: flex;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+        
+        .email-submit {
+            background: #7a8a6a;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .merch-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .merch-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .statement-content h2 {
+                font-size: 2rem;
+            }
+            
+            .statement-content p {
+                font-size: 1.1rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .email-signup {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="merch-page">
+    <!-- Header -->
+    <header class="header">
+        <!-- Moving Banner -->
+        <div class="moving-banner">
+            <div class="banner-content">
+                <span>🌱 Welcome to Kind VGN Link - Your Gateway to a Kinder World 🌱</span>
+                <span>🌱 Discover Amazing Vegan Products & Ethical Brands 🌱</span>
+                <span>🌱 Connecting You to a Kinder World 🌱</span>
+                <span>🌱 Discover, Learn, and Live Kindly Every Day 🌱</span>
+                <span>🌱 Your One-Stop Hub for All Things Vegan  🌱</span>
+            </div>
+        </div>
+        
+        <!-- Top Section - Logo Only -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-square">
+                            <img src="images/logos/kindVGN-link.png" alt="Kind VGN Link Logo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Section - Navigation -->
+        <div class="header-bottom">
+            <div class="header-bottom-container">
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="explore.html" class="nav-link">EXPLORE</a>
+                    <a href="sanctuaries.html" class="nav-link">SANCTUARIES</a>
+                    <a href="events.html" class="nav-link">EVENTS</a>
+                    <a href="vegan-trailblazers.html" class="nav-link">TRAILBLAZERS</a>
+                    <a href="information.html" class="nav-link">INFORMATION</a>
+                    <a href="merch.html" class="nav-link active">MERCH</a>
+                    <a href="about.html" class="nav-link">ABOUT/CONTACT</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-trigger-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-logo">
+                <a href="index.html">
+                    <img src="images/logos/kindVGN-link.png" alt="Kind VGN Link" class="mobile-logo">
+                </a>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">HOME</a>
+                <a href="explore.html" class="mobile-nav-link">EXPLORE</a>
+                <a href="sanctuaries.html" class="mobile-nav-link">SANCTUARIES</a>
+                <a href="events.html" class="mobile-nav-link">EVENTS</a>
+                <a href="vegan-trailblazers.html" class="mobile-nav-link">TRAILBLAZERS</a>
+                <a href="information.html" class="mobile-nav-link">INFORMATION</a>
+                <a href="merch.html" class="mobile-nav-link active">MERCH</a>
+                <a href="about.html" class="mobile-nav-link">ABOUT/CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Merch Hero Section -->
+    <section class="merch-hero">
+        <div class="container">
+            <h1>Kind VGN Link Merch</h1>
+            <p>Wear your values with pride. Support our mission with every purchase.</p>
+            <p style="font-size: 1.1rem; margin-top: 1rem; color: #ff6b35; font-weight: 600;"><i class="fas fa-external-link-alt"></i> All purchases are made through our dedicated online store</p>
+            
+        </div>
+    </section>
+
+
+    <!-- Mission Statement -->
+    <section class="mission-statement">
+        <div class="container">
+            <div class="statement-content">
+                <h2>This isn't just merch — it's a movement.</h2>
+                <p>I created Kind VGN Link merch so that when you wear it, people notice, ask questions, and start conversations. It's about sparking curiosity, opening minds, and showing that kindness and vegan living go hand in hand.</p>
+                <p>Every design is simple but powerful — made to be seen, shared, and felt. When someone asks "What does that mean?" you get the chance to tell the story. That's where change begins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Products</h2>
+            <p class="section-subtitle">Our most popular vegan merchandise</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Bestseller</div>
+                        <img src="images/merch/Kind VGN Link Logo Zipper.webp" alt="Kind VGN Link Logo Zipper Hoodie" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Logo Zip Hoodie</h3>
+                        <p class="product-description">Comfortable, sustainable hoodie featuring the Kind VGN Link logo. And available in multiple colours and sizes.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-zipper/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <img src="images/merch/Kind VGN Link Mug.webp" alt="Kind VGN Link Mug" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Mug</h3>
+                        <p class="product-description">Ceramic mug featuring the Kind VGN Link logo. Perfect for your morning coffee or tea and available in multiple colours.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-mug/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link Logo T-shirt.webp" alt="Kind VGN Link Logo T-Shirt" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Logo T-Shirt</h3>
+                        <p class="product-description">Comfortable t-shirt featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-t-shirt/Black" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link Logo Hoodie.webp" alt="Kind VGN Link Logo Hoodie" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Logo Hoodie</h3>
+                        <p class="product-description">Comfortable hoodie featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours including Stone Blue.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-hoodie/Stone%20Blue" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/The Kind VGN Link Eco Notebook.webp" alt="Kind VGN Link Eco Notebook" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Eco Notebook</h3>
+                        <p class="product-description">Sustainable notebook featuring the Kind VGN Link logo. Perfect for jotting down ideas, recipes, or thoughts about your vegan journey.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/the-kind-vgn-link-eco-notebook/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link Jumper.webp" alt="Kind VGN Link Jumper" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Jumper</h3>
+                        <p class="product-description">Comfortable jumper featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-jumper/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link logo reusable bottle.webp" alt="Kind VGN Link Reusable Bottle" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Reusable Bottle</h3>
+                        <p class="product-description">Sustainable reusable bottle featuring the Kind VGN Link logo. Perfect for staying hydrated while showing your support for the movement.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-reusable-bottle/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link Logo Jumper.webp" alt="Kind VGN Link Logo Jumper" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Logo Jumper</h3>
+                        <p class="product-description">Warm and comfortable jumper featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-jumper/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/merch/Kind VGN Link Logo Cap.webp" alt="Kind VGN Link Logo Cap" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Kind VGN Link Logo Cap</h3>
+                        <p class="product-description">Stylish cap featuring the Kind VGN Link logo. Perfect for sunny days and outdoor activities while showing your support for the movement.</p>
+                        <div class="product-actions">
+                            <a href="https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-cap/" class="btn-primary" target="_blank">Shop Now</a>
+                            <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-secondary" target="_blank">View All Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon">
+        <div class="container">
+            <h3>More Products Coming Soon!</h3>
+            <p>We're constantly adding new vegan merchandise to our collection. Be the first to know about new arrivals and exclusive offers.</p>
+            
+            <div class="email-signup">
+                <input type="email" class="email-input" placeholder="Enter your email address">
+                <button class="email-submit">Notify Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merch CTA Section -->
+    <section class="merch-cta">
+        <div class="container">
+            <h2>Support Our Mission</h2>
+            <p>Every purchase helps us continue our work of connecting people to a kinder world and supporting animal sanctuaries.</p>
+            
+            <div class="cta-buttons">
+                <a href="https://kind-vgn-link.teemill.com/collection/kind-vgn-link-merch/" class="btn-white" target="_blank">Shop All Products</a>
+                <a href="about.html" class="btn-outline">Learn About Our Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logos/kindVGN-link.png" alt="Kind VGN Link Logo">
+                    </div>
+                    <p class="footer-tagline">The Vegan One Stop Shop</p>
+                    <p class="footer-description">Connecting you with amazing vegan businesses, sanctuaries, and resources across the UK and Ireland.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="explore.html">All Categories</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="sanctuaries.html">Sanctuaries</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="vegan-trailblazers.html">Trailblazers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="merch.html">Merch Shop</a></li>
+                            <li><a href="merch.html">Apparel</a></li>
+                            <li><a href="merch.html">Accessories</a></li>
+                            <li><a href="merch.html">Home & Living</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="information.html">Information</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61580385093642" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/kindvgnlink/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2025 Kind VGN Link. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#" class="footer-link" onclick="openModal('privacyModal')">Privacy Policy</a>
+                    <a href="#" class="footer-link" onclick="openModal('termsModal')">Terms of Service</a>
+                    <a href="#" class="footer-link" onclick="openModal('affiliateModal')">Affiliate Disclaimer</a>
+                </div>
+            </div>
+            
+            <!-- Kind Code Design Credit -->
+            <div class="footer-credit">
+                <p>Website designed by <a href="about.html" class="kind-code-link">Kind Code Design</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modals -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-body">
+                <p>At Kind VGN Link, your privacy is important.</p>
+                <h3>Information We Collect</h3>
+                <p>When you use our contact form or make a purchase, we may collect your name, email address, and any information you choose to provide.</p>
+                <h3>How We Use Your Information</h3>
+                <p>We use this information only to respond to your enquiry or process your order. We do not sell, trade, or share your personal data with third parties.</p>
+                <h3>Data Security</h3>
+                <p>We take steps to protect your information but cannot guarantee complete security of data transmitted online.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body">
+                <p>By using Kind VGN Link, you agree to the following:</p>
+                <p>All products are vegan and cruelty-free. We are committed to ethical sourcing and sustainable practices.</p>
+                <p>Returns and exchanges are accepted within 30 days of purchase. Items must be in original condition.</p>
+                <p>We reserve the right to update or change these terms at any time.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="affiliateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('affiliateModal')">&times;</span>
+            <h2>Affiliate Disclaimer</h2>
+            <div class="modal-body">
+                <p>Some of the links on Kind VGN Link are affiliate links. This means that if you click on these links and make a purchase, I may earn a small commission, at no additional cost to you.</p>
+                <p>I only share businesses, sanctuaries, products, and services that are vegan, cruelty-free, and align with the mission of Kind VGN Link.</p>
+                <p>This helps support the running of the website and allows me to continue curating vegan resources for the community.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/global-search.js"></script>
+    
+    <script>
+        // Merch page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Email signup functionality
+            const emailSubmit = document.querySelector('.email-submit');
+            const emailInput = document.querySelector('.email-input');
+            
+            if (emailSubmit && emailInput) {
+                emailSubmit.addEventListener('click', function() {
+                    const email = emailInput.value.trim();
+                    if (email && isValidEmail(email)) {
+                        alert('Thank you for subscribing! We\'ll notify you about new products and offers.');
+                        emailInput.value = '';
+                    } else {
+                        alert('Please enter a valid email address.');
+                    }
+                });
+            }
+            
+            // Redirect to sister website for shopping
+            const shopBtns = document.querySelectorAll('.btn-primary');
+            shopBtns.forEach(btn => {
+                if (btn.textContent.includes('Shop Now')) {
+                    btn.addEventListener('click', function(e) {
+                        // Let the link work naturally - it will open the sister website
+                        console.log('Redirecting to sister website for shopping');
+                    });
+                }
+            });
+        });
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>
