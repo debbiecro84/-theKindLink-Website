@@ -97,7 +97,8 @@ class GlobalSearch {
                     { title: 'Evolve Beauty', description: 'UK-based natural and organic skincare brand certified as a B Corporation', keywords: 'evolve beauty, natural, organic, skincare, b corporation, sustainable, uk', url: 'https://evolvebeauty.co.uk/' },
                     { title: 'Pacifica Beauty', description: 'Leading vegan beauty brand offering comprehensive skincare and beauty products', keywords: 'pacifica beauty, vegan, beauty, skincare, haircare, fragrance, makeup, cruelty-free', url: 'https://www.pacificabeauty.com/' },
                     { title: 'Pai Skincare', description: 'UK-based organic skincare brand specializing in sensitive skin solutions', keywords: 'pai skincare, organic, sensitive skin, cruelty-free, vegan, uk, patch-tested', url: 'https://www.paiskincare.com/' },
-                    { title: 'Tropic Skincare', description: 'UK-based beauty company with 20 years of experience in natural skincare', keywords: 'tropic skincare, natural, organic, skincare, tanning, bronzing, uk, beauty', url: 'https://tropicskincare.com/' }
+                    { title: 'Tropic Skincare', description: 'UK-based beauty company with 20 years of experience in natural skincare', keywords: 'tropic skincare, natural, organic, skincare, tanning, bronzing, uk, beauty', url: 'https://tropicskincare.com/' },
+                    { title: 'Dr. Paw Paw', description: 'UK-based multipurpose beauty brand creating vegan lip balms and skincare products with sustainability at its heart', keywords: 'dr paw paw, drpawpaw, lip balm, skincare, multipurpose, vegan, natural, eco-conscious, charity, uk', url: 'https://www.drpawpaw.com/' }
                 ]
             },
             {
