@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .mobile-nav-link:nth-child(5) { animation-delay: 0.5s; }
             .mobile-nav-link:nth-child(6) { animation-delay: 0.6s; }
             .mobile-nav-link:nth-child(7) { animation-delay: 0.7s; }
+            .mobile-nav-link:nth-child(8) { animation-delay: 0.8s; }
             
             @keyframes slideInFromTop {
                 from {
