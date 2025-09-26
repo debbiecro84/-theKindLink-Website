@@ -3478,4 +3478,872 @@ h3 {
 body .header {
     background: #7a8a6a !important;
     background-color: #7a8a6a !important;
+}
+
+/* Gaming Buttons Styling */
+.gaming-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.gaming-btn {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-green);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ps-btn {
+    background-color: #003791;
+    color: white;
+    border-color: #003791;
+}
+
+.ps-btn:hover {
+    background-color: #002366;
+    border-color: #002366;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 55, 145, 0.3);
+}
+
+.steam-btn {
+    background-color: #1B9CFC;
+    color: white;
+    border-color: #1B9CFC;
+}
+
+.steam-btn:hover {
+    background-color: #0A8AE5;
+    border-color: #0A8AE5;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(27, 156, 252, 0.3);
+}
+
+.wii-btn {
+    background-color: #107C10;
+    color: white;
+    border-color: #107C10;
+}
+
+.wii-btn:hover {
+    background-color: #0E6B0E;
+    border-color: #0E6B0E;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(16, 124, 16, 0.3);
+}
+
+/* Responsive Gaming Buttons */
+@media (max-width: 768px) {
+    .gaming-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .gaming-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===========================================
+   MEMPHIS DESIGN SYSTEM - 90s STYLE
+   =========================================== */
+
+/* Memphis Color Palette */
+:root {
+    --memphis-pink: #ff6b9d;
+    --memphis-cyan: #00d4ff;
+    --memphis-orange: #ff8c42;
+    --memphis-yellow: #ffd23f;
+    --memphis-purple: #8b5cf6;
+    --memphis-green: #10b981;
+    --memphis-red: #ef4444;
+    --memphis-blue: #3b82f6;
+    --memphis-black: #1a1a1a;
+    --memphis-white: #ffffff;
+    --memphis-gray: #6b7280;
+}
+
+/* Memphis Hero Section */
+.memphis-hero {
+    background: linear-gradient(135deg, var(--memphis-purple) 0%, var(--memphis-pink) 50%, var(--memphis-cyan) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.memphis-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Memphis Geometric Shapes */
+.memphis-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--memphis-yellow);
+    border: 4px solid var(--memphis-black);
+    animation: memphis-float 6s ease-in-out infinite;
+}
+
+.circle-1 {
+    width: 80px;
+    height: 80px;
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    width: 60px;
+    height: 60px;
+    top: 70%;
+    right: 15%;
+    background: var(--memphis-orange);
+    animation-delay: 2s;
+}
+
+.circle-3 {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    right: 20%;
+    background: var(--memphis-cyan);
+    animation-delay: 4s;
+}
+
+.circle-4 {
+    width: 70px;
+    height: 70px;
+    top: 60%;
+    left: 5%;
+    background: var(--memphis-green);
+    animation-delay: 1s;
+}
+
+.memphis-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    animation: memphis-rotate 8s linear infinite;
+}
+
+.triangle-1 {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid var(--memphis-orange);
+    top: 20%;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.triangle-2 {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid var(--memphis-cyan);
+    top: 60%;
+    left: 20%;
+    animation-delay: 3s;
+}
+
+.triangle-3 {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid var(--memphis-pink);
+    top: 40%;
+    left: 5%;
+    animation-delay: 1.5s;
+}
+
+.triangle-4 {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 60px solid var(--memphis-yellow);
+    top: 80%;
+    right: 25%;
+    animation-delay: 2.5s;
+}
+
+.memphis-square {
+    position: absolute;
+    background: var(--memphis-cyan);
+    border: 4px solid var(--memphis-black);
+    animation: memphis-bounce 4s ease-in-out infinite;
+}
+
+.square-1 {
+    width: 60px;
+    height: 60px;
+    top: 25%;
+    left: 5%;
+    animation-delay: 1s;
+}
+
+.square-2 {
+    width: 80px;
+    height: 80px;
+    top: 65%;
+    right: 5%;
+    background: var(--memphis-pink);
+    animation-delay: 3s;
+}
+
+.square-3 {
+    width: 70px;
+    height: 70px;
+    top: 45%;
+    right: 30%;
+    background: var(--memphis-orange);
+    animation-delay: 2s;
+}
+
+.memphis-dots {
+    position: absolute;
+    background: radial-gradient(circle, var(--memphis-black) 2px, transparent 2px);
+    background-size: 20px 20px;
+    animation: memphis-pulse 3s ease-in-out infinite;
+}
+
+.dots-1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 20%;
+    animation-delay: 0.5s;
+}
+
+.dots-2 {
+    width: 80px;
+    height: 80px;
+    top: 75%;
+    left: 15%;
+    animation-delay: 2.5s;
+}
+
+.dots-3 {
+    width: 90px;
+    height: 90px;
+    top: 35%;
+    left: 25%;
+    animation-delay: 1.5s;
+}
+
+.dots-4 {
+    width: 70px;
+    height: 70px;
+    top: 55%;
+    right: 10%;
+    animation-delay: 3.5s;
+}
+
+.memphis-wavy {
+    position: absolute;
+    height: 8px;
+    background: var(--memphis-yellow);
+    border-radius: 4px;
+    animation: memphis-wave 5s ease-in-out infinite;
+}
+
+.wavy-1 {
+    width: 120px;
+    top: 40%;
+    left: 15%;
+    animation-delay: 1s;
+}
+
+.wavy-2 {
+    width: 100px;
+    top: 80%;
+    right: 20%;
+    background: var(--memphis-orange);
+    animation-delay: 3s;
+}
+
+.wavy-3 {
+    width: 110px;
+    top: 25%;
+    right: 15%;
+    background: var(--memphis-cyan);
+    animation-delay: 2s;
+}
+
+.memphis-cylinder {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: var(--memphis-pink);
+    border-radius: 25px 25px 0 0;
+    border: 4px solid var(--memphis-black);
+    animation: memphis-wiggle 6s ease-in-out infinite;
+}
+
+.cylinder-1 {
+    top: 20%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.cylinder-2 {
+    top: 60%;
+    right: 12%;
+    background: var(--memphis-orange);
+    animation-delay: 3s;
+}
+
+.memphis-cone {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid var(--memphis-cyan);
+    border-top: 20px solid var(--memphis-black);
+    animation: memphis-spin 7s linear infinite;
+}
+
+.cone-1 {
+    top: 30%;
+    right: 8%;
+    animation-delay: 1s;
+}
+
+.cone-2 {
+    top: 70%;
+    left: 10%;
+    border-bottom-color: var(--memphis-yellow);
+    animation-delay: 4s;
+}
+
+.memphis-x {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, var(--memphis-pink) 0%, var(--memphis-cyan) 100%);
+    border: 4px solid var(--memphis-black);
+    animation: memphis-rotate 5s linear infinite;
+}
+
+.x-1 {
+    top: 50%;
+    left: 12%;
+    animation-delay: 2s;
+}
+
+.x-2 {
+    top: 25%;
+    right: 18%;
+    animation-delay: 4s;
+}
+
+.memphis-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid var(--memphis-orange);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    animation: memphis-slide 4s ease-in-out infinite;
+}
+
+.arrow-1 {
+    top: 65%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+/* Memphis Title Styling */
+.memphis-title-box {
+    background: var(--memphis-yellow);
+    border: 6px solid var(--memphis-black);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 8px 8px 0 var(--memphis-black);
+    animation: memphis-title-bounce 2s ease-in-out infinite;
+}
+
+.memphis-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin: 0;
+    text-shadow: 4px 4px 0 var(--memphis-black);
+}
+
+.title-line-1 {
+    color: var(--memphis-cyan);
+    display: block;
+    animation: memphis-text-slide 1s ease-out 0.5s both;
+}
+
+.title-line-2 {
+    color: var(--memphis-pink);
+    display: block;
+    animation: memphis-text-slide 1s ease-out 0.7s both;
+}
+
+.title-line-3 {
+    color: var(--memphis-orange);
+    display: block;
+    animation: memphis-text-slide 1s ease-out 0.9s both;
+}
+
+.memphis-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--memphis-white);
+    text-shadow: 3px 3px 0 var(--memphis-black);
+    margin: 1.5rem 0;
+    animation: memphis-fade-in 1s ease-out 1.2s both;
+}
+
+/* Memphis Buttons */
+.memphis-button {
+    background: linear-gradient(45deg, var(--memphis-pink) 0%, var(--memphis-orange) 100%);
+    color: var(--memphis-white);
+    border: 4px solid var(--memphis-black);
+    border-radius: 30px;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    box-shadow: 6px 6px 0 var(--memphis-black);
+    transition: all 0.3s ease;
+    animation: memphis-button-pulse 2s ease-in-out infinite;
+}
+
+.memphis-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--memphis-black);
+    background: linear-gradient(45deg, var(--memphis-orange) 0%, var(--memphis-pink) 100%);
+    color: var(--memphis-white);
+    text-decoration: none;
+}
+
+/* Memphis Section Styling */
+.memphis-section-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: var(--memphis-black);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-shadow: 3px 3px 0 var(--memphis-cyan);
+}
+
+.memphis-section-title::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 8px;
+    background: var(--memphis-pink);
+    border-radius: 4px;
+}
+
+.memphis-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 8px;
+    background: var(--memphis-orange);
+    border-radius: 4px;
+}
+
+/* Memphis Features Section */
+.memphis-features {
+    background: linear-gradient(135deg, var(--memphis-cyan) 0%, var(--memphis-white) 50%, var(--memphis-pink) 100%);
+    position: relative;
+}
+
+.memphis-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.memphis-card {
+    background: var(--memphis-white);
+    border: 6px solid var(--memphis-black);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 8px 8px 0 var(--memphis-black);
+    transition: all 0.3s ease;
+}
+
+.memphis-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 var(--memphis-black);
+}
+
+.memphis-card-shape {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.shape-1 {
+    background: var(--memphis-yellow);
+    border: 4px solid var(--memphis-black);
+}
+
+.shape-2 {
+    background: var(--memphis-pink);
+    border: 4px solid var(--memphis-black);
+}
+
+.shape-3 {
+    background: var(--memphis-orange);
+    border: 4px solid var(--memphis-black);
+}
+
+.memphis-icon {
+    background: linear-gradient(45deg, var(--memphis-cyan) 0%, var(--memphis-pink) 100%);
+    border: 4px solid var(--memphis-black);
+    position: relative;
+    z-index: 2;
+}
+
+/* Memphis Showcase Section */
+.memphis-showcase {
+    background: linear-gradient(135deg, var(--memphis-yellow) 0%, var(--memphis-white) 50%, var(--memphis-cyan) 100%);
+    position: relative;
+}
+
+.memphis-showcase-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.memphis-showcase-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.memphis-image {
+    position: relative;
+    overflow: hidden;
+    border: 6px solid var(--memphis-black);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--memphis-black);
+    transition: all 0.3s ease;
+}
+
+.memphis-image:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0 var(--memphis-black);
+}
+
+.memphis-image-shape {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 3px solid var(--memphis-white);
+}
+
+.img-shape-1 {
+    background: var(--memphis-pink);
+}
+
+.img-shape-2 {
+    background: var(--memphis-orange);
+}
+
+.img-shape-3 {
+    background: var(--memphis-cyan);
+}
+
+.img-shape-4 {
+    background: var(--memphis-yellow);
+}
+
+.img-shape-5 {
+    background: var(--memphis-green);
+}
+
+/* Memphis Spotlight Section */
+.memphis-spotlight {
+    background: linear-gradient(135deg, var(--memphis-pink) 0%, var(--memphis-white) 50%, var(--memphis-orange) 100%);
+    position: relative;
+}
+
+.memphis-spotlight-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.memphis-stats {
+    position: relative;
+    z-index: 2;
+}
+
+.memphis-stat {
+    position: relative;
+    background: var(--memphis-white);
+    border: 4px solid var(--memphis-black);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 6px 6px 0 var(--memphis-black);
+    transition: all 0.3s ease;
+}
+
+.memphis-stat:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--memphis-black);
+}
+
+.memphis-stat-shape {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--memphis-black);
+}
+
+.stat-shape-1 {
+    background: var(--memphis-cyan);
+}
+
+.stat-shape-2 {
+    background: var(--memphis-pink);
+}
+
+.stat-shape-3 {
+    background: var(--memphis-orange);
+}
+
+.memphis-spotlight-image {
+    position: relative;
+    border: 6px solid var(--memphis-black);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 0 var(--memphis-black);
+    transition: all 0.3s ease;
+}
+
+.memphis-spotlight-image:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 11px 11px 0 var(--memphis-black);
+}
+
+.spotlight-img-shape {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: var(--memphis-yellow);
+    border: 4px solid var(--memphis-black);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Memphis Events Section */
+.memphis-events {
+    background: linear-gradient(135deg, var(--memphis-cyan) 0%, var(--memphis-white) 50%, var(--memphis-green) 100%);
+    position: relative;
+}
+
+.memphis-events-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.memphis-events-preview {
+    position: relative;
+    z-index: 2;
+}
+
+/* Memphis Featured Section */
+.memphis-featured {
+    background: linear-gradient(135deg, var(--memphis-orange) 0%, var(--memphis-white) 50%, var(--memphis-pink) 100%);
+    position: relative;
+}
+
+.memphis-featured-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Memphis Animations */
+@keyframes memphis-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes memphis-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes memphis-bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes memphis-pulse {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes memphis-wave {
+    0%, 100% { transform: translateX(0px) scaleX(1); }
+    50% { transform: translateX(10px) scaleX(1.2); }
+}
+
+@keyframes memphis-wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+@keyframes memphis-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes memphis-slide {
+    0%, 100% { transform: translateX(0px); }
+    50% { transform: translateX(15px); }
+}
+
+@keyframes memphis-title-bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes memphis-text-slide {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes memphis-fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes memphis-button-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Responsive Memphis Design */
+@media (max-width: 768px) {
+    .memphis-title {
+        font-size: 2.5rem;
+    }
+    
+    .memphis-title-box {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .memphis-section-title {
+        font-size: 2.2rem;
+    }
+    
+    .memphis-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .memphis-card {
+        margin: 0 0.5rem;
+    }
+    
+    .memphis-circle,
+    .memphis-triangle,
+    .memphis-square,
+    .memphis-dots,
+    .memphis-wavy,
+    .memphis-cylinder,
+    .memphis-cone,
+    .memphis-x,
+    .memphis-arrow {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 480px) {
+    .memphis-title {
+        font-size: 2rem;
+    }
+    
+    .memphis-title-box {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .memphis-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .memphis-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .memphis-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 } 
