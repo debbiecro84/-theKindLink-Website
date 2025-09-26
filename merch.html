@@ -164,6 +164,13 @@
             background: white;
         }
         
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -464,6 +471,17 @@
             .email-signup {
                 flex-direction: column;
             }
+            
+            /* Mobile spacing for Products section */
+            .featured-products h2 {
+                margin-bottom: 1rem;
+            }
+            
+            .section-subtitle {
+                margin-top: 0.5rem;
+                margin-bottom: 2.5rem;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -544,8 +562,8 @@
     <section class="merch-hero" style="position: relative; min-height: 500px; overflow: hidden; background: linear-gradient(135deg, #7a8a6a 0%, #5a6b4a 100%);">
         <img src="images/merch/hero-shop1.png" alt="Kind VGN Link Merch" class="hero-image-desktop" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
         <img src="images/merch/small-hero-shop.png" alt="Kind VGN Link Merch" class="hero-image-mobile" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; display: none;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(122, 138, 106, 0.7); z-index: 2;"></div>
-        <div class="container" style="position: relative; z-index: 3; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding-top: 3rem;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #0D0D0D; opacity: 0.8; z-index: 2;"></div>
+        <div class="container" style="position: relative; z-index: 3; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding-top: 2rem;">
             <h1>Kind VGN Link Merch</h1>
             <p>Wear your values with pride. Support our mission with every purchase.</p>
             <p style="font-size: 1.1rem; margin-top: 1rem; color: #ff6b35; font-weight: 600;"><i class="fas fa-external-link-alt"></i> All purchases are made through our dedicated online store</p>
