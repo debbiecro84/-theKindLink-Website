@@ -154,7 +154,8 @@ class GlobalSearch {
                     { title: 'Pureology', description: 'Professional hair care brand specializing in color care without compromise', keywords: 'pureology, professional, hair care, color care, dry hair, damaged hair, blonde hair, fine hair', url: 'https://www.pureology.com/' },
                     { title: 'Maria Nila', description: 'Swedish professional vegan hair care brand, 100% vegan and cruelty-free', keywords: 'maria nila, swedish, professional, vegan, cruelty-free, sulphate-free, paraben-free, color protection', url: 'https://www.marianila.com/' },
                     { title: 'Umberto Giannini', description: 'UK-based hair care brand defining curls since 1998', keywords: 'umberto giannini, uk, hair care, curls, b corp, vegan, cruelty-free, curl jelly', url: 'https://www.umbertogiannini.com/' },
-                    { title: 'Plant Made', description: 'Plant-based beauty and personal care brand offering vegan and cruelty-free hair care products', keywords: 'plant made, hair care, beauty, personal care, vegan, cruelty-free, sustainable', url: 'https://www.weareplantmade.com/' }
+                    { title: 'Plant Made', description: 'Plant-based beauty and personal care brand offering vegan and cruelty-free hair care products', keywords: 'plant made, hair care, beauty, personal care, vegan, cruelty-free, sustainable', url: 'https://www.weareplantmade.com/' },
+                    { title: 'Moo & Yoo', description: 'UK-based sustainable haircare brand offering luxury vegan products with natural ingredients like Marula Oil and Icelandic Moss', keywords: 'moo and yoo, moo & yoo, sustainable haircare, luxury vegan, marula oil, icelandic moss, b corp, uk brand, salon quality, mother daughter', url: 'https://mooandyoo.com/' }
                 ]
             },
             {
@@ -298,7 +299,18 @@ class GlobalSearch {
                 url: 'food-drinks.html',
                 content: [
                     { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' },
-                    { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' }
+                    { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' },
+                    { title: 'Cereals', description: 'Nutritious vegan breakfast cereals and grains', keywords: 'cereals, vegan cereals, breakfast, granola, muesli, healthy grains, plant-based breakfast, morning cereal', url: 'cereals.html' }
+                ]
+            },
+            {
+                page: 'cereals.html',
+                title: 'Cereals',
+                url: 'cereals.html',
+                content: [
+                    { title: 'Cereals', description: 'Nutritious vegan breakfast cereals and grains', keywords: 'cereals, vegan cereals, breakfast, granola, muesli, healthy grains, plant-based breakfast, morning cereal', url: 'cereals.html' },
+                    { title: 'Surreal', description: 'High-protein, zero-sugar cereal that tastes like childhood favorites with grown-up health benefits', keywords: 'surreal, high protein cereal, zero sugar, plant-based protein, low carb, cocoa, cinnamon, frosted, peanut butter, breakfast', url: 'https://eatsurreal.co.uk/' },
+                    { title: 'ELEAT', description: 'High-protein breakfast range with protein oats, cereal, and granola designed to fuel active lifestyles', keywords: 'eleat, high protein breakfast, protein oats, protein cereal, protein granola, natural ingredients, active lifestyle, fitness', url: 'https://eleatcereal.com/' }
                 ]
             },
             {
@@ -340,7 +352,8 @@ class GlobalSearch {
                     { title: 'Based Food', description: 'Plant-based baking and breakfast mixes made with premium ingredients', keywords: 'based food, baking, breakfast, mixes, plant-based, gluten-free, allergen-free', url: 'https://basedfood.co.uk/' },
                     { title: 'Vive', description: 'Dangerously delicious plant-based chocolate treats', keywords: 'vive, chocolate, treats, plant-based, vegan chocolate, sweets', url: 'https://eatvive.com/' },
                     { title: 'Magpye', description: 'Vegan snacks and treats', keywords: 'magpye, snacks, treats, vegan', url: 'https://magpye.co.uk/' },
-                    { title: 'NOMO Chocolate', description: 'Award-winning vegan chocolate crafted for everyone, proudly free from dairy, gluten, eggs, and nuts without compromising on taste', keywords: 'nomo chocolate, vegan chocolate, plant-powered, dairy-free, gluten-free, egg-free, nut-free, award-winning, creamy chocolate, caramel filled, cookie dough, sharing boxes, no missing out', url: 'https://www.awin1.com/cread.php?s=3931129&v=24011&q=489659&r=2576869' }
+                    { title: 'NOMO Chocolate', description: 'Award-winning vegan chocolate crafted for everyone, proudly free from dairy, gluten, eggs, and nuts without compromising on taste', keywords: 'nomo chocolate, vegan chocolate, plant-powered, dairy-free, gluten-free, egg-free, nut-free, award-winning, creamy chocolate, caramel filled, cookie dough, sharing boxes, no missing out', url: 'https://www.awin1.com/cread.php?s=3931129&v=24011&q=489659&r=2576869' },
+                    { title: 'Kiuki', description: 'Premium vegan snacks and treats offering a curated selection of plant-based goodies with a focus on taste, nutrition, and sustainability', keywords: 'kiuki, vegan snacks, treats, plant-based, premium quality, sustainability, nutrition, vegankind', url: 'https://kiuki.com/vegankind' }
                 ]
             },
             {
@@ -897,6 +910,25 @@ class GlobalSearch {
                     { title: 'Cottonsafe Natural Mattress', description: 'Organic cotton mattresses and bedding', keywords: 'cottonsafe, natural mattress, organic cotton, bedding, mattresses', url: 'https://www.cottonsafenaturalmattress.co.uk/' },
                     { title: 'Ettitude', description: 'Bamboo lyocell bedding and home textiles', keywords: 'ettitude, bamboo lyocell, bedding, home textiles, sustainable', url: 'https://www.ettitude.com/en-gb' },
                     { title: 'Vossen', description: 'Sustainable home textiles and linens', keywords: 'vossen, home textiles, linens, sustainable, eco', url: 'https://uk.vossen.com/' }
+                ]
+            },
+
+            // Merch Page
+            {
+                page: 'merch.html',
+                title: 'Kind VGN Link Merch',
+                url: 'merch.html',
+                content: [
+                    { title: 'Kind VGN Link Merch', description: 'Wear your values with pride. Support our mission with every purchase', keywords: 'merch, merchandise, shop, store, clothing, apparel, accessories, vegan merch, kind vgn link merch', url: 'merch.html' },
+                    { title: 'Kind VGN Link Logo Zip Hoodie', description: 'Comfortable, sustainable hoodie featuring the Kind VGN Link logo. Available in multiple colours and sizes', keywords: 'hoodie, zip hoodie, logo hoodie, sustainable, organic cotton, vegan clothing, apparel', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-zipper/' },
+                    { title: 'Kind VGN Link Mug', description: 'Ceramic mug featuring the Kind VGN Link logo. Perfect for your morning coffee or tea and available in multiple colours', keywords: 'mug, ceramic mug, coffee mug, tea mug, logo mug, drinkware, kitchen', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-mug/' },
+                    { title: 'Kind VGN Link Logo T-Shirt', description: 'Comfortable t-shirt featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes', keywords: 't-shirt, tshirt, logo t-shirt, organic cotton, vegan clothing, apparel, casual wear', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-t-shirt/Black' },
+                    { title: 'Kind VGN Link Logo Hoodie', description: 'Comfortable hoodie featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours including Stone Blue', keywords: 'hoodie, logo hoodie, organic cotton, vegan clothing, apparel, casual wear, stone blue', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-hoodie/Stone%20Blue' },
+                    { title: 'Kind VGN Link Eco Notebook', description: 'Sustainable notebook featuring the Kind VGN Link logo. Perfect for jotting down ideas, recipes, or thoughts about your vegan journey', keywords: 'notebook, eco notebook, sustainable, vegan notebook, stationery, writing, journal', url: 'https://kind-vgn-link.teemill.com/product/the-kind-vgn-link-eco-notebook/' },
+                    { title: 'Kind VGN Link Jumper', description: 'Comfortable jumper featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes', keywords: 'jumper, logo jumper, organic cotton, vegan clothing, apparel, casual wear', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-jumper/' },
+                    { title: 'Kind VGN Link Reusable Bottle', description: 'Sustainable reusable bottle featuring the Kind VGN Link logo. Perfect for staying hydrated while showing your support for the movement', keywords: 'reusable bottle, water bottle, sustainable, eco-friendly, hydration, drinkware', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-reusable-bottle/' },
+                    { title: 'Kind VGN Link Logo Jumper', description: 'Warm and comfortable jumper featuring the Kind VGN Link logo. Made from organic cotton and available in multiple colours and sizes', keywords: 'jumper, logo jumper, organic cotton, vegan clothing, apparel, casual wear, warm', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-jumper/' },
+                    { title: 'Kind VGN Link Logo Cap', description: 'Stylish cap featuring the Kind VGN Link logo. Perfect for sunny days and outdoor activities while showing your support for the movement', keywords: 'cap, hat, logo cap, outdoor, sunny days, accessories, headwear', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-cap/' }
                 ]
             }
         ];
