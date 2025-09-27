@@ -63,7 +63,7 @@ class GlobalSearch {
                     { title: 'Books & Media', description: 'Vegan books, magazines, and media', keywords: 'books, media, magazines, reading, literature, documentaries, films', url: 'books-children.html' },
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' },
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
-                    { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
+                    // { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
                 ]
             },
 
@@ -736,6 +736,15 @@ class GlobalSearch {
                 ]
             },
             {
+                page: 'wales-restaurants.html',
+                title: 'Wales Restaurants',
+                url: 'wales-restaurants.html',
+                content: [
+                    { title: 'Wales Restaurants', description: 'Vegan restaurants across Wales', keywords: 'wales, restaurants, vegan wales, welsh dining, uk restaurants, plant-based wales', url: 'wales-restaurants.html' },
+                    { title: 'The Queen Inn', description: 'The world\'s first plant-based steakhouse! Set in a country pub dating back to the 1800s, showcasing the best plant-based meats from across the world. Proudly vegan since January 2022, located in Upper Cwmbran, Torfaen', keywords: 'the queen inn, plant-based steakhouse, world\'s first, country pub, 1800s, upper cwmbran, torfaen, wales, vegan steakhouse, plant-based meats, vegan since 2022', url: 'https://thequeeninn.uk/' }
+                ]
+            },
+            {
                 page: 'edinburgh-restaurants.html',
                 title: 'Edinburgh Restaurants',
                 url: 'edinburgh-restaurants.html',
@@ -933,19 +942,19 @@ class GlobalSearch {
                     { title: 'Kind VGN Link Logo Cap', description: 'Stylish cap featuring the Kind VGN Link logo. Perfect for sunny days and outdoor activities while showing your support for the movement', keywords: 'cap, hat, logo cap, outdoor, sunny days, accessories, headwear', url: 'https://kind-vgn-link.teemill.com/product/kind-vgn-link-logo-cap/' }
                 ]
             },
-            {
-                page: 'video-games.html',
-                title: 'Video Games & Gaming',
-                url: 'video-games.html',
-                content: [
-                    { title: 'Sonic Origins Plus', description: 'Remastered collection of classic Sonic games featuring the iconic blue hedgehog. Speed through Green Hill Zone and thwart Doctor Robotnik\'s plans', keywords: 'sonic, hedgehog, platformer, classic games, sega, blue hedgehog, green hill zone, robotnik', url: 'https://www.playstation.com/en-gb/games/sonic-origins/' },
-                    { title: 'Stray', description: 'Beautiful third-person cat adventure game set in a cybercity. Play as a stray cat exploring neon-lit alleys and befriending robots', keywords: 'stray, cat, adventure, cybercity, robots, neon, exploration, animal protagonist', url: 'https://www.playstation.com/en-gb/games/stray/' },
-                    { title: 'Oddworld: Soulstorm', description: 'Second chapter of Abe\'s heroic journey. Play as Abe, a transformed Mudokon who rises from corporate cog to unlikely hero', keywords: 'oddworld, abe, mudokon, corporate, hero, adventure, action, soulstorm', url: 'https://www.playstation.com/en-gb/games/oddworld-soulstorm/' },
-                    { title: 'Herdling', description: 'Guide a herd of mysterious Calicorn creatures on a stirring journey into the mountains. Emotional storytelling about trust, survival, and companionship', keywords: 'herdling, calicorn, creatures, mountains, journey, emotional, trust, survival, companionship', url: 'https://store.steampowered.com/app/3047750/Herdling/' },
-                    { title: 'Animal Shelter', description: 'Run a refuge for strays and rescues! Clean, protect, and care for abandoned animals as you help them find loving new homes', keywords: 'animal shelter, refuge, strays, rescues, animals, care, adoption, simulation', url: 'https://store.steampowered.com/app/1389820/Animal_Rescue/' },
-                    { title: 'Bunny Raiders', description: 'Roguelike game where you and friends battle through randomly generated rooms, destroying evil robots and saving furry friends', keywords: 'bunny raiders, roguelike, bunnies, robots, animals, nature, protection, multiplayer', url: 'https://store.playstation.com/en-gb/product/EP8209-CUSA30149_00-7386874431634642' }
-                ]
-            }
+            // {
+            //     page: 'video-games.html',
+            //     title: 'Video Games & Gaming',
+            //     url: 'video-games.html',
+            //     content: [
+            //         { title: 'Sonic Origins Plus', description: 'Remastered collection of classic Sonic games featuring the iconic blue hedgehog. Speed through Green Hill Zone and thwart Doctor Robotnik\'s plans', keywords: 'sonic, hedgehog, platformer, classic games, sega, blue hedgehog, green hill zone, robotnik', url: 'https://www.playstation.com/en-gb/games/sonic-origins/' },
+            //         { title: 'Stray', description: 'Beautiful third-person cat adventure game set in a cybercity. Play as a stray cat exploring neon-lit alleys and befriending robots', keywords: 'stray, cat, adventure, cybercity, robots, neon, exploration, animal protagonist', url: 'https://www.playstation.com/en-gb/games/stray/' },
+            //         { title: 'Oddworld: Soulstorm', description: 'Second chapter of Abe\'s heroic journey. Play as Abe, a transformed Mudokon who rises from corporate cog to unlikely hero', keywords: 'oddworld, abe, mudokon, corporate, hero, adventure, action, soulstorm', url: 'https://www.playstation.com/en-gb/games/oddworld-soulstorm/' },
+            //         { title: 'Herdling', description: 'Guide a herd of mysterious Calicorn creatures on a stirring journey into the mountains. Emotional storytelling about trust, survival, and companionship', keywords: 'herdling, calicorn, creatures, mountains, journey, emotional, trust, survival, companionship', url: 'https://store.steampowered.com/app/3047750/Herdling/' },
+            //         { title: 'Animal Shelter', description: 'Run a refuge for strays and rescues! Clean, protect, and care for abandoned animals as you help them find loving new homes', keywords: 'animal shelter, refuge, strays, rescues, animals, care, adoption, simulation', url: 'https://store.steampowered.com/app/1389820/Animal_Rescue/' },
+            //         { title: 'Bunny Raiders', description: 'Roguelike game where you and friends battle through randomly generated rooms, destroying evil robots and saving furry friends', keywords: 'bunny raiders, roguelike, bunnies, robots, animals, nature, protection, multiplayer', url: 'https://store.playstation.com/en-gb/product/EP8209-CUSA30149_00-7386874431634642' }
+            //     ]
+            // }
         ];
     }
 

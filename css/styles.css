@@ -3480,7 +3480,7 @@ body .header {
     background-color: #7a8a6a !important;
 }
 
-/* Gaming Buttons Styling */
+/* Gaming Buttons Styling - COMMENTED OUT
 .gaming-buttons {
     display: flex;
     gap: 0.5rem;
@@ -3546,7 +3546,7 @@ body .header {
     box-shadow: 0 4px 8px rgba(16, 124, 16, 0.3);
 }
 
-/* Responsive Gaming Buttons */
+Responsive Gaming Buttons
 @media (max-width: 768px) {
     .gaming-buttons {
         flex-direction: column;
@@ -3558,6 +3558,7 @@ body .header {
         font-size: 0.85rem;
     }
 }
+*/
 
 /* ===========================================
    MEMPHIS DESIGN SYSTEM - 90s STYLE
