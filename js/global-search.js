@@ -796,6 +796,14 @@ class GlobalSearch {
                 ]
             },
             {
+                page: 'liverpool-restaurants.html',
+                title: 'Liverpool Restaurants',
+                url: 'liverpool-restaurants.html',
+                content: [
+                    { title: 'Liverpool Restaurants', description: 'Vegan restaurants in Liverpool', keywords: 'liverpool, restaurants, vegan liverpool, liverpool dining, uk restaurants, merseyside', url: 'liverpool-restaurants.html' }
+                ]
+            },
+            {
                 page: 'brighton-restaurants.html',
                 title: 'Brighton Restaurants',
                 url: 'brighton-restaurants.html',
