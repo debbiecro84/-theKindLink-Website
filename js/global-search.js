@@ -791,7 +791,8 @@ class GlobalSearch {
                 title: 'York Restaurants',
                 url: 'york-restaurants.html',
                 content: [
-                    { title: 'York Restaurants', description: 'Vegan restaurants in York', keywords: 'york, restaurants, vegan york, york dining, uk restaurants', url: 'york-restaurants.html' }
+                    { title: 'York Restaurants', description: 'Vegan restaurants in York', keywords: 'york, restaurants, vegan york, york dining, uk restaurants', url: 'york-restaurants.html' },
+                    { title: 'Orchid Vegan', description: 'Pure vegan kitchen with Asian fusion cuisine awarded as diners\' choice for 2024', keywords: 'orchid vegan, york, asian fusion, vegan kitchen, diners choice 2024, george hudson street, free delivery, takeaway', url: 'https://orchidvegan.com/' }
                 ]
             },
             {
