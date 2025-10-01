@@ -747,7 +747,8 @@ class GlobalSearch {
                 url: 'wales-restaurants.html',
                 content: [
                     { title: 'Wales Restaurants', description: 'Vegan restaurants across Wales', keywords: 'wales, restaurants, vegan wales, welsh dining, uk restaurants, plant-based wales', url: 'wales-restaurants.html' },
-                    { title: 'The Queen Inn', description: 'The world\'s first plant-based steakhouse! Set in a country pub dating back to the 1800s, showcasing the best plant-based meats from across the world. Proudly vegan since January 2022, located in Upper Cwmbran, Torfaen', keywords: 'the queen inn, plant-based steakhouse, world\'s first, country pub, 1800s, upper cwmbran, torfaen, wales, vegan steakhouse, plant-based meats, vegan since 2022', url: 'https://thequeeninn.uk/' }
+                    { title: 'The Queen Inn', description: 'The world\'s first plant-based steakhouse! Set in a country pub dating back to the 1800s, showcasing the best plant-based meats from across the world. Proudly vegan since January 2022, located in Upper Cwmbran, Torfaen', keywords: 'the queen inn, plant-based steakhouse, world\'s first, country pub, 1800s, upper cwmbran, torfaen, wales, vegan steakhouse, plant-based meats, vegan since 2022', url: 'https://thequeeninn.uk/' },
+                    { title: 'Eating Gorilla', description: 'Plant-based restaurant and bar offering innovative vegan cuisine in Wales with a focus on fresh, locally sourced ingredients', keywords: 'eating gorilla, wales, plant-based restaurant, vegan bar, innovative cuisine, locally sourced, sustainable, fresh ingredients, welsh dining', url: 'https://www.eatinggorilla.co.uk/' }
                 ]
             },
             {
