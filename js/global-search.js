@@ -113,7 +113,9 @@ class GlobalSearch {
                     { title: 'Barry M', description: 'UK-based beauty brand offering innovative makeup and nail products with trending collections', keywords: 'barry m, uk, beauty, makeup, nail products, glazed, sheer splash, thats swell, affordable', url: 'https://www.barrym.com/' },
                     { title: 'CATRICE', description: '100% vegan makeup brand committed to cruelty-free beauty and environmental sustainability', keywords: 'catrice, vegan, cruelty-free, environmental, sustainability, microplastics, clean beauty', url: 'https://www.catrice.com/' },
                     { title: 'essence', description: 'European makeup brand committed to vegan beauty with natural ingredients whenever possible', keywords: 'essence, european, vegan, natural ingredients, affordable, high-quality, animal welfare', url: 'https://www.essence.eu/' },
-                    { title: 'Black Moon Cosmetics', description: '100% vegan and cruelty-free makeup brand specializing in alternative beauty', keywords: 'black moon cosmetics, vegan, cruelty-free, alternative beauty, grunge, liquid to mattes, orb of light', url: 'https://blackmooncosmetics.com/' }
+                    { title: 'Black Moon Cosmetics', description: '100% vegan and cruelty-free makeup brand specializing in alternative beauty', keywords: 'black moon cosmetics, vegan, cruelty-free, alternative beauty, grunge, liquid to mattes, orb of light', url: 'https://blackmooncosmetics.com/' },
+                    { title: 'NailKind', description: 'Award-winning vegan and cruelty-free nail polish brand offering healthy nail care treatments', keywords: 'nailkind, nail polish, vegan, cruelty-free, award-winning, nail care, non-toxic, be kind be you be daring', url: 'https://www.nailkind.com/' },
+                    { title: 'Earthy Nail Polish', description: 'Sustainability beauty pioneer offering plant-based nail polishes with natural ingredients', keywords: 'earthy nail polish, plant-based, natural ingredients, sustainability, gel lock system, iso 16128, eco-friendly', url: 'https://www.earthynailpolish.com/' }
                 ]
             },
             {
