@@ -91,12 +91,23 @@
         </div>
     </section>
 
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="nailcare">Nail Care</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Makeup Categories -->
     <section class="categories-section">
         <div class="container">
             <h2>Retailers</h2>
             <div class="categories-grid">
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/elf-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="e.l.f. Cosmetics" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -110,7 +121,7 @@
                         <a href="https://www.elfcosmetics.co.uk/" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/ve-cosmetics-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="VE Cosmetics" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -124,7 +135,7 @@
                         <a href="https://ve-cosmetics.com/" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/barrym-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Barry M" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -138,7 +149,7 @@
                         <a href="https://barrym.com/" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/catrice-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="CATRICE" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -152,7 +163,7 @@
                         <a href="https://www.catrice.eu/en-gb" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/essence-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="essence" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -166,7 +177,7 @@
                         <a href="https://www.essence.eu/en-gb" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
-                <div class="type-card">
+                <div class="type-card" data-category="makeup">
                     <div class="type-image">
                         <img src="images/beauty/blackmoon-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Black Moon Cosmetics" style="object-fit: contain; background: #f8f9fa;">
                     </div>
@@ -178,6 +189,34 @@
                             <span><i class="fas fa-moon"></i> Alternative Beauty</span>
                         </div>
                         <a href="https://www.blackmooncosmetics.com/" class="type-link" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+                <div class="type-card" data-category="nailcare">
+                    <div class="type-image">
+                        <img src="images/beauty/nailkind-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="NailKind" style="object-fit: contain; background: #f8f9fa;">
+                    </div>
+                    <div class="type-content">
+                        <h3>NailKind</h3>
+                        <p>Award-winning vegan and cruelty-free nail polish brand offering healthy nail care treatments and vibrant colors. Their collection is non-toxic, designed to keep nails healthy and beautifully polished with their "Be Kind. Be You. Be Daring" philosophy.</p>
+                        <div class="type-features">
+                            <span><i class="fas fa-leaf"></i> Vegan & Cruelty-Free</span>
+                            <span><i class="fas fa-award"></i> Award-Winning</span>
+                        </div>
+                        <a href="https://www.nailkind.com/" class="type-link" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+                <div class="type-card" data-category="nailcare">
+                    <div class="type-image">
+                        <img src="images/beauty/earthynailpolish-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Earthy Nail Polish" style="object-fit: contain; background: #f8f9fa;">
+                    </div>
+                    <div class="type-content">
+                        <h3>Earthy Nail Polish</h3>
+                        <p>Sustainability beauty pioneer offering plant-based nail polishes with 79% natural origin ingredients. Their versatile eco-friendly formula can transform into gel with their innovative Gel Lock system, featuring over 49 shades and certified ISO 16128 natural ingredients.</p>
+                        <div class="type-features">
+                            <span><i class="fas fa-leaf"></i> Certified Vegan</span>
+                            <span><i class="fas fa-globe"></i> Sustainability Pioneer</span>
+                        </div>
+                        <a href="https://www.earthynailpolish.com/" class="type-link" target="_blank">Visit Website</a>
                     </div>
                 </div>
 
@@ -344,6 +383,7 @@
     <!-- Scroll to top functionality -->
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/makeup-filter.js"></script>
     
     <script src="js/mobile-menu.js"></script>
     <script src="js/global-search.js"></script>

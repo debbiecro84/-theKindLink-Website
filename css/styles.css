@@ -2027,6 +2027,71 @@ h3 {
     border-color: #9caa8b;
 }
 
+/* Makeup Page Filter Styles */
+.filter-section {
+    padding: 2rem 0;
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--bg-white);
+    border: 2px solid var(--primary-green);
+    border-radius: 25px;
+    color: var(--primary-green);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-green);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    border-color: var(--primary-green);
+    box-shadow: 0 4px 12px var(--shadow-green);
+}
+
+/* Filter Animation */
+.type-card {
+    transition: all 0.3s ease;
+}
+
+.type-card.hidden {
+    display: none;
+}
+
+.type-card.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .events-section {
     padding: 4rem 0;
     background-color: #f4f1eb;
@@ -3174,6 +3239,20 @@ h3 {
     .filter-tab {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
     }
     
     .calendar-day {
