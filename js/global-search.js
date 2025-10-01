@@ -800,7 +800,8 @@ class GlobalSearch {
                 title: 'Liverpool Restaurants',
                 url: 'liverpool-restaurants.html',
                 content: [
-                    { title: 'Liverpool Restaurants', description: 'Vegan restaurants in Liverpool', keywords: 'liverpool, restaurants, vegan liverpool, liverpool dining, uk restaurants, merseyside', url: 'liverpool-restaurants.html' }
+                    { title: 'Liverpool Restaurants', description: 'Vegan restaurants in Liverpool', keywords: 'liverpool, restaurants, vegan liverpool, liverpool dining, uk restaurants, merseyside', url: 'liverpool-restaurants.html' },
+                    { title: 'The Vibe Cafe', description: 'Top rated vegan restaurant in Liverpool on Happy Cow! Family-run wholefood and plant-based cafe', keywords: 'the vibe cafe, liverpool, happy cow, top rated, family-run, wholefood, plant-based, paradise street, fair-trade coffee, homemade', url: 'https://thevibecafe.co.uk/' }
                 ]
             },
             {
