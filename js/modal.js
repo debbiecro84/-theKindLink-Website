@@ -76,6 +76,9 @@ window.onclick = function(event) {
     var sanctuaryModal = document.getElementById('suggestSanctuaryModal');
     var companyModal = document.getElementById('companyListingModal');
     var affiliateModal = document.getElementById('affiliateModal');
+    var veganValuesModal = document.getElementById('veganValuesModal');
+    var privacyModal = document.getElementById('privacyModal');
+    var termsModal = document.getElementById('termsModal');
     
     if (event.target == modal) {
         modal.style.display = 'none';
@@ -88,6 +91,18 @@ window.onclick = function(event) {
     }
     if (event.target == affiliateModal) {
         affiliateModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    if (event.target == veganValuesModal) {
+        veganValuesModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    if (event.target == privacyModal) {
+        privacyModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    if (event.target == termsModal) {
+        termsModal.style.display = 'none';
         document.body.style.overflow = ''; // Restore scrolling
     }
 }
