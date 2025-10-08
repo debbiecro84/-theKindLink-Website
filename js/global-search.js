@@ -63,6 +63,8 @@ class GlobalSearch {
                     { title: 'Books & Media', description: 'Vegan books, magazines, and media', keywords: 'books, media, magazines, reading, literature, documentaries, films', url: 'books-children.html' },
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' },
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
+                    { title: 'Vitamins & Supplements', description: 'High-quality vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, wellness, b12, omega, minerals', url: 'vitamins-supplements.html' },
+                    { title: 'Jobs', description: 'Vegan and ethical job opportunities', keywords: 'jobs, careers, employment, work, vegan jobs, ethical jobs, opportunities, hiring', url: 'jobs.html' },
                     // { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
                 ]
             },
@@ -209,6 +211,18 @@ class GlobalSearch {
                     { title: 'Omvits', description: 'UK\'s 1st vegan collagen peptide supplement with thoughtfully designed plant-based supplements', keywords: 'omvits, uk, vegan collagen, peptide supplement, plant-based, vegan society, eco-conscious packaging', url: 'https://omvits.com/' },
                     { title: 'The Vegan Wellness Co.', description: 'Award-winning vegan healthcare brand with premium nutrition at affordable prices', keywords: 'vegan wellness co, award-winning, vegan healthcare, premium nutrition, affordable, cruelty-free, best vegan healthcare brand 2025', url: 'https://theveganwellnessco.com/' },
                     { title: 'Love Mushrooms', description: 'The Home of Functional Mushrooms - organic mushroom supplements from Marcassie Farm, Scotland', keywords: 'love mushrooms, functional mushrooms, organic, mushroom supplements, scotland, marcassie farm, lions mane, reishi, cordyceps, maitake, shiitake, menopause, wellness, focus, energy', url: 'https://lovemushrooms.co.uk/' }
+                ]
+            },
+            {
+                page: 'jobs.html',
+                title: 'Jobs',
+                url: 'jobs.html',
+                content: [
+                    { title: 'Jobs', description: 'Vegan and ethical job opportunities', keywords: 'jobs, careers, employment, work, vegan jobs, ethical jobs, opportunities, hiring, career, recruitment', url: 'jobs.html' },
+                    { title: 'Vegan Jobs', description: 'The leading job board connecting vegan companies with passionate professionals', keywords: 'vegan jobs, job board, plant-based jobs, animal advocacy, sustainable fashion, ethical industries, careers', url: 'https://veganjobs.com/' },
+                    { title: 'The Vegan Society Jobs', description: 'Work with the world\'s oldest vegan organization with roles in Birmingham', keywords: 'vegan society, jobs, charity work, birmingham, vegan trademark, campaigns, research, advocacy, flexible working', url: 'https://www.vegansociety.com/about-us/jobs' },
+                    { title: 'LinkedIn Vegan Jobs', description: 'Browse over 150+ vegan-related job opportunities across the UK', keywords: 'linkedin, vegan jobs, uk jobs, plant-based companies, cruelty-free beauty, ethical fashion, remote jobs', url: 'https://uk.linkedin.com/jobs/vegan-jobs' },
+                    { title: 'VeganWork', description: 'Comprehensive job aggregator with hundreds of vegan career opportunities worldwide', keywords: 'veganwork, job aggregator, animal rights, plant-based companies, alternative protein, remote positions, internships, volunteer', url: 'https://veganwork.com/' }
                 ]
             },
             {
