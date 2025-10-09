@@ -318,7 +318,8 @@ class GlobalSearch {
                 content: [
                     { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' },
                     { title: 'Cheese', description: 'Delicious plant-based cheese alternatives', keywords: 'cheese, vegan cheese, plant-based cheese, dairy-free cheese, cheese alternatives, vegan dairy, cheese substitutes', url: 'cheese.html' },
-                    { title: 'Cereals', description: 'Nutritious vegan breakfast cereals and grains', keywords: 'cereals, vegan cereals, breakfast, granola, muesli, healthy grains, plant-based breakfast, morning cereal', url: 'cereals.html' }
+                    { title: 'Cereals', description: 'Nutritious vegan breakfast cereals and grains', keywords: 'cereals, vegan cereals, breakfast, granola, muesli, healthy grains, plant-based breakfast, morning cereal', url: 'cereals.html' },
+                    { title: 'Ice Cream', description: 'Delicious vegan ice cream and frozen desserts', keywords: 'ice cream, vegan ice cream, dairy-free ice cream, frozen desserts, plant-based ice cream, gelato, sorbet, frozen treats', url: 'ice-cream.html' }
                 ]
             },
             {
@@ -329,6 +330,16 @@ class GlobalSearch {
                     { title: 'Cereals', description: 'Nutritious vegan breakfast cereals and grains', keywords: 'cereals, vegan cereals, breakfast, granola, muesli, healthy grains, plant-based breakfast, morning cereal', url: 'cereals.html' },
                     { title: 'Surreal', description: 'High-protein, zero-sugar cereal that tastes like childhood favorites with grown-up health benefits', keywords: 'surreal, high protein cereal, zero sugar, plant-based protein, low carb, cocoa, cinnamon, frosted, peanut butter, breakfast', url: 'https://eatsurreal.co.uk/' },
                     { title: 'ELEAT', description: 'High-protein breakfast range with protein oats, cereal, and granola designed to fuel active lifestyles', keywords: 'eleat, high protein breakfast, protein oats, protein cereal, protein granola, natural ingredients, active lifestyle, fitness', url: 'https://eleatcereal.com/' }
+                ]
+            },
+            {
+                page: 'ice-cream.html',
+                title: 'Ice Cream',
+                url: 'ice-cream.html',
+                content: [
+                    { title: 'Ice Cream', description: 'Delicious vegan ice cream and frozen desserts', keywords: 'ice cream, vegan ice cream, dairy-free ice cream, frozen desserts, plant-based ice cream, gelato, sorbet, frozen treats', url: 'ice-cream.html' },
+                    { title: 'Booja-Booja', description: 'Multi award-winning dairy-free ice cream made with minimal, natural ingredients. Organic, gluten-free, and vegan treats', keywords: 'booja-booja, organic ice cream, award-winning, dairy-free, gluten-free, vegan ice cream, natural ingredients', url: 'https://boojabooja.com/' },
+                    { title: 'Moonji', description: 'Ayurvedic-inspired ice cream combining Eastern flavours with plant-based ingredients. All natural, vegan, dairy-free, gluten-free', keywords: 'moonji, ayurvedic ice cream, matcha, salted caramel chai, golden turmeric, natural, vegan ice cream, dairy-free, gluten-free, refined sugar free', url: 'https://wearemoonji.com/' }
                 ]
             },
             {
