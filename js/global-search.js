@@ -357,7 +357,8 @@ class GlobalSearch {
                     { title: 'Living Things', description: 'Low sugar, all natural prebiotic sodas with belly-loving bubbles', keywords: 'living things, prebiotic, soda, low sugar, natural, uk', url: 'https://drinklivingthings.com/' },
                     { title: 'Innocent', description: 'Delicious smoothies, juices, and healthy drinks made with real fruit', keywords: 'innocent, smoothies, juices, fruit, b corp, healthy drinks', url: 'https://www.innocentdrinks.co.uk/home' },
                     { title: 'Overherd', description: 'Powdered oat milk that you just add water to', keywords: 'overherd, oat milk, powdered, sustainable, dairy-free, plant milk', url: 'https://overherd.uk/' },
-                    { title: 'MYOM', description: 'Revolutionary oat milk paste that you make at home', keywords: 'myom, oat milk, paste, home made, dairy-free, plant milk', url: 'https://myom.shop/' }
+                    { title: 'MYOM', description: 'Revolutionary oat milk paste that you make at home', keywords: 'myom, oat milk, paste, home made, dairy-free, plant milk', url: 'https://myom.shop/' },
+                    { title: 'Cairn o\' Mohr', description: 'Scottish fruit wine and cider winery crafting award-winning country wines since 1987', keywords: 'cairn o mohr, scottish, fruit wine, cider, winery, perthshire, award-winning, country wines', url: 'https://cairnomohr.com/' }
                 ]
             },
             {
@@ -382,7 +383,10 @@ class GlobalSearch {
                     { title: 'Vive', description: 'Dangerously delicious plant-based chocolate treats', keywords: 'vive, chocolate, treats, plant-based, vegan chocolate, sweets', url: 'https://eatvive.com/' },
                     { title: 'Magpye', description: 'Vegan snacks and treats', keywords: 'magpye, snacks, treats, vegan', url: 'https://magpye.co.uk/' },
                     { title: 'NOMO Chocolate', description: 'Award-winning vegan chocolate crafted for everyone, proudly free from dairy, gluten, eggs, and nuts without compromising on taste', keywords: 'nomo chocolate, vegan chocolate, plant-powered, dairy-free, gluten-free, egg-free, nut-free, award-winning, creamy chocolate, caramel filled, cookie dough, sharing boxes, no missing out', url: 'https://www.awin1.com/cread.php?s=3931129&v=24011&q=489659&r=2576869' },
-                    { title: 'Kiuki', description: 'Premium vegan snacks and treats offering a curated selection of plant-based goodies with a focus on taste, nutrition, and sustainability', keywords: 'kiuki, vegan snacks, treats, plant-based, premium quality, sustainability, nutrition, vegankind', url: 'https://kiuki.com/vegankind' }
+                    { title: 'Kiuki', description: 'Premium vegan snacks and treats offering a curated selection of plant-based goodies with a focus on taste, nutrition, and sustainability', keywords: 'kiuki, vegan snacks, treats, plant-based, premium quality, sustainability, nutrition, vegankind', url: 'https://kiuki.com/vegankind' },
+                    { title: 'The Undairy Co.', description: 'The creamiest plant-based chocolate crafted with single origin organic Peruvian cacao', keywords: 'undairy, chocolate, dairy-free, gluten-free, bean-to-bar, peruvian cacao', url: 'https://undairy.co.uk/' },
+                    { title: 'Bay Fudge Co.', description: '100% plant-based artisanal fudge created with locally-sourced ingredients', keywords: 'bay fudge, fudge, artisanal, plant-based, locally-sourced, gift boxes', url: 'https://bayfudge.com/' },
+                    { title: 'Jeavons Toffee', description: 'Award-winning handmade vegan confectionery specializing in dairy-free toffees and caramels', keywords: 'jeavons toffee, toffee, caramel, confectionery, award-winning, handmade, vegan', url: 'https://jeavonstoffee.com/' }
                 ]
             },
             {
@@ -410,7 +414,8 @@ class GlobalSearch {
                     { title: 'Magpye', description: 'Multi-award winning vegan pies handmade in Northumberland', keywords: 'magpye, vegan pies, handmade, northumberland, organic, sustainable', url: 'https://magpye.co.uk/' },
                     { title: 'The Dorky French', description: 'Artisan French bakery and café in Glasgow', keywords: 'dorky french, artisan, french bakery, glasgow, viennoiseries', url: 'https://thedorkyfrench.com/' },
                     { title: 'Pure Bakery Highland', description: 'The UK\'s best and biggest variety of vegan friendly bakes', keywords: 'pure bakery highland, vegan bakes, croy, scotland, stockist', url: 'https://purebakeryhighland.co.uk/' },
-                    { title: 'Carla Bakes', description: 'Gluten-free, vegan & FODMAP friendly bakes handmade in small batches', keywords: 'carla bakes, gluten-free, fodmap, fife, sustainable packaging', url: 'https://carlabakes.com/' }
+                    { title: 'Carla Bakes', description: 'Gluten-free, vegan & FODMAP friendly bakes handmade in small batches', keywords: 'carla bakes, gluten-free, fodmap, fife, sustainable packaging', url: 'https://carlabakes.com/' },
+                    { title: 'A. Pastry Shop', description: 'Vegan bakery in Glasgow offering celebration cakes, wedding cakes, catering, and pastry preorders', keywords: 'a pastry shop, glasgow, vegan bakery, celebration cakes, wedding cakes, catering, lgbtq friendly, croissants', url: 'https://apastry.com/' }
                 ]
             },
             {
