@@ -61,12 +61,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kindvgnlink.com/pantry-essentials.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://kindvgnlink.com/beverages.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
@@ -155,12 +149,6 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kindvgnlink.com/home-decor.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://kindvgnlink.com/textiles-linens.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
@@ -204,12 +192,6 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://kindvgnlink.com/fitness-clothing.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
 
     <!-- Books & Media -->
     <url>
@@ -220,18 +202,6 @@
     </url>
     <url>
         <loc>https://kindvgnlink.com/books-cookbooks.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/books-lifestyle.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/books-magazines.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -251,37 +221,13 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kindvgnlink.com/gifts-baskets.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://kindvgnlink.com/gifts-occasions.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/gifts-personalized.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- Fitness & Wellness -->
-    <url>
-        <loc>https://kindvgnlink.com/fitness-nutrition.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/fitness-workout.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
     <url>
         <loc>https://kindvgnlink.com/wellness-products.html</loc>
         <lastmod>2025-01-15</lastmod>
@@ -310,30 +256,6 @@
     </url>
     <url>
         <loc>https://kindvgnlink.com/europe-hotels-b&amp;bs.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/travel-accessories.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/travel-clothing.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/travel-gadgets.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/travel-shoes.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -411,31 +333,13 @@
 
     <!-- Restaurant Types -->
     <url>
-        <loc>https://kindvgnlink.com/fine-dining.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://kindvgnlink.com/casual-dining.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kindvgnlink.com/fast-casual.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://kindvgnlink.com/cafes-coffee.html</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://kindvgnlink.com/bars-pubs.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>

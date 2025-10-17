@@ -59,7 +59,6 @@ class GlobalSearch {
                     { title: 'Beauty & Skincare', description: 'Cruelty-free beauty products', keywords: 'beauty, skincare, cosmetics, cruelty-free, makeup, skincare, personal care, toiletries', url: 'beauty.html' },
                     { title: 'Home & Living', description: 'Sustainable home products', keywords: 'home, living, sustainable, eco, household, decor, furniture, cleaning', url: 'home-living.html' },
                     { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' },
-                    { title: 'Fitness & Wellness', description: 'Vegan fitness and wellness products', keywords: 'fitness, wellness, health, exercise, workout, sports, nutrition, supplements', url: 'fitness-nutrition.html' },
                     { title: 'Books & Media', description: 'Vegan books, magazines, and media', keywords: 'books, media, magazines, reading, literature, documentaries, films', url: 'books-children.html' },
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' },
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
@@ -289,30 +288,6 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'fitness-clothing.html',
-                title: 'Fitness Clothing',
-                url: 'fitness-clothing.html',
-                content: [
-                    { title: 'Fitness Clothing', description: 'Vegan fitness and workout clothing', keywords: 'fitness clothing, workout clothes, gym wear, activewear, sports clothing, yoga pants, leggings, vegan fitness wear', url: 'fitness-clothing.html' }
-                ]
-            },
-            {
-                page: 'fitness-workout.html',
-                title: 'Fitness & Workout',
-                url: 'fitness-workout.html',
-                content: [
-                    { title: 'Fitness & Workout', description: 'Vegan fitness and workout products', keywords: 'fitness, workout, gym, exercise, sports, yoga, pilates, fitness equipment, vegan fitness', url: 'fitness-workout.html' }
-                ]
-            },
-            {
-                page: 'fitness-nutrition.html',
-                title: 'Fitness & Nutrition',
-                url: 'fitness-nutrition.html',
-                content: [
-                    { title: 'Fitness & Nutrition', description: 'Vegan fitness and nutrition products', keywords: 'fitness, nutrition, protein, supplements, health, wellness, vegan nutrition, vegan fitness', url: 'fitness-nutrition.html' }
-                ]
-            },
-            {
                 page: 'food-drinks.html',
                 title: 'Food & Drinks',
                 url: 'food-drinks.html',
@@ -420,14 +395,6 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'pantry-essentials.html',
-                title: 'Pantry Essentials',
-                url: 'pantry-essentials.html',
-                content: [
-                    { title: 'Pantry Essentials', description: 'Vegan pantry essentials', keywords: 'pantry, essentials, cooking, ingredients, spices, herbs, vegan pantry, vegan essentials', url: 'pantry-essentials.html' }
-                ]
-            },
-            {
                 page: 'cleaning-essentials.html',
                 title: 'Cleaning Essentials',
                 url: 'cleaning-essentials.html',
@@ -467,14 +434,6 @@ class GlobalSearch {
                     { title: 'The Loyal Candle Company', description: 'Luxury soy wax candles handcrafted in the heart of Scotland', keywords: 'loyal candle company, luxury, soy wax, scotland, handcrafted, natural, vegan-friendly', url: 'https://theloyalcandlecompany.com/' },
                     { title: 'RinkyDink Candles', description: 'Handmade candles inspired by iconic 90s smells with their Nostalgia Collection', keywords: 'rinkydink candles, handmade, leeds, 90s, nostalgia, school cake, pink custard, soy wax', url: 'https://rinkydinkcandles.co.uk/' },
                     { title: 'Witch & Twig', description: '100% vegan soy wax candles lovingly handmade and delivered in the UK', keywords: 'witch twig, vegan, soy wax, handmade, uk, essential oils, herbs, flowers, sacred stones, mystical', url: 'https://witchandtwig.com/' }
-                ]
-            },
-            {
-                page: 'home-decor.html',
-                title: 'Home Decor',
-                url: 'home-decor.html',
-                content: [
-                    { title: 'Home Decor', description: 'Vegan home decor and accessories', keywords: 'home decor, decoration, furniture, accessories, vegan home, eco home', url: 'home-decor.html' }
                 ]
             },
             {
@@ -532,22 +491,6 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'books-lifestyle.html',
-                title: 'Books - Lifestyle',
-                url: 'books-lifestyle.html',
-                content: [
-                    { title: 'Books - Lifestyle', description: 'Vegan lifestyle books', keywords: 'books, lifestyle, vegan lifestyle, health, wellness, vegan books', url: 'books-lifestyle.html' }
-                ]
-            },
-            {
-                page: 'books-magazines.html',
-                title: 'Books - Magazines',
-                url: 'books-magazines.html',
-                content: [
-                    { title: 'Books - Magazines', description: 'Vegan magazines and publications', keywords: 'books, magazines, publications, vegan magazines, vegan publications', url: 'books-magazines.html' }
-                ]
-            },
-            {
                 page: 'books-media.html',
                 title: 'Books - Media',
                 url: 'books-media.html',
@@ -561,38 +504,6 @@ class GlobalSearch {
                 url: 'travel.html',
                 content: [
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' }
-                ]
-            },
-            {
-                page: 'travel-accessories.html',
-                title: 'Travel Accessories',
-                url: 'travel-accessories.html',
-                content: [
-                    { title: 'Travel Accessories', description: 'Vegan travel accessories', keywords: 'travel, accessories, luggage, bags, travel gear, vegan travel, travel accessories', url: 'travel-accessories.html' }
-                ]
-            },
-            {
-                page: 'travel-clothing.html',
-                title: 'Travel Clothing',
-                url: 'travel-clothing.html',
-                content: [
-                    { title: 'Travel Clothing', description: 'Vegan travel clothing', keywords: 'travel, clothing, travel clothes, vacation wear, travel fashion, vegan travel clothing', url: 'travel-clothing.html' }
-                ]
-            },
-            {
-                page: 'travel-gadgets.html',
-                title: 'Travel Gadgets',
-                url: 'travel-gadgets.html',
-                content: [
-                    { title: 'Travel Gadgets', description: 'Vegan travel gadgets and electronics', keywords: 'travel, gadgets, electronics, travel tech, vegan travel gadgets', url: 'travel-gadgets.html' }
-                ]
-            },
-            {
-                page: 'travel-shoes.html',
-                title: 'Travel Shoes',
-                url: 'travel-shoes.html',
-                content: [
-                    { title: 'Travel Shoes', description: 'Vegan travel shoes and footwear', keywords: 'travel, shoes, footwear, travel shoes, vacation shoes, vegan travel shoes', url: 'travel-shoes.html' }
                 ]
             },
             {
@@ -620,35 +531,11 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'gift-accessories.html',
-                title: 'Gift Accessories',
-                url: 'gift-accessories.html',
-                content: [
-                    { title: 'Gift Accessories', description: 'Vegan gift accessories and presents', keywords: 'gift accessories, presents, vegan gifts, accessories, souvenirs', url: 'gift-accessories.html' }
-                ]
-            },
-            {
-                page: 'gifts-baskets.html',
-                title: 'Gift Baskets',
-                url: 'gifts-baskets.html',
-                content: [
-                    { title: 'Gift Baskets', description: 'Vegan gift baskets', keywords: 'gifts, baskets, gift baskets, presents, vegan gifts, gift sets', url: 'gifts-baskets.html' }
-                ]
-            },
-            {
                 page: 'gifts-occasions.html',
                 title: 'Gifts by Occasions',
                 url: 'gifts-occasions.html',
                 content: [
                     { title: 'Gifts by Occasions', description: 'Vegan gifts for special occasions', keywords: 'gifts, occasions, birthday, christmas, wedding, anniversary, vegan gifts', url: 'gifts-occasions.html' }
-                ]
-            },
-            {
-                page: 'gifts-personalized.html',
-                title: 'Personalized Gifts',
-                url: 'gifts-personalized.html',
-                content: [
-                    { title: 'Personalized Gifts', description: 'Personalized vegan gifts', keywords: 'gifts, personalized, custom, engraved, monogrammed, vegan gifts', url: 'gifts-personalized.html' }
                 ]
             },
             {
@@ -682,14 +569,6 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'fine-dining.html',
-                title: 'Fine Dining',
-                url: 'fine-dining.html',
-                content: [
-                    { title: 'Fine Dining', description: 'Vegan fine dining restaurants', keywords: 'fine dining, upscale, gourmet, vegan fine dining, luxury dining', url: 'fine-dining.html' }
-                ]
-            },
-            {
                 page: 'casual-dining.html',
                 title: 'Casual Dining',
                 url: 'casual-dining.html',
@@ -698,27 +577,11 @@ class GlobalSearch {
                 ]
             },
             {
-                page: 'fast-casual.html',
-                title: 'Fast Casual',
-                url: 'fast-casual.html',
-                content: [
-                    { title: 'Fast Casual', description: 'Vegan fast casual restaurants', keywords: 'fast casual, quick, casual, vegan fast casual, quick service', url: 'fast-casual.html' }
-                ]
-            },
-            {
                 page: 'cafes-coffee.html',
                 title: 'Cafes & Coffee',
                 url: 'cafes-coffee.html',
                 content: [
                     { title: 'Cafes & Coffee', description: 'Vegan cafes and coffee shops', keywords: 'cafes, coffee, coffee shops, vegan cafes, vegan coffee, coffee shops', url: 'cafes-coffee.html' }
-                ]
-            },
-            {
-                page: 'bars-pubs.html',
-                title: 'Bars & Pubs',
-                url: 'bars-pubs.html',
-                content: [
-                    { title: 'Bars & Pubs', description: 'Vegan bars and pubs', keywords: 'bars, pubs, drinks, alcohol, vegan bars, vegan pubs, nightlife', url: 'bars-pubs.html' }
                 ]
             },
             {
