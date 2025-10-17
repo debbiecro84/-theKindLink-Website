@@ -711,14 +711,6 @@ class GlobalSearch {
                     { title: 'Oowee Vegan', description: 'Making the fast food of the future with an obsession for flavor! Serving deliciously vegan comfort food including classic double cheeseburgers and signature milkshakes', keywords: 'oowee vegan, brighton, fast food, vegan comfort food, cheeseburgers, milkshakes, market street, delivery, click collect', url: 'https://ooweevegan.com/' }
                 ]
             },
-            {
-                page: 'bath-restaurants.html',
-                title: 'Bath Restaurants',
-                url: 'bath-restaurants.html',
-                content: [
-                    { title: 'Bath Restaurants', description: 'Vegan restaurants in Bath', keywords: 'bath, restaurants, vegan bath, bath dining, uk restaurants', url: 'bath-restaurants.html' }
-                ]
-            },
 
             // Events Page
             {
