@@ -497,7 +497,7 @@ h3 {
 
 
 .page-header-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     font-family: 'Luckiest Guy', cursive;
     color: var(--text-medium) !important;
@@ -1550,6 +1550,9 @@ h3 {
 
 .categories-section h2 {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Luckiest Guy', cursive;
     margin-bottom: 2rem;
 }
 
@@ -1817,7 +1820,7 @@ h3 {
 }
 
 .type-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #333;
 }
@@ -1825,6 +1828,7 @@ h3 {
 .type-content p {
     color: #666;
     margin-bottom: 1rem;
+    font-size: 1.05rem;
 }
 
 .type-features {
