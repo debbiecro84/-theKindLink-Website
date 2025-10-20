@@ -334,7 +334,8 @@ class GlobalSearch {
                     { title: 'Innocent', description: 'Delicious smoothies, juices, and healthy drinks made with real fruit', keywords: 'innocent, smoothies, juices, fruit, b corp, healthy drinks', url: 'https://www.innocentdrinks.co.uk/home' },
                     { title: 'Overherd', description: 'Powdered oat milk that you just add water to', keywords: 'overherd, oat milk, powdered, sustainable, dairy-free, plant milk', url: 'https://overherd.uk/' },
                     { title: 'MYOM', description: 'Revolutionary oat milk paste that you make at home', keywords: 'myom, oat milk, paste, home made, dairy-free, plant milk', url: 'https://myom.shop/' },
-                    { title: 'Cairn o\' Mohr', description: 'Scottish fruit wine and cider winery crafting award-winning country wines since 1987', keywords: 'cairn o mohr, scottish, fruit wine, cider, winery, perthshire, award-winning, country wines', url: 'https://cairnomohr.com/' }
+                    { title: 'Cairn o\' Mohr', description: 'Scottish fruit wine and cider winery crafting award-winning country wines since 1987', keywords: 'cairn o mohr, scottish, fruit wine, cider, winery, perthshire, award-winning, country wines', url: 'https://cairnomohr.com/' },
+                    { title: 'Cremaura', description: 'Vegan tequila cream liqueurs made in the UK. Award-winning, gluten-free, Vegan Friendly UK certified. Flavours include Coffee Caramel and Rose', keywords: 'cremaura, vegan tequila cream, liqueur, cream liqueur, coffee caramel, rose, gluten-free, vegan friendly uk, awards, plant based alcohol', url: 'https://www.cremaura.com/' }
                 ]
             },
             {
