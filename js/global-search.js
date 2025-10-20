@@ -539,6 +539,15 @@ class GlobalSearch {
                 ]
             },
             {
+                page: 'clothing.html',
+                title: 'Clothing',
+                url: 'clothing.html',
+                content: [
+                    { title: 'Clothing', description: 'Ethical and sustainable vegan clothing', keywords: 'clothing, fashion, apparel, vegan clothing, ethical, sustainable, brands', url: 'clothing.html' },
+                    { title: 'Vegayn', description: 'Queer-owned brand: queer • kind • plant-based. Eco-certified, printed on demand to avoid overproduction. T-shirts, hoodies, hats, mugs, towels and more', keywords: 'vegayn, queer, queer owned, kind, plant-based, clothing, t-shirts, hoodies, accessories, eco-certified, printed on demand', url: 'https://vegayn.com/' }
+                ]
+            },
+            {
                 page: 'tattoo-studios.html',
                 title: 'Tattoo Studios',
                 url: 'tattoo-studios.html',
