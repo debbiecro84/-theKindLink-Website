@@ -522,7 +522,8 @@ class GlobalSearch {
                 title: 'Europe Hotels & B&Bs',
                 url: 'europe-hotels-b&bs.html',
                 content: [
-                    { title: 'Europe Hotels & B&Bs', description: 'Vegan-friendly European accommodation', keywords: 'europe, hotels, b&b, bed and breakfast, accommodation, vegan hotels, europe travel', url: 'europe-hotels-b&bs.html' }
+                    { title: 'Europe Hotels & B&Bs', description: 'Vegan-friendly European accommodation', keywords: 'europe, hotels, b&b, bed and breakfast, accommodation, vegan hotels, europe travel', url: 'europe-hotels-b&bs.html' },
+                    { title: 'Açai Plant-Based Hotel', description: 'Opening summer 2025 in Rhodes, Greece. A sustainable and plant-based haven in the heart of Rhodes town featuring the only exclusive plant-based fine restaurant on the island', keywords: 'acai plant-based hotel, rhodes, greece, plant-based hotel, sustainable, vegan hotel, rhodes town, fine restaurant, eco-friendly, luxury suites, plant-based cuisine', url: 'https://acairhodes.com/' }
                 ]
             },
             {
