@@ -246,7 +246,8 @@ class GlobalSearch {
                     { title: 'Plant Faced Clothing', description: 'Vegan clothing brand offering sustainable, ethical fashion with plant-based messaging', keywords: 'plant faced clothing, vegan clothing, sustainable, ethical fashion, plant-based messaging, eco-friendly', url: 'https://plantfacedclothing.com/' },
                     { title: 'Immaculate Vegan', description: 'Premium vegan store bringing you the best vegan and ethical fashion brands', keywords: 'immaculate vegan, premium, vegan store, ethical fashion, vegan shoes, bags, accessories, sustainable clothing', url: 'https://www.immaculatevegan.com/' },
                     { title: 'Yes Friends', description: 'UK-based ethical and sustainable clothing company making affordable ethical fashion accessible', keywords: 'yes friends, uk, ethical, sustainable clothing, affordable, fairtrade, organic cotton, solar-assisted', url: 'https://yesfriends.com/' },
-                    { title: 'Vegan As Folk', description: 'UK family-run company dedicated to ethical plant-based clothing using organic cotton', keywords: 'vegan as folk, uk, family-run, ethical, plant-based clothing, organic cotton, recycled polyester, wrap, fair wear', url: 'https://veganasfolk.com/' }
+                    { title: 'Vegan As Folk', description: 'UK family-run company dedicated to ethical plant-based clothing using organic cotton', keywords: 'vegan as folk, uk, family-run, ethical, plant-based clothing, organic cotton, recycled polyester, wrap, fair wear', url: 'https://veganasfolk.com/' },
+                    { title: 'Worn Out Vegan', description: 'Made-to-order sustainable vegan clothing with bold activist messaging. Ships from the EU with 10% of proceeds helping animals', keywords: 'worn out vegan, made-to-order, sustainable, vegan clothing, activist messaging, eu shipping, animal support, organic cotton, peta-approved', url: 'https://wornoutvegan.com/' }
                 ]
             },
             {
@@ -363,7 +364,8 @@ class GlobalSearch {
                     { title: 'Kiuki', description: 'Premium vegan snacks and treats offering a curated selection of plant-based goodies with a focus on taste, nutrition, and sustainability', keywords: 'kiuki, vegan snacks, treats, plant-based, premium quality, sustainability, nutrition, vegankind', url: 'https://kiuki.com/vegankind' },
                     { title: 'The Undairy Co.', description: 'The creamiest plant-based chocolate crafted with single origin organic Peruvian cacao', keywords: 'undairy, chocolate, dairy-free, gluten-free, bean-to-bar, peruvian cacao', url: 'https://undairy.co.uk/' },
                     { title: 'Bay Fudge Co.', description: '100% plant-based artisanal fudge created with locally-sourced ingredients', keywords: 'bay fudge, fudge, artisanal, plant-based, locally-sourced, gift boxes', url: 'https://bayfudge.com/' },
-                    { title: 'Jeavons Toffee', description: 'Award-winning handmade vegan confectionery specializing in dairy-free toffees and caramels', keywords: 'jeavons toffee, toffee, caramel, confectionery, award-winning, handmade, vegan', url: 'https://jeavonstoffee.com/' }
+                    { title: 'Jeavons Toffee', description: 'Award-winning handmade vegan confectionery specializing in dairy-free toffees and caramels', keywords: 'jeavons toffee, toffee, caramel, confectionery, award-winning, handmade, vegan', url: 'https://jeavonstoffee.com/' },
+                    { title: 'Kindly of Brighton', description: 'Brighton\'s premier vegan supermarket offering thousands of plant-based products with refill stations to reduce plastic waste', keywords: 'kindly of brighton, brighton, vegan supermarket, refill stations, plastic waste, vegan cheeses, local breweries, organic toiletries, free delivery', url: 'https://kindlyofbrighton.com/' }
                 ]
             },
             {
