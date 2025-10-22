@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/global-search.css">
+    <link rel="stylesheet" href="css/help-requests.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fredoka+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -442,6 +443,115 @@
         </div>
     </section>
 
+    <!-- Sanctuary Help Requests -->
+    <section class="help-requests-section">
+        <div class="container">
+            <h2>Sanctuary Help Requests</h2>
+            <p class="section-description">Sanctuaries often need specific help. Here are current requests from our featured sanctuaries. Click to learn more and see how you can make a difference!</p>
+            
+            <div class="help-requests-grid">
+                <!-- Lotus Lamb & Animal Sanctuary Help Request -->
+                <div class="help-request-card volunteer">
+                    <div class="request-header">
+                        <div class="request-badge volunteer">Volunteer</div>
+                        <div class="request-date">Posted recently</div>
+                    </div>
+                    <div class="request-content">
+                        <h3>Winter Preparation Help Needed - Lotus Lamb & Animal Sanctuary</h3>
+                        <p>We're getting our vegan smallholding ready for winter and could really use some extra hands! Everything's done kindly and vegan-friendly, and you'll be surrounded by friendly animals, fresh air, and plenty of tea, coffee, cake, and cuddles! ☕🍰🐾</p>
+                        <div class="request-details">
+                            <span class="request-type"><i class="fas fa-hands"></i> Volunteer Work</span>
+                            <span class="request-location"><i class="fas fa-map-marker-alt"></i> West Sussex, England</span>
+                        </div>
+                        <div class="request-actions">
+                            <a href="https://lotuslambanimalsanctuary.co.uk/volunteer" target="_blank" class="help-btn primary">Volunteer Now</a>
+                            <button class="help-btn secondary" onclick="openHelpModal('lotus-winter')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-requests-cta">
+                <h3>Want to Post a Help Request?</h3>
+                <p>Are you a sanctuary that needs help? Let our community know what you need!</p>
+                <button class="get-featured-btn" onclick="openHelpRequestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Post a Help Request
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Request Details Modal -->
+    <div id="helpRequestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeHelpModal()">&times;</span>
+            <div id="helpModalContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Help Request Modal -->
+    <div id="postHelpRequestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePostHelpRequestModal()">&times;</span>
+            <h3>Post a Help Request</h3>
+            <form class="help-request-form" action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleHelpRequestFormSubmit(event)">
+                <div class="form-group">
+                    <label for="sanctuary_name">Sanctuary Name *</label>
+                    <input type="text" id="sanctuary_name" name="sanctuary_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="request_type">Type of Help Needed *</label>
+                    <select id="request_type" name="request_type" required>
+                        <option value="">Select type of help</option>
+                        <option value="financial">Financial Support</option>
+                        <option value="volunteer">Volunteer Work</option>
+                        <option value="supplies">Supplies/Materials</option>
+                        <option value="maintenance">Maintenance Work</option>
+                        <option value="fundraiser">Fundraising</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="urgency">Urgency Level *</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">Select urgency</option>
+                        <option value="urgent">Urgent (within 1 week)</option>
+                        <option value="soon">Soon (within 1 month)</option>
+                        <option value="flexible">Flexible timing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="request_title">Request Title *</label>
+                    <input type="text" id="request_title" name="request_title" placeholder="Brief description of what you need" required>
+                </div>
+                <div class="form-group">
+                    <label for="request_description">Detailed Description *</label>
+                    <textarea id="request_description" name="request_description" rows="4" placeholder="Tell us more about what you need and how people can help..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact_info">Contact Information *</label>
+                    <input type="text" id="contact_info" name="contact_info" placeholder="Email, phone, or website where people can reach you" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <input type="text" id="location" name="location" placeholder="City, Region" required>
+                </div>
+                <div class="form-group">
+                    <label for="your_email">Your Email (for follow-up)</label>
+                    <input type="email" id="your_email" name="your_email" placeholder="Your email address">
+                </div>
+                <input type="hidden" name="_subject" value="New Sanctuary Help Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Sanctuaries Page - Post Help Request">
+                <button type="submit" class="suggest-button">Submit Help Request</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Visit a Sanctuary -->
     <section class="visit-section">
         <div class="container">
@@ -729,6 +839,113 @@
     </div>
 
     <script src="js/global-search.js"></script>
+
+    <!-- Help Request Modal Functions -->
+    <script>
+        // Help request modal data
+        const helpRequestData = {
+            'lotus-winter': {
+                title: 'Winter Preparation Help Needed - Lotus Lamb & Animal Sanctuary',
+                content: `
+                    <h3>Winter Preparation on Our Vegan Smallholding</h3>
+                    <p><strong>Sanctuary:</strong> Lotus Lamb & Animal Sanctuary</p>
+                    <p><strong>Location:</strong> West Sussex, England</p>
+                    <p><strong>Urgency:</strong> Next few weeks</p>
+                    
+                    <h4>What We Need Help With:</h4>
+                    <p>We're getting our vegan smallholding ready for winter and could really use some extra hands! Here's what we're hoping to get done:</p>
+                    <ul>
+                        <li>🛠️ <strong>Put a roof and sides on the chicken enclosure</strong> for winter protection</li>
+                        <li>🪵 <strong>Lay a floor in the chicken enclosure</strong> for better comfort</li>
+                        <li>🌳 <strong>Redo the fence between the paddock and the hard standing</strong></li>
+                        <li>🐷 <strong>Finish the fencing for the pigs</strong> (including the top wire)</li>
+                        <li>🚜 <strong>Lay mud mats in front of the pig areas</strong> for easier access</li>
+                        <li>🐴 <strong>Patch up holes in the horse field shelters</strong></li>
+                        <li>🚽 <strong>Build the compost loo</strong> for sustainable facilities</li>
+                        <li>🌾 <strong>Make a cover for the hay feeding area</strong></li>
+                        <li>🌱 <strong>Harrow, seed, and fertilise the paddocks</strong> for spring growth</li>
+                    </ul>
+                    
+                    <h4>What You Can Expect:</h4>
+                    <ul>
+                        <li>Everything's done kindly and vegan-friendly</li>
+                        <li>You'll be surrounded by friendly animals</li>
+                        <li>Fresh air and beautiful countryside</li>
+                        <li>Endless cups of tea, good cake, and all the animal love you can handle! ☕🍰🐾</li>
+                    </ul>
+                    
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>No experience needed — just enthusiasm and kindness ❤️</li>
+                        <li>Enjoy practical outdoor work</li>
+                        <li>Even a few hours would be amazing!</li>
+                        <li>Please drop us a direct message with your availability</li>
+                    </ul>
+                    
+                    <p><strong>Contact:</strong> <a href="https://lotuslambanimalsanctuary.co.uk/volunteer" target="_blank">Visit our volunteer page</a> to apply and let us know your availability!</p>
+                `
+            }
+        };
+
+        // Open help request details modal
+        function openHelpModal(requestId) {
+            const modal = document.getElementById('helpRequestModal');
+            const content = document.getElementById('helpModalContent');
+            
+            if (helpRequestData[requestId]) {
+                const data = helpRequestData[requestId];
+                content.innerHTML = `
+                    <h2>${data.title}</h2>
+                    <div class="modal-body">
+                        ${data.content}
+                    </div>
+                `;
+                modal.style.display = 'block';
+            }
+        }
+
+        // Close help request details modal
+        function closeHelpModal() {
+            document.getElementById('helpRequestModal').style.display = 'none';
+        }
+
+        // Open post help request modal
+        function openHelpRequestModal() {
+            document.getElementById('postHelpRequestModal').style.display = 'block';
+        }
+
+        // Close post help request modal
+        function closePostHelpRequestModal() {
+            document.getElementById('postHelpRequestModal').style.display = 'none';
+        }
+
+        // Handle help request form submission
+        function handleHelpRequestFormSubmit(event) {
+            event.preventDefault();
+            
+            // Show success message
+            alert('Thank you for submitting your help request! We will review it and get back to you within 2-3 business days.');
+            
+            // Close modal
+            closePostHelpRequestModal();
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const helpModal = document.getElementById('helpRequestModal');
+            const postModal = document.getElementById('postHelpRequestModal');
+            
+            if (event.target === helpModal) {
+                closeHelpModal();
+            }
+            if (event.target === postModal) {
+                closePostHelpRequestModal();
+            }
+        }
+    </script>
 </body>
 </html> 
 

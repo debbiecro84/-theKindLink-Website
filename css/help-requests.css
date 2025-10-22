@@ -1,0 +1,355 @@
+/* Help Requests Section Styles */
+.help-requests-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.help-requests-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.help-requests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.help-request-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #28a745;
+}
+
+.help-request-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.help-request-card.urgent {
+    border-left-color: #dc3545;
+}
+
+.help-request-card.volunteer {
+    border-left-color: #007bff;
+}
+
+.help-request-card.supplies {
+    border-left-color: #ffc107;
+}
+
+.help-request-card.fundraiser {
+    border-left-color: #6f42c1;
+}
+
+.request-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.request-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.request-badge.urgent {
+    background: #dc3545;
+    color: white;
+}
+
+.request-badge.volunteer {
+    background: #007bff;
+    color: white;
+}
+
+.request-badge.supplies {
+    background: #ffc107;
+    color: #212529;
+}
+
+.request-badge.fundraiser {
+    background: #6f42c1;
+    color: white;
+}
+
+.request-date {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.request-content {
+    padding: 1.5rem;
+}
+
+.request-content h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.request-content p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.request-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.request-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+.request-details i {
+    color: #28a745;
+    width: 16px;
+}
+
+.request-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.help-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.help-btn.primary {
+    background: #28a745;
+    color: white;
+}
+
+.help-btn.primary:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.help-btn.secondary {
+    background: transparent;
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+.help-btn.secondary:hover {
+    background: #28a745;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.help-requests-cta {
+    text-align: center;
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-requests-cta h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.help-requests-cta p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Help Request Form Styles */
+.help-request-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.help-request-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.help-request-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.help-request-form input,
+.help-request-form select,
+.help-request-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.help-request-form input:focus,
+.help-request-form select:focus,
+.help-request-form textarea:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+.help-request-form .suggest-button {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.help-request-form .suggest-button:hover {
+    background: #218838;
+}
+
+/* Modal Content Styles */
+#helpModalContent h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+#helpModalContent h3 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+#helpModalContent h4 {
+    color: #495057;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+#helpModalContent ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+#helpModalContent li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+#helpModalContent a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#helpModalContent a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-requests-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .help-request-card {
+        margin: 0 1rem;
+    }
+    
+    .request-actions {
+        flex-direction: column;
+    }
+    
+    .help-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .help-requests-cta {
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .help-requests-section h2 {
+        font-size: 2rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .request-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .request-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .help-request-card {
+        margin: 0 0.5rem;
+    }
+    
+    .help-requests-cta {
+        margin: 0 0.5rem;
+        padding: 1.5rem 1rem;
+    }
+}
