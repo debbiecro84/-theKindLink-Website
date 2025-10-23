@@ -64,6 +64,7 @@ class GlobalSearch {
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
                     { title: 'Vitamins & Supplements', description: 'High-quality vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, wellness, b12, omega, minerals', url: 'vitamins-supplements.html' },
                     { title: 'Jobs', description: 'Vegan and ethical job opportunities', keywords: 'jobs, careers, employment, work, vegan jobs, ethical jobs, opportunities, hiring', url: 'jobs.html' },
+                    { title: 'Spa & Retreat', description: 'Vegan-friendly wellness and relaxation experiences', keywords: 'spa, retreat, wellness, relaxation, glamping, sanctuary, vegan spa, wellness retreat, detox, mindfulness, meditation, yoga retreat, animal sanctuary', url: 'spa-retreat.html' },
                     // { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
                 ]
             },
@@ -238,6 +239,7 @@ class GlobalSearch {
                 url: 'clothing.html',
                 content: [
                     { title: 'Clothing', description: 'Vegan clothing and apparel', keywords: 'clothing, clothes, apparel, shirts, pants, dresses, tops, bottoms, vegan clothing', url: 'clothing.html' },
+                    { title: 'Vegan Happy Clothing', description: 'Clothes made with love, designed to spark conversation and support animal rescue. Subtle, stylish vegan clothing for men, women, and kids', keywords: 'vegan happy clothing, clothes made with love, animal rescue support, subtle vegan messaging, 100% cotton, peta approved, hoodies, sweatshirts, joggers, jackets, beanies, accessories, men women kids, cruelty free style, spark conversation', url: 'https://www.veganhappyclothing.co.uk/' },
                     { title: 'Viva La Vegan', description: 'Eco-ethical vegan clothing & accessories with powerful activist messaging', keywords: 'viva la vegan, eco-ethical, vegan clothing, organic cotton, sweatshop-free, animal charities', url: 'https://vivalavegan.com/' },
                     { title: 'HeartCure Clothing', description: 'Vegan non-profit clothing company creating conscious clothing that supports sanctuaries', keywords: 'heartcure clothing, non-profit, conscious clothing, sanctuaries, activism, vegan', url: 'https://heartcureclothing.com/' },
                     { title: 'Anticarnist', description: 'Independent one-woman vegan brand creating sweatshop-free apparel with organic fabrics and cruelty-free inks', keywords: 'anticarnist, independent, one-woman, vegan brand, sweatshop-free, organic fabrics, cruelty-free inks, made to order, animal sanctuaries', url: 'https://www.anticarnist.com/' },
@@ -247,7 +249,7 @@ class GlobalSearch {
                     { title: 'Immaculate Vegan', description: 'Premium vegan store bringing you the best vegan and ethical fashion brands', keywords: 'immaculate vegan, premium, vegan store, ethical fashion, vegan shoes, bags, accessories, sustainable clothing', url: 'https://www.immaculatevegan.com/' },
                     { title: 'Yes Friends', description: 'UK-based ethical and sustainable clothing company making affordable ethical fashion accessible', keywords: 'yes friends, uk, ethical, sustainable clothing, affordable, fairtrade, organic cotton, solar-assisted', url: 'https://yesfriends.com/' },
                     { title: 'Vegan As Folk', description: 'UK family-run company dedicated to ethical plant-based clothing using organic cotton', keywords: 'vegan as folk, uk, family-run, ethical, plant-based clothing, organic cotton, recycled polyester, wrap, fair wear', url: 'https://veganasfolk.com/' },
-                    { title: 'Worn Out Vegan', description: 'Made-to-order sustainable vegan clothing with bold activist messaging. Ships from the EU with 10% of proceeds helping animals', keywords: 'worn out vegan, made-to-order, sustainable, vegan clothing, activist messaging, eu shipping, animal support, organic cotton, peta-approved', url: 'https://wornoutvegan.com/' }
+                    { title: 'Worn Out Vegan', description: 'Made-to-order sustainable vegan clothing with bold activist messaging. Ships from the EU with 10% of proceeds helping animals', keywords: 'worn out vegan, made-to-order, sustainable, vegan clothing, activist messaging, eu shipping, animal support, organic cotton, peta-approved', url: 'https://wornoutvegan.com?sca_ref=9854438.AACEK0gVym4&utm_source=instagram&utm_medium=instagram&utm_campaign=beardedveganutm' }
                 ]
             },
             {
@@ -456,6 +458,7 @@ class GlobalSearch {
                 url: 'general-household.html',
                 content: [
                     { title: 'General Household', description: 'Essential household items and home accessories for sustainable living', keywords: 'general household, household items, home accessories, essential items, sustainable living, eco household, home essentials, household products', url: 'general-household.html' },
+                    { title: 'Vegan Haven', description: 'A business with a soul - your one-stop vegan lifestyle store with furniture, home accessories, clothing, and ethical products', keywords: 'vegan haven, lifestyle store, furniture, home accessories, clothing, watches, ethical products, wildlife rescue, 100% vegan, secure payment, created by vegans, business with soul, percentage sales wildlife, safe haven, rescue rehabilitate release', url: 'https://www.veganhaven.co.uk/' },
                     { title: 'Naked Paper', description: 'UK\'s best eco toilet paper, kitchen roll, and tissues made from unbleached bamboo and recycled materials', keywords: 'naked paper, eco toilet paper, bamboo toilet paper, unbleached, recycled toilet paper, kitchen roll, tissues, sustainable paper, fsc certified, climate footprint, 20 million rolls sold, 12000 reviews, fossil fuel free, double length rolls, subscription service', url: 'https://uk.nakedpaper.com/' },
                     { title: 'The Cheeky Panda', description: 'Sustainable bamboo toilet paper, kitchen roll, tissues, period products, and baby care items that save trees, money and time', keywords: 'cheeky panda, bamboo toilet paper, sustainable toilet paper, bamboo kitchen roll, bamboo tissues, period pads, baby nappies, bamboo wipes, tree-free, double length rolls, subscription service, wwf uk, b corp, fsc certified, cruelty free, vegan, biodegradable, eco friendly, zero waste, bamboo revolution, 8k customers, cheeky savings', url: 'https://uk.cheekypanda.com/' },
                     { title: 'Who Gives A Crap', description: 'Eco-friendly toilet paper, tissues, kitchen roll, and household products with 50% of profits donated to clean water and sanitation projects', keywords: 'who gives a crap, eco toilet paper, recycled toilet paper, bamboo toilet paper, sustainable tissues, kitchen roll, household products, 50% profits donated, clean water, sanitation, fsc certified, carbon neutral shipping, 100% money back guarantee, over 9 million raised, deforestation reduction, bundles, subscription', url: 'https://uk.whogivesacrap.org/' },
@@ -876,7 +879,38 @@ class GlobalSearch {
             //         { title: 'Animal Shelter', description: 'Run a refuge for strays and rescues! Clean, protect, and care for abandoned animals as you help them find loving new homes', keywords: 'animal shelter, refuge, strays, rescues, animals, care, adoption, simulation', url: 'https://store.steampowered.com/app/1389820/Animal_Rescue/' },
             //         { title: 'Bunny Raiders', description: 'Roguelike game where you and friends battle through randomly generated rooms, destroying evil robots and saving furry friends', keywords: 'bunny raiders, roguelike, bunnies, robots, animals, nature, protection, multiplayer', url: 'https://store.playstation.com/en-gb/product/EP8209-CUSA30149_00-7386874431634642' }
             //     ]
-            // }
+            // },
+
+            // Spa & Retreat Page
+            {
+                page: 'spa-retreat.html',
+                title: 'Spa & Retreat',
+                url: 'spa-retreat.html',
+                content: [
+                    { title: 'Spa & Retreat', description: 'Vegan-friendly wellness and relaxation experiences', keywords: 'spa, retreat, wellness, relaxation, glamping, sanctuary, vegan spa, wellness retreat, detox, mindfulness, meditation, yoga retreat, animal sanctuary', url: 'spa-retreat.html' },
+                    { title: 'Hempsall Farm Vegan Glamping', description: 'Luxury vegan glamping in the Cambridgeshire countryside with wood-fired hot tubs and animal sanctuary', keywords: 'hempsall farm, vegan glamping, cambridgeshire, countryside, hot tubs, animal sanctuary, luxury, safari tents, family, groups, fenland, woodland walks', url: 'https://www.veganglamping.site/' },
+                    { title: 'The Base Vegan Retreat Animal Sanctuary', description: 'Luxury vegan retreat and animal sanctuary in Bristol with bespoke cabin and outdoor spa area', keywords: 'base retreat, bristol, animal sanctuary, luxury cabin, cotswolds, outdoor spa, vegan breakfast, wildlife rescue, not-for-profit, campaigning', url: 'https://thebaseretreat.co.uk/' },
+                    { title: 'La Crisalida Retreats', description: 'Holistic health and wellness retreat in the Upper Severn Valley, Wales with daily yoga and plant-based nutrition', keywords: 'la crisalida, wales, holistic wellness, yoga, meditation, plant-based nutrition, maesmawr hall, severn valley, detox, longevity retreat, flexible arrival', url: 'https://lacrisalidaretreats.co.uk/' },
+                    { title: 'Haye Cornwall', description: 'Unique holidays and wellness retreats at an animal sanctuary in Cornwall with yoga retreats and wild swimming', keywords: 'haye cornwall, animal sanctuary, yoga retreats, wild swimming, rescued animals, permaculture garden, cornish countryside, small groups, homemade vegan food', url: 'https://hayecornwall.co.uk/' },
+                    { title: 'The Greenhouse Spa Retreat', description: 'Nurture yourself in nature at this serene Cornish garden spa retreat with 30-year mature garden', keywords: 'greenhouse spa, cornish garden, nature spa, 30-year garden, glamping, holistic treatments, wellness activities, mother nature, sanctuary', url: 'https://www.thegreenhousespa.co.uk/' },
+                    { title: 'The Gavin Sisters - The Detox Barn', description: 'Recognized by Condé Nast as one of the top wellness retreats of 2025! Weekend detox retreats in Suffolk countryside', keywords: 'gavin sisters, detox barn, suffolk, condé nast, top wellness retreats 2025, weekend detox, yoga, plant-based food, fresh juices, barn conversion, open fires, 2-acre garden', url: 'https://gavinsisters.co.uk/' }
+                ]
+            },
+
+            // Decorating Page
+            {
+                page: 'decorating.html',
+                title: 'Decorating',
+                url: 'decorating.html',
+                content: [
+                    { title: 'Decorating', description: 'Transform your space with vegan home decor and sustainable interior design', keywords: 'decorating, home decor, interior design, vegan furniture, wall art, lighting, plants, rugs, accessories, sustainable design, eco-friendly home', url: 'decorating.html' },
+                    { title: 'Edward Bulmer Natural Paint', description: 'Pioneering plant-based natural paint that doesn\'t cost the Earth. 100% natural, toxin-free paints with complete transparency about ingredients', keywords: 'edward bulmer, natural paint, plant-based paint, toxin-free, eco-friendly paint, natural pigments, colour consultancy, london showroom, responsible design, biodiversity', url: 'https://www.edwardbulmerpaint.co.uk/' },
+                    { title: 'Claybrook Studio', description: 'UK-made eco-friendly and vegan paint options with 75 beautiful hues. Water-based paints that are low in VOCs, cruelty-free, and offer excellent coverage and durability', keywords: 'claybrook studio, uk-made, eco-friendly paint, vegan paint, water-based, low voc, cruelty-free, 75 hues, emulsion, eggshell, free samples, sustainable paint', url: 'https://www.claybrookstudio.co.uk/' },
+                    { title: 'The Organic & Natural Paint Company', description: 'Independent family-owned business specializing in natural, organic, and vegan paints. Offers zero VOC paint, air purifying paints, and natural wood finishes', keywords: 'organic natural paint company, zero voc paint, air purifying paint, natural paint, organic paint, vegan paint, clay paint, lime paint, breathable paint, family owned, sustainable paint, eco-friendly', url: 'https://organicnaturalpaint.co.uk/' },
+                    { title: 'Victory Colours Down to Earth Paints', description: 'Brother and sister team creating highly technical, high-performing, solvent-free paint with low toxins. Extremely low VOC paint that is practically odourless', keywords: 'victory colours, down to earth paints, low voc paint, low odour paint, vegan paint, eco-friendly paint, solvent-free, high performing, professional quality, brother sister team, chemistry expertise', url: 'https://www.victorycolours.co.uk/' },
+                    { title: 'Little Greene', description: 'Eco-friendly paint and wallpaper company committed to producing vegan and sustainable decorating solutions. Free from animal-derived ingredients and not tested on animals', keywords: 'little greene, eco-friendly paint, vegan paint, wallpaper, sustainable decorating, cruelty-free, animal-free, quality paint, conscious decorating, uk paint company', url: 'https://www.littlegreene.com/' }
+                ]
+            }
         ];
     }
 
