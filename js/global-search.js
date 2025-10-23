@@ -910,6 +910,17 @@ class GlobalSearch {
                     { title: 'Victory Colours Down to Earth Paints', description: 'Brother and sister team creating highly technical, high-performing, solvent-free paint with low toxins. Extremely low VOC paint that is practically odourless', keywords: 'victory colours, down to earth paints, low voc paint, low odour paint, vegan paint, eco-friendly paint, solvent-free, high performing, professional quality, brother sister team, chemistry expertise', url: 'https://www.victorycolours.co.uk/' },
                     { title: 'Little Greene', description: 'Eco-friendly paint and wallpaper company committed to producing vegan and sustainable decorating solutions. Free from animal-derived ingredients and not tested on animals', keywords: 'little greene, eco-friendly paint, vegan paint, wallpaper, sustainable decorating, cruelty-free, animal-free, quality paint, conscious decorating, uk paint company', url: 'https://www.littlegreene.com/' }
                 ]
+            },
+
+            // Support Websites Page
+            {
+                page: 'support-websites.html',
+                title: 'Support these websites',
+                url: 'support-websites.html',
+                content: [
+                    { title: 'Support these websites', description: 'Help support these amazing vegan websites and movements', keywords: 'support websites, vegan websites, vegan movements, support vegan causes, plant-based websites, ethical websites, vegan community, support vegan activism', url: 'support-websites.html' },
+                    { title: 'Plant-Based Schools', description: 'Parents, teachers and supporters uniting to push for healthier, more sustainable meals in schools. Join the movement fighting to make plant-based school meals happen', keywords: 'plant-based schools, school meals, children health, sustainable school food, vegan school meals, healthy school lunches, plant-based education, school nutrition, vegan kids, sustainable education', url: 'https://www.plantbasedschools.com/' }
+                ]
             }
         ];
     }
