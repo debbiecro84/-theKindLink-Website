@@ -171,6 +171,56 @@
         </div>
     </section>
 
+    <!-- Suggest Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h2>Suggest Food & Drink Brands</h2>
+                <p>Know a great vegan, cruelty-free food or drink brand that we should add? Help us grow our directory by sharing your discoveries!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest Brands
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest Food & Drink Brands</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="food_brand" placeholder="Food & Drink Brand/Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="food_location" placeholder="Location (City, Country)" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="food_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="food_description" placeholder="Tell us about this food & drink brand..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="food_features" placeholder="What makes this special? (e.g., 100% vegan, cruelty-free, organic, sustainable packaging, etc.)" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Food & Drink Brand Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Food & Drinks Page - Suggest Brands Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+
         <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">

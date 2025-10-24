@@ -3615,6 +3615,167 @@ body .header {
     background-color: #7a8a6a !important;
 }
 
+/* Mobile Navigation Global Consistency */
+.mobile-nav {
+    display: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: rgba(38, 38, 38, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    z-index: 1000 !important;
+    padding-top: 80px !important;
+    overflow-y: auto !important;
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    transition: all 0.3s ease !important;
+}
+
+.mobile-nav.active {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.mobile-nav-logo {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-sm) var(--spacing-md) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: var(--spacing-sm) !important;
+}
+
+.mobile-nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: var(--spacing-sm) !important;
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+}
+
+.mobile-nav-link {
+    display: block !important;
+    background-color: var(--bg-white) !important;
+    color: var(--text-gray) !important;
+    text-decoration: none !important;
+    padding: 12px 20px !important;
+    border-radius: var(--radius-md) !important;
+    font-weight: 200 !important;
+    font-size: 0.9rem !important;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    transition: var(--transition-smooth) !important;
+    border: 1px solid transparent !important;
+    text-align: center !important;
+    width: 200px !important;
+    box-sizing: border-box !important;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    background-color: #e55a2b !important;
+    color: var(--text-white) !important;
+    border-color: #e55a2b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(229, 90, 43, 0.3) !important;
+}
+
+.mobile-logo {
+    height: 60px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Mobile Menu Toggle Global Consistency */
+.mobile-menu-toggle {
+    display: none !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    width: 30px !important;
+    height: 30px !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    z-index: 1001 !important;
+}
+
+.mobile-menu-toggle span {
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #ffffff !important;
+    border-radius: 1px !important;
+    transition: all 0.3s ease !important;
+    transform-origin: center !important;
+    display: block !important;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px) !important;
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px) !important;
+}
+
+/* Responsive Mobile Navigation Global Fixes */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex !important;
+        position: absolute !important;
+        left: var(--spacing-md) !important;
+    }
+    
+    .mobile-nav-logo {
+        padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xs) var(--spacing-sm) !important;
+    }
+    
+    .mobile-logo {
+        height: 50px !important;
+    }
+    
+    .mobile-nav-links {
+        gap: 8px !important;
+        padding: var(--spacing-md) var(--spacing-sm) !important;
+    }
+    
+    .mobile-nav-link {
+        padding: 10px 16px !important;
+        font-size: 0.85rem !important;
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-nav-logo {
+        padding: var(--spacing-sm) var(--spacing-xs) !important;
+    }
+    
+    .mobile-logo {
+        height: 45px !important;
+    }
+    
+    .mobile-nav-links {
+        gap: 6px !important;
+        padding: var(--spacing-sm) var(--spacing-xs) !important;
+    }
+    
+    .mobile-nav-link {
+        padding: 8px 12px !important;
+        font-size: 0.8rem !important;
+        width: 160px !important;
+    }
+}
+
 /* Gaming Buttons Styling - COMMENTED OUT
 .gaming-buttons {
     display: flex;

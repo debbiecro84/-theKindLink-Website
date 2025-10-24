@@ -136,7 +136,55 @@
         </div>
     </section>
 
+    <!-- Suggest Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h2>Suggest Fashion Brands</h2>
+                <p>Know a great vegan, cruelty-free fashion brand or ethical clothing company that we should add? Help us grow our directory by sharing your discoveries!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest Brands
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Suggest Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest Fashion Brands</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="fashion_brand" placeholder="Fashion Brand/Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="fashion_location" placeholder="Location (City, Country)" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="fashion_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="fashion_description" placeholder="Tell us about this fashion brand..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="fashion_features" placeholder="What makes this special? (e.g., 100% vegan, cruelty-free, sustainable materials, ethical production, etc.)" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Fashion Brand Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Fashion Page - Suggest Brands Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Back to All Areas -->
     <section class="back-to-areas">

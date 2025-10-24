@@ -183,9 +183,55 @@
         </div>
     </section>
 
-    
+    <!-- Suggest Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <h2>Suggest Vitamin & Supplement Brands</h2>
+                <p>Know a great vegan, cruelty-free vitamin or supplement brand that we should add? Help us grow our directory by sharing your discoveries!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest Brands
+                </button>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- Suggest Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest Vitamin & Supplement Brands</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="supplement_brand" placeholder="Vitamin & Supplement Brand/Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="supplement_location" placeholder="Location (City, Country)" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="supplement_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="supplement_description" placeholder="Tell us about this vitamin & supplement brand..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="supplement_features" placeholder="What makes this special? (e.g., 100% vegan, cruelty-free, natural ingredients, sustainable packaging, etc.)" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Vitamin & Supplement Brand Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Vitamins & Supplements Page - Suggest Brands Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
 
         <!-- Footer -->
     <footer class="footer">

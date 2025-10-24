@@ -101,8 +101,8 @@
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3>Birthday Cards</h3>
-                    <p>Custom vegan birthday cards with personal touches</p>
-                    <a href="gifts-personalized.html" class="category-link">Explore Now</a>
+                    <p>Beautiful vegan birthday cards and eco-friendly greeting cards</p>
+                    <a href="birthday-cards.html" class="category-link">Explore Now</a>
                 </div>
                 <div class="category-card">
                     <div class="category-icon">
@@ -131,6 +131,56 @@
             </div>
         </div>
     </section>
+
+    <!-- Suggest Section -->
+    <section class="suggest-section">
+        <div class="container">
+            <div class="get-featured-content">
+                <div class="get-featured-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h2>Suggest Gift & Accessory Brands</h2>
+                <p>Know a great vegan, cruelty-free gift or accessory brand that we should add? Help us grow our directory by sharing your discoveries!</p>
+                <button class="get-featured-btn" onclick="openSuggestModal()">
+                    <i class="fas fa-plus-circle"></i>
+                    Suggest Brands
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest Modal -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSuggestModal()">&times;</span>
+            <h3>Suggest Gift & Accessory Brands</h3>
+            <form class="suggest-form" action="https://formsubmit.co/hello@kindvgnlink.com" method="POST" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" name="gift_brand" placeholder="Gift & Accessory Brand/Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="gift_location" placeholder="Location (City, Country)" required>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="gift_website" placeholder="Website (optional)">
+                </div>
+                <div class="form-group">
+                    <textarea name="gift_description" placeholder="Tell us about this gift & accessory brand..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="gift_features" placeholder="What makes this special? (e.g., 100% vegan, cruelty-free, sustainable materials, eco-friendly, etc.)" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email (optional - for follow up)" />
+                </div>
+                <input type="hidden" name="_subject" value="New Gift & Accessory Brand Suggestion">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="form_source" value="Gifts & Accessories Page - Suggest Brands Button">
+                <button type="submit" class="suggest-button">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
 
         <!-- Footer -->
     <footer class="footer">
