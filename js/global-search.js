@@ -910,7 +910,8 @@ class GlobalSearch {
                 url: 'support-websites.html',
                 content: [
                     { title: 'Support these websites', description: 'Help support these amazing vegan websites and movements', keywords: 'support websites, vegan websites, vegan movements, support vegan causes, plant-based websites, ethical websites, vegan community, support vegan activism', url: 'support-websites.html' },
-                    { title: 'Plant-Based Schools', description: 'Parents, teachers and supporters uniting to push for healthier, more sustainable meals in schools. Join the movement fighting to make plant-based school meals happen', keywords: 'plant-based schools, school meals, children health, sustainable school food, vegan school meals, healthy school lunches, plant-based education, school nutrition, vegan kids, sustainable education', url: 'https://www.plantbasedschools.com/' }
+                    { title: 'Plant-Based Schools', description: 'Parents, teachers and supporters uniting to push for healthier, more sustainable meals in schools. Join the movement fighting to make plant-based school meals happen', keywords: 'plant-based schools, school meals, children health, sustainable school food, vegan school meals, healthy school lunches, plant-based education, school nutrition, vegan kids, sustainable education', url: 'https://www.plantbasedschools.com/' },
+                    { title: 'Vegan Vend', description: 'Revolutionary all-vegan snack vending machines bringing the best quality vegan snacks to convenient locations. Meet Daisy, Willow, Lumi, and Bluebell', keywords: 'vegan vend, vegan vending machines, all-vegan snacks, daisy willow lumi bluebell, vegan snacks, vending machines, local business, plant-based snacks, vegan convenience, independent business', url: 'https://www.veganvend.co.uk/' }
                 ]
             },
 
