@@ -59,6 +59,7 @@ class GlobalSearch {
                     { title: 'Beauty & Skincare', description: 'Cruelty-free beauty products', keywords: 'beauty, skincare, cosmetics, cruelty-free, makeup, skincare, personal care, toiletries', url: 'beauty.html' },
                     { title: 'Home & Living', description: 'Sustainable home products', keywords: 'home, living, sustainable, eco, household, decor, furniture, cleaning', url: 'home-living.html' },
                     { title: 'Food & Drinks', description: 'Plant-based food and beverages', keywords: 'food, drinks, plant-based, vegan food, sweets, treats, snacks, chocolate, candy, desserts, beverages, drinks', url: 'food-drinks.html' },
+                    { title: 'Meal kit services', description: 'Plant-based meal kits delivered with easy recipes', keywords: 'meal kits, meal-kit, delivery, recipe kits, ready meals, plant-based, vegan meal kits, grubby, planthood, planty', url: 'meal-kits.html' },
                     { title: 'Books & Media', description: 'Vegan books, magazines, and media', keywords: 'books, media, magazines, reading, literature, documentaries, films', url: 'books-children.html' },
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' },
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
@@ -70,6 +71,17 @@ class GlobalSearch {
             },
 
             // Individual Category Pages
+            {
+                page: 'meal-kits.html',
+                title: 'Meal kit services',
+                url: 'meal-kits.html',
+                content: [
+                    { title: 'Meal kit services', description: 'Plant-based meal kits delivered with easy recipes', keywords: 'meal kits, recipe kits, plant-based, vegan meal kits, delivery, ready meals', url: 'meal-kits.html' },
+                    { title: 'Grubby', description: 'Chef-crafted plant-based meal kits and healthy ready meals. 30+ weekly choices, pre-portioned ingredients, generous portions.', keywords: 'grubby, plant-based, meal kits, ready meals, delivery, pre-portioned', url: 'https://grubby.co.uk/' },
+                    { title: 'Planthood', description: 'Whole food, plant-based, chef-prepared meal kits. Natural ingredients, gut-health friendly, ready in minutes. UK-wide delivery.', keywords: 'planthood, meal kits, chef-prepared, whole food, natural ingredients, gut health', url: 'https://planthood.co.uk/' },
+                    { title: 'Planty', description: 'Chef-prepared 100% plant-based ready meals. Heat from frozen in minutes, flexible subscriptions, eco packaging, free weekday delivery.', keywords: 'planty, ready meals, frozen, heat and eat, eco packaging, free delivery', url: 'https://planty.uk/' }
+                ]
+            },
             {
                 page: 'fashion.html',
                 title: 'Fashion',
@@ -175,6 +187,7 @@ class GlobalSearch {
                     { title: 'The English Soap Company', description: 'Family business crafting luxury vegan soap bars and toiletries', keywords: 'english soap company, luxury, soap bars, toiletries, sussex, hand-finished, sustainable', url: 'https://www.englishsoapcompany.co.uk/' },
                     { title: 'Original Source', description: 'UK-based brand offering PETA-approved and vegan shower gels', keywords: 'original source, shower gel, peta approved, vegan, natural fragrances, uk', url: 'https://www.originalsource.co.uk/' },
                     { title: 'AKT London', description: 'Premium natural deodorant and body care brand born to perform', keywords: 'akt london, deodorant, body care, natural, premium, vegan, cruelty-free', url: 'https://www.aktlondon.com/' },
+                    { title: 'The Green Woman', description: 'Award-winning clean beauty essentials: organic deodorant, mineral toothpaste, mineral suncream, natural skincare', keywords: 'the green woman, organic deodorant, mineral toothpaste, mineral suncream, natural skincare, plastic-free, zero waste', url: 'https://www.thegreenwoman.co.uk/' },
                 ]
             },
             {
@@ -604,7 +617,7 @@ class GlobalSearch {
                     { title: 'Jam Delish', description: 'Family-owned Caribbean restaurant in Angel, Islington founded in 2020, blending traditional recipes with modern plant-based cuisine', keywords: 'jam delish, london, caribbean cuisine, angel islington, family-owned, plant-based, traditional recipes', url: 'https://jamdelish.co.uk/' },
                     { title: 'Mildreds', description: 'London\'s plant-based pioneers serving extraordinary food & drink since 1988 with multiple locations across London', keywords: 'mildreds, london, plant-based pioneers, 1988, camden, covent garden, kings cross, soho, victoria, internationally inspired', url: 'https://www.mildreds.com/' },
                     { title: 'BIG sister Vegan Café', description: 'Community-focused vegan concept with a UK base in London. Discover the experience and join the movement through the BIG sister Café and music projects', keywords: 'big sister vegan, bigsistervegan, london, vegan cafe, cafe, music, community, movement', url: 'https://www.bigsistervegan.com/' },
-                    { title: 'The Spread Eagle', description: 'London’s first fully vegan pub on Homerton High Street with a seasonal, minimal-waste kitchen, rotating vegan draught lines, small-batch wines, and cocktails', keywords: 'the spread eagle, london, vegan pub, homerton, minimal waste, seasonal menu, draught lines, cocktails, small-batch wines', url: 'https://www.thespreadeaglelondon.co.uk/' }
+                    { title: 'The Spread Eagle', description: 'London\'s first fully vegan pub on Homerton High Street with a seasonal, minimal-waste kitchen, rotating vegan draught lines, small-batch wines, and cocktails', keywords: 'the spread eagle, london, vegan pub, homerton, minimal waste, seasonal menu, draught lines, cocktails, small-batch wines', url: 'https://www.thespreadeaglelondon.co.uk/' }
                 ]
             },
             {
