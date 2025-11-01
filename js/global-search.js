@@ -706,7 +706,8 @@ class GlobalSearch {
                 content: [
                     { title: 'Leeds Restaurants', description: 'Vegan restaurants in Leeds', keywords: 'leeds, restaurants, vegan leeds, leeds dining, uk restaurants', url: 'leeds-restaurants.html' },
                     { title: 'Fat Annie\'s Stateside Street Food', description: 'Established in 2014, serving quality vegan hot dogs, burgers, and banging sides at Leeds Kirkgate Market with 5-star food hygiene rating', keywords: 'fat annies, leeds, kirkgate market, vegan hot dogs, burgers, street food, 5-star hygiene, 2014, new york inspired', url: 'https://fatannies.co.uk/' },
-                    { title: 'Döner Summer', description: 'Modern vegan döner restaurant offering fresh, plant-based döner wraps and dishes with table booking and gift cards', keywords: 'doner summer, leeds, vegan doner, wraps, table booking, gift cards, modern, contemporary dining', url: 'https://www.donersummer.com/' }
+                    { title: 'Döner Summer', description: 'Modern vegan döner restaurant offering fresh, plant-based döner wraps and dishes with table booking and gift cards', keywords: 'doner summer, leeds, vegan doner, wraps, table booking, gift cards, modern, contemporary dining', url: 'https://www.donersummer.com/' },
+                    { title: 'The Greenhouse Horsforth', description: 'Plant-based café serving nutritious, delicious food all day long. 100% vegan eatery and 2021 Good Food Award winner with Ecologi Climate Partnership', keywords: 'the greenhouse horsforth, leeds, horsforth, plant-based café, vegan café, good food award, ecologi, carbon neutral, climate partner', url: 'https://www.thegreenhousehorsforth.co.uk/' }
                 ]
             },
             {
