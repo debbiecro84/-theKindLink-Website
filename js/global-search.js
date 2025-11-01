@@ -739,7 +739,8 @@ class GlobalSearch {
                 content: [
                     { title: 'Liverpool Restaurants', description: 'Vegan restaurants in Liverpool', keywords: 'liverpool, restaurants, vegan liverpool, liverpool dining, uk restaurants, merseyside', url: 'liverpool-restaurants.html' },
                     { title: 'The Vibe Cafe', description: 'Top rated vegan restaurant in Liverpool on Happy Cow! Family-run wholefood and plant-based cafe', keywords: 'the vibe cafe, liverpool, happy cow, top rated, family-run, wholefood, plant-based, paradise street, fair-trade coffee, homemade', url: 'https://thevibecafe.co.uk/' },
-                    { title: 'Guac \'n\' Roll Kitchen', description: 'Vibrant vegan restaurant in Liverpool offering a diverse plant-based menu with creative dishes', keywords: 'guac n roll kitchen, guacnrollkitchen, liverpool, vegan restaurant, creative menu, chikn parm, shawarma, kempston street, plant-based', url: 'https://www.facebook.com/guacnrollkitchen' }
+                    { title: 'Guac \'n\' Roll Kitchen', description: 'Vibrant vegan restaurant in Liverpool offering a diverse plant-based menu with creative dishes', keywords: 'guac n roll kitchen, guacnrollkitchen, liverpool, vegan restaurant, creative menu, chikn parm, shawarma, kempston street, plant-based', url: 'https://www.facebook.com/guacnrollkitchen' },
+                    { title: 'Down the Hatch', description: 'Award-winning seitan\'s basement serving wholesome 100% plant-based food. Offering generous portions, cocktails, venue hire, wedding catering, and dog-friendly dining. Woo Tan Scran available', keywords: 'down the hatch, liverpool, award-winning, seitan, plant-based, vegan, cocktails, venue hire, wedding, dog-friendly, duke street, woo tan scran', url: 'https://www.downthehatchliv.co.uk/' }
                 ]
             },
             {
