@@ -690,7 +690,8 @@ class GlobalSearch {
                 title: 'Dublin Restaurants',
                 url: 'dublin-restaurants.html',
                 content: [
-                    { title: 'Dublin Restaurants', description: 'Vegan restaurants in Dublin', keywords: 'dublin, ireland, restaurants, vegan dublin, dublin dining, irish restaurants', url: 'dublin-restaurants.html' }
+                    { title: 'Dublin Restaurants', description: 'Vegan restaurants in Dublin', keywords: 'dublin, ireland, restaurants, vegan dublin, dublin dining, irish restaurants', url: 'dublin-restaurants.html' },
+                    { title: 'Cornucopia', description: 'Family-run vegetarian and vegan restaurant established in 1986, located on Dublin\'s beautiful Wicklow Street. Serving fresh, plant-based cuisine from two self-service counters across three floors of a restored Georgian home. Specializing in vegan and gluten-free options with a daily-changing menu, organic coffees, handmade pastries, and a 100% plant-based bakery', keywords: 'cornucopia, dublin, ireland, vegan restaurant, vegetarian, established 1986, wicklow street, georgian home, gluten-free, plant-based, organic coffee, handmade pastries, family-run', url: 'https://cornucopia.ie/' }
                 ]
             },
             {
