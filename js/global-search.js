@@ -720,7 +720,8 @@ class GlobalSearch {
                     { title: 'Vegano', description: 'Delicious, cruelty-free food in a modern and cosy setting', keywords: 'vegano, vegan restaurant, newcastle, cruelty-free, modern, cosy, dining', url: 'https://www.vegano.uk.com/' },
                     { title: 'SnackWallah', description: 'Authentic vegan Indian street food at Newcastle Grainger Market', keywords: 'snackwallah, indian street food, vegan, newcastle, grainger market, authentic, indian cuisine', url: 'https://snackwallahuk.onepage.website/' },
                     { title: 'Veganatomy', description: 'Plant-based dining experience in Newcastle', keywords: 'veganatomy, plant-based, dining, newcastle, vegan restaurant, experience', url: 'https://www.veganatomy.co.uk/' },
-                    { title: 'Glazed Handmade Donuts', description: 'Damn good vegan donuts, artisan cakes & plant-based pastries', keywords: 'glazed handmade donuts, vegan donuts, artisan cakes, plant-based pastries, newcastle, desserts', url: 'https://glazedhandmadedonuts.co.uk/' }
+                    { title: 'Glazed Handmade Donuts', description: 'Damn good vegan donuts, artisan cakes & plant-based pastries', keywords: 'glazed handmade donuts, vegan donuts, artisan cakes, plant-based pastries, newcastle, desserts', url: 'https://glazedhandmadedonuts.co.uk/' },
+                    { title: 'The Ship Inn', description: 'Family-friendly pub in Ouseburn Valley with fully vegan kitchen. Serving fresh, globally inspired dishes, in-house baked bread and cakes, vegan-friendly beers, wines, spirits, and specialty teas with live music events', keywords: 'ship inn, ouseburn, newcastle, vegan pub, fully vegan kitchen, globally inspired dishes, live music, stepney bank, family-friendly', url: 'https://www.facebook.com/shipouseburn/' }
                 ]
             },
             {
