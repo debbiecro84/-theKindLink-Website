@@ -111,7 +111,8 @@ class GlobalSearch {
                     { title: 'Pacifica Beauty', description: 'Leading vegan beauty brand offering comprehensive skincare and beauty products', keywords: 'pacifica beauty, vegan, beauty, skincare, haircare, fragrance, makeup, cruelty-free', url: 'https://www.pacificabeauty.com/' },
                     { title: 'Pai Skincare', description: 'UK-based organic skincare brand specializing in sensitive skin solutions', keywords: 'pai skincare, organic, sensitive skin, cruelty-free, vegan, uk, patch-tested', url: 'https://www.paiskincare.com/' },
                     { title: 'Tropic Skincare', description: 'UK-based beauty company with 20 years of experience in natural skincare', keywords: 'tropic skincare, natural, organic, skincare, tanning, bronzing, uk, beauty', url: 'https://tropicskincare.com/' },
-                    { title: 'Dr. Paw Paw', description: 'UK-based multipurpose beauty brand creating vegan lip balms and skincare products with sustainability at its heart', keywords: 'dr paw paw, drpawpaw, lip balm, skincare, multipurpose, vegan, natural, eco-conscious, charity, uk', url: 'https://www.drpawpaw.com/' }
+                    { title: 'Dr. Paw Paw', description: 'UK-based multipurpose beauty brand creating vegan lip balms and skincare products with sustainability at its heart', keywords: 'dr paw paw, drpawpaw, lip balm, skincare, multipurpose, vegan, natural, eco-conscious, charity, uk', url: 'https://www.drpawpaw.com/' },
+                    { title: 'UpCircle Beauty', description: 'Forward-thinking skincare and haircare brand creating natural, sustainable, and upcycled beauty products. B-Corp certified with over 30,000 5-star reviews', keywords: 'upcircle beauty, upcycled skincare, upcycled haircare, b-corp certified, natural sustainable, coffee grounds, fruit stones, refill scheme, cruelty-free, vegan-friendly', url: 'https://upcirclebeauty.com/' }
                 ]
             },
             {
@@ -440,10 +441,10 @@ class GlobalSearch {
                     { title: 'The Loyal Candle Company', description: 'Luxury soy wax candles handcrafted in the heart of Scotland using 100% natural, vegan-friendly ingredients', keywords: 'loyal candle company, luxury soy wax candles, scotland, 100% natural, vegan-friendly, hand-poured, free shipping', url: 'https://www.theloyalcandlecompany.co.uk/' },
                     { title: 'Witch & Twig', description: '100% vegan soy wax candles lovingly handmade in the UK, infused with natural essential oils, herbs, flowers, and sacred stones', keywords: 'witch and twig, 100% vegan, soy wax candles, uk, libby johnstone, natural essential oils, herbs, flowers, sacred stones, mystical energy', url: 'https://www.witchandtwig.com/' },
                     { title: 'The Yorkshire Candle Company', description: 'Hand-poured candles made in Yorkshire since 2014, ethically driven with vegan-friendly products and sustainability commitment', keywords: 'yorkshire candle company, hand-poured candles, yorkshire, 2014, ethically driven, vegan-friendly, sustainability, wax melts, reed diffusers, free uk shipping', url: 'https://theyorkshirecandleco.co.uk/' },
-                    { title: 'Wild Nature Candles', description: 'Eco-friendly soy wax candles and vegan wax melts hand-poured in the UK Cotswolds', keywords: 'wild nature candles, eco-friendly, soy wax, vegan wax melts, cotswolds, sustainable, tree planting', url: 'https://www.wildnaturecandles.co.uk/' },
-                    { title: 'Scents of the Wild', description: 'Natural botanical candles and soy wax melts handcrafted in Scotland', keywords: 'scents of the wild, botanical, candles, soy wax melts, scotland, natural, essential oils, flower petals', url: 'https://scentsofthewild.co.uk/' },
-                    { title: 'The Loyal Candle Company', description: 'Luxury soy wax candles handcrafted in the heart of Scotland', keywords: 'loyal candle company, luxury, soy wax, scotland, handcrafted, natural, vegan-friendly', url: 'https://theloyalcandlecompany.com/' },
-                    { title: 'Witch & Twig', description: '100% vegan soy wax candles lovingly handmade and delivered in the UK', keywords: 'witch twig, vegan, soy wax, handmade, uk, essential oils, herbs, flowers, sacred stones, mystical', url: 'https://witchandtwig.com/' }
+                    { title: 'Belle Isle Botanicals', description: 'Handmade vegan pressed flower candles and home fragrance using 100% cruelty-free and vegan ingredients, made in Bristol', keywords: 'belle isle botanicals, pressed flower candles, home fragrance, vegan candles, bristol, recyclable packaging, tin returns, soy candles, room sprays, reed diffusers', url: 'https://belleislebotanicals.com/' },
+                    { title: 'Carly\'s Candle Company', description: 'Multi award-winning home fragrances hand-poured using 100% sustainable soy wax with vegan-friendly fragrance oils and wood wicks', keywords: 'carlys candle company, carlys candles, award-winning, sustainable soy wax, vegan-friendly, wood wicks, refillable candles, plantable labels, trees planted, northamptonshire, buckinghamshire', url: 'https://www.carlyscandlecompany.co.uk/' },
+                    { title: 'The Lemon Tree Candle Company', description: 'Hand-poured candles and essential oil candles made in the UK since March 2020, offering candles, reed diffusers, wax melts, and hand & body wash', keywords: 'lemon tree candle company, hand-poured candles, essential oil candles, uk, llanidloes, powys, chester, reed diffusers, wax melts, hand body wash', url: 'https://lemontreecandles.co.uk/' },
+                    { title: 'Vegan Bunny', description: 'Award-winning vegan soy candles and eco-decor with long-lasting, beautifully scented candles including signature soy candles, bakery candles, and glass jar candles', keywords: 'vegan bunny, award-winning candles, vegan soy candles, eco-decor, bakery candles, self care candles, glass jar candles, plants trees, free delivery, subscriptions, preserved bouquets', url: 'https://veganbunny.co.uk/' }
                 ]
             },
             {
@@ -507,6 +508,17 @@ class GlobalSearch {
                 url: 'books-media.html',
                 content: [
                     { title: 'Books - Media', description: 'Vegan books, magazines, and media', keywords: 'books, media, magazines, reading, literature, documentaries, films', url: 'books-media.html' }
+                ]
+            },
+            {
+                page: 'books-media-page.html',
+                title: 'Vegan Media',
+                url: 'books-media-page.html',
+                content: [
+                    { title: 'Vegan Media', description: 'Documentaries, films, podcasts, and media content that explore veganism and animal compassion', keywords: 'vegan media, documentaries, films, podcasts, vegan content, animal compassion, media resources', url: 'books-media-page.html' },
+                    { title: 'Vegan Media Content (1976)', description: 'Educational and inspiring vegan media content from 1976 exploring plant-based living, animal compassion, and ethical lifestyle choices', keywords: 'vegan media 1976, vegan society, 1976 documentary, vegan history, educational vegan content', url: 'https://www.youtube.com/watch?v=VlTYjaQLy2o' },
+                    { title: 'Dominion', description: 'A powerful documentary exposing the hidden reality of animal agriculture and its impact on animals, the environment, and human health', keywords: 'dominion documentary, animal agriculture, documentary, vegan documentary, animal rights, youtube documentary', url: 'https://www.youtube.com/watch?v=LQRAfJyEsko' },
+                    { title: 'Seaspiracy', description: 'An eye-opening 2021 documentary exploring ocean life and the harm humans do to marine species, uncovering alarming global corruption', keywords: 'seaspiracy, netflix documentary, ocean life, marine conservation, 2021 documentary, ocean corruption', url: 'https://www.netflix.com/gb/title/81014008' }
                 ]
             },
             {
