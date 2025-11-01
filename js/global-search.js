@@ -686,6 +686,14 @@ class GlobalSearch {
                 ]
             },
             {
+                page: 'dublin-restaurants.html',
+                title: 'Dublin Restaurants',
+                url: 'dublin-restaurants.html',
+                content: [
+                    { title: 'Dublin Restaurants', description: 'Vegan restaurants in Dublin', keywords: 'dublin, ireland, restaurants, vegan dublin, dublin dining, irish restaurants', url: 'dublin-restaurants.html' }
+                ]
+            },
+            {
                 page: 'edinburgh-restaurants.html',
                 title: 'Edinburgh Restaurants',
                 url: 'edinburgh-restaurants.html',
