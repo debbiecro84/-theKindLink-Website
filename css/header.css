@@ -295,12 +295,12 @@ body {
 }
 
 .page-header-content h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 800;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     color: var(--primary-green);
     margin-bottom: var(--spacing-sm);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
