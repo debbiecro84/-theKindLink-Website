@@ -856,7 +856,8 @@ h3 {
     
     .features-section h2,
     .vegan-living-showcase h2,
-    .events-section h2 {
+    .events-section h2,
+    .categories-section h2 {
         font-size: 2rem;
     }
     
@@ -1060,7 +1061,8 @@ h3 {
     
     .features-section h2,
     .vegan-living-showcase h2,
-    .events-section h2 {
+    .events-section h2,
+    .categories-section h2 {
         font-size: 1.8rem;
         margin-bottom: var(--spacing-md);
     }
@@ -3055,6 +3057,10 @@ h3 {
         font-size: 1.3rem;
     }
     
+    .categories-section h2 {
+        font-size: 2rem;
+    }
+    
     .content-grid,
     .rights-content,
     .about-content,
@@ -3259,6 +3265,10 @@ h3 {
     .help-icon,
     .nutrition-icon {
         font-size: 2.5rem;
+    }
+    
+    .categories-section h2 {
+        font-size: 1.8rem;
     }
     
     .event-date {
