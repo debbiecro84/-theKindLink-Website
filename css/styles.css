@@ -1623,14 +1623,16 @@ h3 {
     background-color: #e55a2b;
 }
 
-/* Explore page specific styles for image-based cards */
-.explore-page .categories-section .category-card {
+/* Explore page and Fashion page specific styles for image-based cards */
+.explore-page .categories-section .category-card,
+.fashion-page .categories-section .category-card {
     padding: 0;
     overflow: hidden;
     position: relative;
 }
 
-.explore-page .categories-section .category-image {
+.explore-page .categories-section .category-image,
+.fashion-page .categories-section .category-image {
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -1638,7 +1640,8 @@ h3 {
     margin-bottom: 0;
 }
 
-.explore-page .categories-section .category-image img {
+.explore-page .categories-section .category-image img,
+.fashion-page .categories-section .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1646,11 +1649,13 @@ h3 {
     transition: transform 0.3s ease;
 }
 
-.explore-page .categories-section .category-card:hover .category-image img {
+.explore-page .categories-section .category-card:hover .category-image img,
+.fashion-page .categories-section .category-card:hover .category-image img {
     transform: scale(1.05);
 }
 
-.explore-page .categories-section .category-overlay {
+.explore-page .categories-section .category-overlay,
+.fashion-page .categories-section .category-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1666,7 +1671,8 @@ h3 {
     text-align: center;
 }
 
-.explore-page .categories-section .category-overlay h3 {
+.explore-page .categories-section .category-overlay h3,
+.fashion-page .categories-section .category-overlay h3 {
     font-size: 1.5rem;
     margin: 0 0 0.5rem 0;
     padding: 0;
@@ -1678,7 +1684,8 @@ h3 {
     text-align: center;
 }
 
-.explore-page .categories-section .category-overlay p {
+.explore-page .categories-section .category-overlay p,
+.fashion-page .categories-section .category-overlay p {
     color: #ffffff !important;
     margin: 0 0 1rem 0;
     padding: 0;
@@ -1690,7 +1697,8 @@ h3 {
     text-align: center;
 }
 
-.explore-page .categories-section .category-link {
+.explore-page .categories-section .category-link,
+.fashion-page .categories-section .category-link {
     align-self: center;
     transform: none;
     margin: 0;
@@ -1700,7 +1708,8 @@ h3 {
     line-height: 1.5;
 }
 
-.explore-page .categories-section .category-link:hover {
+.explore-page .categories-section .category-link:hover,
+.fashion-page .categories-section .category-link:hover {
     transform: scale(1.05);
 }
 
@@ -3330,23 +3339,28 @@ h3 {
         padding: 1rem;
     }
     
-    .explore-page .categories-section .category-image {
+    .explore-page .categories-section .category-image,
+    .fashion-page .categories-section .category-image {
         height: 250px;
     }
     
-    .explore-page .categories-section .category-overlay {
+    .explore-page .categories-section .category-overlay,
+    .fashion-page .categories-section .category-overlay {
         padding: 1.5rem;
     }
     
-    .explore-page .categories-section .category-overlay h3 {
+    .explore-page .categories-section .category-overlay h3,
+    .fashion-page .categories-section .category-overlay h3 {
         font-size: 1.3rem;
     }
     
-    .explore-page .categories-section .category-overlay p {
+    .explore-page .categories-section .category-overlay p,
+    .fashion-page .categories-section .category-overlay p {
         font-size: 0.9rem;
     }
     
-    .explore-page .categories-section .category-link {
+    .explore-page .categories-section .category-link,
+    .fashion-page .categories-section .category-link {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
