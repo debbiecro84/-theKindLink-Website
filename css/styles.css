@@ -1623,16 +1623,18 @@ h3 {
     background-color: #e55a2b;
 }
 
-/* Explore page and Fashion page specific styles for image-based cards */
+/* Explore page, Fashion page, and Beauty page specific styles for image-based cards */
 .explore-page .categories-section .category-card,
-.fashion-page .categories-section .category-card {
+.fashion-page .categories-section .category-card,
+.beauty-page .categories-section .category-card {
     padding: 0;
     overflow: hidden;
     position: relative;
 }
 
 .explore-page .categories-section .category-image,
-.fashion-page .categories-section .category-image {
+.fashion-page .categories-section .category-image,
+.beauty-page .categories-section .category-image {
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -1641,7 +1643,8 @@ h3 {
 }
 
 .explore-page .categories-section .category-image img,
-.fashion-page .categories-section .category-image img {
+.fashion-page .categories-section .category-image img,
+.beauty-page .categories-section .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1650,12 +1653,14 @@ h3 {
 }
 
 .explore-page .categories-section .category-card:hover .category-image img,
-.fashion-page .categories-section .category-card:hover .category-image img {
+.fashion-page .categories-section .category-card:hover .category-image img,
+.beauty-page .categories-section .category-card:hover .category-image img {
     transform: scale(1.05);
 }
 
 .explore-page .categories-section .category-overlay,
-.fashion-page .categories-section .category-overlay {
+.fashion-page .categories-section .category-overlay,
+.beauty-page .categories-section .category-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1672,7 +1677,8 @@ h3 {
 }
 
 .explore-page .categories-section .category-overlay h3,
-.fashion-page .categories-section .category-overlay h3 {
+.fashion-page .categories-section .category-overlay h3,
+.beauty-page .categories-section .category-overlay h3 {
     font-size: 1.5rem;
     margin: 0 0 0.5rem 0;
     padding: 0;
@@ -1685,7 +1691,8 @@ h3 {
 }
 
 .explore-page .categories-section .category-overlay p,
-.fashion-page .categories-section .category-overlay p {
+.fashion-page .categories-section .category-overlay p,
+.beauty-page .categories-section .category-overlay p {
     color: #ffffff !important;
     margin: 0 0 1rem 0;
     padding: 0;
@@ -1698,7 +1705,8 @@ h3 {
 }
 
 .explore-page .categories-section .category-link,
-.fashion-page .categories-section .category-link {
+.fashion-page .categories-section .category-link,
+.beauty-page .categories-section .category-link {
     align-self: center;
     transform: none;
     margin: 0;
@@ -1709,7 +1717,8 @@ h3 {
 }
 
 .explore-page .categories-section .category-link:hover,
-.fashion-page .categories-section .category-link:hover {
+.fashion-page .categories-section .category-link:hover,
+.beauty-page .categories-section .category-link:hover {
     transform: scale(1.05);
 }
 
@@ -3340,27 +3349,32 @@ h3 {
     }
     
     .explore-page .categories-section .category-image,
-    .fashion-page .categories-section .category-image {
+    .fashion-page .categories-section .category-image,
+    .beauty-page .categories-section .category-image {
         height: 250px;
     }
     
     .explore-page .categories-section .category-overlay,
-    .fashion-page .categories-section .category-overlay {
+    .fashion-page .categories-section .category-overlay,
+    .beauty-page .categories-section .category-overlay {
         padding: 1.5rem;
     }
     
     .explore-page .categories-section .category-overlay h3,
-    .fashion-page .categories-section .category-overlay h3 {
+    .fashion-page .categories-section .category-overlay h3,
+    .beauty-page .categories-section .category-overlay h3 {
         font-size: 1.3rem;
     }
     
     .explore-page .categories-section .category-overlay p,
-    .fashion-page .categories-section .category-overlay p {
+    .fashion-page .categories-section .category-overlay p,
+    .beauty-page .categories-section .category-overlay p {
         font-size: 0.9rem;
     }
     
     .explore-page .categories-section .category-link,
-    .fashion-page .categories-section .category-link {
+    .fashion-page .categories-section .category-link,
+    .beauty-page .categories-section .category-link {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
