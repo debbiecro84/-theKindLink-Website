@@ -1626,10 +1626,11 @@ h3 {
     background-color: #e55a2b;
 }
 
-/* Explore page, Fashion page, and Beauty page specific styles for image-based cards */
+/* Explore page, Fashion page, Beauty page, and Food & Drinks page specific styles for image-based cards */
 .explore-page .categories-section .category-card,
 .fashion-page .categories-section .category-card,
-.beauty-page .categories-section .category-card {
+.beauty-page .categories-section .category-card,
+.food-drinks-page .categories-section .category-card {
     padding: 0;
     overflow: hidden;
     position: relative;
@@ -1638,7 +1639,8 @@ h3 {
 
 .explore-page .categories-section .category-image,
 .fashion-page .categories-section .category-image,
-.beauty-page .categories-section .category-image {
+.beauty-page .categories-section .category-image,
+.food-drinks-page .categories-section .category-image {
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -1648,7 +1650,8 @@ h3 {
 
 .explore-page .categories-section .category-image img,
 .fashion-page .categories-section .category-image img,
-.beauty-page .categories-section .category-image img {
+.beauty-page .categories-section .category-image img,
+.food-drinks-page .categories-section .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1660,7 +1663,8 @@ h3 {
 
 .explore-page .categories-section .category-card:hover .category-image img,
 .fashion-page .categories-section .category-card:hover .category-image img,
-.beauty-page .categories-section .category-card:hover .category-image img {
+.beauty-page .categories-section .category-card:hover .category-image img,
+.food-drinks-page .categories-section .category-card:hover .category-image img {
     will-change: transform;
     transform: scale3d(1.05, 1.05, 1);
 }
@@ -1674,6 +1678,23 @@ h3 {
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.65) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Food & Drinks page specific - darker overlay for better text visibility */
+.food-drinks-page .categories-section .category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.85) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1697,6 +1718,18 @@ h3 {
     text-align: center;
 }
 
+.food-drinks-page .categories-section .category-overlay h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: inherit;
+    text-align: center;
+}
+
 .explore-page .categories-section .category-overlay p,
 .fashion-page .categories-section .category-overlay p,
 .beauty-page .categories-section .category-overlay p {
@@ -1711,9 +1744,22 @@ h3 {
     text-align: center;
 }
 
+.food-drinks-page .categories-section .category-overlay p {
+    color: #ffffff !important;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 1);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    font-family: inherit;
+    text-align: center;
+}
+
 .explore-page .categories-section .category-link,
 .fashion-page .categories-section .category-link,
-.beauty-page .categories-section .category-link {
+.beauty-page .categories-section .category-link,
+.food-drinks-page .categories-section .category-link {
     align-self: center;
     transform: none;
     margin: 0;
@@ -1725,7 +1771,8 @@ h3 {
 
 .explore-page .categories-section .category-link:hover,
 .fashion-page .categories-section .category-link:hover,
-.beauty-page .categories-section .category-link:hover {
+.beauty-page .categories-section .category-link:hover,
+.food-drinks-page .categories-section .category-link:hover {
     transform: scale(1.05);
 }
 
