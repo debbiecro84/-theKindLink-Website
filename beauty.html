@@ -72,6 +72,22 @@
         }
     }
     </script>
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Preconnect for faster external resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="images/logos/kindVGN-link.png" as="image">
+    
+    <!-- Performance hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/header.css">
@@ -167,7 +183,7 @@
             <div class="categories-grid">
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/skincare-cover.jpg" alt="Skincare">
+                        <img src="images/explore-images/skincare-cover.jpg" alt="Skincare" loading="lazy">
                         <div class="category-overlay">
                             <h3>Skincare</h3>
                             <p>Natural and vegan skincare products</p>
@@ -177,7 +193,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/makeup-cover.jpg" alt="Makeup">
+                        <img src="images/explore-images/makeup-cover.jpg" alt="Makeup" loading="lazy">
                         <div class="category-overlay">
                             <h3>Makeup</h3>
                             <p>Vegan cosmetics and beauty products</p>
@@ -187,7 +203,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/haircare-cover.jpg" alt="Hair Care">
+                        <img src="images/explore-images/haircare-cover.jpg" alt="Hair Care" loading="lazy">
                         <div class="category-overlay">
                             <h3>Hair Care</h3>
                             <p>Plant-based hair products</p>
@@ -197,7 +213,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/bodycare-cover.jpg" alt="Body Care">
+                        <img src="images/explore-images/bodycare-cover.jpg" alt="Body Care" loading="lazy">
                         <div class="category-overlay">
                             <h3>Body Care</h3>
                             <p>Vegan body care and bath products</p>
@@ -207,7 +223,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/fragrances-cover.jpg" alt="Fragrances">
+                        <img src="images/explore-images/fragrances-cover.jpg" alt="Fragrances" loading="lazy">
                         <div class="category-overlay">
                             <h3>Fragrances</h3>
                             <p>Vegan perfumes and scented products</p>
@@ -217,7 +233,7 @@
                 </div>
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="images/explore-images/tanning-cover.jpg" alt="Tanning">
+                        <img src="images/explore-images/tanning-cover.jpg" alt="Tanning" loading="lazy">
                         <div class="category-overlay">
                             <h3>Tanning</h3>
                             <p>Vegan self-tanning and bronzing products</p>
