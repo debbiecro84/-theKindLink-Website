@@ -1626,11 +1626,12 @@ h3 {
     background-color: #e55a2b;
 }
 
-/* Explore page, Fashion page, Beauty page, and Food & Drinks page specific styles for image-based cards */
+/* Explore page, Fashion page, Beauty page, Food & Drinks page, and Home & Living page specific styles for image-based cards */
 .explore-page .categories-section .category-card,
 .fashion-page .categories-section .category-card,
 .beauty-page .categories-section .category-card,
-.food-drinks-page .categories-section .category-card {
+.food-drinks-page .categories-section .category-card,
+.home-living-page .categories-section .category-card {
     padding: 0;
     overflow: hidden;
     position: relative;
@@ -1640,7 +1641,8 @@ h3 {
 .explore-page .categories-section .category-image,
 .fashion-page .categories-section .category-image,
 .beauty-page .categories-section .category-image,
-.food-drinks-page .categories-section .category-image {
+.food-drinks-page .categories-section .category-image,
+.home-living-page .categories-section .category-image {
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -1651,7 +1653,8 @@ h3 {
 .explore-page .categories-section .category-image img,
 .fashion-page .categories-section .category-image img,
 .beauty-page .categories-section .category-image img,
-.food-drinks-page .categories-section .category-image img {
+.food-drinks-page .categories-section .category-image img,
+.home-living-page .categories-section .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1664,14 +1667,16 @@ h3 {
 .explore-page .categories-section .category-card:hover .category-image img,
 .fashion-page .categories-section .category-card:hover .category-image img,
 .beauty-page .categories-section .category-card:hover .category-image img,
-.food-drinks-page .categories-section .category-card:hover .category-image img {
+.food-drinks-page .categories-section .category-card:hover .category-image img,
+.home-living-page .categories-section .category-card:hover .category-image img {
     will-change: transform;
     transform: scale3d(1.05, 1.05, 1);
 }
 
 .explore-page .categories-section .category-overlay,
 .fashion-page .categories-section .category-overlay,
-.beauty-page .categories-section .category-overlay {
+.beauty-page .categories-section .category-overlay,
+.home-living-page .categories-section .category-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1706,7 +1711,8 @@ h3 {
 
 .explore-page .categories-section .category-overlay h3,
 .fashion-page .categories-section .category-overlay h3,
-.beauty-page .categories-section .category-overlay h3 {
+.beauty-page .categories-section .category-overlay h3,
+.home-living-page .categories-section .category-overlay h3 {
     font-size: 1.5rem;
     margin: 0 0 0.5rem 0;
     padding: 0;
@@ -1732,7 +1738,8 @@ h3 {
 
 .explore-page .categories-section .category-overlay p,
 .fashion-page .categories-section .category-overlay p,
-.beauty-page .categories-section .category-overlay p {
+.beauty-page .categories-section .category-overlay p,
+.home-living-page .categories-section .category-overlay p {
     color: #ffffff !important;
     margin: 0 0 1rem 0;
     padding: 0;
@@ -1759,7 +1766,8 @@ h3 {
 .explore-page .categories-section .category-link,
 .fashion-page .categories-section .category-link,
 .beauty-page .categories-section .category-link,
-.food-drinks-page .categories-section .category-link {
+.food-drinks-page .categories-section .category-link,
+.home-living-page .categories-section .category-link {
     align-self: center;
     transform: none;
     margin: 0;
@@ -1772,7 +1780,8 @@ h3 {
 .explore-page .categories-section .category-link:hover,
 .fashion-page .categories-section .category-link:hover,
 .beauty-page .categories-section .category-link:hover,
-.food-drinks-page .categories-section .category-link:hover {
+.food-drinks-page .categories-section .category-link:hover,
+.home-living-page .categories-section .category-link:hover {
     transform: scale(1.05);
 }
 
