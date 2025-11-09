@@ -378,6 +378,12 @@ h3 {
     display: inline-block;
 }
 
+.banner-content i {
+    color: var(--primary-green);
+    margin: 0 0.35rem;
+    font-size: 1rem;
+}
+
 
 /* Mobile responsive styles for banner */
 @media (max-width: 768px) {
