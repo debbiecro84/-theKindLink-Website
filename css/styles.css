@@ -4862,12 +4862,13 @@ Responsive Gaming Buttons
     transform: translateX(-50%);
     width: calc(100% - 3rem);
     max-width: 920px;
-    background: var(--gradient-primary);
-    color: var(--text-white);
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+    color: var(--text-medium);
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--radius-lg);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-medium);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -4883,9 +4884,9 @@ Responsive Gaming Buttons
 }
 
 .kv-cookie-banner .kv-cookie-button {
-    background: var(--text-white);
-    color: var(--primary-green-darker);
-    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--radius-md);
     padding: 0.65rem 1.6rem;
     font-weight: 600;
@@ -4894,55 +4895,41 @@ Responsive Gaming Buttons
     text-decoration: none;
     transition: var(--transition-smooth);
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
 }
 
-.kv-cookie-banner .kv-cookie-button-manage {
-    background: transparent;
+.kv-cookie-banner .kv-cookie-button-accept {
+    background: var(--gradient-primary);
     color: var(--text-white);
-    border: 2px solid rgba(255, 255, 255, 0.65);
+    border: none;
+    box-shadow: 0 12px 25px var(--shadow-green);
+}
+
+.kv-cookie-banner .kv-cookie-button-reject {
+    background: transparent;
+    color: var(--primary-green-darker);
+    border: 2px solid rgba(156, 170, 139, 0.45);
     box-shadow: none;
 }
 
 .kv-cookie-banner .kv-cookie-button:hover,
 .kv-cookie-banner .kv-cookie-button:focus {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
     outline: none;
 }
 
-.kv-cookie-banner .kv-cookie-button-manage:hover,
-.kv-cookie-banner .kv-cookie-button-manage:focus {
-    background: rgba(255, 255, 255, 0.15);
+.kv-cookie-banner .kv-cookie-button-accept:hover,
+.kv-cookie-banner .kv-cookie-button-accept:focus {
+    box-shadow: 0 18px 40px var(--shadow-green-hover);
+}
+
+.kv-cookie-banner .kv-cookie-button-reject:hover,
+.kv-cookie-banner .kv-cookie-button-reject:focus {
+    background: rgba(156, 170, 139, 0.12);
     box-shadow: none;
 }
 
 .kv-cookie-banner .kv-cookie-button:active {
     transform: translateY(1px);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-}
-
-.kv-cookie-banner .kv-cookie-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kv-cookie-banner .kv-cookie-button-manage::after {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-left: 0.5rem;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(-45deg);
-    transition: var(--transition-smooth);
-}
-
-.kv-cookie-banner .kv-cookie-button-manage:hover::after,
-.kv-cookie-banner .kv-cookie-button-manage:focus::after {
-    transform: translateX(3px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -4961,10 +4948,6 @@ Responsive Gaming Buttons
         text-align: center;
         padding: 0.75rem 1rem;
     }
-    
-    .kv-cookie-banner .kv-cookie-button-manage::after {
-        margin-left: 0.75rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -4978,4 +4961,26 @@ Responsive Gaming Buttons
     .kv-cookie-banner span {
         text-align: left;
     }
+}
+
+.kv-cookie-notification {
+    position: fixed;
+    bottom: calc(var(--spacing-xl) + 90px);
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(0, 0, 0, 0.85);
+    color: var(--text-white);
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.kv-cookie-notification.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }

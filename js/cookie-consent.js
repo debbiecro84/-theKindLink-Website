@@ -9,44 +9,38 @@
 
     function hasConsent() {
         try {
-            if (window.localStorage && localStorage.getItem(CONSENT_STORAGE_KEY) === 'accepted') {
-                return true;
+            if (window.localStorage) {
+                var stored = localStorage.getItem(CONSENT_STORAGE_KEY);
+                if (stored === 'accepted' || stored === 'rejected') {
+                    return true;
+                }
             }
         } catch (error) {
             // localStorage might be unavailable or disabled (Safari private mode, etc.)
         }
 
-        return document.cookie.indexOf(CONSENT_COOKIE_NAME + '=accepted') !== -1;
+        var cookieMatch = document.cookie.match(new RegExp(CONSENT_COOKIE_NAME + '=(accepted|rejected)'));
+        return !!cookieMatch;
     }
 
-    function rememberConsent() {
+    function rememberConsent(value) {
         try {
             if (window.localStorage) {
-                localStorage.setItem(CONSENT_STORAGE_KEY, 'accepted');
+                localStorage.setItem(CONSENT_STORAGE_KEY, value || 'accepted');
             }
         } catch (error) {
             // Ignore storage errors
         }
 
         var maxAge = 60 * 60 * 24 * 365; // 1 year
-        document.cookie = CONSENT_COOKIE_NAME + '=accepted; path=/; max-age=' + maxAge;
+        document.cookie = CONSENT_COOKIE_NAME + '=' + (value || 'accepted') + '; path=/; max-age=' + maxAge;
     }
 
-    function handleManageChoices(event) {
+    function handleReject(event) {
         event.preventDefault();
-
-        if (typeof openModal === 'function') {
-            openModal('privacyModal');
-            return;
-        }
-
-        // Fallback to navigate to a privacy page if available.
-        var fallbackLink = document.querySelector('a[href*="privacy"]');
-        if (fallbackLink) {
-            window.location.href = fallbackLink.getAttribute('href');
-        } else {
-            window.location.href = '/privacy.html';
-        }
+        rememberConsent('rejected');
+        removeBanner();
+        showNotification('Cookies rejected. Only essential features will run.');
     }
 
     function removeBanner() {
@@ -65,6 +59,26 @@
         return button;
     }
 
+    function showNotification(message) {
+        var notification = document.createElement('div');
+        notification.className = 'kv-cookie-notification';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(function () {
+            notification.classList.add('visible');
+        }, 10);
+
+        setTimeout(function () {
+            notification.classList.remove('visible');
+            setTimeout(function () {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 4000);
+    }
+
     function buildBanner() {
         if (document.getElementById(BANNER_ID)) {
             return;
@@ -78,22 +92,19 @@
         banner.setAttribute('aria-label', 'Cookie consent notification');
 
         var message = document.createElement('span');
-        message.textContent = 'Kind VGN Link uses cookies, including Google services, to deliver features, personalise content, and analyse traffic.';
+        message.textContent = 'We use cookies to make Kind VGN Link work better for you and to understand how our visitors use the site.';
 
         var acceptButton = createButton('Accept cookies', 'kv-cookie-button kv-cookie-button-accept', function () {
-            rememberConsent();
+            rememberConsent('accepted');
             removeBanner();
+            showNotification('Thanks for accepting cookies. Enjoy the full experience!');
         });
 
-        var manageButton = document.createElement('a');
-        manageButton.href = '#';
-        manageButton.className = 'kv-cookie-button kv-cookie-button-manage';
-        manageButton.textContent = 'Manage choices';
-        manageButton.addEventListener('click', handleManageChoices);
+        var rejectButton = createButton('Reject cookies', 'kv-cookie-button kv-cookie-button-reject', handleReject);
 
         banner.appendChild(message);
-        banner.appendChild(manageButton);
         banner.appendChild(acceptButton);
+        banner.appendChild(rejectButton);
 
         document.body.appendChild(banner);
     }
