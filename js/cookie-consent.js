@@ -1,10 +1,11 @@
 /**
- * Google Cookie Consent Banner
- * Loads Google's cookiechoices library and displays a consent banner across the site.
+ * Cookie Consent Banner
+ * Displays a consent banner tailored to the Kind VGN Link theme.
  */
 (function () {
     var CONSENT_STORAGE_KEY = 'kv_cookie_consent';
     var CONSENT_COOKIE_NAME = 'kv_cookie_consent';
+    var BANNER_ID = 'kv-cookie-banner';
 
     function hasConsent() {
         try {
@@ -12,7 +13,7 @@
                 return true;
             }
         } catch (error) {
-            // localStorage might be unavailable (Safari private mode, etc.)
+            // localStorage might be unavailable or disabled (Safari private mode, etc.)
         }
 
         return document.cookie.indexOf(CONSENT_COOKIE_NAME + '=accepted') !== -1;
@@ -48,66 +49,66 @@
         }
     }
 
-    function configureBanner() {
-        if (!window.cookieChoices) {
+    function removeBanner() {
+        var banner = document.getElementById(BANNER_ID);
+        if (banner && banner.parentNode) {
+            banner.parentNode.removeChild(banner);
+        }
+    }
+
+    function createButton(label, className, onClick) {
+        var button = document.createElement('button');
+        button.className = className;
+        button.type = 'button';
+        button.textContent = label;
+        button.addEventListener('click', onClick);
+        return button;
+    }
+
+    function buildBanner() {
+        if (document.getElementById(BANNER_ID)) {
             return;
         }
 
-        var message = 'Kind VGN Link uses cookies from Google and its partners to deliver services and analyse traffic.';
-        var dismissText = 'Accept cookies';
-        var learnMoreText = 'Manage choices';
-
-        cookieChoices.showCookieConsentBar(message, dismissText, learnMoreText, '#');
-
-        var banner = document.querySelector('.cookie-choices-info');
-        if (!banner) {
-            return;
-        }
-
-        banner.classList.add('kv-cookie-banner');
+        var banner = document.createElement('div');
+        banner.id = BANNER_ID;
+        banner.className = 'kv-cookie-banner';
         banner.setAttribute('role', 'dialog');
         banner.setAttribute('aria-live', 'polite');
+        banner.setAttribute('aria-label', 'Cookie consent notification');
 
-        var buttons = banner.querySelectorAll('.cookie-choices-button');
-        if (!buttons.length) {
+        var message = document.createElement('span');
+        message.textContent = 'Kind VGN Link uses cookies, including Google services, to deliver features, personalise content, and analyse traffic.';
+
+        var acceptButton = createButton('Accept cookies', 'kv-cookie-button kv-cookie-button-accept', function () {
+            rememberConsent();
+            removeBanner();
+        });
+
+        var manageButton = document.createElement('a');
+        manageButton.href = '#';
+        manageButton.className = 'kv-cookie-button kv-cookie-button-manage';
+        manageButton.textContent = 'Manage choices';
+        manageButton.addEventListener('click', handleManageChoices);
+
+        banner.appendChild(message);
+        banner.appendChild(manageButton);
+        banner.appendChild(acceptButton);
+
+        document.body.appendChild(banner);
+    }
+
+    function init() {
+        if (hasConsent()) {
             return;
         }
 
-        var acceptButton = buttons[0];
-        if (acceptButton) {
-            acceptButton.addEventListener('click', rememberConsent, { once: true });
-        }
-
-        var manageButton = buttons[1];
-        if (manageButton) {
-            manageButton.addEventListener('click', handleManageChoices);
-        }
-    }
-
-    function loadGoogleCookieChoices() {
-        if (document.querySelector('script[data-cookiechoices="google"]')) {
-            configureBanner();
-            return;
-        }
-
-        var script = document.createElement('script');
-        script.src = 'https://www.gstatic.com/hostedlibs/cookiechoices/1/cookiechoices.min.js';
-        script.async = true;
-        script.setAttribute('data-cookiechoices', 'google');
-        script.onload = configureBanner;
-
-        document.head.appendChild(script);
-    }
-
-    if (hasConsent()) {
-        return;
+        buildBanner();
     }
 
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadGoogleCookieChoices);
+        document.addEventListener('DOMContentLoaded', init);
     } else {
-        loadGoogleCookieChoices();
+        init();
     }
 })();
-
-
