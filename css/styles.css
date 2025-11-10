@@ -4853,3 +4853,133 @@ Responsive Gaming Buttons
         font-size: 0.9rem;
     }
 } 
+
+/* Cookie Consent Banner */
+.cookie-choices-info.kv-cookie-banner {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 3rem);
+    max-width: 920px;
+    background: var(--gradient-primary);
+    color: var(--text-white);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+.cookie-choices-info.kv-cookie-banner span {
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button {
+    background: var(--text-white);
+    color: var(--primary-green-darker);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.65rem 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:nth-of-type(2) {
+    background: transparent;
+    color: var(--text-white);
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    box-shadow: none;
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:hover,
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
+    outline: none;
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:nth-of-type(2):hover,
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:nth-of-type(2):focus {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: none;
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.cookie-choices-info.kv-cookie-banner a.cookie-choices-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie-choices-info.kv-cookie-banner a.cookie-choices-button::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 0.5rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    transition: var(--transition-smooth);
+}
+
+.cookie-choices-info.kv-cookie-banner a.cookie-choices-button:hover::after,
+.cookie-choices-info.kv-cookie-banner a.cookie-choices-button:focus::after {
+    transform: translateX(3px) rotate(-45deg);
+}
+
+.cookie-choices-info.kv-cookie-banner .cookie-choices-button:first-of-type::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cookie-choices-info.kv-cookie-banner {
+        bottom: var(--spacing-lg);
+        padding: var(--spacing-sm) var(--spacing-sm);
+        gap: var(--spacing-xs);
+    }
+    
+    .cookie-choices-info.kv-cookie-banner span {
+        font-size: 0.9rem;
+    }
+    
+    .cookie-choices-info.kv-cookie-banner .cookie-choices-button {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+    
+    .cookie-choices-info.kv-cookie-banner a.cookie-choices-button::after {
+        margin-left: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-choices-info.kv-cookie-banner {
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 1.5rem);
+        border-radius: var(--radius-md);
+    }
+    
+    .cookie-choices-info.kv-cookie-banner span {
+        text-align: left;
+    }
+}
