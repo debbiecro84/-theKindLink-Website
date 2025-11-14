@@ -120,8 +120,12 @@ body {
 }
 
 /* Global H1 styles for all pages */
-h1 {
-    font-family: 'Luckiest Guy', cursive !important;
+h1,
+.page-header-content h1,
+.categories-section h2,
+h2 {
+    font-family: 'Luckiest Guy', 'Fredoka One', cursive !important;
+    font-weight: 400 !important;
 }
 
 /* Global button styles for all pages */
@@ -503,29 +507,31 @@ h3 {
 
 
 .page-header-content h1 {
-    font-size: 4.5rem;
-    font-weight: 800;
-    font-family: 'Luckiest Guy', cursive;
+    font-size: 4.5rem !important;
+    font-weight: 400 !important;
+    font-family: 'Luckiest Guy', 'Fredoka One', cursive !important;
     color: var(--text-medium) !important;
-    margin-bottom: var(--spacing-sm);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm) !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
 }
 
 .page-header-content h2 {
     font-size: 2rem;
     font-weight: 600;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', cursive !important;
     color: var(--text-dark) !important;
     margin-bottom: var(--spacing-sm);
     letter-spacing: 0.5px;
 }
 
 .page-header-content p {
-    font-size: 1.2rem;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem !important;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     color: #ff6b35 !important;
-    margin-bottom: 0;
+    font-weight: 400 !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 0 !important;
 }
 
 
@@ -864,7 +870,9 @@ h3 {
     .vegan-living-showcase h2,
     .events-section h2,
     .categories-section h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .features-grid {
@@ -1069,8 +1077,10 @@ h3 {
     .vegan-living-showcase h2,
     .events-section h2,
     .categories-section h2 {
-        font-size: 1.8rem;
-        margin-bottom: var(--spacing-md);
+        font-size: 1.8rem !important;
+        font-weight: 800 !important;
+        font-family: 'Luckiest Guy', cursive !important;
+        margin-bottom: var(--spacing-md) !important;
     }
     
     .showcase-subtitle,
@@ -1557,11 +1567,11 @@ h3 {
 }
 
 .categories-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-    font-family: 'Luckiest Guy', cursive;
-    margin-bottom: 2rem;
+    text-align: center !important;
+    font-size: 2.5rem !important;
+    font-weight: 400 !important;
+    font-family: 'Luckiest Guy', 'Fredoka One', cursive !important;
+    margin-bottom: 2rem !important;
 }
 
 .categories-grid {
@@ -3151,11 +3161,15 @@ h3 {
     
     
     .page-header-content h1 {
-        font-size: 3.5rem;
+        font-size: 3.5rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .page-header-content p {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
+        font-weight: 400 !important;
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
     
     .container {
@@ -3226,7 +3240,9 @@ h3 {
     }
     
     .categories-section h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .content-grid,
@@ -3385,11 +3401,15 @@ h3 {
     
     
     .page-header-content h1 {
-        font-size: 3rem;
+        font-size: 3rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .page-header-content p {
-        font-size: 1rem;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
     
     .content-block {
@@ -3467,7 +3487,9 @@ h3 {
     }
     
     .categories-section h2 {
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .event-date {

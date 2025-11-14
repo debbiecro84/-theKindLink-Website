@@ -289,27 +289,28 @@ body {
 
 /* Page Header */
 .page-header {
-    background-color: var(--text-dark);
+    background-color: var(--bg-light) !important;
     padding: var(--spacing-xl) 0;
     text-align: center;
 }
 
 .page-header-content h1 {
-    font-size: 4.5rem;
-    font-weight: 800;
-    font-family: 'Luckiest Guy', cursive;
-    color: var(--primary-green);
-    margin-bottom: var(--spacing-sm);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 4.5rem !important;
+    font-weight: 400 !important;
+    font-family: 'Luckiest Guy', 'Fredoka One', cursive !important;
+    color: var(--text-medium) !important;
+    margin-bottom: var(--spacing-sm) !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
 }
 
 .page-header-content p {
-    font-size: 1.2rem;
-    color: var(--text-white);
-    font-weight: 400;
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 0.5px;
+    font-size: 1.2rem !important;
+    color: #ff6b35 !important;
+    font-weight: 400 !important;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 0 !important;
 }
 
 /* Enhanced Responsive Header */
@@ -438,11 +439,15 @@ body {
     }
     
     .page-header-content h1 {
-        font-size: 3.5rem;
+        font-size: 3.5rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .page-header-content p {
-        font-size: 1rem;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
 }
 
@@ -495,12 +500,16 @@ body {
     }
     
     .page-header-content h1 {
-        font-size: 2.8rem;
-        letter-spacing: 1px;
+        font-size: 2.8rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
+        letter-spacing: 1px !important;
     }
     
     .page-header-content p {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
+        font-weight: 400 !important;
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
     
     .mobile-nav-logo {
@@ -540,7 +549,9 @@ body {
     }
     
     .page-header-content h1 {
-        font-size: 2.6rem;
+        font-size: 2.6rem !important;
+        font-weight: 400 !important;
+        font-family: 'Luckiest Guy', cursive !important;
     }
     
     .mobile-nav-logo {
