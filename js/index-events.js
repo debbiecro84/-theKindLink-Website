@@ -1,82 +1,39 @@
 // Index Page Events Auto-Update
+// Uses shared events data from events-data.js to show previews from the main events page
 document.addEventListener('DOMContentLoaded', () => {
     // Function to automatically update events based on current date
     function updateIndexEvents() {
+        // Get today's date normalized to start of day (midnight) for accurate comparison
         const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
         const eventsContainer = document.querySelector('.events-preview');
         
         if (!eventsContainer) return;
         
-        // Define all available events with their dates
-        const allEvents = [
-            {
-                month: 'SEP',
-                day: '13',
-                title: 'Leicester Vegan Festival 2025',
-                location: 'Leicester, England',
-                type: 'Festival',
-                date: new Date('2025-09-13')
-            },
-            {
-                month: 'SEP',
-                day: '20',
-                title: 'Portsmouth Vegan Festival 2025',
-                location: 'Portsmouth, England',
-                type: 'Festival',
-                date: new Date('2025-09-20')
-            },
-            {
-                month: 'OCT',
-                day: '05',
-                title: 'Bournemouth Vegan Festival 2025',
-                location: 'Bournemouth, England',
-                type: 'Festival',
-                date: new Date('2025-10-05')
-            },
-            {
-                month: 'OCT',
-                day: '12',
-                title: 'Essex Vegan Festival 2025',
-                location: 'Essex, England',
-                type: 'Festival',
-                date: new Date('2025-10-12')
-            },
-            {
-                month: 'NOV',
-                day: '02',
-                title: 'Sheffield Vegan Festival 2025',
-                location: 'Sheffield, England',
-                type: 'Festival',
-                date: new Date('2025-11-02')
-            },
-            {
-                month: 'NOV',
-                day: '16',
-                title: 'Glasgow Vegan Festival 2025',
-                location: 'Glasgow, Scotland',
-                type: 'Festival',
-                date: new Date('2025-11-16')
-            },
-            {
-                month: 'DEC',
-                day: '07',
-                title: 'Northern Vegan Christmas Festival 2025',
-                location: 'Manchester, England',
-                type: 'Festival',
-                date: new Date('2025-12-07')
-            },
-            {
-                month: 'DEC',
-                day: '14',
-                title: 'Newcastle Vegan Festival 2025',
-                location: 'Newcastle, England',
-                type: 'Festival',
-                date: new Date('2025-12-14')
-            }
-        ];
+        // Check if EVENTS_DATA is available (from events-data.js)
+        if (typeof EVENTS_DATA === 'undefined') {
+            console.error('EVENTS_DATA not found. Make sure events-data.js is loaded before index-events.js');
+            return;
+        }
         
-        // Filter out past events and get next 3 upcoming events
-        const upcomingEvents = allEvents
+        // Process events from shared data source
+        const upcomingEvents = EVENTS_DATA
+            .map(event => {
+                // Normalize event date to start of day for accurate comparison
+                const eventDate = new Date(event.date);
+                eventDate.setHours(0, 0, 0, 0);
+                
+                // Format date for display
+                const dateInfo = formatEventDate(event.date);
+                
+                return {
+                    ...event,
+                    date: eventDate,
+                    month: dateInfo.month,
+                    day: dateInfo.day
+                };
+            })
             .filter(event => event.date >= today)
             .sort((a, b) => a.date - b.date)
             .slice(0, 3);
