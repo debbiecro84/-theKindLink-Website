@@ -271,6 +271,14 @@
                 </div>
             </div>
             
+            <!-- Filter Buttons -->
+            <div class="filter-container" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all" style="padding: 0.75rem 1.5rem; border: none; border-radius: 25px; cursor: pointer; font-weight: 500; background: #4CAF50; color: white; transition: all 0.3s ease;">All Events</button>
+                <button class="filter-btn" data-filter="festival" style="padding: 0.75rem 1.5rem; border: 2px solid #4CAF50; border-radius: 25px; cursor: pointer; font-weight: 500; background: white; color: #4CAF50; transition: all 0.3s ease;">Festivals</button>
+                <button class="filter-btn" data-filter="marches" style="padding: 0.75rem 1.5rem; border: 2px solid #4CAF50; border-radius: 25px; cursor: pointer; font-weight: 500; background: white; color: #4CAF50; transition: all 0.3s ease;">Marches</button>
+                <button class="filter-btn" data-filter="activism" style="padding: 0.75rem 1.5rem; border: 2px solid #4CAF50; border-radius: 25px; cursor: pointer; font-weight: 500; background: white; color: #4CAF50; transition: all 0.3s ease;">Activism</button>
+            </div>
+            
             <div class="categories-grid" id="eventsGrid">
                 <div class="type-card" data-event-date="2025-09-06">
                     <div class="type-image">
@@ -437,6 +445,20 @@
                     </div>
                 </div>
 
+                <div class="type-card" data-event-date="2026-01-03" data-category="activism">
+                    <div class="type-image">
+                        <img src="images/information/veganoutreachscotland-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Veganuary Outreach Aberdeen">
+                    </div>
+                    <div class="type-content">
+                        <h3>Veganuary Outreach</h3>
+                        <p>Join the Veganuary Outreach event in Aberdeen (Scotland) - 3 January 2026</p>
+                        <div class="type-features">
+                            <span><i class="fas fa-calendar"></i> 3 January 2026</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Aberdeen</span>
+                        </div>
+                        <a href="https://www.facebook.com/events/1649548776402230" class="type-link" target="_blank">View Event</a>
+                    </div>
+                </div>
                 <div class="type-card" data-event-date="2026-02-07">
                     <div class="type-image">
                         <img src="images/events/13th-event-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Scotland Vegan Festival 2026" style="object-fit: contain; background: #f8f9fa;">
@@ -602,6 +624,21 @@
                     </div>
                 </div>
 
+                <div class="type-card" data-event-date="2026-08-14" data-category="festival">
+                    <div class="type-image">
+                        <img src="images/events/vegancampout-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Vegan Camp Out 2026">
+                    </div>
+                    <div class="type-content">
+                        <h3>Vegan Camp Out 2026</h3>
+                        <p>UK's Best Vegan Festival! 4 days of camping, music, food & community - 14-17 August 2026</p>
+                        <div class="type-features">
+                            <span><i class="fas fa-calendar"></i> 14-17 August 2026</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Walesby Forest, Nottinghamshire</span>
+                        </div>
+                        <a href="https://ticketpulse.co.uk/vco26" class="type-link" target="_blank">Get Tickets</a>
+                    </div>
+                </div>
+
                 <div class="type-card" data-event-date="2026-09-27">
                     <div class="type-image">
                         <img src="images/events/stafford-event.png" style="object-fit: contain; background: #f8f9fa;" alt="Staffordshire Vegan Festival 2026" style="object-fit: contain; background: #f8f9fa;">
@@ -640,31 +677,6 @@
 
 
 
-
-    <!-- Partner Section -->
-    <section class="categories-section">
-        <div class="container">
-            <h2>Our Event Partners</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="images/events/partner-cover.jpg" style="object-fit: contain; background: #f8f9fa;" alt="Vegan Events UK" style="object-fit: contain; background: #f8f9fa;">
-                    </div>
-                    <h3>Vegan Events UK</h3>
-                    <p>Since 2017, Vegan Events UK has been bringing the best of vegan living to communities across the UK. Our festivals offer a one-stop destination where you can discover amazing plant-based products, support small family-run businesses, and see just how delicious, accessible, and varied vegan living can be.</p>
-                    <a href="https://www.veganeventsuk.co.uk/" class="category-link" target="_blank">Visit Website</a>
-                </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="images/events/vegancampout-cover.png" style="object-fit: contain; background: #f8f9fa;" alt="Vegan Camp Out" style="object-fit: contain; background: #f8f9fa;">
-                    </div>
-                    <h3>Vegan Camp Out</h3>
-                    <p>Voted UK's Best Vegan Festival! Vegan Camp Out is the ultimate vegan camping experience featuring live music, amazing food vendors, workshops, and a vibrant community. Join thousands of vegans for an unforgettable weekend of activism, education, and celebration.</p>
-                    <a href="https://www.vegancampout.co.uk/" class="category-link" target="_blank">Visit Website</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Suggest Section -->
     <section class="suggest-section">
@@ -893,8 +905,9 @@
         function searchEvents() {
             const searchInput = document.getElementById('eventSearchInput');
             const searchTerm = searchInput.value.toLowerCase().trim();
-            const eventCards = document.querySelectorAll('.type-card');
+            const eventCards = document.querySelectorAll('#eventsGrid .type-card');
             const eventsGrid = document.getElementById('eventsGrid');
+            const today = new Date();
             
             // Remove existing no results message
             const existingNoResults = document.querySelector('.no-results-message');
@@ -905,11 +918,21 @@
             let visibleCount = 0;
             
             eventCards.forEach(card => {
+                // Skip expired events
+                const eventDate = card.getAttribute('data-event-date');
+                if (eventDate && eventDate !== 'ongoing') {
+                    const eventDateObj = new Date(eventDate);
+                    if (eventDateObj < today) {
+                        card.style.display = 'none';
+                        return;
+                    }
+                }
+                
                 // Get all text content from the card
                 const cardText = card.textContent.toLowerCase();
-                const cardTitle = card.querySelector('h3').textContent.toLowerCase();
-                const cardDescription = card.querySelector('p').textContent.toLowerCase();
-                const cardFeatures = card.querySelector('.type-features').textContent.toLowerCase();
+                const cardTitle = card.querySelector('h3') ? card.querySelector('h3').textContent.toLowerCase() : '';
+                const cardDescription = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : '';
+                const cardFeatures = card.querySelector('.type-features') ? card.querySelector('.type-features').textContent.toLowerCase() : '';
                 
                 // Check if search term matches any part of the card content
                 const matches = cardText.includes(searchTerm) || 

@@ -1,4 +1,4 @@
-// Event Date Checker - Simple and Clean
+// Event Date Checker and Filter - Simple and Clean
 document.addEventListener('DOMContentLoaded', () => {
     // Function to check and hide expired events
     function checkEventDates() {
@@ -16,24 +16,75 @@ document.addEventListener('DOMContentLoaded', () => {
             // Parse the event date
             const eventDateObj = new Date(eventDate);
             
-            // If event date has passed, hide the card
+            // If event date has passed, mark as expired
             if (eventDateObj < today) {
+                card.setAttribute('data-expired', 'true');
                 card.style.display = 'none';
             }
         });
         
         // Check if all events are hidden and show a message
-        const visibleEvents = document.querySelectorAll('.type-card:not([style*="display: none"])');
+        checkNoEvents();
+    }
+    
+    // Check if no events are visible
+    function checkNoEvents() {
+        const container = document.querySelector('#eventsGrid');
+        if (!container) return;
+        
+        const visibleEvents = container.querySelectorAll('.type-card:not([style*="display: none"])');
+        let noEventsMessage = container.querySelector('.no-events-message');
+        
         if (visibleEvents.length === 0) {
-            const container = document.querySelector('.categories-grid');
-            if (container) {
-                const noEventsMessage = document.createElement('div');
+            if (!noEventsMessage) {
+                noEventsMessage = document.createElement('div');
                 noEventsMessage.className = 'no-events-message';
                 noEventsMessage.innerHTML = '<h3>No upcoming events at the moment</h3><p>Check back soon for new vegan events and festivals!</p>';
                 container.appendChild(noEventsMessage);
             }
+            noEventsMessage.style.display = 'block';
+        } else if (noEventsMessage) {
+            noEventsMessage.style.display = 'none';
         }
     }
+    
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.style.background = 'white';
+                b.style.color = '#4CAF50';
+            });
+            btn.classList.add('active');
+            btn.style.background = '#4CAF50';
+            btn.style.color = 'white';
+            
+            const filter = btn.getAttribute('data-filter');
+            const eventCards = document.querySelectorAll('#eventsGrid .type-card');
+            
+            eventCards.forEach(card => {
+                // Skip expired events
+                if (card.getAttribute('data-expired') === 'true') {
+                    card.style.display = 'none';
+                    return;
+                }
+                
+                const category = card.getAttribute('data-category') || 'festival';
+                
+                if (filter === 'all' || category === filter) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            checkNoEvents();
+        });
+    });
     
     // Run the check when page loads
     checkEventDates();
