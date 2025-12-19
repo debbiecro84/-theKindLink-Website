@@ -101,6 +101,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fredoka+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
+    <!-- Responsive styles for explore page logos -->
+    <style>
+        .explore-logos {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .explore-logos img {
+            width: 80px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+        
+        /* Tablet and smaller screens */
+        @media (max-width: 768px) {
+            .explore-logos {
+                gap: 1.5rem;
+            }
+            
+            .explore-logos img {
+                width: 60px;
+            }
+        }
+        
+        /* Mobile screens */
+        @media (max-width: 480px) {
+            .explore-logos {
+                gap: 1rem;
+            }
+            
+            .explore-logos img {
+                width: 45px;
+            }
+        }
+        
+        /* Very small mobile screens */
+        @media (max-width: 360px) {
+            .explore-logos {
+                gap: 0.75rem;
+            }
+            
+            .explore-logos img {
+                width: 35px;
+            }
+        }
+    </style>
+    
     <!-- Preload critical resources -->
     <link rel="preload" href="images/sanctuaries/explore-cover.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="css/styles.css" as="style">
@@ -202,7 +251,7 @@
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #0D0D0D; opacity: 0.5; z-index: 2;"></div>
         <div class="page-header-content" style="position: relative; z-index: 3; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding-top: 2rem; text-align: center;">
             <h1 style="color: #ffffff !important;">Explore Brands </h1>
-            <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 1rem;">
+            <div class="explore-logos" style="display: flex; gap: 2rem; justify-content: center; margin-top: 1rem;">
                 <img src="images/logos/vegan.png" alt="Vegan" style="width: 80px; height: auto; filter: brightness(0) invert(1);">
                 <img src="images/logos/animal.png" alt="Animal Friendly" style="width: 80px; height: auto; filter: brightness(0) invert(1);">
                 <img src="images/logos/recycling.png" alt="Recycling" style="width: 80px; height: auto; filter: brightness(0) invert(1);">

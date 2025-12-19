@@ -65,7 +65,31 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const filter = btn.getAttribute('data-filter');
             const eventCards = document.querySelectorAll('#eventsGrid .type-card');
+            const container = document.querySelector('#eventsGrid');
             
+            // Remove existing messages
+            const existingMessage = container.querySelector('.no-events-message, .marches-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            // Special handling for marches filter
+            if (filter === 'marches') {
+                // Hide all event cards
+                eventCards.forEach(card => {
+                    card.style.display = 'none';
+                });
+                
+                // Show "check back soon" message
+                const marchesMessage = document.createElement('div');
+                marchesMessage.className = 'marches-message';
+                marchesMessage.style.cssText = 'text-align: center; padding: 3rem 1rem; color: var(--text-light, #666);';
+                marchesMessage.innerHTML = '<h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-green, #4CAF50);">Check back soon</h3>';
+                container.appendChild(marchesMessage);
+                return;
+            }
+            
+            // Normal filtering for other categories
             eventCards.forEach(card => {
                 // Skip expired events
                 if (card.getAttribute('data-expired') === 'true') {
