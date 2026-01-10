@@ -514,6 +514,7 @@ h3 {
     margin-bottom: var(--spacing-sm) !important;
     letter-spacing: 1px !important;
     text-transform: uppercase !important;
+    line-height: 1.1 !important;
 }
 
 .page-header-content h2 {
@@ -548,8 +549,8 @@ h3 {
 
 .spa-guide-content h2 {
     font-size: 2.5rem !important;
-    font-weight: 400 !important;
-    font-family: 'Luckiest Guy', 'Fredoka One', cursive !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     color: var(--text-dark) !important;
     margin-bottom: 1.5rem !important;
     line-height: 1.2;
@@ -3289,6 +3290,7 @@ h3 {
         font-size: 3.5rem !important;
         font-weight: 400 !important;
         font-family: 'Luckiest Guy', cursive !important;
+        line-height: 1.1 !important;
     }
     
     .page-header-content p {
@@ -3529,6 +3531,7 @@ h3 {
         font-size: 3rem !important;
         font-weight: 400 !important;
         font-family: 'Luckiest Guy', cursive !important;
+        line-height: 1.1 !important;
     }
     
     .page-header-content p {
