@@ -15,6 +15,39 @@ function showCategory(categoryId) {
     }
 }
 
+// Category Dropdown Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryFilter = document.getElementById('categoryFilter');
+    const categoryCards = document.querySelectorAll('.category-card');
+    
+    if (categoryFilter && categoryCards.length > 0) {
+        categoryFilter.addEventListener('change', function() {
+            const selectedCategory = this.value;
+            
+            categoryCards.forEach(card => {
+                if (selectedCategory === 'all') {
+                    // Show all cards
+                    card.style.display = '';
+                    card.style.opacity = '1';
+                } else {
+                    // Show only matching category
+                    const cardCategory = card.getAttribute('data-category');
+                    if (cardCategory === selectedCategory) {
+                        card.style.display = '';
+                        card.style.opacity = '1';
+                        // Scroll to the first matching card
+                        setTimeout(() => {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+});
+
 // Scroll to top functionality
 document.addEventListener('DOMContentLoaded', function() {
     const scrollToTopBtn = document.getElementById('scrollToTop');

@@ -84,6 +84,11 @@
                     "name": "Fitness & Wellness",
                     "description": "Vegan fitness and wellness products"
                 },
+                {
+                    "@type": "Thing",
+                    "name": "Baby Products",
+                    "description": "Cruelty-free baby care products"
+                }
                 /* {
                     "@type": "Thing",
                     "name": "Video Games",
@@ -257,8 +262,33 @@
     <section class="categories-section">
         <div class="container">
             <h2>Shop by Category</h2>
-            <div class="categories-grid">
-                <div class="category-card">
+            
+            <!-- Category Dropdown Filter -->
+            <div class="category-filter-container" style="max-width: 400px; margin: 0 auto 2rem auto;">
+                <label for="categoryFilter" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Quick Jump to Category:</label>
+                <select id="categoryFilter" style="width: 100%; padding: 0.75rem 1rem; border: 2px solid #4CAF50; border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif; background: white; color: var(--text-dark); cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'><path fill=\'%234CAF50\' d=\'M6 9L1 4h10z\'/></svg>'); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem;">
+                    <option value="all">All Categories</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="beauty">Beauty & Skincare</option>
+                    <option value="restaurants">Restaurants</option>
+                    <option value="food-drinks">Food & Drinks</option>
+                    <option value="meal-kits">Meal Kit Services</option>
+                    <option value="recipes">Recipes</option>
+                    <option value="home-living">Home & Living</option>
+                    <option value="travel">Travel</option>
+                    <option value="books-media">Books & Media</option>
+                    <option value="tattoo-studios">Tattoo Studios</option>
+                    <option value="gifts-accessories">Gifts & Accessories</option>
+                    <option value="baby-products">Baby Products</option>
+                    <option value="vitamins-supplements">Vitamins & Supplements</option>
+                    <option value="spa-retreat">Spa & Retreat</option>
+                    <option value="jobs">Jobs</option>
+                    <option value="support-websites">Support these websites</option>
+                </select>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <div class="category-card" data-category="fashion">
                     <div class="category-image">
                         <img src="images/explore-images/clothes-cover.jpg" alt="Fashion">
                         <div class="category-overlay">
@@ -268,7 +298,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="beauty">
                     <div class="category-image">
                         <img src="images/explore-images/beauty-cover.jpg" alt="Beauty & Skincare">
                         <div class="category-overlay">
@@ -278,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="restaurants">
                     <div class="category-image">
                         <img src="images/explore-images/rest-cover.jpg" alt="Restaurants">
                         <div class="category-overlay">
@@ -288,7 +318,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="food-drinks">
                     <div class="category-image">
                         <img src="images/explore-images/snacks-cover.png" alt="Food & Drinks" loading="lazy">
                         <div class="category-overlay">
@@ -298,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="meal-kits">
                     <div class="category-image">
                         <img src="images/explore-images/food-delivery.png" alt="Meal kit services" loading="lazy">
                         <div class="category-overlay">
@@ -308,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="recipes">
                     <div class="category-image">
                         <img src="images/explore-images/recipe-cover.jpg" alt="Recipes" loading="lazy">
                         <div class="category-overlay">
@@ -318,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="home-living">
                     <div class="category-image">
                         <img src="images/explore-images/home&living-cover.jpg" alt="Home & Living" loading="lazy">
                         <div class="category-overlay">
@@ -328,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="travel">
                     <div class="category-image">
                         <img src="images/explore-images/travel-cover.jpg" alt="Travel" loading="lazy">
                         <div class="category-overlay">
@@ -338,7 +368,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="books-media">
                     <div class="category-image">
                         <img src="images/explore-images/books-cover.jpg" alt="Books & Media" loading="lazy">
                         <div class="category-overlay">
@@ -348,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="tattoo-studios">
                     <div class="category-image">
                         <img src="images/explore-images/tattoo-cover.jpg" alt="Tattoo Studios" loading="lazy">
                         <div class="category-overlay">
@@ -358,7 +388,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="gifts-accessories">
                     <div class="category-image">
                         <img src="images/explore-images/gift-cover.jpg" alt="Gifts & Accessories" loading="lazy">
                         <div class="category-overlay">
@@ -368,7 +398,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="baby-products">
+                    <div class="category-image">
+                        <img src="images/baby products/baby-product-cover.png" alt="Baby Products" loading="lazy">
+                        <div class="category-overlay">
+                            <h3>Baby Products</h3>
+                            <p>Gentle, cruelty-free products for your little ones</p>
+                            <a href="baby-products.html" class="category-link">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="vitamins-supplements">
                     <div class="category-image">
                         <img src="images/explore-images/supplement-cover.jpg" alt="Vitamins & Supplements" loading="lazy">
                         <div class="category-overlay">
@@ -378,7 +418,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="spa-retreat">
                     <div class="category-image">
                         <img src="images/explore-images/spa-cover.jpg" alt="Spa & Retreat" loading="lazy">
                         <div class="category-overlay">
@@ -388,7 +428,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="jobs">
                     <div class="category-image">
                         <img src="images/explore-images/jobs-cover.jpg" alt="Jobs" loading="lazy">
                         <div class="category-overlay">
@@ -398,7 +438,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="category-card" data-category="support-websites">
                     <div class="category-image">
                         <img src="images/explore-images/support-cover.jpg" alt="Support these websites" loading="lazy">
                         <div class="category-overlay">
@@ -565,6 +605,7 @@
     <script src="js/scroll.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/explore.js"></script>
     <!-- Vegan Values Disclaimer Modal -->
     <div id="veganValuesModal" class="modal">
         <div class="modal-content">

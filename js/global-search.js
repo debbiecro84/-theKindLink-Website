@@ -64,6 +64,7 @@ class GlobalSearch {
                     { title: 'Travel', description: 'Vegan-friendly travel and accommodation', keywords: 'travel, accommodation, hotels, vegan travel, holidays, trips, vacation', url: 'travel.html' },
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
                     { title: 'Vitamins & Supplements', description: 'High-quality vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, wellness, b12, omega, minerals', url: 'vitamins-supplements.html' },
+                    { title: 'Baby Products', description: 'Gentle, cruelty-free products for your little ones', keywords: 'baby products, baby care, baby wipes, nappies, baby skincare, baby bath, baby food, vegan baby, cruelty-free baby, organic baby', url: 'baby-products.html' },
                     { title: 'Jobs', description: 'Vegan and ethical job opportunities', keywords: 'jobs, careers, employment, work, vegan jobs, ethical jobs, opportunities, hiring', url: 'jobs.html' },
                     { title: 'Spa & Retreat', description: 'Vegan-friendly wellness and relaxation experiences', keywords: 'spa, retreat, wellness, relaxation, glamping, sanctuary, vegan spa, wellness retreat, detox, mindfulness, meditation, yoga retreat, animal sanctuary', url: 'spa-retreat.html' },
                     // { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
@@ -97,6 +98,20 @@ class GlobalSearch {
                 content: [
                     { title: 'Beauty & Skincare', description: 'Cruelty-free beauty products', keywords: 'beauty, skincare, cosmetics, cruelty-free, makeup, skincare, personal care, toiletries', url: 'beauty.html' },
                     { title: 'Re:gn', description: 'UK-based sustainable brand offering eco-friendly beauty products including makeup, skincare, and hair care', keywords: 'regn, re:gn, sustainable, eco-friendly, uk, bamboo, organic, cruelty-free, vegan, zero waste, reusable, affordable, makeup, skincare, hair care, beauty', url: 'https://www.regn.co.uk/' }
+                ]
+            },
+            {
+                page: 'baby-products.html',
+                title: 'Vegan Baby Products',
+                url: 'baby-products.html',
+                content: [
+                    { title: 'Vegan Baby Products', description: 'Gentle, cruelty-free products for your little ones', keywords: 'baby products, baby care, baby wipes, nappies, baby skincare, baby bath, baby food, vegan baby, cruelty-free baby, organic baby, newborn, toddler, infant', url: 'baby-products.html' },
+                    { title: 'Handmade Naturals', description: 'Cheshire-based artisan brand creating handmade vegan and cruelty-free baby care products since 2007', keywords: 'handmade naturals, cheshire, artisan, baby care, little ones, baby bath, moisturisers, nappy change, sls-free, organic, award winning', url: 'https://handmadenaturals.co.uk/collections/little-ones' },
+                    { title: 'The Cheeky Panda', description: 'UK-based sustainable brand creating bamboo baby wipes and nappies certified vegan by The Vegan Society', keywords: 'cheeky panda, bamboo baby wipes, bamboo nappies, vegan society, leaping bunny, 99% water formula, fragrance-free, pfas-free, good housekeeping, b corp', url: 'https://uk.cheekypanda.com/' },
+                    { title: 'Vegan Supermarket', description: 'UK\'s leading online vegan supermarket offering comprehensive range of vegan baby products', keywords: 'vegan supermarket, baby products, organic baby wipes, biodegradable nappies, vegan baby food, organic cotton baby clothes, online store', url: 'https://www.vegansupermarket.co.uk/vegan-baby' },
+                    { title: 'WaterWipes', description: 'Ultra-pure baby wipes made with 99.9% purified water and a drop of fruit extract', keywords: 'waterwipes, ultra-pure, 99.9% water, fruit extract, hypoallergenic, allergy uk approved, skin health alliance, microbiome-friendly, newborn safe, premature babies', url: 'https://www.waterwipes.com/uk/en/products/newborns/waterwipes-original-baby-wipes' },
+                    { title: 'Nala\'s Baby', description: 'UK-based award-winning brand creating natural, vegan, and cruelty-free baby skincare and haircare products', keywords: 'nalas baby, nala\'s baby, made in britain, paediatrician approved, sensitive skin, body wash, bubble bath, body lotion, body butter, baby oil, shampoo, conditioner', url: 'https://nalasbaby.com/' },
+                    { title: 'Peace With The Wild', description: 'UK-based online retailer offering comprehensive range of zero waste, eco-friendly mama and baby products', keywords: 'peace with the wild, zero waste, eco-friendly, baby balms, baby bottles, cloth nappies, baby bowls, baby utensils, baby toys, baby books, plastic-free packaging', url: 'https://www.peacewiththewild.co.uk/product-category/mama-baby/' }
                 ]
             },
             {
