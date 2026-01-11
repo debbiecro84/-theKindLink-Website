@@ -3308,6 +3308,13 @@ h3 {
         display: block !important;
     }
     
+    /* Adjust image position for screens 300px to 826px */
+    @media (min-width: 300px) and (max-width: 826px) {
+        .hero-image-mobile {
+            object-position: center 95% !important;
+        }
+    }
+    
     .container {
         padding: 0 1rem;
     }
