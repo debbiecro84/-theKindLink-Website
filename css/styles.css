@@ -3299,6 +3299,15 @@ h3 {
         font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     }
     
+    /* Mobile hero image */
+    .hero-image-desktop {
+        display: none;
+    }
+    
+    .hero-image-mobile {
+        display: block !important;
+    }
+    
     .container {
         padding: 0 1rem;
     }
@@ -3532,6 +3541,15 @@ h3 {
         font-weight: 400 !important;
         font-family: 'Luckiest Guy', cursive !important;
         line-height: 1.1 !important;
+    }
+    
+    /* Mobile hero image for small screens */
+    .hero-image-desktop {
+        display: none;
+    }
+    
+    .hero-image-mobile {
+        display: block !important;
     }
     
     .page-header-content p {
