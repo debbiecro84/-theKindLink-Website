@@ -65,6 +65,7 @@ class GlobalSearch {
                     { title: 'Gifts & Accessories', description: 'Vegan gifts and accessories', keywords: 'gifts, accessories, presents, vegan gifts, presents, souvenirs', url: 'gifts-accessories.html' },
                     { title: 'Vitamins & Supplements', description: 'High-quality vegan vitamins and supplements', keywords: 'vitamins, supplements, nutrition, health, wellness, b12, omega, minerals', url: 'vitamins-supplements.html' },
                     { title: 'Baby Products', description: 'Gentle, cruelty-free products for your little ones', keywords: 'baby products, baby care, baby wipes, nappies, baby skincare, baby bath, baby food, vegan baby, cruelty-free baby, organic baby', url: 'baby-products.html' },
+                    { title: 'Pet Brands', description: 'Plant-based pet food and cruelty-free accessories', keywords: 'pet brands, vegan pet food, plant-based pet food, vegan dog food, vegan cat food, cruelty-free pet products, ethical pet brands, vegan pet treats, vegan pet toys', url: 'companion-animal-care.html' },
                     { title: 'Jobs', description: 'Vegan and ethical job opportunities', keywords: 'jobs, careers, employment, work, vegan jobs, ethical jobs, opportunities, hiring', url: 'jobs.html' },
                     { title: 'Spa & Retreat', description: 'Vegan-friendly wellness and relaxation experiences', keywords: 'spa, retreat, wellness, relaxation, glamping, sanctuary, vegan spa, wellness retreat, detox, mindfulness, meditation, yoga retreat, animal sanctuary', url: 'spa-retreat.html' },
                     // { title: 'Video Games', description: 'Vegan-friendly gaming and entertainment', keywords: 'video games, gaming, entertainment, vegan games, animal games, ethical gaming, cruelty-free gaming', url: 'video-games.html' }
@@ -112,6 +113,18 @@ class GlobalSearch {
                     { title: 'WaterWipes', description: 'Ultra-pure baby wipes made with 99.9% purified water and a drop of fruit extract', keywords: 'waterwipes, ultra-pure, 99.9% water, fruit extract, hypoallergenic, allergy uk approved, skin health alliance, microbiome-friendly, newborn safe, premature babies', url: 'https://www.waterwipes.com/uk/en/products/newborns/waterwipes-original-baby-wipes' },
                     { title: 'Nala\'s Baby', description: 'UK-based award-winning brand creating natural, vegan, and cruelty-free baby skincare and haircare products', keywords: 'nalas baby, nala\'s baby, made in britain, paediatrician approved, sensitive skin, body wash, bubble bath, body lotion, body butter, baby oil, shampoo, conditioner', url: 'https://nalasbaby.com/' },
                     { title: 'Peace With The Wild', description: 'UK-based online retailer offering comprehensive range of zero waste, eco-friendly mama and baby products', keywords: 'peace with the wild, zero waste, eco-friendly, baby balms, baby bottles, cloth nappies, baby bowls, baby utensils, baby toys, baby books, plastic-free packaging', url: 'https://www.peacewiththewild.co.uk/product-category/mama-baby/' }
+                ]
+            },
+            {
+                page: 'companion-animal-care.html',
+                title: 'Vegan Pet Brands',
+                url: 'companion-animal-care.html',
+                content: [
+                    { title: 'Vegan Pet Brands', description: 'Plant-based pet food and cruelty-free accessories', keywords: 'pet brands, vegan pet food, plant-based pet food, vegan dog food, vegan cat food, cruelty-free pet products, ethical pet brands, vegan pet treats, vegan pet toys, natural pet products, dog, cat, pet care', url: 'companion-animal-care.html' },
+                    { title: 'Benevo', description: 'UK-based vegan pet food brand creating nutritionally complete plant-based food for dogs and cats since 2005', keywords: 'benevo, vegan pet food, plant-based dog food, vegan cat food, puppy food, nutritionally complete, compostable poop bags, hampshire uk, 2005, feeding change', url: 'https://www.benevo.com/' },
+                    { title: 'W\'ZIS', description: 'UK-based vegan dog treat brand creating colourful, fun treats that are never dull, brown, or bone-shaped', keywords: 'wzis, w\'zis, vegan dog treats, plant-based treats, reward treats, big chews, dental hygiene, hypoallergenic, low calorie, vet trusted, tinned love, uk', url: 'https://www.wzis.dog/' },
+                    { title: 'HOWND', description: 'UK\'s most ethically awarded plant-powered pet care brand creating hypoallergenic dog food, wellness treats, and professional grooming products', keywords: 'hownd, plant-powered, hypoallergenic dog food, wellness treats, professional grooming, cruelty-free certified, planet kind, clean ingredients, award winning, uk', url: 'https://dogslovehownd.com/' },
+                    { title: 'Herbie Wilde', description: 'The cleanest, kindest plant-based dog food on the planet with 39 natural superfood ingredients, proven to improve allergies and sensitive tummies', keywords: 'herbie wilde, plant-based dog food, hypoallergenic, vet approved, 100% plant protein, dairy free, soya free, grain free, superfood, farm to bowl, flexi-diet, uk', url: 'https://herbiewilde.co.uk/' }
                 ]
             },
             {
